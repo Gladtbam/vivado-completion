@@ -5,7 +5,7 @@
   [![Visual Studio Code](https://img.shields.io/badge/VS%20Code-Extension-blue.svg)](https://code.visualstudio.com/) [![Vivado](https://img.shields.io/badge/Xilinx-Vivado-red.svg)]() [![TypeScript](https://img.shields.io/badge/Language-TypeScript-blue.svg)]()
 </div>
 
-为 FPGA 和 ASIC 硬件工程师打造的 **工业级 Vivado TCL & XDC 智能补全插件**。告别痛苦的官方纯文本编辑器，在 VS Code 中享受丝滑的约束编写体验！
+为 FPGA 和 ASIC 硬件工程师打造的 **Vivado TCL & XDC 智能补全插件**。告别痛苦的官方纯文本编辑器，在 VS Code 中享受丝滑的约束编写体验！
 
 ## ✨ 核心特性 (Features)
 
@@ -14,7 +14,7 @@
   * 输入首字母，提示顶级命令。
   * 输入 `命令 + 空格` 或 `-`（例如 `create_clock -`），**精准弹出该命令专属的选项参数**（如 `-name`, `-period`, `-add` 等）。
 * 📖 **内置官方帮助文档**: 补全时直接在侧边栏渲染 Vivado 官方的完整 Help 描述（包含 Description, Syntax, Usage）
-* 🎯 **原生 XDC 完美融合**: 不再将 `.xdc` 粗暴识别为普通纯文本，而是适配 **Xilinx Design Constraints** 语言标识。可与社区主流的 FPGA/TCL 语法高亮插件无缝协同工作，彩色高亮与智能补全我全都要！
+* 🎯 **原生 XDC 完美融合**: 适配 **Xilinx Design Constraints** 语言标识。可与社区主流的 FPGA/TCL 语法高亮插件无缝协同工作，彩色高亮与智能补全我全都要！
 * ⚡ **极致性能**: 采用现代化的 `esbuild` 打包和预编译内存字典，即使加载数千个命令的庞大上下文，也保证毫秒级响应，告别卡顿。
 
 ## 🎮 使用方法 (Usage)
@@ -44,7 +44,7 @@
 
 **🤝 如何参与贡献？**
 
-我们非常欢迎提交 Pull Request 来完善指令提示体验！
+欢迎提交 Pull Request 来完善指令提示体验！
 
 * **优化单个指令（日常贡献）**: 如果你想为某个特定命令添加更详细的中文解释，或者增加常用的代码补全模板（Snippet），只需在 `data/commands/` 目录下找到对应的 `.json` 文件（例如 `create_clock.json`）并直接修改即可。完成后运行 `npm run package` 测试。
 * **升级 Vivado 版本（底层同步）**: 当 Vivado 发布新版本时，只需导出最新的 `data/vivado_api_schema.json` 并重新运行 `npm run split-dict`，即可实现全量指令的无痛升级。
