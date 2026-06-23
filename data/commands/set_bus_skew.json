@@ -1,0 +1,52 @@
+{
+  "name": "set_bus_skew",
+  "short_description": "Define bus skew",
+  "full_help": "set_bus_skew\n\nDescription: \nDefine bus skew\n\nSyntax: \nset_bus_skew  [-from <args>] [-rise_from <args>] [-fall_from <args>]\n              [-to <args>] [-rise_to <args>] [-fall_to <args>]\n              [-through <args>] [-rise_through <args>] [-fall_through <args>]\n              [-quiet] [-verbose] <value>\n\nUsage: \n  Name             Description\n  ----------------------------\n  [-from]          List of path startpoints\n  [-rise_from]     Apply to paths rising from the list of startpoints\n  [-fall_from]     Apply to paths falling from the list of startpoints\n  [-to]            List of path endpoints\n  [-rise_to]       Apply to paths with rise transition at the list of \n                   endpoints\n  [-fall_to]       Apply to paths with fall transition at the list of \n                   endpoints\n  [-through]       List of through pins, cells or nets\n  [-rise_through]  Apply to paths rising through pins, cells or nets\n  [-fall_through]  Apply to paths falling through pins, cells or nets\n  [-quiet]         Ignore command errors\n  [-verbose]       Suspend message limits during command execution\n  <value>          Constraint value\n\nCategories: \nXDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "List of path startpoints"
+    },
+    {
+      "flag": "-rise_from",
+      "description": "Apply to paths rising from the list of startpoints"
+    },
+    {
+      "flag": "-fall_from",
+      "description": "Apply to paths falling from the list of startpoints"
+    },
+    {
+      "flag": "-to",
+      "description": "List of path endpoints"
+    },
+    {
+      "flag": "-rise_to",
+      "description": "Apply to paths with rise transition at the list of endpoints"
+    },
+    {
+      "flag": "-fall_to",
+      "description": "Apply to paths with fall transition at the list of endpoints"
+    },
+    {
+      "flag": "-through",
+      "description": "List of through pins, cells or nets"
+    },
+    {
+      "flag": "-rise_through",
+      "description": "Apply to paths rising through pins, cells or nets"
+    },
+    {
+      "flag": "-fall_through",
+      "description": "Apply to paths falling through pins, cells or nets"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

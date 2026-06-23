@@ -1,0 +1,20 @@
+{
+  "name": "get_ip_upgrade_results",
+  "short_description": "Get a list of results for IP upgrades during the current project",
+  "full_help": "get_ip_upgrade_results\n\nDescription: \nGet a list of results for IP upgrades during the current project\n\nSyntax: \nget_ip_upgrade_results  [-srcset <arg>] [-quiet] [-verbose] [<objects>...]\n\nReturns: \nlist of IP upgrade results\n\nUsage: \n  Name         Description\n  ------------------------\n  [-srcset]    (Optional) Specifies the source file set containing the \n               upgraded IP\n               Default: The current source fileset\n               Values: Source set name\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  [<objects>]  IP to be upgraded\n               Values: IP instance(s) within the design, as returned by \n               'get_ips <instance name>' or 'get_bd_cells <cell name>'\n\nCategories: \nObject, Project, IPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-srcset",
+      "description": "(Optional) Specifies the source file set containing the upgraded IP Default: The current source fileset Values: Source set name"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

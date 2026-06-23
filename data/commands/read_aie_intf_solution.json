@@ -1,0 +1,20 @@
+{
+  "name": "read_aie_intf_solution",
+  "short_description": "Reads aie interface solution file.",
+  "full_help": "read_aie_intf_solution\n\nDescription: \nReads aie interface solution file.\n\nSyntax: \nread_aie_intf_solution  [-cell <arg>] [-quiet] [-verbose] [<file>]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-cell]     AIE IP Name for which aie interface solution file to be read.\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<file>]    Input AIE Interface solution file.\n\nCategories: \nAIE, FileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cell",
+      "description": "AIE IP Name for which aie interface solution file to be read."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

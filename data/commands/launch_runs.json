@@ -1,0 +1,80 @@
+{
+  "name": "launch_runs",
+  "short_description": "Launch a set of runs",
+  "full_help": "launch_runs\n\nDescription: \nLaunch a set of runs\n\nSyntax: \nlaunch_runs  [-jobs <arg>] [-scripts_only] [-lsf <arg>] [-sge <arg>]\n             [-cluster_configuration <arg>] [-dir <arg>] [-to_step <arg>]\n             [-next_step] [-host <args>] [-remote_cmd <arg>] [-email_to <args>]\n             [-email_all] [-pre_launch_script <arg>]\n             [-post_launch_script <arg>] [-custom_script <arg>] [-force]\n             [-quiet] [-verbose] <runs>...\n\nUsage: \n  Name                      Description\n  -------------------------------------\n  [-jobs]                   Number of jobs\n                            Default: 1\n  [-scripts_only]           Only generate scripts\n  [-lsf]                    Use LSF to launch jobs. Required argument is the \n                            bsub command line to pass to LSF\n                            Default: empty\n  [-sge]                    Use SGE to launch jobs. Required argument is the \n                            qsub command line to pass to SGE\n                            Default: empty\n  [-cluster_configuration]  Run jobs on a particular cluster configuration \n                            (picks cluster configuration from GUI settings).\n                            Default: empty\n  [-dir]                    Launch directory\n  [-to_step]                Last Step to run. Ignored when launching multiple\n                            runs. Not valid with -next_step\n  [-next_step]              Run next step. Ignored when launching multiple \n                            runs. Not valid with -to_step.\n  [-host]                   Launch on specified remote host with a specified \n                            number of jobs. Example: -host {machine1 2} -host\n                            {machine2 4}\n  [-remote_cmd]             Command to log in to remote hosts\n                            Default: ssh -q -o ConnectTimeout=30 -o \n                            ConnectionAttempts=3 -o BatchMode=yes\n  [-email_to]               List of email addresses to notify when jobs \n                            complete (only applicable with -host)\n  [-email_all]              Send email after each job completes (only \n                            applicable with -host)\n  [-pre_launch_script]      Script to run before launching each job (only \n                            applicable with -host)\n  [-post_launch_script]     Script to run after each job completes (only \n                            applicable with -host)\n  [-custom_script]          User run script map file which contains run name \n                            to user run script mapping\n  [-force]                  Run the command, even if there are pending \n                            constraint changes, which will be lost (in a \n                            Dynamic Function eXchange design)\n  [-quiet]                  Ignore command errors\n  [-verbose]                Suspend message limits during command execution\n  <runs>                    Runs to launch\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-jobs",
+      "description": "Number of jobs Default: 1"
+    },
+    {
+      "flag": "-scripts_only",
+      "description": "Only generate scripts"
+    },
+    {
+      "flag": "-lsf",
+      "description": "Use LSF to launch jobs. Required argument is the bsub command line to pass to LSF Default: empty"
+    },
+    {
+      "flag": "-sge",
+      "description": "Use SGE to launch jobs. Required argument is the qsub command line to pass to SGE Default: empty"
+    },
+    {
+      "flag": "-cluster_configuration",
+      "description": "Run jobs on a particular cluster configuration (picks cluster configuration from GUI settings). Default: empty"
+    },
+    {
+      "flag": "-dir",
+      "description": "Launch directory"
+    },
+    {
+      "flag": "-to_step",
+      "description": "Last Step to run. Ignored when launching multiple runs. Not valid with -next_step"
+    },
+    {
+      "flag": "-next_step",
+      "description": "Run next step. Ignored when launching multiple runs. Not valid with -to_step."
+    },
+    {
+      "flag": "-host",
+      "description": "Launch on specified remote host with a specified number of jobs. Example: -host {machine1 2} -host {machine2 4}"
+    },
+    {
+      "flag": "-remote_cmd",
+      "description": "Command to log in to remote hosts Default: ssh -q -o ConnectTimeout=30 -o ConnectionAttempts=3 -o BatchMode=yes"
+    },
+    {
+      "flag": "-email_to",
+      "description": "List of email addresses to notify when jobs complete (only applicable with -host)"
+    },
+    {
+      "flag": "-email_all",
+      "description": "Send email after each job completes (only applicable with -host)"
+    },
+    {
+      "flag": "-pre_launch_script",
+      "description": "Script to run before launching each job (only applicable with -host)"
+    },
+    {
+      "flag": "-post_launch_script",
+      "description": "Script to run after each job completes (only applicable with -host)"
+    },
+    {
+      "flag": "-custom_script",
+      "description": "User run script map file which contains run name to user run script mapping"
+    },
+    {
+      "flag": "-force",
+      "description": "Run the command, even if there are pending constraint changes, which will be lost (in a Dynamic Function eXchange design)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

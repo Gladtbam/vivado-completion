@@ -1,0 +1,44 @@
+{
+  "name": "write_device_image",
+  "short_description": "Write programmable device image",
+  "full_help": "write_device_image\n\nDescription: \nWrite programmable device image\n\nSyntax: \nwrite_device_image  [-force] [-verbose] [-raw_partitions] [-mask_file]\n                    [-logic_location_file] [-cell <arg>] [-no_pdi]\n                    [-no_partial_pdifile] [-quiet] <file>\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-force]                Overwrite existing file\n  [-verbose]              Print write_device_image options\n  [-raw_partitions]       Write raw CFI and NPI partition files (.rcfi and \n                          .rnpi)\n  [-mask_file]            Write mask file (.msk_cfi)\n  [-logic_location_file]  Write logic location file (.ll)\n  [-cell]                 Create only partial device image for named cell\n  [-no_pdi]               Do not generate pdi file\n  [-no_partial_pdifile]   Do not write partial pdi files for a Dynamic \n                          Function eXchange design\n  [-quiet]                Ignore command errors\n  <file>                  The name of the .pdi file to generate. If extension\n                          is included, only allowed extension is .pdi\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Print write_device_image options"
+    },
+    {
+      "flag": "-raw_partitions",
+      "description": "Write raw CFI and NPI partition files (.rcfi and .rnpi)"
+    },
+    {
+      "flag": "-mask_file",
+      "description": "Write mask file (.msk_cfi)"
+    },
+    {
+      "flag": "-logic_location_file",
+      "description": "Write logic location file (.ll)"
+    },
+    {
+      "flag": "-cell",
+      "description": "Create only partial device image for named cell"
+    },
+    {
+      "flag": "-no_pdi",
+      "description": "Do not generate pdi file"
+    },
+    {
+      "flag": "-no_partial_pdifile",
+      "description": "Do not write partial pdi files for a Dynamic Function eXchange design"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    }
+  ]
+}

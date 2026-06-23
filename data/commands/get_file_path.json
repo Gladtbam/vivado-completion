@@ -1,0 +1,100 @@
+{
+  "name": "get_file_path",
+  "short_description": "Get the full path to the specific file, for the given part.",
+  "full_help": "get_file_path\n\nDescription: \nGet the full path to the specific file, for the given part.\n\nSyntax: \nget_file_path  [-regexp] [-nocase] [-filter <arg>] [-of_objects <args>]\n               [-part <arg>] [-partname <arg>] [-partobj <arg>] [-v <arg>]\n               [-vaultFileId <arg>] [-useLegacy <arg>] [-filename <arg>]\n               [-legacyFileId <arg>] [-dataLevel <arg>] [-isTimingFile <arg>]\n               [-checkDeviceFilesDir <arg>] [-useOldAPIs <arg>]\n               [-askGetDataFilePath <arg>]\n               [-askGetMostSpecificDataLocation <arg>]\n               [-askGetDataLocation_Filename <arg>]\n               [-askGetDataLocation_DataLevel_Filename <arg>] [-quiet]\n               [-verbose] [<patterns>]\n\nReturns: \nstring\n\nUsage: \n  Name                                      Description\n  -----------------------------------------------------\n  [-regexp]                                 Patterns are full regular \n                                            expressions\n  [-nocase]                                 Perform case-insensitive \n                                            matching. (valid only when \n                                            -regexp specified)\n  [-filter]                                 Filter list with expression\n  [-of_objects]                             Get the string of these part.\n  [-part]                                   (same as -partname) partname to \n                                            use if not providing a part \n                                            object.\n  [-partname]                               partname to use if not providing \n                                            a part object.\n  [-partobj]                                part Tcl object\n  [-v]                                      Verbose level where \n                                            0=None;1=Errors;2=Warnings;3=Info\n                                            ;4=Trace;5=Verbose\n                                            Default: 2=Warnings\n  [-vaultFileId]                            Vault Key or Filename for looking\n                                            up file location in vault's \n                                            device.manifest.\n  [-useLegacy]                              Use legacy / pre-vault file \n                                            locating logic, where \n                                            0=NO_LEGACY_FILE_LOCATING, \n                                            1=GET_DATA_FILE_PATH, \n                                            2=GET_MOST_SPECIFIC_DATA_LOC, \n                                            3=GET_DATA_LOCATION, \n                                            4=GET_DATA_LOCATION_IN_DPX_COMMON\n                                            Default: 0=NO_LEGACY_FILE_LOCATIN\n                                            G\n  [-filename]                               filename is an obsolete parameter\n                                            because it is now ambiguous. It \n                                            will be used as the legacyFileId,\n                                            but you may have intended it to \n                                            be used as the vaultFileId.  \n                                            Please use those two parameters \n                                            instead of this one.\n  [-legacyFileId]                           Legacy Filename or Token(e.g. \n                                            \"<xng>\".\n  [-dataLevel]                              0=HDPA_ARCH, 1=HDPA_FAMILY, \n                                            2=HDPA_DEVICE, 3=HDPA_PACKAGE, \n                                            4=HDPA_SPEED to use with \n                                            getDataLocation(dataLevel, \n                                            filename) or getMostSpecificDataL\n                                            ocation(dataLevel, filename, \n                                            isTimingFile(default=false), \n                                            checkDeviceFilesDir(default=false\n                                            ))\n                                            Default: 0=HDPA_ARCH\n  [-isTimingFile]                           Legacy option to indicate a \n                                            timing file, to use with \n                                            getMostSpecificDataLocation(dataL\n                                            evel, filename, isTimingFile(defa\n                                            ult=false), checkDeviceFilesDir(d\n                                            efault=false))\n                                            Default: 0=false\n  [-checkDeviceFilesDir]                    Legacy option to look in \n                                            \"devicefiles\" directory, to use \n                                            with getMostSpecificDataLocation(\n                                            dataLevel, filename, \n                                            isTimingFile(default=false), \n                                            checkDeviceFilesDir(default=false\n                                            ))\n                                            Default: 0=false\n  [-useOldAPIs]                             if true, force the use of \n                                            old/deprecated/legacy HDARPart \n                                            API calls directly rather then \n                                            indirectly through new HDARPart \n                                            getFilePath API.\n                                            Default: 0=false\n  [-askGetDataFilePath]                     ask getDataFilePath\n                                            Default: 0=false\n  [-askGetMostSpecificDataLocation]         ask getMostSpecificDataLocation\n                                            Default: 0=false\n  [-askGetDataLocation_Filename]            ask getDataLocation(filename)\n                                            Default: 0=false\n  [-askGetDataLocation_DataLevel_Filename]  ask getDataLocation(DataLevel, \n                                            filename)\n                                            Default: 0=false\n  [-quiet]                                  Ignore command errors\n  [-verbose]                                Suspend message limits during \n                                            command execution\n  [<patterns>]                              Match string against patterns\n                                            Default: *\n\nCategories: \nDevice, Object, Internal\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching. (valid only when"
+    },
+    {
+      "flag": "-regexp",
+      "description": "specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get the string of these part."
+    },
+    {
+      "flag": "-part",
+      "description": "(same as -partname) partname to use if not providing a part object."
+    },
+    {
+      "flag": "-partname",
+      "description": "partname to use if not providing a part object."
+    },
+    {
+      "flag": "-partobj",
+      "description": "part Tcl object"
+    },
+    {
+      "flag": "-v",
+      "description": "Verbose level where 0=None;1=Errors;2=Warnings;3=Info ;4=Trace;5=Verbose Default: 2=Warnings"
+    },
+    {
+      "flag": "-vaultFileId",
+      "description": "Vault Key or Filename for looking up file location in vault's device.manifest."
+    },
+    {
+      "flag": "-useLegacy",
+      "description": "Use legacy / pre-vault file locating logic, where 0=NO_LEGACY_FILE_LOCATING, 1=GET_DATA_FILE_PATH, 2=GET_MOST_SPECIFIC_DATA_LOC, 3=GET_DATA_LOCATION, 4=GET_DATA_LOCATION_IN_DPX_COMMON Default: 0=NO_LEGACY_FILE_LOCATIN G"
+    },
+    {
+      "flag": "-filename",
+      "description": "filename is an obsolete parameter because it is now ambiguous. It will be used as the legacyFileId, but you may have intended it to be used as the vaultFileId. Please use those two parameters instead of this one."
+    },
+    {
+      "flag": "-legacyFileId",
+      "description": "Legacy Filename or Token(e.g. \"<xng>\"."
+    },
+    {
+      "flag": "-dataLevel",
+      "description": "0=HDPA_ARCH, 1=HDPA_FAMILY, 2=HDPA_DEVICE, 3=HDPA_PACKAGE, 4=HDPA_SPEED to use with getDataLocation(dataLevel, filename) or getMostSpecificDataL ocation(dataLevel, filename, isTimingFile(default=false), checkDeviceFilesDir(default=false )) Default: 0=HDPA_ARCH"
+    },
+    {
+      "flag": "-isTimingFile",
+      "description": "Legacy option to indicate a timing file, to use with getMostSpecificDataLocation(dataL evel, filename, isTimingFile(defa ult=false), checkDeviceFilesDir(d efault=false)) Default: 0=false"
+    },
+    {
+      "flag": "-checkDeviceFilesDir",
+      "description": "Legacy option to look in \"devicefiles\" directory, to use with getMostSpecificDataLocation( dataLevel, filename, isTimingFile(default=false), checkDeviceFilesDir(default=false )) Default: 0=false"
+    },
+    {
+      "flag": "-useOldAPIs",
+      "description": "if true, force the use of old/deprecated/legacy HDARPart API calls directly rather then indirectly through new HDARPart getFilePath API. Default: 0=false"
+    },
+    {
+      "flag": "-askGetDataFilePath",
+      "description": "ask getDataFilePath Default: 0=false"
+    },
+    {
+      "flag": "-askGetMostSpecificDataLocation",
+      "description": "ask getMostSpecificDataLocation Default: 0=false"
+    },
+    {
+      "flag": "-askGetDataLocation_Filename",
+      "description": "ask getDataLocation(filename) Default: 0=false"
+    },
+    {
+      "flag": "-askGetDataLocation_DataLevel_Filename",
+      "description": "ask getDataLocation(DataLevel, filename) Default: 0=false"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

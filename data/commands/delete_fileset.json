@@ -1,0 +1,20 @@
+{
+  "name": "delete_fileset",
+  "short_description": "Delete a fileset",
+  "full_help": "delete_fileset\n\nDescription: \nDelete a fileset\n\nSyntax: \ndelete_fileset  [-merge <arg>] [-quiet] [-verbose] <fileset>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-merge]    Fileset to merge files from the deleted fileset into\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <fileset>   Fileset to be deleted\n\nCategories: \nProject, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-merge",
+      "description": "Fileset to merge files from the deleted fileset into"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

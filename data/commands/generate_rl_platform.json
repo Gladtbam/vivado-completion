@@ -1,0 +1,32 @@
+{
+  "name": "generate_rl_platform",
+  "short_description": "Generate new platform based on base platform and wrapper module",
+  "full_help": "generate_rl_platform\n\nDescription: \nGenerate new platform based on base platform and wrapper module\n\nSyntax: \ngenerate_rl_platform  [-use_source <arg>] [-reconfig_platform <arg>]\n                      [-base_platform <arg>] [-platform <arg>] [-quiet]\n                      [-verbose]\n\nUsage: \n  Name                  Description\n  ---------------------------------\n  [-use_source]         Specify wrapper checkpoint path\n  [-reconfig_platform]  (Required) Specify reconfigurable platform module \n                        name\n  [-base_platform]      (Required) Specify base platform checkpoint path\n  [-platform]           (Optional) Specify new platform checkpoint path, the \n                        default file name is 'rl_platform.dcp'\n  [-quiet]              Ignore command errors\n  [-verbose]            Suspend message limits during command execution\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-use_source",
+      "description": "Specify wrapper checkpoint path"
+    },
+    {
+      "flag": "-reconfig_platform",
+      "description": "(Required) Specify reconfigurable platform module name"
+    },
+    {
+      "flag": "-base_platform",
+      "description": "(Required) Specify base platform checkpoint path"
+    },
+    {
+      "flag": "-platform",
+      "description": "(Optional) Specify new platform checkpoint path, the default file name is 'rl_platform.dcp'"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

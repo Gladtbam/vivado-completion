@@ -1,0 +1,16 @@
+{
+  "name": "close_design",
+  "short_description": "Close the current design",
+  "full_help": "close_design\n\nDescription: \nClose the current design\n\nSyntax: \nclose_design  [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

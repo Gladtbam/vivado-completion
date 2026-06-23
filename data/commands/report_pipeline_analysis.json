@@ -1,0 +1,48 @@
+{
+  "name": "report_pipeline_analysis",
+  "short_description": "Perform pipeline register insertion analysis and display report.",
+  "full_help": "report_pipeline_analysis\n\nDescription: \nPerform pipeline register insertion analysis and display report.\n\nSyntax: \nreport_pipeline_analysis  [-cells <args>] [-verbose] [-clocks <args>]\n                          [-file <arg>] [-include_paths_to_pipeline] [-append]\n                          [-max_added_latency <arg>] [-report_loops]\n                          [-return_string] [-quiet]\n\nUsage: \n  Name                          Description\n  -----------------------------------------\n  [-cells]                      Analyze each of the specified hierarchical \n                                cells separately and ignore feedback loops \n                                external to the cells.\n  [-verbose]                    Suspend message limits during command \n                                execution\n  [-clocks]                     Filter report output to show only the \n                                specified clocks\n  [-file]                       Filename to output results to. (send output \n                                to console if -file is not used)\n  [-include_paths_to_pipeline]  Report paths to cut. (only available if -file\n                                is used)\n  [-append]                     Append to existing file\n  [-max_added_latency]          Maximum extra latency that can be inserted \n                                into the system (0 = unlimited).\n                                Default: 100\n  [-report_loops]               Report loop information as well\n  [-return_string]              Return report as string\n  [-quiet]                      Ignore command errors\n\nCategories: \nTools, Tcl\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cells",
+      "description": "Analyze each of the specified hierarchical cells separately and ignore feedback loops external to the cells."
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    },
+    {
+      "flag": "-clocks",
+      "description": "Filter report output to show only the specified clocks"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-include_paths_to_pipeline",
+      "description": "Report paths to cut. (only available if -file is used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append to existing file"
+    },
+    {
+      "flag": "-max_added_latency",
+      "description": "Maximum extra latency that can be inserted into the system (0 = unlimited). Default: 100"
+    },
+    {
+      "flag": "-report_loops",
+      "description": "Report loop information as well"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    }
+  ]
+}

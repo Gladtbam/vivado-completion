@@ -1,0 +1,40 @@
+{
+  "name": "report_power_opt",
+  "short_description": "Report power optimizations",
+  "full_help": "report_power_opt\n\nDescription: \nReport power optimizations\n\nSyntax: \nreport_power_opt  [-cell <args>] [-file <arg>] [-format <arg>] [-name <arg>]\n                  [-append] [-return_string] [-quiet] [-verbose]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-cell]           List of instance names\n                    Default: empty\n  [-file]           Output file\n  [-format]         Specifies how to format the report. Default is 'text', \n                    another option is 'xml'. Only applies if -file is used. \n                    If xml output is used, -append is not allowed.\n                    Default: text\n  [-name]           Output the results to GUI panel with this name\n  [-append]         Append if  existing file. Otherwise overwrite existing \n                    file.\n  [-return_string]  Return report as string\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nPower\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cell",
+      "description": "List of instance names Default: empty"
+    },
+    {
+      "flag": "-file",
+      "description": "Output file"
+    },
+    {
+      "flag": "-format",
+      "description": "Specifies how to format the report. Default is 'text', another option is 'xml'. Only applies if -file is used. If xml output is used, -append is not allowed. Default: text"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-append",
+      "description": "Append if  existing file. Otherwise overwrite existing file."
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

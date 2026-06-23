@@ -1,0 +1,20 @@
+{
+  "name": "genkey_ipprovider",
+  "short_description": "To generate a pair of RSA keys to be used with Xilinx encryption: genkey_ipprovide <base_key_name>.",
+  "full_help": "genkey_ipprovider\n\nDescription: \nTo generate a pair of RSA keys to be used with Xilinx encryption: genkey_ipprovide <base_key_name>.\n\n\nSyntax: \ngenkey_ipprovider  [-overwrite] [-quiet] [-verbose] <file>\n\nUsage: \n  Name          Description\n  -------------------------\n  [-overwrite]  overwrite existing file.\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  <file>        generate a pair of key with base name\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-overwrite",
+      "description": "overwrite existing file."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

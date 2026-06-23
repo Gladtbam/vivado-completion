@@ -1,0 +1,16 @@
+{
+  "name": "delete_macros",
+  "short_description": "Delete a list of macros",
+  "full_help": "delete_macros\n\nDescription: \nDelete a list of macros\n\nSyntax: \ndelete_macros  [-quiet] [-verbose] <macros>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <macros>    Macros to delete\n\nCategories: \nXDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

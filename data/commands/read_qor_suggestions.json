@@ -1,0 +1,16 @@
+{
+  "name": "read_qor_suggestions",
+  "short_description": "Read QoR Suggestions from the given file",
+  "full_help": "read_qor_suggestions\n\nDescription: \nRead QoR Suggestions from the given file\n\nSyntax: \nread_qor_suggestions  [-quiet] [-verbose] <file>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <file>      QoR suggestions file\n              Values: Path to the QoR suggestions file, typically ending with\n              .rqs.\n\nCategories: \nFileIO, Feasibility, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "get_net_delays",
+  "short_description": "Get the routed or estimated delays in picoseconds on a net from the driver to each load pin.",
+  "full_help": "get_net_delays\n\nDescription: \nGet the routed or estimated delays in picoseconds on a net from the driver to each load pin.\n\nSyntax: \nget_net_delays  -of_objects <args> [-regexp] [-nocase] [-patterns <arg>]\n                [-filter <arg>] [-to <args>] [-interconnect_only] [-quiet]\n                [-verbose]\n\nReturns: \nnet_delays\n\nUsage: \n  Name                  Description\n  ---------------------------------\n  -of_objects           Get 'net_delay' objects of these types: 'net'.\n  [-regexp]             Patterns are full regular expressions\n  [-nocase]             Perform case-insensitive matching. (valid only when \n                        -regexp specified)\n  [-patterns]           Match the 'net_delay' objects against patterns.\n                        Default: *\n  [-filter]             Filter list with expression\n  [-to]                 Get the delay of the net to the given terminal(s) or \n                        port(s).\n  [-interconnect_only]  Include only interconnect delays. The default is to \n                        include the intra-site delay.\n  [-quiet]              Ignore command errors\n  [-verbose]            Suspend message limits during command execution\n\nCategories: \nTiming, Netlist, Object\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-of_objects",
+      "description": "Get 'net_delay' objects of these types: 'net'."
+    },
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching. (valid only when"
+    },
+    {
+      "flag": "-regexp",
+      "description": "specified)"
+    },
+    {
+      "flag": "-patterns",
+      "description": "Match the 'net_delay' objects against patterns. Default: *"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-to",
+      "description": "Get the delay of the net to the given terminal(s) or port(s)."
+    },
+    {
+      "flag": "-interconnect_only",
+      "description": "Include only interconnect delays. The default is to include the intra-site delay."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

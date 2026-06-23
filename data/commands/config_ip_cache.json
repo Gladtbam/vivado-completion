@@ -1,0 +1,128 @@
+{
+  "name": "config_ip_cache",
+  "short_description": "Manage the IP instance Synthesis cache. Lists out the IP Cache entries if no options are specified.",
+  "full_help": "config_ip_cache\n\nDescription: \nManage the IP instance Synthesis cache. Lists out the IP Cache entries if no options are specified.\n\nSyntax: \nconfig_ip_cache  [-use_cache_location <arg>] [-use_project_cache]\n                 [-disable_cache] [-clear_output_repo] [-clear_local_cache]\n                 [-cache_has_match] [-cache_was_used] [-disable_for_ip]\n                 [-enable_for_ip] [-is_ip_disabled] [-get_id]\n                 [-get_entry_location <arg>] [-disk_usage_output_repo]\n                 [-import_from_project] [-zip_cache <arg>] [-remove] [-purge]\n                 [-vlnv <arg>] [-old_swvers] [-unused] [-swver <arg>]\n                 [-num_days_old <arg>] [-num_days_unused <arg>]\n                 [-obs_synth_crc] [-report] [-rptfile <arg>] [-csvfile <arg>]\n                 [-dir <arg>] [-quiet] [-verbose] [<ip>]\n\nUsage: \n  Name                       Description\n  --------------------------------------\n  [-use_cache_location]      Set current project properties to use the \n                             specified cache location\n  [-use_project_cache]       Set current project properties to use the \n                             default project IP cache location\n  [-disable_cache]           Disable cache use.\n  [-clear_output_repo]       Delete from disk and in memory all cache entries\n                             that exist in the current project's designated \n                             cache (local or remote).\n  [-clear_local_cache]       Delete from disk and in memory all local cache \n                             entries for this project.\n  [-cache_has_match]         Returns the cache-ID of the cache entry that \n                             would work for this IP instance; else ''.\n  [-cache_was_used]          Returns '1' if the cache was used to obtain the \n                             IP's current synthesis results; else '0'.\n  [-disable_for_ip]          Disable cache usage for a specific IP instance.\n  [-enable_for_ip]           Re-enable cache usage for a specific IP \n                             instance.\n  [-is_ip_disabled]          Returns '1' if the cache usage is disabled for \n                             the specified IP instance; else '0'.\n  [-get_id]                  Calculate and return IP cache ID string for \n                             specified <ip>\n  [-get_entry_location]      Return directory where this cache-ID entry is \n                             located.\n  [-disk_usage_output_repo]  Return total disk usage in MB for all cache \n                             entries in the current project's ip_output_repo.\n  [-import_from_project]     Import existing synthesized IP from the project \n                             into the cache.\n  [-zip_cache]               Zip up all cache entries used by IP instances in\n                             the current project and write to the given \n                             zipfilename.\n  [-remove]                  Remove the corresponding cache entry for the \n                             specified IP instance or specified cachedInst; \n                             return cache ID string if successful, otherwise \n                             blank.\n  [-purge]                   Delete all cache entries that match the \n                             specified type(s): -vlnv, -obs_swvers, \n                             -obs_synth_crc, and/or -swver. Returns the \n                             number of entries deleted.\n  [-vlnv]                    Used with -purge, specifies the VLNV of the IP \n                             the cache entries were created from. May use a \n                             wildcard ('*') in one or more fields in the \n                             VLNV.\n  [-old_swvers]              Used with -purge to delete cache entries created\n                             with old Vivado SW Versions.\n  [-unused]                  Used with -purge to delete cache entries that \n                             have never been used.\n  [-swver]                   Used with -purge to delete any cache entries \n                             created from this specific Vivado SW Version \n                             (i.e., '2017.1').\n  [-num_days_old]            Used with -purge to delete any cache entries \n                             that are this number of days old or older.\n  [-num_days_unused]         Used with -purge to delete any cache entries \n                             that have not been used for this number of days \n                             or longer.\n  [-obs_synth_crc]           Used with -purge to delete cache entries whose \n                             component synth checksum is not the same as the \n                             IP Catalog's current component synthesis \n                             checksum.\n  [-report]                  Report cache statistics for the specified IP or \n                             cache object, or for the current cache location \n                             if none specified. If -rptfile is specified, \n                             write statistics to that file. If -dir is \n                             specified, write statistics for cache entries \n                             found under that directory.\n  [-rptfile]                 Used with -report, specifies the text file to \n                             write the cache statistics to.\n  [-csvfile]                 Used with -report, specifies the csv file to \n                             write the cache statistics to, in csv format.\n  [-dir]                     Used eith -report, specifies the directory to \n                             report cache entry statistics for.\n  [-quiet]                   Ignore command errors\n  [-verbose]                 Suspend message limits during command execution\n  [<ip>]                     IP instance object, IP file, or IP name pattern\n\nCategories: \nObject, IPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-use_cache_location",
+      "description": "Set current project properties to use the specified cache location"
+    },
+    {
+      "flag": "-use_project_cache",
+      "description": "Set current project properties to use the default project IP cache location"
+    },
+    {
+      "flag": "-disable_cache",
+      "description": "Disable cache use."
+    },
+    {
+      "flag": "-clear_output_repo",
+      "description": "Delete from disk and in memory all cache entries that exist in the current project's designated cache (local or remote)."
+    },
+    {
+      "flag": "-clear_local_cache",
+      "description": "Delete from disk and in memory all local cache entries for this project."
+    },
+    {
+      "flag": "-cache_has_match",
+      "description": "Returns the cache-ID of the cache entry that would work for this IP instance; else ''."
+    },
+    {
+      "flag": "-cache_was_used",
+      "description": "Returns '1' if the cache was used to obtain the IP's current synthesis results; else '0'."
+    },
+    {
+      "flag": "-disable_for_ip",
+      "description": "Disable cache usage for a specific IP instance."
+    },
+    {
+      "flag": "-enable_for_ip",
+      "description": "Re-enable cache usage for a specific IP instance."
+    },
+    {
+      "flag": "-is_ip_disabled",
+      "description": "Returns '1' if the cache usage is disabled for the specified IP instance; else '0'."
+    },
+    {
+      "flag": "-get_id",
+      "description": "Calculate and return IP cache ID string for specified <ip>"
+    },
+    {
+      "flag": "-get_entry_location",
+      "description": "Return directory where this cache-ID entry is located."
+    },
+    {
+      "flag": "-disk_usage_output_repo",
+      "description": "Return total disk usage in MB for all cache entries in the current project's ip_output_repo."
+    },
+    {
+      "flag": "-import_from_project",
+      "description": "Import existing synthesized IP from the project into the cache."
+    },
+    {
+      "flag": "-zip_cache",
+      "description": "Zip up all cache entries used by IP instances in the current project and write to the given zipfilename."
+    },
+    {
+      "flag": "-remove",
+      "description": "Remove the corresponding cache entry for the specified IP instance or specified cachedInst; return cache ID string if successful, otherwise blank."
+    },
+    {
+      "flag": "-purge",
+      "description": "Delete all cache entries that match the specified type(s): -vlnv, -obs_swvers, -obs_synth_crc, and/or -swver. Returns the number of entries deleted."
+    },
+    {
+      "flag": "-vlnv",
+      "description": "Used with -purge, specifies the VLNV of the IP the cache entries were created from. May use a wildcard ('*') in one or more fields in the VLNV."
+    },
+    {
+      "flag": "-old_swvers",
+      "description": "Used with -purge to delete cache entries created with old Vivado SW Versions."
+    },
+    {
+      "flag": "-unused",
+      "description": "Used with -purge to delete cache entries that have never been used."
+    },
+    {
+      "flag": "-swver",
+      "description": "Used with -purge to delete any cache entries created from this specific Vivado SW Version (i.e., '2017.1')."
+    },
+    {
+      "flag": "-num_days_old",
+      "description": "Used with -purge to delete any cache entries that are this number of days old or older."
+    },
+    {
+      "flag": "-num_days_unused",
+      "description": "Used with -purge to delete any cache entries that have not been used for this number of days or longer."
+    },
+    {
+      "flag": "-obs_synth_crc",
+      "description": "Used with -purge to delete cache entries whose component synth checksum is not the same as the IP Catalog's current component synthesis checksum."
+    },
+    {
+      "flag": "-report",
+      "description": "Report cache statistics for the specified IP or cache object, or for the current cache location if none specified. If -rptfile is specified, write statistics to that file. If -dir is specified, write statistics for cache entries found under that directory."
+    },
+    {
+      "flag": "-rptfile",
+      "description": "Used with -report, specifies the text file to write the cache statistics to."
+    },
+    {
+      "flag": "-csvfile",
+      "description": "Used with -report, specifies the csv file to write the cache statistics to, in csv format."
+    },
+    {
+      "flag": "-dir",
+      "description": "Used eith -report, specifies the directory to report cache entry statistics for."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

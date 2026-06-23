@@ -1,0 +1,44 @@
+{
+  "name": "set_msg_config",
+  "short_description": "Configure how the Vivado tool will display and manage specific messages, based on message ID, string, or severity.",
+  "full_help": "set_msg_config\n\nDescription: \nConfigure how the Vivado tool will display and manage specific messages, based on message ID, string, or severity.\n\nSyntax: \nset_msg_config  [-id <arg>] [-string <args>] [-severity <arg>] [-limit <arg>]\n                [-new_severity <arg>] [-suppress] [-regexp] [-quiet] [-verbose]\n\nUsage: \n  Name             Description\n  ----------------------------\n  [-id]            A qualifier, apply the selected operation only to messages\n                   that match given message id. Example: '-id {Common \n                   17-35}'.\n                   Default: match any id\n  [-string]        A qualifier, apply the selected operation only to messages\n                   that contain the given list of strings.\n                   Default: none\n  [-severity]      A qualifier, apply the selected operation only to messages\n                   at the given severity level. Example: '-severity INFO'\n                   Default: match any severity\n  [-limit]         for the messages that match the qualifiers, limit the \n                   number of messages displayed to the given integer value. \n                   Can only be used in conjunction with one of -id or \n                   -severity.\n  [-new_severity]  for the messages that match the qualifiers, change the \n                   severity to the given value for the current project\n  [-suppress]      for the messages that match the qualifiers, suppress (do \n                   not display) any messages for the current project\n  [-regexp]        The values used for -string are full regular expressions\n  [-quiet]         Ignore command errors\n  [-verbose]       Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-id",
+      "description": "A qualifier, apply the selected operation only to messages that match given message id. Example: '-id {Common 17-35}'. Default: match any id"
+    },
+    {
+      "flag": "-string",
+      "description": "A qualifier, apply the selected operation only to messages that contain the given list of strings. Default: none"
+    },
+    {
+      "flag": "-severity",
+      "description": "A qualifier, apply the selected operation only to messages at the given severity level. Example: '-severity INFO' Default: match any severity"
+    },
+    {
+      "flag": "-limit",
+      "description": "for the messages that match the qualifiers, limit the number of messages displayed to the given integer value. Can only be used in conjunction with one of -id or -severity."
+    },
+    {
+      "flag": "-new_severity",
+      "description": "for the messages that match the qualifiers, change the severity to the given value for the current project"
+    },
+    {
+      "flag": "-suppress",
+      "description": "for the messages that match the qualifiers, suppress (do not display) any messages for the current project"
+    },
+    {
+      "flag": "-regexp",
+      "description": "The values used for -string are full regular expressions"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

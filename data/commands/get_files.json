@@ -1,0 +1,52 @@
+{
+  "name": "get_files",
+  "short_description": "Get a list of source files",
+  "full_help": "get_files\n\nDescription: \nGet a list of source files\n\nSyntax: \nget_files  [-regexp] [-nocase] [-filter <arg>] [-compile_order <arg>]\n           [-used_in <arg>] [-references] [-all] [-of_objects <args>] [-quiet]\n           [-verbose] [<patterns>]\n\nReturns: \nlist of file objects\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-regexp]         Patterns are full regular expressions\n  [-nocase]         Perform case-insensitive matching (valid only when \n                    -regexp specified)\n  [-filter]         Filter list with expression\n  [-compile_order]  Get files by type and in compilation order (must use with\n                    -used_in)\n  [-used_in]        Get files used in a specific step (must use with \n                    -compile_order)\n  [-references]     Get files referenced in the provided objects (must use \n                    with -of_objects)\n  [-all]            Include all internal files.\n  [-of_objects]     Get 'file' objects of these types: 'file fileset ip \n                    reconfig_module'.\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  [<patterns>]      Match file names against patterns\n                    Default: *\n\nCategories: \nObject, Project\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching (valid only when"
+    },
+    {
+      "flag": "-regexp",
+      "description": "specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-compile_order",
+      "description": "Get files by type and in compilation order (must use with -used_in)"
+    },
+    {
+      "flag": "-used_in",
+      "description": "Get files used in a specific step (must use with -compile_order)"
+    },
+    {
+      "flag": "-references",
+      "description": "Get files referenced in the provided objects (must use with -of_objects)"
+    },
+    {
+      "flag": "-all",
+      "description": "Include all internal files."
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get 'file' objects of these types: 'file fileset ip reconfig_module'."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

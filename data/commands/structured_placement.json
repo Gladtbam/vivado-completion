@@ -1,0 +1,36 @@
+{
+  "name": "structured_placement",
+  "short_description": "Write pblock constraints for structured placement",
+  "full_help": "structured_placement\n\nDescription: \nWrite pblock constraints for structured placement\n\nSyntax: \nstructured_placement  [-file <arg>] [-force] [-apply]\n                      [-pblock_height_limit <arg>] [-pblock_size_limit <arg>]\n                      [-quiet] [-verbose]\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-file]                 Pblock constraints file\n                          Values: A filename with alphanumeric characters.\n  [-force]                Overwrite existing file\n  [-apply]                Apply the pblock constraints\n  [-pblock_height_limit]  Maximum number of sites in a column\n                          Default: 32\n  [-pblock_size_limit]    Maximum number of sites in a PBlobk\n                          Default: 80\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n\nCategories: \nXDC, Methodology\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Pblock constraints file Values: A filename with alphanumeric characters."
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-apply",
+      "description": "Apply the pblock constraints"
+    },
+    {
+      "flag": "-pblock_height_limit",
+      "description": "Maximum number of sites in a column Default: 32"
+    },
+    {
+      "flag": "-pblock_size_limit",
+      "description": "Maximum number of sites in a PBlobk Default: 80"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "run_noc_compiler",
+  "short_description": "Execute the NOC compiler.",
+  "full_help": "run_noc_compiler\n\nDescription: \nExecute the NOC compiler.\n\nSyntax: \nrun_noc_compiler  [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nNOC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

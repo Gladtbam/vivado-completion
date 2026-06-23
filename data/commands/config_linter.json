@@ -1,0 +1,24 @@
+{
+  "name": "config_linter",
+  "short_description": "Set configuration of RTL Linter",
+  "full_help": "config_linter\n\nDescription: \nSet configuration of RTL Linter\n\nSyntax: \nconfig_linter  [-rule <arg>] [-severity <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name         Description\n  ------------------------\n  [-rule]      Linter Rule ID\n  [-severity]  Severity of Linter Rules, valid values are WARNING, \n               CRITICAL_WARNING and ERROR\n               Default: WARNING\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-rule",
+      "description": "Linter Rule ID"
+    },
+    {
+      "flag": "-severity",
+      "description": "Severity of Linter Rules, valid values are WARNING, CRITICAL_WARNING and ERROR Default: WARNING"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

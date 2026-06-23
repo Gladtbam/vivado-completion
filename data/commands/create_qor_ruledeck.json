@@ -1,0 +1,16 @@
+{
+  "name": "create_qor_ruledeck",
+  "short_description": "Create new QoR ruledecks",
+  "full_help": "create_qor_ruledeck\n\nDescription: \nCreate new QoR ruledecks\n\nSyntax: \ncreate_qor_ruledeck  [-quiet] [-verbose] <ruledecks>...\n\nReturns: \nCreate new QoR ruledecks\n\nUsage: \n  Name         Description\n  ------------------------\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  <ruledecks>  Names of QoR rule decks to create\n\nCategories: \nNetlist, Project\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

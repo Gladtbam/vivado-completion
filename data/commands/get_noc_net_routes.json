@@ -1,0 +1,32 @@
+{
+  "name": "get_noc_net_routes",
+  "short_description": "Get a list of NOC net physical routes",
+  "full_help": "get_noc_net_routes\n\nDescription: \nGet a list of NOC net physical routes\n\nSyntax: \nget_noc_net_routes  [-regexp] [-nocase] [-filter <arg>] [-of_objects <args>]\n                    [-quiet] [-verbose] [<patterns>]\n\nReturns: \nnoc_net_route\n\nUsage: \n  Name           Description\n  --------------------------\n  [-regexp]      Patterns are full regular expressions\n  [-nocase]      Perform case-insensitive matching. (valid only when -regexp \n                 specified)\n  [-filter]      Filter list with expression\n  [-of_objects]  Get the noc_net_route of these noc_logical_path.\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<patterns>]   Match noc_net_route against patterns\n                 Default: *\n\nCategories: \nNOC, Object\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching. (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get the noc_net_route of these noc_logical_path."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

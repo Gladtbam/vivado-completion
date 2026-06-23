@@ -1,0 +1,20 @@
+{
+  "name": "import_synplify",
+  "short_description": "Imports the given Synplify project file",
+  "full_help": "import_synplify\n\nDescription: \nImports the given Synplify project file\n\nSyntax: \nimport_synplify  [-copy_sources] [-quiet] [-verbose] <file>\n\nReturns: \nlist of files object that were imported from the Synplify file\n\nUsage: \n  Name             Description\n  ----------------------------\n  [-copy_sources]  Copy all the sources from synplify project file into the \n                   created project\n  [-quiet]         Ignore command errors\n  [-verbose]       Suspend message limits during command execution\n  <file>           Name of the Synplify project file to be imported\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-copy_sources",
+      "description": "Copy all the sources from synplify project file into the created project"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

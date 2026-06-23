@@ -1,0 +1,40 @@
+{
+  "name": "report_synchronizer_mtbf",
+  "short_description": "Compute mean time between failures and display report",
+  "full_help": "report_synchronizer_mtbf\n\nDescription: \nCompute mean time between failures and display report\n\nSyntax: \nreport_synchronizer_mtbf  [-file <arg>] [-append] [-return_string]\n                          [-warn_if_mtbf_below <arg>] [-quiet] [-no_header]\n                          [-report_endpoints] [-verbose]\n\nReturns: \nReport\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-file]                Filename to output results to. (send output to \n                         console if -file is not used)\n  [-append]              Append the results to file, don't overwrite the \n                         results file\n  [-return_string]       Return the report output as a string\n  [-warn_if_mtbf_below]  \n                         Default: 1e+12\n  [-quiet]               Ignore command errors\n  [-no_header]           Report without the header\n  [-report_endpoints]    Report cdc path end points\n  [-verbose]             Suspend message limits during command execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return the report output as a string"
+    },
+    {
+      "flag": "-warn_if_mtbf_below",
+      "description": " Default: 1e+12"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-no_header",
+      "description": "Report without the header"
+    },
+    {
+      "flag": "-report_endpoints",
+      "description": "Report cdc path end points"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "add_example_design_repo",
+  "short_description": "Adds a repository of user/custom example designs",
+  "full_help": "add_example_design_repo\n\nDescription: \nAdds a repository of user/custom example designs\n\nSyntax: \nadd_example_design_repo  -repo_path <arg> [-quiet] [-verbose]\n\nReturns: \nAdds a repository of user/custom example designs\n\nUsage: \n  Name        Description\n  -----------------------\n  -repo_path  Repo Path that contains Example design\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nIPIntegrator\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-repo_path",
+      "description": "Repo Path that contains Example design"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

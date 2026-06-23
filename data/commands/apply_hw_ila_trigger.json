@@ -1,0 +1,20 @@
+{
+  "name": "apply_hw_ila_trigger",
+  "short_description": "Apply trigger at startup init values to an ILA core in the design",
+  "full_help": "apply_hw_ila_trigger\n\nDescription: \nApply trigger at startup init values to an ILA core in the design\n\nSyntax: \napply_hw_ila_trigger  [-ila_cell <arg>] [-quiet] [-verbose] [<file>]\n\nUsage: \n  Name         Description\n  ------------------------\n  [-ila_cell]  Apply trigger settings to this ila cell\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  [<file>]     ILA startup trigger settings file\n\nCategories: \nDebug\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-ila_cell",
+      "description": "Apply trigger settings to this ila cell"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

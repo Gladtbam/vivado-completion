@@ -1,0 +1,36 @@
+{
+  "name": "create_port_on_reconfigurable_module",
+  "short_description": "Generate a port on a given reconfigurable cell",
+  "full_help": "create_port_on_reconfigurable_module\n\nDescription: \nGenerate a port on a given reconfigurable cell\n\nSyntax: \ncreate_port_on_reconfigurable_module  [-cell <arg>] [-port <arg>]\n                                      [-direction <arg>] [-from <arg>]\n                                      [-to <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name          Description\n  -------------------------\n  [-cell]       (Required) specify the HD.RECONFIGURABLE cell name for port \n                punching\n  [-port]       (Required) specify the newly added port name on given \n                HD.RECONFIGURABLE cell\n  [-direction]  (Required) specify the direction of ports, it could be either\n                INPUT, OUTPUT or INOUT\n  [-from]       (Optional) specify the lower boundary of port bus\n                Default: -1\n  [-to]         (Optional) specify the higher boundary of port bus\n                Default: -1\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cell",
+      "description": "(Required) specify the HD.RECONFIGURABLE cell name for port punching"
+    },
+    {
+      "flag": "-port",
+      "description": "(Required) specify the newly added port name on given HD.RECONFIGURABLE cell"
+    },
+    {
+      "flag": "-direction",
+      "description": "(Required) specify the direction of ports, it could be either INPUT, OUTPUT or INOUT"
+    },
+    {
+      "flag": "-from",
+      "description": "(Optional) specify the lower boundary of port bus Default: -1"
+    },
+    {
+      "flag": "-to",
+      "description": "(Optional) specify the higher boundary of port bus Default: -1"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

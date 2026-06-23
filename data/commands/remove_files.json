@@ -1,0 +1,20 @@
+{
+  "name": "remove_files",
+  "short_description": "Remove files or directories from a fileset",
+  "full_help": "remove_files\n\nDescription: \nRemove files or directories from a fileset\n\nSyntax: \nremove_files  [-fileset <arg>] [-quiet] [-verbose] <files>...\n\nReturns: \nlist of files that were removed\n\nUsage: \n  Name        Description\n  -----------------------\n  [-fileset]  Fileset name\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <files>     Name of the file(s) to be removed\n\nCategories: \nProject, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-fileset",
+      "description": "Fileset name"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

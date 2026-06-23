@@ -1,0 +1,16 @@
+{
+  "name": "reset_target",
+  "short_description": "Reset target data for the specified source",
+  "full_help": "reset_target\n\nDescription: \nReset target data for the specified source\n\nSyntax: \nreset_target  [-quiet] [-verbose] <name> <objects>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <name>      List of targets to be reset, or 'all' to reset all generated \n              targets\n  <objects>   The objects for which data needs to be reset\n\nCategories: \nProject, IPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

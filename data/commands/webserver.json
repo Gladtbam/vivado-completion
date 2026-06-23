@@ -1,0 +1,44 @@
+{
+  "name": "webserver",
+  "short_description": "Start and Stop the webserver. With no arguments this gives the state of the webserver (running or stopped), URL, key value, and active connections.",
+  "full_help": "webserver\n\nDescription: \nStart and Stop the webserver. With no arguments this gives the state of the webserver (running or stopped), URL, key value, and active connections.\n\nSyntax: \nwebserver  [-start] [-stop] [-open] [-external] [-browser <arg>] [-port <arg>]\n           [-key <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name         Description\n  ------------------------\n  [-start]     start the webserver if not running\n  [-stop]      stop the webserver if running\n  [-open]      start if not running and open a browser\n  [-external]  allow connections from external hosts. Only valid with \n               start/open\n  [-browser]   optional browser to use when opening HTML. Implies 'open'\n  [-port]      webserver port. Use 0 to choose an open port. Only valid with \n               'start'\n               Default: 0\n  [-key]       none, auto, or a string to be used as a security key (website \n               password).\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-start",
+      "description": "start the webserver if not running"
+    },
+    {
+      "flag": "-stop",
+      "description": "stop the webserver if running"
+    },
+    {
+      "flag": "-open",
+      "description": "start if not running and open a browser"
+    },
+    {
+      "flag": "-external",
+      "description": "allow connections from external hosts. Only valid with start/open"
+    },
+    {
+      "flag": "-browser",
+      "description": "optional browser to use when opening HTML. Implies 'open'"
+    },
+    {
+      "flag": "-port",
+      "description": "webserver port. Use 0 to choose an open port. Only valid with 'start' Default: 0"
+    },
+    {
+      "flag": "-key",
+      "description": "none, auto, or a string to be used as a security key (website password)."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

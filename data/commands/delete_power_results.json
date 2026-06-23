@@ -1,0 +1,20 @@
+{
+  "name": "delete_power_results",
+  "short_description": "Delete power results that were stored in memory under a given name.",
+  "full_help": "delete_power_results\n\nDescription: \nDelete power results that were stored in memory under a given name.\n\nSyntax: \ndelete_power_results  -name <arg> [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  -name       Name for the set of results to clear\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nPower\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Name for the set of results to clear"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

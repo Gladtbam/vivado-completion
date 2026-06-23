@@ -1,0 +1,24 @@
+{
+  "name": "import_ip",
+  "short_description": "Import an IP file and add it to the fileset",
+  "full_help": "import_ip\n\nDescription: \nImport an IP file and add it to the fileset\n\nSyntax: \nimport_ip  [-srcset <arg>] [-name <arg>] [-quiet] [-verbose] [<files>]\n\nReturns: \nlist of file objects that were added\n\nUsage: \n  Name        Description\n  -----------------------\n  [-srcset]   (Optional) Specifies the source file set containing the objects\n              to be upgraded\n              Default: The current source fileset\n              Values: Source set name\n  [-name]     (Optional) Specifies a replacement name for the imported IP; \n              may not be used with multiple files.\n              Default: The current name for the imported IP\n              Values: The new name for the imported IP\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<files>]   Names of the IP files to be imported\n              Values: A list of XCI (and/or XCO) file name(s)\n\nCategories: \nProject, IPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-srcset",
+      "description": "(Optional) Specifies the source file set containing the objects to be upgraded Default: The current source fileset Values: Source set name"
+    },
+    {
+      "flag": "-name",
+      "description": "(Optional) Specifies a replacement name for the imported IP; may not be used with multiple files. Default: The current name for the imported IP Values: The new name for the imported IP"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

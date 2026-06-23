@@ -1,0 +1,16 @@
+{
+  "name": "all_ffs",
+  "short_description": "Get a list of flip flop cells in the current design",
+  "full_help": "all_ffs\n\nDescription: \nGet a list of flip flop cells in the current design\n\nSyntax: \nall_ffs  [-quiet] [-verbose]\n\nReturns: \nlist of flip flop cell objects\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nXDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

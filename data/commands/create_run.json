@@ -1,0 +1,52 @@
+{
+  "name": "create_run",
+  "short_description": "Define a synthesis or implementation run for the current project",
+  "full_help": "create_run\n\nDescription: \nDefine a synthesis or implementation run for the current project\n\nSyntax: \ncreate_run  [-constrset <arg>] [-parent_run <arg>] [-part <arg>] -flow <arg>\n            [-strategy <arg>] [-report_strategy <arg>] [-pr_config <arg>]\n            [-dfx_mode <arg>] [-rm_instance <arg>] [-quiet] [-verbose] <name>\n\nReturns: \nrun object\n\nUsage: \n  Name                Description\n  -------------------------------\n  [-constrset]        Constraint fileset to use\n  [-parent_run]       Synthesis run to link to new implementation run\n  [-part]             Target part\n  -flow               Flow name\n  [-strategy]         Strategy to apply to the run\n  [-report_strategy]  Report strategy to apply to the run\n  [-pr_config]        partition configuration to apply to the run\n  [-dfx_mode]         dynamic function exchange mode\n                      Default: STANDARD\n  [-rm_instance]      reconfigurable module instance information. Format \n                      <partition cell>:<reconfigurable module>\n  [-quiet]            Ignore command errors\n  [-verbose]          Suspend message limits during command execution\n  <name>              Name for new run\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-constrset",
+      "description": "Constraint fileset to use"
+    },
+    {
+      "flag": "-parent_run",
+      "description": "Synthesis run to link to new implementation run"
+    },
+    {
+      "flag": "-part",
+      "description": "Target part"
+    },
+    {
+      "flag": "-flow",
+      "description": "Flow name"
+    },
+    {
+      "flag": "-strategy",
+      "description": "Strategy to apply to the run"
+    },
+    {
+      "flag": "-report_strategy",
+      "description": "Report strategy to apply to the run"
+    },
+    {
+      "flag": "-pr_config",
+      "description": "partition configuration to apply to the run"
+    },
+    {
+      "flag": "-dfx_mode",
+      "description": "dynamic function exchange mode Default: STANDARD"
+    },
+    {
+      "flag": "-rm_instance",
+      "description": "reconfigurable module instance information. Format <partition cell>:<reconfigurable module>"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "report_control_sets",
+  "short_description": "Report the unique control sets in design",
+  "full_help": "report_control_sets\n\nDescription: \nReport the unique control sets in design\n\nSyntax: \nreport_control_sets  [-file <arg>] [-append] [-hierarchical]\n                     [-hierarchical_depth <arg>] [-sort_by <args>]\n                     [-cells <args>] [-return_string] [-quiet] [-verbose]\n\nReturns: \nReport\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-file]                Filename to output results to. (send output to \n                         console if -file is not used)\n  [-append]              Append to existing file\n  [-hierarchical]        Generates text-based hierarchical report.\n  [-hierarchical_depth]  Specifies the depth level for textual hierarchical \n                         report\n                         Default: 0\n  [-sort_by]             Sort criterion: can be used only when -verbose is \n                         used. Options are clk, clkEn, set. Ex: \n                         report_control_sets -verbose -sort_by {clk clkEn}\n  [-cells]               Cells/bel_instances for which to report control sets\n  [-return_string]       Return report as string\n  [-quiet]               Ignore command errors\n  [-verbose]             Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append to existing file"
+    },
+    {
+      "flag": "-hierarchical",
+      "description": "Generates text-based hierarchical report."
+    },
+    {
+      "flag": "-hierarchical_depth",
+      "description": "Specifies the depth level for textual hierarchical report Default: 0"
+    },
+    {
+      "flag": "-sort_by",
+      "description": "Sort criterion: can be used only when -verbose is used. Options are clk, clkEn, set. Ex: report_control_sets -verbose -sort_by {clk clkEn}"
+    },
+    {
+      "flag": "-cells",
+      "description": "Cells/bel_instances for which to report control sets"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

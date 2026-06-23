@@ -1,0 +1,16 @@
+{
+  "name": "load_features",
+  "short_description": "Load Tcl commands for a specified feature.",
+  "full_help": "load_features\n\nDescription: \nLoad Tcl commands for a specified feature.\n\nSyntax: \nload_features  [-quiet] [-verbose] [<features>...]\n\nUsage: \n  Name          Description\n  -------------------------\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  [<features>]  Feature(s) to load, use list_features for a list of available \n                features.\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

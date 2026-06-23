@@ -1,0 +1,32 @@
+{
+  "name": "report_accelerator_utilization",
+  "short_description": "Compute Accelerator utilization of device and display report",
+  "full_help": "report_accelerator_utilization\n\nDescription: \nCompute Accelerator utilization of device and display report\n\nSyntax: \nreport_accelerator_utilization  [-file <arg>] [-name <arg>] [-json]\n                                [-kernels <args>] [-quiet] [-verbose]\n\nReturns: \nReport\n\nUsage: \n  Name        Description\n  -----------------------\n  [-file]     Filename to output results to. (send output to console if -file\n              is not used)\n  [-name]     Output the results to GUI panel with this name\n  [-json]     Generate a JSON view of the data in addition to the report\n  [-kernels]  Report utilization of given list of kernels\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-json",
+      "description": "Generate a JSON view of the data in addition to the report"
+    },
+    {
+      "flag": "-kernels",
+      "description": "Report utilization of given list of kernels"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

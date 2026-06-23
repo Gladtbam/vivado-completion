@@ -1,0 +1,16 @@
+{
+  "name": "create_new_qor_suggestion",
+  "short_description": "Set FAILED_TO_APPLY property to 1, and APPLIED property to 0, for specified RQS suggestion ID",
+  "full_help": "create_new_qor_suggestion\n\nDescription: \nSet FAILED_TO_APPLY property to 1, and APPLIED property to 0, for specified RQS suggestion ID\n\nSyntax: \ncreate_new_qor_suggestion  [-quiet] [-verbose] [<IDs>]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<IDs>]     Match suggestion names against given names\n\nCategories: \nObject, Feasibility, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

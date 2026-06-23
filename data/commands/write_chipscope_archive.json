@@ -1,0 +1,24 @@
+{
+  "name": "write_chipscope_archive",
+  "short_description": "chipscope container",
+  "full_help": "write_chipscope_archive\n\nDescription: \nchipscope container\n\nSyntax: \nwrite_chipscope_archive  [-rp <arg>] [-force] [-quiet] [-verbose] <file>\n\nReturns: \nname of the output file\n\nUsage: \n  Name        Description\n  -----------------------\n  [-rp]       rp name\n  [-force]    Overwrite existing file\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <file>      container file name\n\nCategories: \nFileIO, Debug\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-rp",
+      "description": "rp name"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

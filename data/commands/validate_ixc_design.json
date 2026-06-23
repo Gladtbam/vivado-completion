@@ -1,0 +1,20 @@
+{
+  "name": "validate_ixc_design",
+  "short_description": "Validate IXC design",
+  "full_help": "validate_ixc_design\n\nDescription: \nValidate IXC design\n\nSyntax: \nvalidate_ixc_design  [-check_phy_connectivity] [-quiet] [-verbose]\n\nUsage: \n  Name                       Description\n  --------------------------------------\n  [-check_phy_connectivity]  Checks all used hardware level connections for \n                             MIG IPs\n  [-quiet]                   Ignore command errors\n  [-verbose]                 Suspend message limits during command execution\n\nCategories: \nMemory\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-check_phy_connectivity",
+      "description": "Checks all used hardware level connections for MIG IPs"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

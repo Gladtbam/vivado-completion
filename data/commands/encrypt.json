@@ -1,0 +1,32 @@
+{
+  "name": "encrypt",
+  "short_description": "Encrypt files in place with a language specific key file in IEEE 1735. no default",
+  "full_help": "encrypt\n\nDescription: \nEncrypt files in place with a language specific key file in IEEE 1735. no default\n\nSyntax: \nencrypt  [-key <arg>] -lang <arg> [-batch <arg>] [-ext <arg>] [-quiet]\n         [-verbose] [<files>...]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-key]      key file to be used to encrypt; if absent, use embedded keys\n  -lang       HDL language of the input/output file\n  [-batch]    An input file contains a list of files to be encrypted\n  [-ext]      extension to use for encrypted file; the original source files \n              will be preserved.\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<files>]   Files to be encrypted in place\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-key",
+      "description": "key file to be used to encrypt; if absent, use embedded keys"
+    },
+    {
+      "flag": "-lang",
+      "description": "HDL language of the input/output file"
+    },
+    {
+      "flag": "-batch",
+      "description": "An input file contains a list of files to be encrypted"
+    },
+    {
+      "flag": "-ext",
+      "description": "extension to use for encrypted file; the original source files will be preserved."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

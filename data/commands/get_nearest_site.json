@@ -1,0 +1,20 @@
+{
+  "name": "get_nearest_site",
+  "short_description": "Get a site of a particular site type nearest a site",
+  "full_help": "get_nearest_site\n\nDescription: \nGet a site of a particular site type nearest a site\n\nSyntax: \nget_nearest_site  [-site <args>] [-quiet] [-verbose] [<site_types>]\n\nReturns: \nsite object\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-site]         Site from which to search\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n  [<site_types>]  Target site types\n\nCategories: \nDevice\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-site",
+      "description": "Site from which to search"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

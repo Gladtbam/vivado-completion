@@ -1,0 +1,20 @@
+{
+  "name": "copy_constraints",
+  "short_description": "creates a copy of given constraint set",
+  "full_help": "copy_constraints\n\nDescription: \ncreates a copy of given constraint set\n\nSyntax: \ncopy_constraints  [-constrset <arg>] [-quiet] [-verbose] <name>\n\nReturns: \nreturns the copied constraint set object\n\nUsage: \n  Name          Description\n  -------------------------\n  [-constrset]  Contraint FileSet from which files are copied\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  <name>        Name of the copied constraint set\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-constrset",
+      "description": "Contraint FileSet from which files are copied"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "remove_gui_custom_command_args",
+  "short_description": "Remove one or more custom command arguments",
+  "full_help": "remove_gui_custom_command_args\n\nDescription: \nRemove one or more custom command arguments\n\nSyntax: \nremove_gui_custom_command_args  -command_name <arg> [-quiet] [-verbose]\n                                <names>...\n\nUsage: \n  Name           Description\n  --------------------------\n  -command_name  name of custom command whose arguments are being removed.\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  <names>        name of one or more custom command arguments to remove.\n\nCategories: \nGUIControl\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-command_name",
+      "description": "name of custom command whose arguments are being removed."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

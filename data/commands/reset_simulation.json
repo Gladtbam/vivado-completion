@@ -1,0 +1,24 @@
+{
+  "name": "reset_simulation",
+  "short_description": "Reset an existing simulation run",
+  "full_help": "reset_simulation\n\nDescription: \nReset an existing simulation run\n\nSyntax: \nreset_simulation  [-mode <arg>] [-type <arg>] [-quiet] [-verbose] [<simset>]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-mode]     Remove generated data for the specified mode. Values: \n              behavioral, post-synthesis, post-implementation\n              Default: behavioral\n  [-type]     Remove generated data for the specified type. Applicable mode \n              is post-synthesis or post-implementation. Values: functional, \n              timing\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<simset>]  Name of the simulation fileset to reset\n\nCategories: \nSimulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-mode",
+      "description": "Remove generated data for the specified mode. Values: behavioral, post-synthesis, post-implementation Default: behavioral"
+    },
+    {
+      "flag": "-type",
+      "description": "Remove generated data for the specified type. Applicable mode is post-synthesis or post-implementation. Values: functional, timing"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

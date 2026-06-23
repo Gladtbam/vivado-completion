@@ -1,0 +1,36 @@
+{
+  "name": "change_qor_suggestion_property",
+  "short_description": "Set FAILED_TO_APPLY property to 1, and APPLIED property to 0, for specified RQS suggestion ID",
+  "full_help": "change_qor_suggestion_property\n\nDescription: \nSet FAILED_TO_APPLY property to 1, and APPLIED property to 0, for specified RQS suggestion ID\n\nSyntax: \nchange_qor_suggestion_property  [-set_applied] [-set_failed_to_apply]\n                                [-set_incr_friendly] [-reset_incr_friendly]\n                                [-set_properties <args>] [-quiet] [-verbose]\n                                <IDs>\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-set_applied]          set APPLIED = 1\n  [-set_failed_to_apply]  set APPLIED = 0, FAILED_TO_APPLY = 1\n  [-set_incr_friendly]    set INCR_FRIENDLY = 1\n  [-reset_incr_friendly]  set INCR_FRIENDLY = 0\n  [-set_properties]       set_property COMMAND <...>\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n  <IDs>                   Match suggestion names against given names\n\nCategories: \nObject, Feasibility, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-set_applied",
+      "description": "set APPLIED = 1"
+    },
+    {
+      "flag": "-set_failed_to_apply",
+      "description": "set APPLIED = 0, FAILED_TO_APPLY = 1"
+    },
+    {
+      "flag": "-set_incr_friendly",
+      "description": "set INCR_FRIENDLY = 1"
+    },
+    {
+      "flag": "-reset_incr_friendly",
+      "description": "set INCR_FRIENDLY = 0"
+    },
+    {
+      "flag": "-set_properties",
+      "description": "set_property COMMAND <...>"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

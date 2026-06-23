@@ -1,0 +1,20 @@
+{
+  "name": "save_constraints",
+  "short_description": "Save the current design's constraints",
+  "full_help": "save_constraints\n\nDescription: \nSave the current design's constraints\n\nSyntax: \nsave_constraints  [-force] [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-force]    Force constraints save, overwriting the target and source XDC \n              if necessary\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Force constraints save, overwriting the target and source XDC if necessary"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

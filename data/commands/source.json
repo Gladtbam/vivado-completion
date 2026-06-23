@@ -1,0 +1,24 @@
+{
+  "name": "source",
+  "short_description": "Add tracing of commands",
+  "full_help": "source\n\nDescription: \nAdd tracing of commands\n\nSyntax: \nsource  [-encoding <arg>] [-notrace] [-quiet] [-verbose] <file>\n\nUsage: \n  Name         Description\n  ------------------------\n  [-encoding]  specify the encoding of the data stored in filename\n  [-notrace]   disable tracing of sourced commands\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  <file>       script to source\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-encoding",
+      "description": "specify the encoding of the data stored in filename"
+    },
+    {
+      "flag": "-notrace",
+      "description": "disable tracing of sourced commands"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

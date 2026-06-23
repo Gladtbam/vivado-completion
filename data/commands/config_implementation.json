@@ -1,0 +1,16 @@
+{
+  "name": "config_implementation",
+  "short_description": "Configure Implementation",
+  "full_help": "config_implementation\n\nDescription: \nConfigure Implementation\n\nSyntax: \nconfig_implementation  [-quiet] [-verbose] [<list>]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<list>]    list of config params which need to be configured\n\nCategories: \nConfiguration\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

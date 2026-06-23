@@ -1,0 +1,44 @@
+{
+  "name": "calc_config_time",
+  "short_description": "Calculate device configuration time (ms)",
+  "full_help": "calc_config_time\n\nDescription: \nCalculate device configuration time (ms)\n\nSyntax: \ncalc_config_time  [-verbose] [-max] [-min] [-typical] [-por_used]\n                  [-por_ramp <arg>] [-clk_freq <arg>] [-bitstream_size <arg>]\n                  [-quiet]\n\nReturns: \nReport\n\nUsage: \n  Name               Description\n  ------------------------------\n  [-verbose]         Print out calculation parameters\n  [-max]             Calculate Maximum Configuration Time\n  [-min]             Calculate Minimum Configuration Time\n  [-typical]         Calculate Typical Configuration Time\n  [-por_used]        (Deprecated) Specify if Power On Reset (POR) is used by \n                     using a non-zero por_ramp\n  [-por_ramp]        Specify a Power On Reset (POR) ramp rate as 1 ms to 50 \n                     ms\n                     Default: 0 ms\n  [-clk_freq]        Specify a clock frequency for Slave mode, or for Master \n                     mode if using external master clock (MHz)\n                     Default: 0 MHz\n  [-bitstream_size]  Specify a bitstream size to override the default\n                     Default: 0\n  [-quiet]           Ignore command errors\n\nCategories: \nBitgen, Report\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-verbose",
+      "description": "Print out calculation parameters"
+    },
+    {
+      "flag": "-max",
+      "description": "Calculate Maximum Configuration Time"
+    },
+    {
+      "flag": "-min",
+      "description": "Calculate Minimum Configuration Time"
+    },
+    {
+      "flag": "-typical",
+      "description": "Calculate Typical Configuration Time"
+    },
+    {
+      "flag": "-por_used",
+      "description": "(Deprecated) Specify if Power On Reset (POR) is used by using a non-zero por_ramp"
+    },
+    {
+      "flag": "-por_ramp",
+      "description": "Specify a Power On Reset (POR) ramp rate as 1 ms to 50 ms Default: 0 ms"
+    },
+    {
+      "flag": "-clk_freq",
+      "description": "Specify a clock frequency for Slave mode, or for Master mode if using external master clock (MHz) Default: 0 MHz"
+    },
+    {
+      "flag": "-bitstream_size",
+      "description": "Specify a bitstream size to override the default Default: 0"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    }
+  ]
+}

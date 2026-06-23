@@ -1,0 +1,32 @@
+{
+  "name": "get_board_part_pins",
+  "short_description": "Gets the list of board_part pins object",
+  "full_help": "get_board_part_pins\n\nDescription: \nGets the list of board_part pins object\n\nSyntax: \nget_board_part_pins  [-regexp] [-nocase] [-filter <arg>] [-of_objects <args>]\n                     [-quiet] [-verbose] [<patterns>...]\n\nReturns: \nlist of pins in the board_part\n\nUsage: \n  Name           Description\n  --------------------------\n  [-regexp]      Patterns are full regular expressions\n  [-nocase]      Perform case-insensitive matching\n  [-filter]      Filter list with expression\n  [-of_objects]  Get 'board_component_pin' objects of these types: \n                 'board_component_interface board_interface_port'.\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<patterns>]   match board_part pin names against patterns\n                 Default: *\n                 Values: The default search pattern is the wildcard *, or .* \n                 when -regexp is specified.\n\nCategories: \nObject, Board\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get 'board_component_pin' objects of these types: 'board_component_interface board_interface_port'."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "create_ip_run",
+  "short_description": "Creates a run for the given IP.",
+  "full_help": "create_ip_run\n\nDescription: \nCreates a run for the given IP.\n\nSyntax: \ncreate_ip_run  [-force] [-quiet] [-verbose] <objects>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-force]    Force regeneration of products of the given IP.\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <objects>   All of the IP objects (from get_ips or get_files) for which a \n              run needs to be generated for.\n\nCategories: \nProject, IPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Force regeneration of products of the given IP."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

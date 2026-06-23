@@ -1,0 +1,96 @@
+{
+  "name": "report_operating_conditions",
+  "short_description": "Get operating conditions values for power estimation",
+  "full_help": "report_operating_conditions\n\nDescription: \nGet operating conditions values for power estimation\n\nSyntax: \nreport_operating_conditions  [-voltage <args>] [-voltage_range <args>] [-grade]\n                             [-process] [-junction_temp] [-ambient_temp]\n                             [-thetaja] [-thetasa] [-airflow] [-heatsink]\n                             [-thetajb] [-board] [-board_temp] [-board_layers]\n                             [-design_power_budget] [-all] [-file <arg>]\n                             [-return_string] [-append]\n                             [-supply_current_budget <args>] [-quiet]\n                             [-verbose]\n\nUsage: \n  Name                      Description\n  -------------------------------------\n  [-voltage]                Gets voltage value.  Supported voltage supplies \n                            vary by family.\n  [-voltage_range]          Gets voltage range.  Supported voltage supplies \n                            vary by family.\n  [-grade]                  Temperature grade.  Supported values vary by \n                            family.\n  [-process]                Gets process\n  [-junction_temp]          Junction Temperature (C): auto|degC\n  [-ambient_temp]           Ambient Temperature (C): default|degC\n  [-thetaja]                ThetaJA (C/W): auto|degC/W\n  [-thetasa]                Gets ThetaSA\n  [-airflow]                Airflow (LFM): 0 to 750\n  [-heatsink]               Gets dimensions of heatsink\n  [-thetajb]                Gets ThetaJB\n  [-board]                  Board type: jedec, small, medium, large, custom\n  [-board_temp]             Board Temperature degC\n  [-board_layers]           Board layers: 4to7, 8to11, 12to15, 16+\n  [-design_power_budget]    Design Power Budget (W)\n  [-all]                    Gets all operating conditions listed in this help\n                            message\n  [-file]                   Filename to output results to. (send output to \n                            console if -file is not used)\n  [-return_string]          Return operating conditions as string\n  [-append]                 Append operating conditions to end of file\n  [-supply_current_budget]  Reports a list of supply current budget 'name \n                            value' pairs.  Supported voltage supplies vary by\n                            family.\n  [-quiet]                  Ignore command errors\n  [-verbose]                Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-voltage",
+      "description": "Gets voltage value.  Supported voltage supplies vary by family."
+    },
+    {
+      "flag": "-voltage_range",
+      "description": "Gets voltage range.  Supported voltage supplies vary by family."
+    },
+    {
+      "flag": "-grade",
+      "description": "Temperature grade.  Supported values vary by family."
+    },
+    {
+      "flag": "-process",
+      "description": "Gets process"
+    },
+    {
+      "flag": "-junction_temp",
+      "description": "Junction Temperature (C): auto|degC"
+    },
+    {
+      "flag": "-ambient_temp",
+      "description": "Ambient Temperature (C): default|degC"
+    },
+    {
+      "flag": "-thetaja",
+      "description": "ThetaJA (C/W): auto|degC/W"
+    },
+    {
+      "flag": "-thetasa",
+      "description": "Gets ThetaSA"
+    },
+    {
+      "flag": "-airflow",
+      "description": "Airflow (LFM): 0 to 750"
+    },
+    {
+      "flag": "-heatsink",
+      "description": "Gets dimensions of heatsink"
+    },
+    {
+      "flag": "-thetajb",
+      "description": "Gets ThetaJB"
+    },
+    {
+      "flag": "-board",
+      "description": "Board type: jedec, small, medium, large, custom"
+    },
+    {
+      "flag": "-board_temp",
+      "description": "Board Temperature degC"
+    },
+    {
+      "flag": "-board_layers",
+      "description": "Board layers: 4to7, 8to11, 12to15, 16+"
+    },
+    {
+      "flag": "-design_power_budget",
+      "description": "Design Power Budget (W)"
+    },
+    {
+      "flag": "-all",
+      "description": "Gets all operating conditions listed in this help message"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return operating conditions as string"
+    },
+    {
+      "flag": "-append",
+      "description": "Append operating conditions to end of file"
+    },
+    {
+      "flag": "-supply_current_budget",
+      "description": "Reports a list of supply current budget 'name value' pairs.  Supported voltage supplies vary by family."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

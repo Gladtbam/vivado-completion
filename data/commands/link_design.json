@@ -1,0 +1,52 @@
+{
+  "name": "link_design",
+  "short_description": "Open a netlist design",
+  "full_help": "link_design\n\nDescription: \nOpen a netlist design\n\nSyntax: \nlink_design  [-name <arg>] [-part <arg>] [-constrset <arg>] [-top <arg>]\n             [-mode <arg>] [-pr_config <arg>] [-reconfig_partitions <args>]\n             [-partitions <args>] [-ignore_timing] [-quiet] [-verbose]\n\nReturns: \ndesign object\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-name]                 Design name\n  [-part]                 Target part\n  [-constrset]            Constraint fileset to use\n  [-top]                  Specify the top module name when the structural \n                          netlist is Verilog\n  [-mode]                 The design mode. Values: default, out_of_context\n                          Default: default\n  [-pr_config]            PR Configuration to apply while opening the design\n  [-reconfig_partitions]  List of reconfigurable partitions to load while \n                          opening the design\n  [-partitions]           List of partitions to load while opening the design\n  [-ignore_timing]        open a netlist design without the timing \n                          constraints.\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Design name"
+    },
+    {
+      "flag": "-part",
+      "description": "Target part"
+    },
+    {
+      "flag": "-constrset",
+      "description": "Constraint fileset to use"
+    },
+    {
+      "flag": "-top",
+      "description": "Specify the top module name when the structural netlist is Verilog"
+    },
+    {
+      "flag": "-mode",
+      "description": "The design mode. Values: default, out_of_context Default: default"
+    },
+    {
+      "flag": "-pr_config",
+      "description": "PR Configuration to apply while opening the design"
+    },
+    {
+      "flag": "-reconfig_partitions",
+      "description": "List of reconfigurable partitions to load while opening the design"
+    },
+    {
+      "flag": "-partitions",
+      "description": "List of partitions to load while opening the design"
+    },
+    {
+      "flag": "-ignore_timing",
+      "description": "open a netlist design without the timing constraints."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

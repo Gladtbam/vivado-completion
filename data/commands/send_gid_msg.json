@@ -1,0 +1,40 @@
+{
+  "name": "send_gid_msg",
+  "short_description": "Send a fully formatted message with unique GID. Id, ssname, severity and msg options are mandatory. To register a new value for ssname, please send an email to msgmgr@xilinx.com with the following information: 1. Requested ssname. Should be <= 12 characters in length, and contain only lower/upper case letters, digits, the underscore, and (if desired) end with the :: sequence. If :: is used, everything after the first :: sequence in the value of ssname used with this command will be treated as a wildcard. So for example, if you have registered 'board::' with msgmgr, and then use 'board::utils' as the ssname with this command, it will be accepted as valid. But if you register 'board', the same value of ssname is invalid. 2. The name of the engineering owner for this new ssname. 3. The name of the manager of the engineering owner. 4. A one-line description of the tcl files that will use this ssname. Note that the engineering owner and their manager are responsible for making sure the value of -id used with each instance of this command is unique for the ssname that they have registered.",
+  "full_help": "send_gid_msg\n\nDescription: \nSend a fully formatted message with unique GID. Id, ssname, severity and msg options are mandatory.\nTo register a new value for ssname, please send an email to msgmgr@xilinx.com with the following information:\n1. Requested ssname. Should be <= 12 characters in length, and contain only lower/upper case letters, digits,\nthe underscore, and (if desired) end with the :: sequence. If :: is used, everything after the first :: sequence\nin the value of ssname used with this command will be treated as a wildcard.\nSo for example, if you have registered 'board::' with msgmgr, and then use 'board::utils' as the ssname with this command,\nit will be accepted as valid.\nBut if you register 'board', the same value of ssname is invalid.\n2. The name of the engineering owner for this new ssname.\n3. The name of the manager of the engineering owner.\n4. A one-line description of the tcl files that will use this ssname.\nNote that the engineering owner and their manager are responsible for making sure the value of -id used with each instance of\nthis command is unique for the ssname that they have registered.\n\nSyntax: \nsend_gid_msg  [-continue] -id <arg> -ssname <arg> -severity <arg>\n              [-description <arg>] [-resolution <arg>] [-quiet] [-verbose]\n              <msg>\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-continue]     Continue the execution of the current tcl script (if any) \n                  in cases where severity is ERROR. Default behavior is to \n                  terminate the currently executing script on ERROR.\n  -id             An integer identifier >= 1, caller must insure that it is \n                  unique for the given value of ssname. Required.\n  -ssname         A string identifier indicating the general source of the \n                  message. For example, 'board_infra'. Any identifier used \n                  must be pre-approved by msgmgr@xilinx.com. Messages using \n                  unapproved identifiers will not be output. Required.\n  -severity       Message severity to send, e.g. \"INFO\",\"WARNING\", \"ERROR\" or\n                  \"CRITICAL WARNING\"\n  [-description]  Optional message description. It is recommended that the \n                  description start with source file:line number where the \n                  message originated. Example:\n                  'apply_board_connection.tcl:123 This message indicates that\n                  given interface is not correctly defined.'\n                   For information on how to retrieve the tcl source file \n                  line number see:\n                  https://stackoverflow.com/questions/27834094/getting-the-li\n                  ne-number-of-executing-code-in-tcl\n  [-resolution]   Optional message resolution. Should describe to the \n                  customer possible steps for resolving the problem.\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n  <msg>           Complete formated message text. Required.\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-continue",
+      "description": "Continue the execution of the current tcl script (if any) in cases where severity is ERROR. Default behavior is to terminate the currently executing script on ERROR."
+    },
+    {
+      "flag": "-id",
+      "description": "An integer identifier >= 1, caller must insure that it is unique for the given value of ssname. Required."
+    },
+    {
+      "flag": "-ssname",
+      "description": "A string identifier indicating the general source of the message. For example, 'board_infra'. Any identifier used must be pre-approved by msgmgr@xilinx.com. Messages using unapproved identifiers will not be output. Required."
+    },
+    {
+      "flag": "-severity",
+      "description": "Message severity to send, e.g. \"INFO\",\"WARNING\", \"ERROR\" or \"CRITICAL WARNING\""
+    },
+    {
+      "flag": "-description",
+      "description": "Optional message description. It is recommended that the description start with source file:line number where the message originated. Example: 'apply_board_connection.tcl:123 This message indicates that given interface is not correctly defined.' For information on how to retrieve the tcl source file line number see: https://stackoverflow.com/questions/27834094/getting-the-li ne-number-of-executing-code-in-tcl"
+    },
+    {
+      "flag": "-resolution",
+      "description": "Optional message resolution. Should describe to the customer possible steps for resolving the problem."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

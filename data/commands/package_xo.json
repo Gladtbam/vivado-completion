@@ -1,0 +1,68 @@
+{
+  "name": "package_xo",
+  "short_description": "Used to package a Xilinx Object (XO) container",
+  "full_help": "package_xo\n\nDescription: \nUsed to package a Xilinx Object (XO) container\n\nSyntax: \npackage_xo  [-kernel_name <arg>] [-force] [-kernel_xml <arg>]\n            [-output_kernel_xml <arg>] [-design_xml <arg>]\n            [-ip_directory <arg>] [-parent_ip_directory <arg>]\n            [-kernel_files <args>] [-kernel_xml_args <args>]\n            [-kernel_xml_pipes <args>] [-kernel_xml_connections <args>]\n            [-ctrl_protocol <arg>] -xo_path <arg> [-quiet] [-verbose]\n\nReturns: \nThe path to the packaged XO container\n\nUsage: \n  Name                       Description\n  --------------------------------------\n  [-kernel_name]             The name of the kernel\n  [-force]                   Overwrite existing kernel in XO file\n  [-kernel_xml]              The path to the existing kernel XML file\n  [-output_kernel_xml]       The path of the generated output kernel XML file\n  [-design_xml]              The path to the existing design XML file\n  [-ip_directory]            The path to the kernel IP directory\n  [-parent_ip_directory]     If the kernel IP directory specified contains \n                             multiple IPs, specify a directory path to the \n                             parent IP where its component.xml is located \n                             directly below.\n  [-kernel_files]            Kernel file name(s)\n  [-kernel_xml_args]         Generate kernel.xml with the arg(s). Each arg \n                             value should follow this format: \n                             {name:addressQualifier:id:port:size:offset:type:\n                             memSize} where memSize is optional.\n  [-kernel_xml_pipes]        Generate kernel.xml with the pipe(s). Each pipe \n                             value should follow this format: \n                             {name:width:depth}\n  [-kernel_xml_connections]  Generate kernel.xml with the connection(s). Each\n                             connection value should follow this format: \n                             {srcInst:srcPort:dstInst:dstPort}\n  [-ctrl_protocol]           Kernel control protocol. Valid values: \n                             ap_ctrl_hs, ap_ctrl_chain, ap_ctrl_none, \n                             user_managed. Default: ap_ctrl_hs\n                             Default: ap_ctrl_hs\n  -xo_path                   The path of the output XO container file\n  [-quiet]                   Ignore command errors\n  [-verbose]                 Suspend message limits during command execution\n\nCategories: \nVitis, Acceleration, FileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-kernel_name",
+      "description": "The name of the kernel"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing kernel in XO file"
+    },
+    {
+      "flag": "-kernel_xml",
+      "description": "The path to the existing kernel XML file"
+    },
+    {
+      "flag": "-output_kernel_xml",
+      "description": "The path of the generated output kernel XML file"
+    },
+    {
+      "flag": "-design_xml",
+      "description": "The path to the existing design XML file"
+    },
+    {
+      "flag": "-ip_directory",
+      "description": "The path to the kernel IP directory"
+    },
+    {
+      "flag": "-parent_ip_directory",
+      "description": "If the kernel IP directory specified contains multiple IPs, specify a directory path to the parent IP where its component.xml is located directly below."
+    },
+    {
+      "flag": "-kernel_files",
+      "description": "Kernel file name(s)"
+    },
+    {
+      "flag": "-kernel_xml_args",
+      "description": "Generate kernel.xml with the arg(s). Each arg value should follow this format: {name:addressQualifier:id:port:size:offset:type: memSize} where memSize is optional."
+    },
+    {
+      "flag": "-kernel_xml_pipes",
+      "description": "Generate kernel.xml with the pipe(s). Each pipe value should follow this format: {name:width:depth}"
+    },
+    {
+      "flag": "-kernel_xml_connections",
+      "description": "Generate kernel.xml with the connection(s). Each connection value should follow this format: {srcInst:srcPort:dstInst:dstPort}"
+    },
+    {
+      "flag": "-ctrl_protocol",
+      "description": "Kernel control protocol. Valid values: ap_ctrl_hs, ap_ctrl_chain, ap_ctrl_none, user_managed. Default: ap_ctrl_hs Default: ap_ctrl_hs"
+    },
+    {
+      "flag": "-xo_path",
+      "description": "The path of the output XO container file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

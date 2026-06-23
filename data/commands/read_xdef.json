@@ -1,0 +1,40 @@
+{
+  "name": "read_xdef",
+  "short_description": "Read Xilinx physical design exchange and restore the physical implementation data to working memory",
+  "full_help": "read_xdef\n\nDescription: \nRead Xilinx physical design exchange and restore the physical implementation data to working memory\n\nSyntax: \nread_xdef  [-print_release_version] [-no_routing] [-no_clear] [-cell <arg>]\n           [-strict] [-no_clear_prog_delay] [-quiet] [-verbose] <file>\n\nUsage: \n  Name                      Description\n  -------------------------------------\n  [-print_release_version]  Print out the release version of the file\n  [-no_routing]             Do not read and restore the routing data\n  [-no_clear]               Do not clear the place and route databases before\n                            attempting to read in the new xdef data\n  [-cell]                   Read the given XDEF in as if it were instantiated\n                            under the given cell.\n  [-strict]                 Require exact matches between placement and \n                            routing information for the loaded design. Only \n                            valid with -cell.\n  [-no_clear_prog_delay]    Don't clear the prog delays when reading in the \n                            xdef.\n  [-quiet]                  Ignore command errors\n  [-verbose]                Suspend message limits during command execution\n  <file>                    XDEF file name\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-print_release_version",
+      "description": "Print out the release version of the file"
+    },
+    {
+      "flag": "-no_routing",
+      "description": "Do not read and restore the routing data"
+    },
+    {
+      "flag": "-no_clear",
+      "description": "Do not clear the place and route databases before attempting to read in the new xdef data"
+    },
+    {
+      "flag": "-cell",
+      "description": "Read the given XDEF in as if it were instantiated under the given cell."
+    },
+    {
+      "flag": "-strict",
+      "description": "Require exact matches between placement and routing information for the loaded design. Only valid with -cell."
+    },
+    {
+      "flag": "-no_clear_prog_delay",
+      "description": "Don't clear the prog delays when reading in the xdef."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "get_template_bd_designs",
+  "short_description": "Get a list of IPI example designs",
+  "full_help": "get_template_bd_designs\n\nDescription: \nGet a list of IPI example designs\n\nSyntax: \nget_template_bd_designs  [-quiet] [-verbose]\n\nReturns: \nlist of IPI design objects\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nIPIntegrator\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

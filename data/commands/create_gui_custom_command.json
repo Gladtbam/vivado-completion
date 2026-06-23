@@ -1,0 +1,48 @@
+{
+  "name": "create_gui_custom_command",
+  "short_description": "Create a custom command in the GUI",
+  "full_help": "create_gui_custom_command\n\nDescription: \nCreate a custom command in the GUI\n\nSyntax: \ncreate_gui_custom_command  -name <arg> [-menu_name <arg>] [-description <arg>]\n                           [-show_on_toolbar] [-run_proc <arg>]\n                           [-toolbar_icon <arg>] [-command <arg>]\n                           [-tcl_file <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name                Description\n  -------------------------------\n  -name               Unique name of the command to create.\n  [-menu_name]        Menu name for the custom command.\n  [-description]      Display this text for the description of the menu item \n                      and optionally the toolbar button\n  [-show_on_toolbar]  Add this command to the toolbar\n  [-run_proc]         Needed when '-command' and 'tcl_file' options are both \n                      specified.\n                      If true, gui button will run command mentioned in \n                      '-command' option otherwise source script mentioned in \n                      '-tcl_file' option\n  [-toolbar_icon]     The full path to the PNG or JPEG file to display on the\n                      toolbar button\n  [-command]          The command to execute\n  [-tcl_file]         The full path to the Tcl file to source\n  [-quiet]            Ignore command errors\n  [-verbose]          Suspend message limits during command execution\n\nCategories: \nGUIControl\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Unique name of the command to create."
+    },
+    {
+      "flag": "-menu_name",
+      "description": "Menu name for the custom command."
+    },
+    {
+      "flag": "-description",
+      "description": "Display this text for the description of the menu item and optionally the toolbar button"
+    },
+    {
+      "flag": "-show_on_toolbar",
+      "description": "Add this command to the toolbar"
+    },
+    {
+      "flag": "-run_proc",
+      "description": "Needed when '-command' and 'tcl_file' options are both specified. If true, gui button will run command mentioned in '-command' option otherwise source script mentioned in '-tcl_file' option"
+    },
+    {
+      "flag": "-toolbar_icon",
+      "description": "The full path to the PNG or JPEG file to display on the toolbar button"
+    },
+    {
+      "flag": "-command",
+      "description": "The command to execute"
+    },
+    {
+      "flag": "-tcl_file",
+      "description": "The full path to the Tcl file to source"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

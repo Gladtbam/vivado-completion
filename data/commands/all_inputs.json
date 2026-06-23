@@ -1,0 +1,16 @@
+{
+  "name": "all_inputs",
+  "short_description": "Get a list of all input ports in the current design",
+  "full_help": "all_inputs\n\nDescription: \nGet a list of all input ports in the current design\n\nSyntax: \nall_inputs  [-quiet] [-verbose]\n\nReturns: \nlist of port objects\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

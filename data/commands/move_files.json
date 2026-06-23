@@ -1,0 +1,24 @@
+{
+  "name": "move_files",
+  "short_description": "Moves the files from one fileset to another while maintaining all of their original properties.",
+  "full_help": "move_files\n\nDescription: \nMoves the files from one fileset to another while maintaining all of their original properties.\n\nSyntax: \nmove_files  [-fileset <arg>] [-of_objects <args>] [-quiet] [-verbose]\n            [<files>...]\n\nReturns: \nlist of files that were moved\n\nUsage: \n  Name           Description\n  --------------------------\n  [-fileset]     Destination fileset name\n  [-of_objects]  Reconfig Modules to move the files to\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<files>]      Name of the files to be moved\n\nCategories: \nProject, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-fileset",
+      "description": "Destination fileset name"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Reconfig Modules to move the files to"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "flow_viz",
+  "short_description": "Generate flow visualization data",
+  "full_help": "flow_viz\n\nDescription: \nGenerate flow visualization data\n\nSyntax: \nflow_viz  [-verbose] [-quiet]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-verbose]  Suspend message limits during command execution\n  [-quiet]    Ignore command errors\n\nCategories: \nTools, Tcl\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    }
+  ]
+}

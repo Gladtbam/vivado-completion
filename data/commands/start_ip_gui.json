@@ -1,0 +1,32 @@
+{
+  "name": "start_ip_gui",
+  "short_description": "Customize an instance of a configurable IP GUI",
+  "full_help": "start_ip_gui\n\nDescription: \nCustomize an instance of a configurable IP GUI\n\nSyntax: \nstart_ip_gui  [-vlnv <arg>] [-ip <args>] [-module_name <arg>] [-ipdef <args>]\n              [-quiet] [-verbose]\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-vlnv]         VLNV string for the Catalog IP from which the new IP will \n                  be created (colon delimited Vendor, Library, Name, Version)\n  [-ip]           IP Instance object\n  [-module_name]  Predefined name for the component\n  [-ipdef]        IP Catalog object\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n\nCategories: \nIPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-vlnv",
+      "description": "VLNV string for the Catalog IP from which the new IP will be created (colon delimited Vendor, Library, Name, Version)"
+    },
+    {
+      "flag": "-ip",
+      "description": "IP Instance object"
+    },
+    {
+      "flag": "-module_name",
+      "description": "Predefined name for the component"
+    },
+    {
+      "flag": "-ipdef",
+      "description": "IP Catalog object"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

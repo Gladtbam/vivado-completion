@@ -1,0 +1,36 @@
+{
+  "name": "write_edif",
+  "short_description": "Export the current netlist as an EDIF file",
+  "full_help": "write_edif\n\nDescription: \nExport the current netlist as an EDIF file\n\nSyntax: \nwrite_edif  [-pblocks <args>] [-cell <arg>] [-force] [-security_mode <arg>]\n            [-logic_function_stripped] [-quiet] [-verbose] <file>\n\nReturns: \nthe name of the output file or directory\n\nUsage: \n  Name                        Description\n  ---------------------------------------\n  [-pblocks]                  Export netlist for these pblocks (not valid \n                              with -cell)\n  [-cell]                     Export netlist for this cell (not valid with \n                              -pblocks)\n  [-force]                    Overwrite existing file\n  [-security_mode]            If set to 'all', and some of design needs \n                              encryption then whole of design will be written\n                              to a single encrypted file\n                              Default: multifile\n  [-logic_function_stripped]  Convert INIT strings on LUTs & RAMBs to fixed \n                              values\n  [-quiet]                    Ignore command errors\n  [-verbose]                  Suspend message limits during command execution\n  <file>                      Output file (directory with -pblocks or -cell)\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-pblocks",
+      "description": "Export netlist for these pblocks (not valid with -cell)"
+    },
+    {
+      "flag": "-cell",
+      "description": "Export netlist for this cell (not valid with -pblocks)"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-security_mode",
+      "description": "If set to 'all', and some of design needs encryption then whole of design will be written to a single encrypted file Default: multifile"
+    },
+    {
+      "flag": "-logic_function_stripped",
+      "description": "Convert INIT strings on LUTs & RAMBs to fixed values"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

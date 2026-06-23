@@ -1,0 +1,16 @@
+{
+  "name": "current_instance",
+  "short_description": "Set or get the current instance",
+  "full_help": "current_instance\n\nDescription: \nSet or get the current instance\n\nSyntax: \ncurrent_instance  [-quiet] [-verbose] [<instance>]\n\nReturns: \ninstance name\n\nUsage: \n  Name          Description\n  -------------------------\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  [<instance>]  Name of instance\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

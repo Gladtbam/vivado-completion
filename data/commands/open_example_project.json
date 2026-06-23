@@ -1,0 +1,32 @@
+{
+  "name": "open_example_project",
+  "short_description": "Open the example project for the indicated IP",
+  "full_help": "open_example_project\n\nDescription: \nOpen the example project for the indicated IP\n\nSyntax: \nopen_example_project  [-dir <arg>] [-rename_bdcell <arg>] [-force]\n                      [-in_process] [-quiet] [-verbose] <objects>...\n\nReturns: \nThe Project that was opened\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-dir]            Path to directory where example project will be created\n  [-rename_bdcell]  Specify the IP instance name to use instead of the \n                    specified BD cell's IP name in the example design\n  [-force]          Overwrite an example project if it exists\n  [-in_process]     Open the example project in the same process\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  <objects>         The objects whose example projects will be opened\n\nCategories: \nProject, IPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-dir",
+      "description": "Path to directory where example project will be created"
+    },
+    {
+      "flag": "-rename_bdcell",
+      "description": "Specify the IP instance name to use instead of the specified BD cell's IP name in the example design"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite an example project if it exists"
+    },
+    {
+      "flag": "-in_process",
+      "description": "Open the example project in the same process"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

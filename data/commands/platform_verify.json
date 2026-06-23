@@ -1,0 +1,32 @@
+{
+  "name": "platform_verify",
+  "short_description": "TCL task to verify platform by comparing files at the bit level",
+  "full_help": "platform_verify\n\nDescription: \nTCL task to verify platform by comparing files at the bit level\n\nSyntax: \nplatform_verify  -reference <arg> [-untrusted <arg>] [-in_memory] [-cell <arg>]\n                 [-quiet] [-verbose]\n\nUsage: \n  Name          Description\n  -------------------------\n  -reference    full path to trusted reference DCP file\n  [-untrusted]  full path to untrusted DCP file\n  [-in_memory]  use in-memory design for comparison, when -untrusted option \n                is not specified\n  [-cell]       Name of reconfigurable cell which will be verified\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-reference",
+      "description": "full path to trusted reference DCP file"
+    },
+    {
+      "flag": "-untrusted",
+      "description": "full path to untrusted DCP file"
+    },
+    {
+      "flag": "-in_memory",
+      "description": "use in-memory design for comparison, when -untrusted option is not specified"
+    },
+    {
+      "flag": "-cell",
+      "description": "Name of reconfigurable cell which will be verified"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

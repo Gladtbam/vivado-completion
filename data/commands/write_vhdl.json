@@ -1,0 +1,56 @@
+{
+  "name": "write_vhdl",
+  "short_description": "Export the current netlist in VHDL format",
+  "full_help": "write_vhdl\n\nDescription: \nExport the current netlist in VHDL format\n\nSyntax: \nwrite_vhdl  [-cell <arg>] [-mode <arg>] [-lib] [-port_diff_buffers]\n            [-write_all_overrides] [-keep_vcc_gnd] [-rename_top <arg>]\n            [-arch_only] [-force] [-include_xilinx_libs] [-quiet] [-verbose]\n            <file>\n\nReturns: \nthe name of the output file or directory\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-cell]                 Root of the design to write, e.g. des.subblk.cpu\n                          Default: whole design\n  [-mode]                 Output mode. Valid values: funcsim, pin_planning, \n                          synth_stub\n                          Default: funcsim\n  [-lib]                  Write each library into a separate file\n  [-port_diff_buffers]    Output differential buffers when writing in -port \n                          mode\n  [-write_all_overrides]  Write parameter overrides on Xilinx primitives even\n                          if the same as the default value\n  [-keep_vcc_gnd]         Don't replace VCC/GND instances by literal \n                          constants on load terminals.  For simulation modes \n                          only.\n  [-rename_top]           Replace top module name with custom name e.g. \n                          netlist\n                          Default: new top module name\n  [-arch_only]            Write only the architecture, not the entity \n                          declaration for the top cell\n  [-force]                Overwrite existing file\n  [-include_xilinx_libs]  Include simulation models directly in netlist \n                          instead of linking to library\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n  <file>                  Which file to write\n\nCategories: \nFileIO, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cell",
+      "description": "Root of the design to write, e.g. des.subblk.cpu Default: whole design"
+    },
+    {
+      "flag": "-mode",
+      "description": "Output mode. Valid values: funcsim, pin_planning, synth_stub Default: funcsim"
+    },
+    {
+      "flag": "-lib",
+      "description": "Write each library into a separate file"
+    },
+    {
+      "flag": "-port_diff_buffers",
+      "description": "Output differential buffers when writing in -port mode"
+    },
+    {
+      "flag": "-write_all_overrides",
+      "description": "Write parameter overrides on Xilinx primitives even if the same as the default value"
+    },
+    {
+      "flag": "-keep_vcc_gnd",
+      "description": "Don't replace VCC/GND instances by literal constants on load terminals.  For simulation modes only."
+    },
+    {
+      "flag": "-rename_top",
+      "description": "Replace top module name with custom name e.g. netlist Default: new top module name"
+    },
+    {
+      "flag": "-arch_only",
+      "description": "Write only the architecture, not the entity declaration for the top cell"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-include_xilinx_libs",
+      "description": "Include simulation models directly in netlist instead of linking to library"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "webtalk_register_client",
+  "short_description": "Register a new client with the Webtalk manager.",
+  "full_help": "webtalk_register_client\n\nDescription: \nRegister a new client with the Webtalk manager.\n\nSyntax: \nwebtalk_register_client  -client <arg> [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  -client     string value that is the name of the client.\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-client",
+      "description": "string value that is the name of the client."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

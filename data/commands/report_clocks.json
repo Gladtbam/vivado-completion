@@ -1,0 +1,32 @@
+{
+  "name": "report_clocks",
+  "short_description": "Report clocks",
+  "full_help": "report_clocks\n\nDescription: \nReport clocks\n\nSyntax: \nreport_clocks  [-file <arg>] [-append] [-return_string] [-quiet] [-verbose]\n               [<clocks>]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-file]           Filename to output results to. (send output to console if\n                    -file is not used)\n  [-append]         Append the results to file, don't overwrite the results \n                    file\n  [-return_string]  Return report as string\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  [<clocks>]        List of clocks\n                    Default: *\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if"
+    },
+    {
+      "flag": "-file",
+      "description": "is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

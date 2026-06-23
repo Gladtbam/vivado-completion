@@ -1,0 +1,56 @@
+{
+  "name": "write_bitstream",
+  "short_description": "Write a bitstream for the current design",
+  "full_help": "write_bitstream\n\nDescription: \nWrite a bitstream for the current design\n\nSyntax: \nwrite_bitstream  [-force] [-verbose] [-raw_bitfile] [-no_binary_bitfile]\n                 [-mask_file] [-readback_file] [-logic_location_file]\n                 [-bin_file] [-reference_bitfile <arg>] [-cell <arg>]\n                 [-no_partial_bitfile] [-quiet] <file>\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-force]                Overwrite existing file\n  [-verbose]              Print write_bitstream options\n  [-raw_bitfile]          Write raw bit file (.rbt)\n  [-no_binary_bitfile]    Do not write binary bit file (.bit)\n  [-mask_file]            Write mask file (.msk)\n  [-readback_file]        Write readback files (.rbd, .msd)\n  [-logic_location_file]  Write logic location file (.ll)\n  [-bin_file]             Write binary bit file without header (.bin)\n  [-reference_bitfile]    Reference bitfile to be used for generating partial\n                          bitstream\n  [-cell]                 Create only partial bitstream for named cell\n  [-no_partial_bitfile]   Do not write partial bit files for a Dynamic \n                          Function eXchange design\n  [-quiet]                Ignore command errors\n  <file>                  The name of the .bit file to generate\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Print write_bitstream options"
+    },
+    {
+      "flag": "-raw_bitfile",
+      "description": "Write raw bit file (.rbt)"
+    },
+    {
+      "flag": "-no_binary_bitfile",
+      "description": "Do not write binary bit file (.bit)"
+    },
+    {
+      "flag": "-mask_file",
+      "description": "Write mask file (.msk)"
+    },
+    {
+      "flag": "-readback_file",
+      "description": "Write readback files (.rbd, .msd)"
+    },
+    {
+      "flag": "-logic_location_file",
+      "description": "Write logic location file (.ll)"
+    },
+    {
+      "flag": "-bin_file",
+      "description": "Write binary bit file without header (.bin)"
+    },
+    {
+      "flag": "-reference_bitfile",
+      "description": "Reference bitfile to be used for generating partial bitstream"
+    },
+    {
+      "flag": "-cell",
+      "description": "Create only partial bitstream for named cell"
+    },
+    {
+      "flag": "-no_partial_bitfile",
+      "description": "Do not write partial bit files for a Dynamic Function eXchange design"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    }
+  ]
+}

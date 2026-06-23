@@ -1,0 +1,20 @@
+{
+  "name": "tie_unused_pins",
+  "short_description": "Tie off unused cell pins",
+  "full_help": "tie_unused_pins\n\nDescription: \nTie off unused cell pins\n\nSyntax: \ntie_unused_pins  [-of_objects <args>] [-quiet] [-verbose]\n\nUsage: \n  Name           Description\n  --------------------------\n  [-of_objects]  tie unused pins of specified cell(s)\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n\nCategories: \nNetlist\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-of_objects",
+      "description": "tie unused pins of specified cell(s)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

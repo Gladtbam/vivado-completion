@@ -1,0 +1,44 @@
+{
+  "name": "get_bels",
+  "short_description": "Get a list of bels. If a design is loaded, gets the constructed site type bels.",
+  "full_help": "get_bels\n\nDescription: \nGet a list of bels. If a design is loaded, gets the constructed site type bels.\n\nSyntax: \nget_bels  [-regexp] [-nocase] [-filter <arg>] [-of_objects <args>]\n          [-include_routing_bels] [-include_routethru_bels] [-net_segment_only]\n          [-quiet] [-verbose] [<patterns>]\n\nReturns: \nbels\n\nUsage: \n  Name                       Description\n  --------------------------------------\n  [-regexp]                  Patterns are full regular expressions\n  [-nocase]                  Perform case-insensitive matching. (valid only \n                             when -regexp specified)\n  [-filter]                  Filter list with expression\n  [-of_objects]              Get the bels of these slr, tiles, sites, cells, \n                             clock_regions, nets or pseudo pips.\n  [-include_routing_bels]    Also look for and include matching rbels.\n  [-include_routethru_bels]  Also look for and include routethru bels\n  [-net_segment_only]        Only look for the given net segment.\n  [-quiet]                   Ignore command errors\n  [-verbose]                 Suspend message limits during command execution\n  [<patterns>]               Match bels against patterns\n                             Default: *\n\nCategories: \nDevice, Object, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching. (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get the bels of these slr, tiles, sites, cells, clock_regions, nets or pseudo pips."
+    },
+    {
+      "flag": "-include_routing_bels",
+      "description": "Also look for and include matching rbels."
+    },
+    {
+      "flag": "-include_routethru_bels",
+      "description": "Also look for and include routethru bels"
+    },
+    {
+      "flag": "-net_segment_only",
+      "description": "Only look for the given net segment."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

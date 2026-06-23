@@ -1,0 +1,64 @@
+{
+  "name": "launch_simulation",
+  "short_description": "Generate simulation scripts of the design and launch steps for the target simulator.",
+  "full_help": "launch_simulation\n\nDescription: \nGenerate simulation scripts of the design and launch steps for the target simulator.\n\n\nSyntax: \nlaunch_simulation  [-step <arg>] [-simset <arg>] [-mode <arg>] [-type <arg>]\n                   [-scripts_only] [-gui] [-exec] [-of_objects <args>]\n                   [-absolute_path] [-install_path <arg>]\n                   [-gcc_install_path <arg>] [-noclean_dir] [-quiet] [-verbose]\n\nUsage: \n  Name                 Description\n  --------------------------------\n  [-step]              Launch a simulation step. Values: all, compile, \n                       elaborate, simulate. Default:all (launch all steps).\n                       Default: all\n  [-simset]            Name of the simulation fileset\n  [-mode]              Simulation mode. Values: behavioral, post-synthesis, \n                       post-implementation\n                       Default: behavioral\n  [-type]              Netlist type. Values: functional, timing. This is only\n                       applicable when mode is set to post-synthesis or \n                       post-implementation\n  [-scripts_only]      Only generate scripts\n  [-gui]               Invoke simulator GUI (applicable for -scripts_only \n                       mode)\n  [-exec]              Execute existing script for the step specified with \n                       the -step switch\n  [-of_objects]        Generate compile order file for this object \n                       (applicable with -scripts_only option only)\n  [-absolute_path]     Make design source file paths in 'absolute' format\n  [-install_path]      Custom installation directory path\n  [-gcc_install_path]  Specify GNU compiler installation directory path for \n                       the g++/gcc executables\n  [-noclean_dir]       Do not remove simulation run directory files\n  [-quiet]             Ignore command errors\n  [-verbose]           Suspend message limits during command execution\n\nCategories: \nToolLaunch, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-step",
+      "description": "Launch a simulation step. Values: all, compile, elaborate, simulate. Default:all (launch all steps). Default: all"
+    },
+    {
+      "flag": "-simset",
+      "description": "Name of the simulation fileset"
+    },
+    {
+      "flag": "-mode",
+      "description": "Simulation mode. Values: behavioral, post-synthesis, post-implementation Default: behavioral"
+    },
+    {
+      "flag": "-type",
+      "description": "Netlist type. Values: functional, timing. This is only applicable when mode is set to post-synthesis or post-implementation"
+    },
+    {
+      "flag": "-scripts_only",
+      "description": "Only generate scripts"
+    },
+    {
+      "flag": "-gui",
+      "description": "Invoke simulator GUI (applicable for -scripts_only mode)"
+    },
+    {
+      "flag": "-exec",
+      "description": "Execute existing script for the step specified with the -step switch"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Generate compile order file for this object (applicable with -scripts_only option only)"
+    },
+    {
+      "flag": "-absolute_path",
+      "description": "Make design source file paths in 'absolute' format"
+    },
+    {
+      "flag": "-install_path",
+      "description": "Custom installation directory path"
+    },
+    {
+      "flag": "-gcc_install_path",
+      "description": "Specify GNU compiler installation directory path for the g++/gcc executables"
+    },
+    {
+      "flag": "-noclean_dir",
+      "description": "Do not remove simulation run directory files"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

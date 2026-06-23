@@ -1,0 +1,28 @@
+{
+  "name": "write_debug_probes",
+  "short_description": "Write debug probes to a file",
+  "full_help": "write_debug_probes\n\nDescription: \nWrite debug probes to a file\n\nSyntax: \nwrite_debug_probes  [-cell <arg>] [-no_partial_ltxfile] [-force] [-quiet]\n                    [-verbose] <file>\n\nReturns: \nname of the output file\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-cell]                Hierarchical name of the Reconfigurable Partition \n                         Cell\n  [-no_partial_ltxfile]  Do not generate partial LTX files\n  [-force]               Overwrite existing file\n  [-quiet]               Ignore command errors\n  [-verbose]             Suspend message limits during command execution\n  <file>                 Debug probes file name (default extension is .ltx)\n\nCategories: \nFileIO, Debug\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cell",
+      "description": "Hierarchical name of the Reconfigurable Partition Cell"
+    },
+    {
+      "flag": "-no_partial_ltxfile",
+      "description": "Do not generate partial LTX files"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "report_datasheet",
+  "short_description": "Report data sheet",
+  "full_help": "report_datasheet\n\nDescription: \nReport data sheet\n\nSyntax: \nreport_datasheet  [-significant_digits <arg>] [-file <arg>] [-append]\n                  [-return_string] [-sort_by <arg>] [-name <arg>]\n                  [-show_all_corners] [-show_oe_timing] [-group <args>]\n                  [-rpx <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-significant_digits]  Number of digits to display: Range: 0 to 3\n                         Default: 3\n  [-file]                Filename to output results to. (send output to \n                         console if -file is not used)\n  [-append]              Append the results to file, don't overwrite the \n                         results file\n  [-return_string]       Return report as string\n  [-sort_by]             Sorting order: Values: clock, port\n                         Default: clock\n  [-name]                Output the results to GUI panel with this name\n  [-show_all_corners]    Provide all corners\n  [-show_oe_timing]      Show output enable (tristate) timing\n  [-group]               List of output ports for skew calculation\n  [-rpx]                 Filename to output interactive results to.\n  [-quiet]               Ignore command errors\n  [-verbose]             Suspend message limits during command execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-significant_digits",
+      "description": "Number of digits to display: Range: 0 to 3 Default: 3"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-sort_by",
+      "description": "Sorting order: Values: clock, port Default: clock"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-show_all_corners",
+      "description": "Provide all corners"
+    },
+    {
+      "flag": "-show_oe_timing",
+      "description": "Show output enable (tristate) timing"
+    },
+    {
+      "flag": "-group",
+      "description": "List of output ports for skew calculation"
+    },
+    {
+      "flag": "-rpx",
+      "description": "Filename to output interactive results to."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

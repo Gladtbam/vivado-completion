@@ -1,0 +1,16 @@
+{
+  "name": "enable_beta_device",
+  "short_description": "Enable all licensed beta devices matching an optional pattern",
+  "full_help": "enable_beta_device\n\nDescription: \nEnable all licensed beta devices matching an optional pattern\n\nSyntax: \nenable_beta_device  [-quiet] [-verbose] [<pattern>]\n\nUsage: \n  Name         Description\n  ------------------------\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  [<pattern>]  Enable parts matching pattern\n\nCategories: \nDevice\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

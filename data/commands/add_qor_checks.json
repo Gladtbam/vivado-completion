@@ -1,0 +1,20 @@
+{
+  "name": "add_qor_checks",
+  "short_description": "Add a QoR Check to a ruledeck",
+  "full_help": "add_qor_checks\n\nDescription: \nAdd a QoR Check to a ruledeck\n\nSyntax: \nadd_qor_checks  -ruledeck <arg> [-quiet] [-verbose] [<IDs>]\n\nReturns: \nAdd a QoR check to a ruledeck\n\nUsage: \n  Name        Description\n  -----------------------\n  -ruledeck   Ruledeck to add to\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<IDs>]     Match suggestion names against given IDs\n\nCategories: \nNetlist, Project\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-ruledeck",
+      "description": "Ruledeck to add to"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

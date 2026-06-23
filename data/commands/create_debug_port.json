@@ -1,0 +1,16 @@
+{
+  "name": "create_debug_port",
+  "short_description": "Create a new debug port",
+  "full_help": "create_debug_port\n\nDescription: \nCreate a new debug port\n\nSyntax: \ncreate_debug_port  [-quiet] [-verbose] <name> <type>\n\nReturns: \nnew debug_port object\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <name>      Name of the debug core instance\n  <type>      Type of the new debug port\n\nCategories: \nDebug, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

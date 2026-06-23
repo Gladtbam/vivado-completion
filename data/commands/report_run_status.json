@@ -1,0 +1,16 @@
+{
+  "name": "report_run_status",
+  "short_description": "Report reason for staleness of run.",
+  "full_help": "report_run_status\n\nDescription: \nReport reason for staleness of run.\n\nSyntax: \nreport_run_status  [-quiet] [-verbose] <runs>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <runs>      Run whose status needs to report\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

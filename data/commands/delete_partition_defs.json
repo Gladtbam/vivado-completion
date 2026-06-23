@@ -1,0 +1,20 @@
+{
+  "name": "delete_partition_defs",
+  "short_description": "Delete existing PartitionDefs",
+  "full_help": "delete_partition_defs\n\nDescription: \nDelete existing PartitionDefs\n\nSyntax: \ndelete_partition_defs  [-merge <arg>] [-quiet] [-verbose] <partition_defs>\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-merge]          Fileset to merge files into from the default RM of deleted \n                    Partition Def\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  <partition_defs>  List of PartitionDefs to delete\n\nCategories: \nPartition\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-merge",
+      "description": "Fileset to merge files into from the default RM of deleted Partition Def"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

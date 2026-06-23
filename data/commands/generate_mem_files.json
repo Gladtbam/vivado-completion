@@ -1,0 +1,20 @@
+{
+  "name": "generate_mem_files",
+  "short_description": "Write all the simulation .mem files.",
+  "full_help": "generate_mem_files\n\nDescription: \nWrite all the simulation .mem files.\n\nSyntax: \ngenerate_mem_files  [-force] [-quiet] [-verbose] <directory>\n\nReturns: \nThe name of the directory\n\nUsage: \n  Name         Description\n  ------------------------\n  [-force]     Overwrite existing .mem files\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  <directory>  Directory for exporting .mem files.\n               Values: A directory with alphanumeric characters.\n\nCategories: \nFileIO, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrite existing .mem files"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

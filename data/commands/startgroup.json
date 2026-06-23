@@ -1,0 +1,20 @@
+{
+  "name": "startgroup",
+  "short_description": "Start a set of commands that can be undone/redone as a group",
+  "full_help": "startgroup\n\nDescription: \nStart a set of commands that can be undone/redone as a group\n\nSyntax: \nstartgroup  [-try] [-quiet] [-verbose]\n\nReturns: \nint\n\nUsage: \n  Name        Description\n  -----------------------\n  [-try]      Don't start a group if one has already been started\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nGUIControl\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-try",
+      "description": "Don't start a group if one has already been started"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

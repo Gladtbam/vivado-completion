@@ -1,0 +1,40 @@
+{
+  "name": "make_wrapper",
+  "short_description": "Generate HDL wrapper for the specified source",
+  "full_help": "make_wrapper\n\nDescription: \nGenerate HDL wrapper for the specified source\n\nSyntax: \nmake_wrapper  [-top] [-testbench] [-inst_template] [-fileset <arg>] [-import]\n              [-force] [-quiet] [-verbose] <files>\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-top]            Create a top-level wrapper for the specified source\n  [-testbench]      Create a testbench for the specified source\n  [-inst_template]  Create an instantiation template for the specified \n                    source. The template will not be added to the project and\n                    will be generated for reference purposes only.\n  [-fileset]        Fileset name\n  [-import]         Import generated wrapper to the project\n  [-force]          Overwrite existing source(s)\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  <files>           Source file for which the wrapper needs to be generated\n\nCategories: \nProject, SysGen\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-top",
+      "description": "Create a top-level wrapper for the specified source"
+    },
+    {
+      "flag": "-testbench",
+      "description": "Create a testbench for the specified source"
+    },
+    {
+      "flag": "-inst_template",
+      "description": "Create an instantiation template for the specified source. The template will not be added to the project and will be generated for reference purposes only."
+    },
+    {
+      "flag": "-fileset",
+      "description": "Fileset name"
+    },
+    {
+      "flag": "-import",
+      "description": "Import generated wrapper to the project"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing source(s)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

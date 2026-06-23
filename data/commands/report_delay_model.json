@@ -1,0 +1,32 @@
+{
+  "name": "report_delay_model",
+  "short_description": "Report settings affecting timing analysis",
+  "full_help": "report_delay_model\n\nDescription: \nReport settings affecting timing analysis\n\nSyntax: \nreport_delay_model  [-file <arg>] [-append] [-return_string] [-all] [-quiet]\n                    [-verbose]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-file]           Output the results to file\n  [-append]         Append the results to file, don't overwrite the results \n                    file\n  [-return_string]  return report as string\n  [-all]            report all configuration settings (by default, only the \n                    typically important settings are reported\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Output the results to file"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-return_string",
+      "description": "return report as string"
+    },
+    {
+      "flag": "-all",
+      "description": "report all configuration settings (by default, only the typically important settings are reported"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "reset_switching_activity",
+  "short_description": "Reset switching activity on specified objects",
+  "full_help": "reset_switching_activity\n\nDescription: \nReset switching activity on specified objects\n\nSyntax: \nreset_switching_activity  [-default] [-type <args>] [-hier] [-all]\n                          [-no_deassert_resets] [-quiet] [-verbose]\n                          [<objects>...]\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-default]             Reset default static probability and default toggle \n                         rate\n  [-type]                Specify nodes in a specific category.  List of valid\n                         type values: io_output, io_bidir_enable, register, \n                         lut_ram, lut, dsp, bram_enable, bram_wr_enable, \n                         gt_txdata, gt_rxdata.\n  [-hier]                Hierarchically resets the switching activity on a \n                         hierarchical cells provided as <objects>.\n  [-all]                 Reset switching activity on all nets\n  [-no_deassert_resets]  A switch to undo the deassertion of resets via \n                         command set_switching_activity -deassert_resets\n  [-quiet]               Ignore command errors\n  [-verbose]             Suspend message limits during command execution\n  [<objects>]            Objects to reset switching activity on\n\nCategories: \nPower, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-default",
+      "description": "Reset default static probability and default toggle rate"
+    },
+    {
+      "flag": "-type",
+      "description": "Specify nodes in a specific category.  List of valid type values: io_output, io_bidir_enable, register, lut_ram, lut, dsp, bram_enable, bram_wr_enable, gt_txdata, gt_rxdata."
+    },
+    {
+      "flag": "-hier",
+      "description": "Hierarchically resets the switching activity on a hierarchical cells provided as <objects>."
+    },
+    {
+      "flag": "-all",
+      "description": "Reset switching activity on all nets"
+    },
+    {
+      "flag": "-no_deassert_resets",
+      "description": "A switch to undo the deassertion of resets via command set_switching_activity -deassert_resets"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

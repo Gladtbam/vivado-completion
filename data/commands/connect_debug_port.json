@@ -1,0 +1,20 @@
+{
+  "name": "connect_debug_port",
+  "short_description": "Connect nets and pins to debug port channels",
+  "full_help": "connect_debug_port\n\nDescription: \nConnect nets and pins to debug port channels\n\nSyntax: \nconnect_debug_port  [-channel_start_index <arg>] [-quiet] [-verbose] <port>\n                    <nets>...\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-channel_start_index]  Connect nets starting at channel index\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n  <port>                  Debug port name\n  <nets>                  List of nets or pins\n\nCategories: \nDebug, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-channel_start_index",
+      "description": "Connect nets starting at channel index"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

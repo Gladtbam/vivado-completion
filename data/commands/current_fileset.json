@@ -1,0 +1,24 @@
+{
+  "name": "current_fileset",
+  "short_description": "Get the current fileset (any type) or set the current fileset (applicable to simulation filesets only)",
+  "full_help": "current_fileset\n\nDescription: \nGet the current fileset (any type) or set the current fileset (applicable to simulation filesets only)\n\nSyntax: \ncurrent_fileset  [-constrset] [-simset] [-quiet] [-verbose] [<fileset>...]\n\nReturns: \ncurrent fileset (the current srcset by default)\n\nUsage: \n  Name          Description\n  -------------------------\n  [-constrset]  Get the current constraints fileset\n  [-simset]     Get the current active simulation fileset\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  [<fileset>]   Specify the simulation fileset to set as current (active); \n                optional\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-constrset",
+      "description": "Get the current constraints fileset"
+    },
+    {
+      "flag": "-simset",
+      "description": "Get the current active simulation fileset"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

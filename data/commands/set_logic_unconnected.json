@@ -1,0 +1,16 @@
+{
+  "name": "set_logic_unconnected",
+  "short_description": "Sets logic unconnected for output ports and output pins",
+  "full_help": "set_logic_unconnected\n\nDescription: \nSets logic unconnected for output ports and output pins\n\nSyntax: \nset_logic_unconnected  [-quiet] [-verbose] <objects>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <objects>   List of output ports and output pins\n\nCategories: \nXDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

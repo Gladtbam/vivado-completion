@@ -1,0 +1,48 @@
+{
+  "name": "get_dataflow_paths",
+  "short_description": "Get a list of dataflow paths",
+  "full_help": "get_dataflow_paths\n\nDescription: \nGet a list of dataflow paths\n\nSyntax: \nget_dataflow_paths  [-filter <arg>] [-max_paths <arg>] [-max_depth <arg>]\n                    [-min_depth <arg>] [-min_width <arg>] [-from <args>]\n                    [-to <args>] [-through <args>] [-quiet] [-verbose]\n\nReturns: \nList of dataflow paths\n\nUsage: \n  Name          Description\n  -------------------------\n  [-filter]     Filter list with given expression.\n  [-max_paths]  Maximum number of paths.\n                Default: 100\n  [-max_depth]  Maximum number of instances that can be skipped to find the \n                next required end point.\n                Default: 10\n  [-min_depth]  Minimum number of instances that can be skipped to find the \n                next required end point.\n                Default: 1\n  [-min_width]  Minimum number of bus depth to consider for paths to be \n                shown.\n                Default: 1\n  [-from]       From leaf cells.\n  [-to]         To leaf cells.\n  [-through]    Through leaf cells.\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n\nCategories: \nNetlist, Project\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-filter",
+      "description": "Filter list with given expression."
+    },
+    {
+      "flag": "-max_paths",
+      "description": "Maximum number of paths. Default: 100"
+    },
+    {
+      "flag": "-max_depth",
+      "description": "Maximum number of instances that can be skipped to find the next required end point. Default: 10"
+    },
+    {
+      "flag": "-min_depth",
+      "description": "Minimum number of instances that can be skipped to find the next required end point. Default: 1"
+    },
+    {
+      "flag": "-min_width",
+      "description": "Minimum number of bus depth to consider for paths to be shown. Default: 1"
+    },
+    {
+      "flag": "-from",
+      "description": "From leaf cells."
+    },
+    {
+      "flag": "-to",
+      "description": "To leaf cells."
+    },
+    {
+      "flag": "-through",
+      "description": "Through leaf cells."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

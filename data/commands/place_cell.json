@@ -1,0 +1,16 @@
+{
+  "name": "place_cell",
+  "short_description": "Move or place one or more instances to new locations. Sites and cells are required to be listed in the right order and there should be same number of sites as number of cells.",
+  "full_help": "place_cell\n\nDescription: \nMove or place one or more instances to new locations. Sites and cells are required to be listed in the right order and there should be same number of sites as number of cells. \n\nSyntax: \nplace_cell  [-quiet] [-verbose] <cell_site_list>...\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  <cell_site_list>  a list of cells and sites in the interleaved order \n\nCategories: \nFloorplan\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

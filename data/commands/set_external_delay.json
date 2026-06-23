@@ -1,0 +1,36 @@
+{
+  "name": "set_external_delay",
+  "short_description": "Set external delay",
+  "full_help": "set_external_delay\n\nDescription: \nSet external delay\n\nSyntax: \nset_external_delay  -from <args> -to <args> [-min] [-max] [-add] [-quiet]\n                    [-verbose] <delay_value>\n\nUsage: \n  Name           Description\n  --------------------------\n  -from          Output port\n  -to            Input port\n  [-min]         Specifies minimum delay\n  [-max]         Specifies maximum delay\n  [-add]         Add to existing external delay\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  <delay_value>  External (feedback) delay value\n\nCategories: \nXDC, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "Output port"
+    },
+    {
+      "flag": "-to",
+      "description": "Input port"
+    },
+    {
+      "flag": "-min",
+      "description": "Specifies minimum delay"
+    },
+    {
+      "flag": "-max",
+      "description": "Specifies maximum delay"
+    },
+    {
+      "flag": "-add",
+      "description": "Add to existing external delay"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

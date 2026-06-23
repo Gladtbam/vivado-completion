@@ -1,0 +1,72 @@
+{
+  "name": "write_xdc",
+  "short_description": "Writes constraints to a Xilinx Design Constraints (XDC) file. The default file extension for a XDC file is .xdc.",
+  "full_help": "write_xdc\n\nDescription: \nWrites constraints to a Xilinx Design Constraints (XDC) file. The default file extension for a XDC file is .xdc. \n\nSyntax: \nwrite_xdc  [-no_fixed_only] [-constraints <arg>] [-cell <arg>] [-sdc]\n           [-no_tool_comments] [-force] [-exclude_timing] [-include_noc]\n           [-exclude_physical] [-add_netlist_placement]\n           [-logic_function_stripped] [-type <args>] [-write_id]\n           [-exclude_cells <args>] [-quiet] [-verbose] [<file>]\n\nUsage: \n  Name                        Description\n  ---------------------------------------\n  [-no_fixed_only]            Export fixed and non-fixed placement (by \n                              default only fixed placement is exported)\n  [-constraints]              Include constraints that are flagged invalid\n                              Values: valid, invalid, all\n                              Default: valid\n  [-cell]                     Hierarchical cell for which constraints are \n                              exported.\n  [-sdc]                      Export all timing constriants in SDC compatible\n                              format.\n  [-no_tool_comments]         Don't write verbose tool generated comments to \n                              the xdc when translating from ucf.\n  [-force]                    Overwrite existing file.\n  [-exclude_timing]           Don't export timing constraints.\n  [-include_noc]              Export NOC constraints.\n  [-exclude_physical]         Don't export physical constraints.\n  [-add_netlist_placement]    Export netlist placement constraints.\n  [-logic_function_stripped]  Write disable_timing constraints which are \n                              associated with having previously run \n                              write_edif with its -logic_function_stripped \n                              option.\n  [-type]                     Types of constraint to export.\n                              Values: timing, io, misc, waiver and physical, \n                              noc. If not specified, all constraints will be \n                              exported.\n  [-write_id]                 Write position number for timing constraints\n  [-exclude_cells]            Don't export constraints scoped to or below the\n                              specified hierarchical cell(s).\n  [-quiet]                    Ignore command errors\n  [-verbose]                  Suspend message limits during command execution\n  [<file>]                    Output constraints to the specified XDC file.\n\nCategories: \nTiming, FileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-no_fixed_only",
+      "description": "Export fixed and non-fixed placement (by default only fixed placement is exported)"
+    },
+    {
+      "flag": "-constraints",
+      "description": "Include constraints that are flagged invalid Values: valid, invalid, all Default: valid"
+    },
+    {
+      "flag": "-cell",
+      "description": "Hierarchical cell for which constraints are exported."
+    },
+    {
+      "flag": "-sdc",
+      "description": "Export all timing constriants in SDC compatible format."
+    },
+    {
+      "flag": "-no_tool_comments",
+      "description": "Don't write verbose tool generated comments to the xdc when translating from ucf."
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file."
+    },
+    {
+      "flag": "-exclude_timing",
+      "description": "Don't export timing constraints."
+    },
+    {
+      "flag": "-include_noc",
+      "description": "Export NOC constraints."
+    },
+    {
+      "flag": "-exclude_physical",
+      "description": "Don't export physical constraints."
+    },
+    {
+      "flag": "-add_netlist_placement",
+      "description": "Export netlist placement constraints."
+    },
+    {
+      "flag": "-logic_function_stripped",
+      "description": "Write disable_timing constraints which are associated with having previously run write_edif with its -logic_function_stripped option."
+    },
+    {
+      "flag": "-type",
+      "description": "Types of constraint to export. Values: timing, io, misc, waiver and physical, noc. If not specified, all constraints will be exported."
+    },
+    {
+      "flag": "-write_id",
+      "description": "Write position number for timing constraints"
+    },
+    {
+      "flag": "-exclude_cells",
+      "description": "Don't export constraints scoped to or below the specified hierarchical cell(s)."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

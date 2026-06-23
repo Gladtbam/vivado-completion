@@ -1,0 +1,16 @@
+{
+  "name": "validate_hw_platform",
+  "short_description": "Validate the specified harware platform",
+  "full_help": "validate_hw_platform\n\nDescription: \nValidate the specified harware platform\n\nSyntax: \nvalidate_hw_platform  [-verbose] [-quiet] [<file>]\n\nReturns: \nThe name of the shell file\n\nUsage: \n  Name        Description\n  -----------------------\n  [-verbose]  Dump verbose information\n  [-quiet]    Ignore command errors\n  [<file>]    Xilinx Shell Archive file\n              Values: Path to shell file.\n\nCategories: \nVitis, Platform\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-verbose",
+      "description": "Dump verbose information"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    }
+  ]
+}

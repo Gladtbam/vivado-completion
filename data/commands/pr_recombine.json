@@ -1,0 +1,20 @@
+{
+  "name": "pr_recombine",
+  "short_description": "Re-establish a parent cell as a Reconfigurable Partition while removing a lower-level Reconfigurable Partition when using the Hierarchical Dynamic Function eXchange solution.",
+  "full_help": "pr_recombine\n\nDescription: \nRe-establish a parent cell as a Reconfigurable Partition while removing a lower-level Reconfigurable Partition when using the Hierarchical Dynamic Function eXchange solution.\n\nSyntax: \npr_recombine  [-cell <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-cell]     (Required) Specify reconfigurable container module name\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cell",
+      "description": "(Required) Specify reconfigurable container module name"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

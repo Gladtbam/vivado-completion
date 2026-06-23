@@ -1,0 +1,32 @@
+{
+  "name": "write_mem_info",
+  "short_description": "Write the Memory Map Info of the design to a .mmi file.",
+  "full_help": "write_mem_info\n\nDescription: \nWrite the Memory Map Info of the design to a .mmi file.\n\nSyntax: \nwrite_mem_info  [-cell <arg>] [-no_partial_mmi] [-force_detect_xpm] [-force]\n                [-quiet] [-verbose] <file>\n\nReturns: \nThe name of the .mmi file\n\nUsage: \n  Name                 Description\n  --------------------------------\n  [-cell]              Create only partial .mmi for named cell\n  [-no_partial_mmi]    Do not write partial bit files for a Dynamic Function \n                       eXchange design\n  [-force_detect_xpm]  Traverse netlist and check for XPM\n  [-force]             Overwrite existing mem info xml file\n  [-quiet]             Ignore command errors\n  [-verbose]           Suspend message limits during command execution\n  <file>               Design mem info file\n                       Values: A filename with alphanumeric characters and \n                       .mmi extension.\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cell",
+      "description": "Create only partial .mmi for named cell"
+    },
+    {
+      "flag": "-no_partial_mmi",
+      "description": "Do not write partial bit files for a Dynamic Function eXchange design"
+    },
+    {
+      "flag": "-force_detect_xpm",
+      "description": "Traverse netlist and check for XPM"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing mem info xml file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "read_waivers",
+  "short_description": "Read one or more DRC/METHODOLOGY/CDC message waivers data sets from binary file(s)",
+  "full_help": "read_waivers\n\nDescription: \nRead one or more DRC/METHODOLOGY/CDC message waivers data sets from binary file(s)\n\nSyntax: \nread_waivers  [-type <arg>] [-cleanup <arg>] [-file <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-type]     Type of waiver - ALL, DRC, METHODOLOGY, CDC\n  [-cleanup]  Type of waivers to cleanup - ALL, DRC, METHODOLOGY, CDC\n  [-file]     Name of file to read waivers (or as TYPE.<filename>, if more \n              than one Type was saved\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nWaiver, Object\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-type",
+      "description": "Type of waiver - ALL, DRC, METHODOLOGY, CDC"
+    },
+    {
+      "flag": "-cleanup",
+      "description": "Type of waivers to cleanup - ALL, DRC, METHODOLOGY, CDC"
+    },
+    {
+      "flag": "-file",
+      "description": "Name of file to read waivers (or as TYPE.<filename>, if more than one Type was saved"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

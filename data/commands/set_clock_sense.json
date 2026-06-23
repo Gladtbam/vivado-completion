@@ -1,0 +1,32 @@
+{
+  "name": "set_clock_sense",
+  "short_description": "Set clock sense on ports or pins",
+  "full_help": "set_clock_sense\n\nDescription: \nSet clock sense on ports or pins\n\nSyntax: \nset_clock_sense  [-positive] [-negative] [-stop_propagation] [-clocks <args>]\n                 [-quiet] [-verbose] <pins>\n\nUsage: \n  Name                 Description\n  --------------------------------\n  [-positive]          Specify positive unate (non_inverting) clock sense\n  [-negative]          Specify negative unate (inverting) clock sense\n  [-stop_propagation]  Stop clock propagation from specified pins\n  [-clocks]            List of clocks\n  [-quiet]             Ignore command errors\n  [-verbose]           Suspend message limits during command execution\n  <pins>               List of port and/or pins\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-positive",
+      "description": "Specify positive unate (non_inverting) clock sense"
+    },
+    {
+      "flag": "-negative",
+      "description": "Specify negative unate (inverting) clock sense"
+    },
+    {
+      "flag": "-stop_propagation",
+      "description": "Stop clock propagation from specified pins"
+    },
+    {
+      "flag": "-clocks",
+      "description": "List of clocks"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "update_ip_catalog",
+  "short_description": "Update the IP Catalog.  Before executing this command optionally use the following to set repository paths:'set_property ip_repo_paths <repo_path_list> [current_fileset]'",
+  "full_help": "update_ip_catalog\n\nDescription: \nUpdate the IP Catalog.  Before executing this command optionally use the following to set repository paths:'set_property ip_repo_paths <repo_path_list> [current_fileset]'\n\nSyntax: \nupdate_ip_catalog  [-rebuild] [-add_ip <arg>] [-delete_ip <arg>]\n                   [-delete_mult_ip <args>] [-disable_ip <arg>]\n                   [-enable_ip <arg>] [-add_interface <arg>] [-create_index]\n                   [-repo_path <arg>] [-update_module_ref] [-quiet] [-verbose]\n\nReturns: \nTrue for success\n\nUsage: \n  Name                  Description\n  ---------------------------------\n  [-rebuild]            Trigger a rebuild of the specified repository's index\n                        file or rebuild all repositories if none specified\n  [-add_ip]             Add the specified IP into the specified repository\n                        Values: Either a path to the IP's component.xml or to\n                        a zip file containing the IP\n  [-delete_ip]          Remove the specified IP from the specified repository\n                        Values: Either a path to the IP's component.xml or \n                        its VLNV\n  [-delete_mult_ip]     Remove the specified IPs from the specified \n                        repository\n                        Values: A list of IPs; either paths to the \n                        component.xml files or their VLNVs\n  [-disable_ip]         Disable the specified IP from the specified \n                        repository\n                        Values: Either a path to the IP's component.xml or \n                        its VLNV\n  [-enable_ip]          Enable the specified disabled IP from the specified \n                        repository\n                        Values: Either a path to the IP's component.xml or \n                        its VLNV\n  [-add_interface]      Add the specified interface into the specified \n                        repository\n                        Values: A path to the interface's xml file\n  [-create_index]       Cache the specified repository's data on disk, to \n                        improve load time.\n  [-repo_path]          Used in conjunction with rebuild, add_ip, delete_ip, \n                        delete_mult_ip, disable_ip or create_index to specify\n                        the path of the repository on which to operate\n  [-update_module_ref]  Update module reference from their source (e.g. HDL \n                        file)\n  [-quiet]              Ignore command errors\n  [-verbose]            Suspend message limits during command execution\n\nCategories: \nIPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-rebuild",
+      "description": "Trigger a rebuild of the specified repository's index file or rebuild all repositories if none specified"
+    },
+    {
+      "flag": "-add_ip",
+      "description": "Add the specified IP into the specified repository Values: Either a path to the IP's component.xml or to a zip file containing the IP"
+    },
+    {
+      "flag": "-delete_ip",
+      "description": "Remove the specified IP from the specified repository Values: Either a path to the IP's component.xml or its VLNV"
+    },
+    {
+      "flag": "-delete_mult_ip",
+      "description": "Remove the specified IPs from the specified repository Values: A list of IPs; either paths to the component.xml files or their VLNVs"
+    },
+    {
+      "flag": "-disable_ip",
+      "description": "Disable the specified IP from the specified repository Values: Either a path to the IP's component.xml or its VLNV"
+    },
+    {
+      "flag": "-enable_ip",
+      "description": "Enable the specified disabled IP from the specified repository Values: Either a path to the IP's component.xml or its VLNV"
+    },
+    {
+      "flag": "-add_interface",
+      "description": "Add the specified interface into the specified repository Values: A path to the interface's xml file"
+    },
+    {
+      "flag": "-create_index",
+      "description": "Cache the specified repository's data on disk, to improve load time."
+    },
+    {
+      "flag": "-repo_path",
+      "description": "Used in conjunction with rebuild, add_ip, delete_ip, delete_mult_ip, disable_ip or create_index to specify the path of the repository on which to operate"
+    },
+    {
+      "flag": "-update_module_ref",
+      "description": "Update module reference from their source (e.g. HDL file)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

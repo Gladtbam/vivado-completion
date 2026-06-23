@@ -1,0 +1,112 @@
+{
+  "name": "read_iphys_opt_tcl",
+  "short_description": "load iPhysOpt script and run it.",
+  "full_help": "read_iphys_opt_tcl\n\nDescription: \nload iPhysOpt script and run it.\n\nSyntax: \nread_iphys_opt_tcl  [-fanout_opt] [-critical_cell_opt] [-replicate_cell]\n                    [-reconnect] [-placement_opt] [-forward_retime]\n                    [-backward_retime] [-dsp_register_opt] [-bram_register_opt]\n                    [-uram_register_opt] [-shift_register_opt]\n                    [-shift_register_to_pipeline] [-auto_pipeline]\n                    [-pipeline_to_shift_register] [-control_set_opt]\n                    [-critical_pin_opt] [-restruct_opt] [-equ_drivers_opt]\n                    [-include_skipped_optimizations] [-create_bufg]\n                    [-insert_negative_edge_ffs] [-hold_fix] [-slr_crossing_opt]\n                    [-memory_rewire_opt] [-quiet] [-verbose] [<input>]\n\nUsage: \n  Name                              Description\n  ---------------------------------------------\n  [-fanout_opt]                     Fanout optimization including very high \n                                    fanout optimizations\n  [-critical_cell_opt]              Do cell-duplication based optimization on\n                                    timing critical nets\n  [-replicate_cell]                 Atomic cell replication operation for \n                                    interconnect retiming and LUT \n                                    optimization\n  [-reconnect]                      Reconnect loads from equivalent drivers \n                                    for interconnect retiming and LUT \n                                    optimization\n  [-placement_opt]                  Move cells to reduce delay on \n                                    timing-critical nets\n  [-forward_retime]                 Forward retiming optimization\n  [-backward_retime]                Backward retiming optimization\n  [-dsp_register_opt]               DSP register optimization\n  [-bram_register_opt]              BRAM register optimization\n  [-uram_register_opt]              UltraRAM register optimization\n  [-shift_register_opt]             Shift register optimization\n  [-shift_register_to_pipeline]     Shift register to pipeline optimization\n  [-auto_pipeline]                  Auto pipeline\n  [-pipeline_to_shift_register]     pipeline to shift register optimization\n  [-control_set_opt]                Control set optimization\n  [-critical_pin_opt]               Pin Swap optimization\n  [-restruct_opt]                   LUT restructuring optimization\n  [-equ_drivers_opt]                Equivalent driver rewiring\n  [-include_skipped_optimizations]  Apply undo changes\n  [-create_bufg]                    Insert bufg to drive HFO nets\n  [-insert_negative_edge_ffs]       Inserting negative edge triggered FFs for\n                                    high hold mitigation\n  [-hold_fix]                       Inserting buffers for hold fix \n                                    optimization\n  [-slr_crossing_opt]               Optimize slr crossing nets\n  [-memory_rewire_opt]              memory rewire optimization\n  [-quiet]                          Ignore command errors\n  [-verbose]                        Suspend message limits during command \n                                    execution\n  [<input>]                         iPhysOpt.tcl file\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-fanout_opt",
+      "description": "Fanout optimization including very high fanout optimizations"
+    },
+    {
+      "flag": "-critical_cell_opt",
+      "description": "Do cell-duplication based optimization on timing critical nets"
+    },
+    {
+      "flag": "-replicate_cell",
+      "description": "Atomic cell replication operation for interconnect retiming and LUT optimization"
+    },
+    {
+      "flag": "-reconnect",
+      "description": "Reconnect loads from equivalent drivers for interconnect retiming and LUT optimization"
+    },
+    {
+      "flag": "-placement_opt",
+      "description": "Move cells to reduce delay on timing-critical nets"
+    },
+    {
+      "flag": "-forward_retime",
+      "description": "Forward retiming optimization"
+    },
+    {
+      "flag": "-backward_retime",
+      "description": "Backward retiming optimization"
+    },
+    {
+      "flag": "-dsp_register_opt",
+      "description": "DSP register optimization"
+    },
+    {
+      "flag": "-bram_register_opt",
+      "description": "BRAM register optimization"
+    },
+    {
+      "flag": "-uram_register_opt",
+      "description": "UltraRAM register optimization"
+    },
+    {
+      "flag": "-shift_register_opt",
+      "description": "Shift register optimization"
+    },
+    {
+      "flag": "-shift_register_to_pipeline",
+      "description": "Shift register to pipeline optimization"
+    },
+    {
+      "flag": "-auto_pipeline",
+      "description": "Auto pipeline"
+    },
+    {
+      "flag": "-pipeline_to_shift_register",
+      "description": "pipeline to shift register optimization"
+    },
+    {
+      "flag": "-control_set_opt",
+      "description": "Control set optimization"
+    },
+    {
+      "flag": "-critical_pin_opt",
+      "description": "Pin Swap optimization"
+    },
+    {
+      "flag": "-restruct_opt",
+      "description": "LUT restructuring optimization"
+    },
+    {
+      "flag": "-equ_drivers_opt",
+      "description": "Equivalent driver rewiring"
+    },
+    {
+      "flag": "-include_skipped_optimizations",
+      "description": "Apply undo changes"
+    },
+    {
+      "flag": "-create_bufg",
+      "description": "Insert bufg to drive HFO nets"
+    },
+    {
+      "flag": "-insert_negative_edge_ffs",
+      "description": "Inserting negative edge triggered FFs for high hold mitigation"
+    },
+    {
+      "flag": "-hold_fix",
+      "description": "Inserting buffers for hold fix optimization"
+    },
+    {
+      "flag": "-slr_crossing_opt",
+      "description": "Optimize slr crossing nets"
+    },
+    {
+      "flag": "-memory_rewire_opt",
+      "description": "memory rewire optimization"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "close_msg_db",
+  "short_description": "Close Message Db file",
+  "full_help": "close_msg_db\n\nDescription: \nClose Message Db file\n\nSyntax: \nclose_msg_db  [-file <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-file]     Message file to be closed\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Message file to be closed"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "write_xdef",
+  "short_description": "Write Xilinx physical design exchange to a file.  The XDEF contains placement, clustering, and routing information and relates logical design objects to the device model.",
+  "full_help": "write_xdef\n\nDescription: \nWrite Xilinx physical design exchange to a file.  The XDEF contains placement, clustering, and routing information and relates logical design objects to the device model.\n\nSyntax: \nwrite_xdef  [-print_release_version] [-force] [-no_routing] [-mode <arg>]\n            [-cell <arg>] [-quiet] [-verbose] <file>\n\nUsage: \n  Name                      Description\n  -------------------------------------\n  [-print_release_version]  Print out the release version of the file\n  [-force]                  Overwrite existing XDEF file if necessary\n  [-no_routing]             Do not write the routing data\n  [-mode]                   (Verilog|VHDL|EDIF) Rename logical cells and nets\n                            in the output XDEF to match names in the given \n                            output file type.\n  [-cell]                   Write the XDEF as if the given cell was the top \n                            level cell in the design.\n  [-quiet]                  Ignore command errors\n  [-verbose]                Suspend message limits during command execution\n  <file>                    Output file name\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-print_release_version",
+      "description": "Print out the release version of the file"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing XDEF file if necessary"
+    },
+    {
+      "flag": "-no_routing",
+      "description": "Do not write the routing data"
+    },
+    {
+      "flag": "-mode",
+      "description": "(Verilog|VHDL|EDIF) Rename logical cells and nets in the output XDEF to match names in the given output file type."
+    },
+    {
+      "flag": "-cell",
+      "description": "Write the XDEF as if the given cell was the top level cell in the design."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

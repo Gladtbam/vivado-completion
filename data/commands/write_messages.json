@@ -1,0 +1,36 @@
+{
+  "name": "write_messages",
+  "short_description": "Write Vivado messages to the specified file.",
+  "full_help": "write_messages\n\nDescription: \nWrite Vivado messages to the specified file.\n\nSyntax: \nwrite_messages  [-severity <args>] [-force] [-message_db <arg>]\n                [-suppression <arg>] [-modified_severity <arg>] [-quiet]\n                [-verbose] [<file>]\n\nUsage: \n  Name                  Description\n  ---------------------------------\n  [-severity]           Message severity list to query, e.g. \"ERROR\", \n                        \"CRITICAL WARNING\", \"WARNING\", \"INFO\", \"STATUS\", \n                        \"ALL\" or \"OUTPUT\".\n  [-force]              Overwrite existing file.\n  [-message_db]         Message source file name, e.g. xst.xmsgs, rds.pb.\n  [-suppression]        Write suppressed messages, e.g. \"SUPPRESSED\", \n                        \"UNSUPPRESSED\", \"ALL\". \n                        SUPPRESSED : Write only suppressed messages. \n                        UNSUPPRESSED : Write unsuppressed messages. \n                        ALL : Write both suppressed and unsuppressed \n                        messages.\n                        Default: ALL\n  [-modified_severity]  Write modified Severity messages, e.g. \"MODIFIED\", \n                        \"UNMODIFIED\", \"ALL\". \n                        MODIFIED : Write only changed severity messages.\n                        UNMODIFIED : Write unchanged severity messages. \n                        ALL : Write both changed and unchanged severity \n                        messages.\n                        Default: ALL\n  [-quiet]              Ignore command errors\n  [-verbose]            Suspend message limits during command execution\n  [<file>]              Filename to output result to.\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-severity",
+      "description": "Message severity list to query, e.g. \"ERROR\", \"CRITICAL WARNING\", \"WARNING\", \"INFO\", \"STATUS\", \"ALL\" or \"OUTPUT\"."
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file."
+    },
+    {
+      "flag": "-message_db",
+      "description": "Message source file name, e.g. xst.xmsgs, rds.pb."
+    },
+    {
+      "flag": "-suppression",
+      "description": "Write suppressed messages, e.g. \"SUPPRESSED\", \"UNSUPPRESSED\", \"ALL\". SUPPRESSED : Write only suppressed messages. UNSUPPRESSED : Write unsuppressed messages. ALL : Write both suppressed and unsuppressed messages. Default: ALL"
+    },
+    {
+      "flag": "-modified_severity",
+      "description": "Write modified Severity messages, e.g. \"MODIFIED\", \"UNMODIFIED\", \"ALL\". MODIFIED : Write only changed severity messages. UNMODIFIED : Write unchanged severity messages. ALL : Write both changed and unchanged severity messages. Default: ALL"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

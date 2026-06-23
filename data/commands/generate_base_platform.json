@@ -1,0 +1,32 @@
+{
+  "name": "generate_base_platform",
+  "short_description": "Generate a base platform based on a given routed checkpoint",
+  "full_help": "generate_base_platform\n\nDescription: \nGenerate a base platform based on a given routed checkpoint\n\nSyntax: \ngenerate_base_platform  [-source <arg>] [-reconfig_platform <arg>]\n                        [-base_platform <arg>]\n                        [-reconfig_platform_prefix <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name                         Description\n  ----------------------------------------\n  [-source]                    (Required) Specify routed checkpoint path\n  [-reconfig_platform]         (Required) Specify reconfigurable platform \n                               module name\n  [-base_platform]             (Optional) Specify the output file name, the \n                               default file name is 'base_platform'\n  [-reconfig_platform_prefix]  (Optional) Specify wrapper port name prefix \n                               from reconfigurable platform module, the \n                               default prefix is 'RL_'\n  [-quiet]                     Ignore command errors\n  [-verbose]                   Suspend message limits during command \n                               execution\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-source",
+      "description": "(Required) Specify routed checkpoint path"
+    },
+    {
+      "flag": "-reconfig_platform",
+      "description": "(Required) Specify reconfigurable platform module name"
+    },
+    {
+      "flag": "-base_platform",
+      "description": "(Optional) Specify the output file name, the default file name is 'base_platform'"
+    },
+    {
+      "flag": "-reconfig_platform_prefix",
+      "description": "(Optional) Specify wrapper port name prefix from reconfigurable platform module, the default prefix is 'RL_'"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

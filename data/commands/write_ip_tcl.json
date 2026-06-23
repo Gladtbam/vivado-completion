@@ -1,0 +1,32 @@
+{
+  "name": "write_ip_tcl",
+  "short_description": "Write a tcl script on disk that will recreate a given IP.",
+  "full_help": "write_ip_tcl\n\nDescription: \nWrite a tcl script on disk that will recreate a given IP.\n\nSyntax: \nwrite_ip_tcl  [-force] [-no_ip_version] [-ip_name <arg>] [-multiple_files]\n              [-quiet] [-verbose] [<objects>] [<tcl_filename>...]\n\nReturns: \nIP TCL file\n\nUsage: \n  Name               Description\n  ------------------------------\n  [-force]           Flag to overwrite existing file.\n  [-no_ip_version]   Flag to not include the IP version in the IP VLNV in \n                     create_ip commands. NOTE - this may have implications if\n                     there are major IP version changes.\n  [-ip_name]         Set the name of the IP. This argument is not supported \n                     for multiple IP.\n  [-multiple_files]  Flag to create a .tcl file for each IP supplied as an \n                     argument\n  [-quiet]           Ignore command errors\n  [-verbose]         Suspend message limits during command execution\n  [<objects>]        IP(s) to be written to disk\n                     Values: IP instance(s) as returned by 'get_ips <instance\n                     name>'\n  [<tcl_filename>]   File path to the exported tcl file. If the path is a \n                     directory and multiple IP are given as an argument, a \n                     file for each IP will be created.\n                     Default: ./\n\nCategories: \nObject, Project, IPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Flag to overwrite existing file."
+    },
+    {
+      "flag": "-no_ip_version",
+      "description": "Flag to not include the IP version in the IP VLNV in create_ip commands. NOTE - this may have implications if there are major IP version changes."
+    },
+    {
+      "flag": "-ip_name",
+      "description": "Set the name of the IP. This argument is not supported for multiple IP."
+    },
+    {
+      "flag": "-multiple_files",
+      "description": "Flag to create a .tcl file for each IP supplied as an argument"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

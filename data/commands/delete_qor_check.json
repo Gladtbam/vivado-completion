@@ -1,0 +1,16 @@
+{
+  "name": "delete_qor_check",
+  "short_description": "Delete a user QoR suggestion check",
+  "full_help": "delete_qor_check\n\nDescription: \nDelete a user QoR suggestion check\n\nSyntax: \ndelete_qor_check  [-quiet] [-verbose] <name>...\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <name>      Suggestion ID of user suggestion to delete\n\nCategories: \nObject, Feasibility, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

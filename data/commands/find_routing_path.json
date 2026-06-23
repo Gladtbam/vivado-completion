@@ -1,0 +1,56 @@
+{
+  "name": "find_routing_path",
+  "short_description": "Find a routing path between two nodes.",
+  "full_help": "find_routing_path\n\nDescription: \nFind a routing path between two nodes.\n\nSyntax: \nfind_routing_path  [-from <args>] [-to <args>] [-max_nodes <arg>]\n                   [-min_nodes <arg>] [-exclude_nodes <args>]\n                   [-include_nodes <args>] [-sort_include_nodes]\n                   [-ignore_all_routing] [-show_fixed_routes] [-allow_overlap]\n                   [-quiet] [-verbose]\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-from]                -from <start node> or <start site_pin> Start of \n                         routing path.\n  [-to]                  -to <end node> or <end site_pin> End of routing \n                         path.\n  [-max_nodes]           Specifies the maximum number of nodes (including \n                         from and to nodes) allowed in solution.\n                         Default: 500\n  [-min_nodes]           Specifies the minimum number of nodes (including \n                         from and to nodes) allowed in solution.\n                         Default: 2\n  [-exclude_nodes]       Exclude specified nodes from routing path.\n  [-include_nodes]       Specify the nodes which must exist in the path.\n  [-sort_include_nodes]  Sort the given nodes which must exist in the path.\n  [-ignore_all_routing]  Solution may include nodes used in any existing \n                         (including fixed) routes.\n  [-show_fixed_routes]   Solution will mark fix routes with '*'.\n  [-allow_overlap]       Solution may include nodes used in existing \n                         non-fixed routes.\n  [-quiet]               Ignore command errors\n  [-verbose]             Suspend message limits during command execution\n\nCategories: \nDevice, Object\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "-from <start node> or <start site_pin> Start of routing path."
+    },
+    {
+      "flag": "-to",
+      "description": "-to <end node> or <end site_pin> End of routing path."
+    },
+    {
+      "flag": "-max_nodes",
+      "description": "Specifies the maximum number of nodes (including from and to nodes) allowed in solution. Default: 500"
+    },
+    {
+      "flag": "-min_nodes",
+      "description": "Specifies the minimum number of nodes (including from and to nodes) allowed in solution. Default: 2"
+    },
+    {
+      "flag": "-exclude_nodes",
+      "description": "Exclude specified nodes from routing path."
+    },
+    {
+      "flag": "-include_nodes",
+      "description": "Specify the nodes which must exist in the path."
+    },
+    {
+      "flag": "-sort_include_nodes",
+      "description": "Sort the given nodes which must exist in the path."
+    },
+    {
+      "flag": "-ignore_all_routing",
+      "description": "Solution may include nodes used in any existing (including fixed) routes."
+    },
+    {
+      "flag": "-show_fixed_routes",
+      "description": "Solution will mark fix routes with '*'."
+    },
+    {
+      "flag": "-allow_overlap",
+      "description": "Solution may include nodes used in existing non-fixed routes."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

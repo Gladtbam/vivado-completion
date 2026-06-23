@@ -1,0 +1,16 @@
+{
+  "name": "webtalk_dump_data",
+  "short_description": "Dump the webtalk data model created by calls to webtalk_add_data to standard output.",
+  "full_help": "webtalk_dump_data\n\nDescription: \nDump the webtalk data model created by calls to webtalk_add_data to standard output.\n\nSyntax: \nwebtalk_dump_data  [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "create_testbench",
+  "short_description": "Create testbench for design unit instance",
+  "full_help": "create_testbench\n\nDescription: \nCreate testbench for design unit instance\n\nSyntax: \ncreate_testbench  [-name <arg>] [-mode <arg>] [-type <arg>]\n                  [-add_to_simset <arg>] [-runtime <arg>] [-set_as_top]\n                  [-force] [-quiet] [-verbose]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-name]           Name of the testbench module\n                    Default: testbench\n  [-mode]           Simulation mode (behavioral, post-synthesis or \n                    post-implementation)\n                    Default: behavioral\n  [-type]           Netlist type (functional or timing)\n  [-add_to_simset]  Add the generated testbench to the specified simulation \n                    fileset\n  [-runtime]        Set simulation runtime\n  [-set_as_top]     Set generated testbench module as top\n  [-force]          Overwrite existing testbench source file\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nToolLaunch, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Name of the testbench module Default: testbench"
+    },
+    {
+      "flag": "-mode",
+      "description": "Simulation mode (behavioral, post-synthesis or post-implementation) Default: behavioral"
+    },
+    {
+      "flag": "-type",
+      "description": "Netlist type (functional or timing)"
+    },
+    {
+      "flag": "-add_to_simset",
+      "description": "Add the generated testbench to the specified simulation fileset"
+    },
+    {
+      "flag": "-runtime",
+      "description": "Set simulation runtime"
+    },
+    {
+      "flag": "-set_as_top",
+      "description": "Set generated testbench module as top"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing testbench source file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

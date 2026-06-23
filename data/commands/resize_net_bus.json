@@ -1,0 +1,24 @@
+{
+  "name": "resize_net_bus",
+  "short_description": "Resize net bus in the current design",
+  "full_help": "resize_net_bus\n\nDescription: \nResize net bus in the current design\n\nSyntax: \nresize_net_bus  [-from <arg>] [-to <arg>] [-quiet] [-verbose] <net_bus_name>...\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-from]         New starting bus index\n  [-to]           New ending bus index\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n  <net_bus_name>  Name of the net bus to resize\n\nCategories: \nNetlist\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "New starting bus index"
+    },
+    {
+      "flag": "-to",
+      "description": "New ending bus index"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

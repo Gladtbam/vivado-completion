@@ -1,0 +1,32 @@
+{
+  "name": "save_project_as",
+  "short_description": "Save the current project under a new name",
+  "full_help": "save_project_as\n\nDescription: \nSave the current project under a new name\n\nSyntax: \nsave_project_as  [-scan_for_includes] [-exclude_run_results]\n                 [-include_local_ip_cache] [-force] [-quiet] [-verbose] <name>\n                 [<dir>]\n\nReturns: \nsaved project object\n\nUsage: \n  Name                       Description\n  --------------------------------------\n  [-scan_for_includes]       Scan for include files and add them to the new \n                             project\n  [-exclude_run_results]     Exclude run results in the new project\n  [-include_local_ip_cache]  Include IP cache results in the new project\n  [-force]                   Overwrite existing project directory\n  [-quiet]                   Ignore command errors\n  [-verbose]                 Suspend message limits during command execution\n  <name>                     New name for the project to save\n  [<dir>]                    Directory where the project file is saved\n                             Default: .\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-scan_for_includes",
+      "description": "Scan for include files and add them to the new project"
+    },
+    {
+      "flag": "-exclude_run_results",
+      "description": "Exclude run results in the new project"
+    },
+    {
+      "flag": "-include_local_ip_cache",
+      "description": "Include IP cache results in the new project"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing project directory"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

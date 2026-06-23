@@ -1,0 +1,20 @@
+{
+  "name": "version",
+  "short_description": "Returns the build for Vivado and the build date",
+  "full_help": "version\n\nDescription: \nReturns the build for Vivado and the build date\n\nSyntax: \nversion  [-short] [-quiet] [-verbose]\n\nReturns: \nVivado version\n\nUsage: \n  Name        Description\n  -----------------------\n  [-short]    Return only the numeric version number\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-short",
+      "description": "Return only the numeric version number"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

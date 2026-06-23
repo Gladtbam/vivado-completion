@@ -1,0 +1,24 @@
+{
+  "name": "report_simlib_info",
+  "short_description": "Report info of simulation libraries",
+  "full_help": "report_simlib_info\n\nDescription: \nReport info of simulation libraries\n\nSyntax: \nreport_simlib_info  [-file <arg>] [-append] [-quiet] [-verbose] <path>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-file]     Output file\n              Default: report_simlib_info.log\n  [-append]   Append mode\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <path>      Specify the path for pre-compiled libraries\n\nCategories: \nSimulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Output file Default: report_simlib_info.log"
+    },
+    {
+      "flag": "-append",
+      "description": "Append mode"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

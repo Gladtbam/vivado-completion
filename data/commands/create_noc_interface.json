@@ -1,0 +1,28 @@
+{
+  "name": "create_noc_interface",
+  "short_description": "Create NOC Interface.",
+  "full_help": "create_noc_interface\n\nDescription: \nCreate NOC Interface.\n\nSyntax: \ncreate_noc_interface  [-type <arg>] -mode <arg> [-category <arg>] [-quiet]\n                      [-verbose] <path>\n\nUsage: \n  Name         Description\n  ------------------------\n  [-type]      NOC Interface type (default AXIMM).\n  -mode        NOC Interface mode.\n  [-category]  NOC Interface category (default PL).\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  <path>       NOC Interface path.\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-type",
+      "description": "NOC Interface type (default AXIMM)."
+    },
+    {
+      "flag": "-mode",
+      "description": "NOC Interface mode."
+    },
+    {
+      "flag": "-category",
+      "description": "NOC Interface category (default PL)."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

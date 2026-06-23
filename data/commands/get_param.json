@@ -1,0 +1,16 @@
+{
+  "name": "get_param",
+  "short_description": "Get a parameter value",
+  "full_help": "get_param\n\nDescription: \nGet a parameter value\n\nSyntax: \nget_param  [-quiet] [-verbose] <name>\n\nReturns: \nparameter value\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <name>      Parameter name\n\nCategories: \nPropertyAndParameter\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

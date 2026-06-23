@@ -1,0 +1,24 @@
+{
+  "name": "check_syntax",
+  "short_description": "Check HDL syntax in the supplied fileset or active fileset.",
+  "full_help": "check_syntax\n\nDescription: \nCheck HDL syntax in the supplied fileset or active fileset.\n\nSyntax: \ncheck_syntax  [-fileset <arg>] [-return_string] [-quiet] [-verbose]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-fileset]        Fileset to check for syntax\n  [-return_string]  Return the syntax check messages as a string\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-fileset",
+      "description": "Fileset to check for syntax"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return the syntax check messages as a string"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

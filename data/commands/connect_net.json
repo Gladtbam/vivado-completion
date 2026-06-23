@@ -1,0 +1,40 @@
+{
+  "name": "connect_net",
+  "short_description": "Connect a net to pins or ports",
+  "full_help": "connect_net\n\nDescription: \nConnect a net to pins or ports\n\nSyntax: \nconnect_net  [-hierarchical] [-basename <arg>] [-net <args>] [-objects <args>]\n             [-net_object_list <args>] [-dict <args>] [-quiet] [-verbose]\n\nUsage: \n  Name                Description\n  -------------------------------\n  [-hierarchical]     Allow hierarchical connection, creating nets and pins \n                      as needed (see -basename).\n  [-basename]         base name to use for net / pin names needed when doing \n                      hierarchical connection (see -hier). Default value is \n                      inferred from the name of the net being connected (see \n                      -net).\n  [-net]              Net to connect to given objects.\n  [-objects]          List of pin and port objects to connect\n  [-net_object_list]  optional, a list of net and pin/port list pairs, each \n                      pin or port list element is connected to the \n                      corresponding net, e.g. { net_a { pin_b port_c } net_d \n                      pin_e }. Cannot be used with -net, -objects list is \n                      ignored when -net_object_list is used.\n  [-dict]             alternative to -net_object_list, faster, but requires a\n                      list of net and pin/port object pairs (must be a list \n                      of objects, not names or other TCL objects), each pin \n                      or port list element is connected to the corresponding \n                      net, e.g. { $net_1 $pin_1 $net_2 $pin_2 }. Cannot be \n                      used with -net, -objects list is ignored when -dict is \n                      used.\n  [-quiet]            Ignore command errors\n  [-verbose]          Suspend message limits during command execution\n\nCategories: \nNetlist\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-hierarchical",
+      "description": "Allow hierarchical connection, creating nets and pins as needed (see -basename)."
+    },
+    {
+      "flag": "-basename",
+      "description": "base name to use for net / pin names needed when doing hierarchical connection (see -hier). Default value is inferred from the name of the net being connected (see -net)."
+    },
+    {
+      "flag": "-net",
+      "description": "Net to connect to given objects."
+    },
+    {
+      "flag": "-objects",
+      "description": "List of pin and port objects to connect"
+    },
+    {
+      "flag": "-net_object_list",
+      "description": "optional, a list of net and pin/port list pairs, each pin or port list element is connected to the corresponding net, e.g. { net_a { pin_b port_c } net_d pin_e }. Cannot be used with -net, -objects list is ignored when -net_object_list is used."
+    },
+    {
+      "flag": "-dict",
+      "description": "alternative to -net_object_list, faster, but requires a list of net and pin/port object pairs (must be a list of objects, not names or other TCL objects), each pin or port list element is connected to the corresponding net, e.g. { $net_1 $pin_1 $net_2 $pin_2 }. Cannot be used with -net, -objects list is ignored when -dict is used."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

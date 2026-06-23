@@ -1,0 +1,28 @@
+{
+  "name": "reset_project",
+  "short_description": "Reset current project",
+  "full_help": "reset_project\n\nDescription: \nReset current project\n\nSyntax: \nreset_project  [-exclude_runs] [-exclude_ips] [-exclude_sim_runs] [-quiet]\n               [-verbose]\n\nUsage: \n  Name                 Description\n  --------------------------------\n  [-exclude_runs]      Do not reset runs\n  [-exclude_ips]       Do not reset ips\n  [-exclude_sim_runs]  Do not reset simulation runs\n  [-quiet]             Ignore command errors\n  [-verbose]           Suspend message limits during command execution\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-exclude_runs",
+      "description": "Do not reset runs"
+    },
+    {
+      "flag": "-exclude_ips",
+      "description": "Do not reset ips"
+    },
+    {
+      "flag": "-exclude_sim_runs",
+      "description": "Do not reset simulation runs"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

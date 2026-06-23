@@ -1,0 +1,80 @@
+{
+  "name": "set_multicycle_path",
+  "short_description": "Define multicycle path",
+  "full_help": "set_multicycle_path\n\nDescription: \nDefine multicycle path\n\nSyntax: \nset_multicycle_path  [-setup] [-hold] [-rise] [-fall] [-start] [-end]\n                     [-reset_path] [-from <args>] [-rise_from <args>]\n                     [-fall_from <args>] [-to <args>] [-rise_to <args>]\n                     [-fall_to <args>] [-through <args>] [-rise_through <args>]\n                     [-fall_through <args>] [-quiet] [-verbose]\n                     <path_multiplier>\n\nUsage: \n  Name               Description\n  ------------------------------\n  [-setup]           Only setup multiplier is set\n  [-hold]            Only hold multiplier is set\n  [-rise]            Multiplier valid for rising delays on path endpoint\n  [-fall]            Multiplier valid for falling delays on path endpoint\n  [-start]           Multiplier measured against path startpoint\n  [-end]             Multiplier measured against path endpoint\n  [-reset_path]      Reset this path before setting multicycle\n  [-from]            List of path startpoints or clocks\n  [-rise_from]       Apply to paths rising from the list of startpoints or \n                     clocks\n  [-fall_from]       Apply to paths falling from the list of startpoints or \n                     clocks\n  [-to]              List of path endpoints or clocks\n  [-rise_to]         Apply to paths with rise transition at the list of \n                     endpoints or clocks\n  [-fall_to]         Apply to paths with fall transition at the list of \n                     endpoints or clocks\n  [-through]         List of through pins, cells or nets\n  [-rise_through]    Apply to paths rising through pins, cells or nets\n  [-fall_through]    Apply to paths falling through pins, cells or nets\n  [-quiet]           Ignore command errors\n  [-verbose]         Suspend message limits during command execution\n  <path_multiplier>  Number of cycles\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-setup",
+      "description": "Only setup multiplier is set"
+    },
+    {
+      "flag": "-hold",
+      "description": "Only hold multiplier is set"
+    },
+    {
+      "flag": "-rise",
+      "description": "Multiplier valid for rising delays on path endpoint"
+    },
+    {
+      "flag": "-fall",
+      "description": "Multiplier valid for falling delays on path endpoint"
+    },
+    {
+      "flag": "-start",
+      "description": "Multiplier measured against path startpoint"
+    },
+    {
+      "flag": "-end",
+      "description": "Multiplier measured against path endpoint"
+    },
+    {
+      "flag": "-reset_path",
+      "description": "Reset this path before setting multicycle"
+    },
+    {
+      "flag": "-from",
+      "description": "List of path startpoints or clocks"
+    },
+    {
+      "flag": "-rise_from",
+      "description": "Apply to paths rising from the list of startpoints or clocks"
+    },
+    {
+      "flag": "-fall_from",
+      "description": "Apply to paths falling from the list of startpoints or clocks"
+    },
+    {
+      "flag": "-to",
+      "description": "List of path endpoints or clocks"
+    },
+    {
+      "flag": "-rise_to",
+      "description": "Apply to paths with rise transition at the list of endpoints or clocks"
+    },
+    {
+      "flag": "-fall_to",
+      "description": "Apply to paths with fall transition at the list of endpoints or clocks"
+    },
+    {
+      "flag": "-through",
+      "description": "List of through pins, cells or nets"
+    },
+    {
+      "flag": "-rise_through",
+      "description": "Apply to paths rising through pins, cells or nets"
+    },
+    {
+      "flag": "-fall_through",
+      "description": "Apply to paths falling through pins, cells or nets"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

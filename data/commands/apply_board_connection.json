@@ -1,0 +1,28 @@
+{
+  "name": "apply_board_connection",
+  "short_description": "Applies board connections to given designs",
+  "full_help": "apply_board_connection\n\nDescription: \nApplies board connections to given designs\n\nSyntax: \napply_board_connection  [-board_interface <arg>] -ip_intf <arg> -diagram <arg>\n                        [-quiet] [-verbose]\n\nReturns: \nsucess/failure status of applied action.\n\nUsage: \n  Name                Description\n  -------------------------------\n  [-board_interface]  Board interface name to which connection need to be \n                      applied.\n  -ip_intf            Full path of IP interface name to which board \n                      automation need to be applied.\n  -diagram            The IP Integrator design name.\n  [-quiet]            Ignore command errors\n  [-verbose]          Suspend message limits during command execution\n\nCategories: \nObject, Project, Board, IPIntegrator\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-board_interface",
+      "description": "Board interface name to which connection need to be applied."
+    },
+    {
+      "flag": "-ip_intf",
+      "description": "Full path of IP interface name to which board automation need to be applied."
+    },
+    {
+      "flag": "-diagram",
+      "description": "The IP Integrator design name."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

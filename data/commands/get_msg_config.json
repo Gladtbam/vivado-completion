@@ -1,0 +1,40 @@
+{
+  "name": "get_msg_config",
+  "short_description": "Returns the current message count, limit, or the message configuration rules previously defined by the set_msg_config command.",
+  "full_help": "get_msg_config\n\nDescription: \nReturns the current message count, limit, or the message configuration rules previously defined by the set_msg_config command.\n\nSyntax: \nget_msg_config  [-id <arg>] [-severity <arg>] [-rules] [-limit] [-count]\n                [-quiet] [-verbose]\n\nUsage: \n  Name         Description\n  ------------------------\n  [-id]        The message id to match. Should be used in conjunction with \n               -limit or -count\n               Default: empty\n  [-severity]  The message severity to match. Should be used in conjunction \n               with -limit or -count\n               Default: empty\n  [-rules]     Show a table displaying all message control rules for the \n               current project\n  [-limit]     Show the limit for the number of messages matching either -id \n               or -severity that will be displayed\n  [-count]     Show the number of messages matching either -id or -severity \n               that have been displayed\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-id",
+      "description": "The message id to match. Should be used in conjunction with"
+    },
+    {
+      "flag": "-limit",
+      "description": "or -count Default: empty"
+    },
+    {
+      "flag": "-severity",
+      "description": "The message severity to match. Should be used in conjunction with -limit or -count Default: empty"
+    },
+    {
+      "flag": "-rules",
+      "description": "Show a table displaying all message control rules for the current project"
+    },
+    {
+      "flag": "-limit",
+      "description": "Show the limit for the number of messages matching either -id or -severity that will be displayed"
+    },
+    {
+      "flag": "-count",
+      "description": "Show the number of messages matching either -id or -severity that have been displayed"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

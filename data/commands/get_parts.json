@@ -1,0 +1,28 @@
+{
+  "name": "get_parts",
+  "short_description": "Get a list of parts available in the software",
+  "full_help": "get_parts\n\nDescription: \nGet a list of parts available in the software\n\nSyntax: \nget_parts  [-regexp] [-filter <arg>] [-of_objects <args>] [-quiet] [-verbose]\n           [<patterns>]\n\nReturns: \nlist of part objects\n\nUsage: \n  Name           Description\n  --------------------------\n  [-regexp]      Patterns are full regular expressions\n  [-filter]      Filter list with expression\n  [-of_objects]  Get the parts of the objects specified: project, design, or \n                 run.\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<patterns>]   Match part names against patterns\n                 Default: *\n                 Values: The default search pattern is the wildcard *, or .* \n                 when -regexp is specified.\n\nCategories: \nObject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get the parts of the objects specified: project, design, or run."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "read_twx",
+  "short_description": "Read timing results from Trace STA tool",
+  "full_help": "read_twx\n\nDescription: \nRead timing results from Trace STA tool\n\nSyntax: \nread_twx  [-cell <arg>] [-pblock <arg>] [-quiet] [-verbose] <name> <file>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-cell]     Interpret names in the report file as relative to the specified\n              cell\n  [-pblock]   Interpret names in the report file as relative to the specified\n              pblock\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <name>      Name for the set of results\n  <file>      Name of the Trace import file\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cell",
+      "description": "Interpret names in the report file as relative to the specified cell"
+    },
+    {
+      "flag": "-pblock",
+      "description": "Interpret names in the report file as relative to the specified pblock"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

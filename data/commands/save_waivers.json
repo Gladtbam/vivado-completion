@@ -1,0 +1,24 @@
+{
+  "name": "save_waivers",
+  "short_description": "Save one or more DRC/METHODOLOGY/CDC message waivers data sets to binary file(s)",
+  "full_help": "save_waivers\n\nDescription: \nSave one or more DRC/METHODOLOGY/CDC message waivers data sets to binary file(s)\n\nSyntax: \nsave_waivers  [-type <arg>] [-file <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-type]     Type of waiver - ALL, DRC, METHODOLOGY, CDC\n  [-file]     Name of file to save waivers (or as TYPE.<filename>, if more \n              than one Type being saved)\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nWaiver, Object\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-type",
+      "description": "Type of waiver - ALL, DRC, METHODOLOGY, CDC"
+    },
+    {
+      "flag": "-file",
+      "description": "Name of file to save waivers (or as TYPE.<filename>, if more than one Type being saved)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "get_pplocs",
+  "short_description": "Internal TCL task for reporting PPLOCs on pins or nets: (1) -nets option returns PPLOCs on given nets; (2) -pins option returns PPLOCs on given pins; (3) if option -nets and option -pins are both not specificed, it returns all PPLOCs in the design.",
+  "full_help": "get_pplocs\n\nDescription: \nInternal TCL task for reporting PPLOCs on pins or nets: (1) -nets option returns PPLOCs on given nets; (2) -pins option returns PPLOCs on given pins; (3) if option -nets and option -pins are both not specificed, it returns all PPLOCs in the design.\n\nSyntax: \nget_pplocs  -nets <args> -pins <args> [-count] [-unlocked] [-locked]\n            [-level <arg>] [-wire] [-quiet] [-verbose]\n\nReturns: \nPPLOC nodes or number of PPLOCs\n\nUsage: \n  Name         Description\n  ------------------------\n  -nets        List of nets to report its PPLOCs\n  -pins        List of pins to report its PPLOCs\n  [-count]     Count number of PPLOCs;; Do not report PPLOC or node names.\n  [-unlocked]  Report unlocked/unfixed PPLOCs only \n  [-locked]    Report locked/fixed PPLOCs only; use -level to specify locked \n               level.\n  [-level]     Specify locked level; Valid values are placement and routing.\n               Default: placement\n  [-wire]      get wires instead of nodes for assigned PPLOCs\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-nets",
+      "description": "List of nets to report its PPLOCs"
+    },
+    {
+      "flag": "-pins",
+      "description": "List of pins to report its PPLOCs"
+    },
+    {
+      "flag": "-count",
+      "description": "Count number of PPLOCs;; Do not report PPLOC or node names."
+    },
+    {
+      "flag": "-unlocked",
+      "description": "Report unlocked/unfixed PPLOCs only"
+    },
+    {
+      "flag": "-locked",
+      "description": "Report locked/fixed PPLOCs only; use -level to specify locked level."
+    },
+    {
+      "flag": "-level",
+      "description": "Specify locked level; Valid values are placement and routing. Default: placement"
+    },
+    {
+      "flag": "-wire",
+      "description": "get wires instead of nodes for assigned PPLOCs"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

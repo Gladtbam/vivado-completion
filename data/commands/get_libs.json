@@ -1,0 +1,28 @@
+{
+  "name": "get_libs",
+  "short_description": "Get a list of Libraries",
+  "full_help": "get_libs\n\nDescription: \nGet a list of Libraries\n\nSyntax: \nget_libs  [-regexp] [-filter <arg>] [-nocase] [-quiet] [-verbose] [<patterns>]\n\nReturns: \nlist of libraries\n\nUsage: \n  Name          Description\n  -------------------------\n  [-regexp]     Patterns are regular expressions\n  [-filter]     Filter list with expression\n  [-nocase]     Perform case-insensitive matching when a pattern has been \n                specified. This argument applies to the use of -regexp only.\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  [<patterns>]  Match library names against patterns. \n                Default: *\n\nCategories: \nObject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are regular expressions"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching when a pattern has been specified. This argument applies to the use of -regexp only."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

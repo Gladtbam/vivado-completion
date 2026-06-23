@@ -1,0 +1,16 @@
+{
+  "name": "remove_cells_from_pblock",
+  "short_description": "Remove cells from a Pblock",
+  "full_help": "remove_cells_from_pblock\n\nDescription: \nRemove cells from a Pblock\n\nSyntax: \nremove_cells_from_pblock  [-quiet] [-verbose] <pblock> <cells>...\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <pblock>    Pblock to remove cells from\n  <cells>     Cells to remove\n\nCategories: \nFloorplan, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

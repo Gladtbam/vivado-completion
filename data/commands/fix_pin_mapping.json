@@ -1,0 +1,16 @@
+{
+  "name": "fix_pin_mapping",
+  "short_description": "sample internal tcltask",
+  "full_help": "fix_pin_mapping\n\nDescription: \nsample internal tcltask\n\nSyntax: \nfix_pin_mapping  [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

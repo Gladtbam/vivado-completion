@@ -1,0 +1,76 @@
+{
+  "name": "report_cdc",
+  "short_description": "Report the clock domain crossing (CDC) paths in the current design.",
+  "full_help": "report_cdc\n\nDescription: \nReport the clock domain crossing (CDC) paths in the current design.\n\nSyntax: \nreport_cdc  [-from <args>] [-to <args>] [-cells <args>] [-details] [-summary]\n            [-all_checks_per_endpoint] [-severity <arg>] [-no_header]\n            [-show_waiver] [-no_waiver] [-waived] [-file <arg>] [-append]\n            [-return_string] [-name <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name                        Description\n  ---------------------------------------\n  [-from]                     From clocks\n  [-to]                       To clocks\n  [-cells]                    Run report_cdc on the cells\n  [-details]                  Report the detail of the CDC timing paths not \n                              safely timed\n  [-summary]                  Report a summary by clocks of the CDC\n  [-all_checks_per_endpoint]  Report all checks per endpoint\n  [-severity]                 Report only the severity specified (Info, \n                              Warning or Critical)\n  [-no_header]                Do not generate a report header\n  [-show_waiver]              Show the waived paths\n  [-no_waiver]                Ignore the waiver\n  [-waived]                   Show only the waived paths\n  [-file]                     Filename to output results to. (send output to \n                              console if -file is not used)\n  [-append]                   Append the results to file, don't overwrite the\n                              results file\n  [-return_string]            Return report as string\n  [-name]                     Output the results to GUI panel with this name\n  [-quiet]                    Ignore command errors\n  [-verbose]                  Suspend message limits during command execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "From clocks"
+    },
+    {
+      "flag": "-to",
+      "description": "To clocks"
+    },
+    {
+      "flag": "-cells",
+      "description": "Run report_cdc on the cells"
+    },
+    {
+      "flag": "-details",
+      "description": "Report the detail of the CDC timing paths not safely timed"
+    },
+    {
+      "flag": "-summary",
+      "description": "Report a summary by clocks of the CDC"
+    },
+    {
+      "flag": "-all_checks_per_endpoint",
+      "description": "Report all checks per endpoint"
+    },
+    {
+      "flag": "-severity",
+      "description": "Report only the severity specified (Info, Warning or Critical)"
+    },
+    {
+      "flag": "-no_header",
+      "description": "Do not generate a report header"
+    },
+    {
+      "flag": "-show_waiver",
+      "description": "Show the waived paths"
+    },
+    {
+      "flag": "-no_waiver",
+      "description": "Ignore the waiver"
+    },
+    {
+      "flag": "-waived",
+      "description": "Show only the waived paths"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

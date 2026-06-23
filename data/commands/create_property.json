@@ -1,0 +1,40 @@
+{
+  "name": "create_property",
+  "short_description": "Create property for class of objects(s)",
+  "full_help": "create_property\n\nDescription: \nCreate property for class of objects(s)\n\nSyntax: \ncreate_property  [-description <arg>] [-type <arg>] [-enum_values <args>]\n                 [-default_value <arg>] [-file_types <args>]\n                 [-display_text <arg>] [-quiet] [-verbose] <name> <class>\n\nReturns: \nThe property that was created if success, \"\" if failure\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-description]    Description of property\n  [-type]           Type of property to create; valid values are: string, \n                    int, long, double, bool, enum, file\n                    Default: string\n  [-enum_values]    Enumeration values\n  [-default_value]  Default value of type string\n  [-file_types]     File type extensions (without the dot)\n  [-display_text]   Text to display when selecting the file in file browser\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  <name>            Name of property to create\n  <class>           Object type to create property for; valid values are: \n                    design, net, cell, pin, port, pblock, interface, fileset\n\nCategories: \nPropertyAndParameter, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-description",
+      "description": "Description of property"
+    },
+    {
+      "flag": "-type",
+      "description": "Type of property to create; valid values are: string, int, long, double, bool, enum, file Default: string"
+    },
+    {
+      "flag": "-enum_values",
+      "description": "Enumeration values"
+    },
+    {
+      "flag": "-default_value",
+      "description": "Default value of type string"
+    },
+    {
+      "flag": "-file_types",
+      "description": "File type extensions (without the dot)"
+    },
+    {
+      "flag": "-display_text",
+      "description": "Text to display when selecting the file in file browser"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

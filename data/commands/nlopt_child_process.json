@@ -1,0 +1,36 @@
+{
+  "name": "nlopt_child_process",
+  "short_description": "Entry for nlopt child process control",
+  "full_help": "nlopt_child_process\n\nDescription: \nEntry for nlopt child process control\n\nSyntax: \nnlopt_child_process  -mainShmName <arg> -shmShift <arg> -workerId <arg>\n                     -intFolderPath <arg> -eNumber <arg> [-quiet] [-verbose]\n\nUsage: \n  Name            Description\n  ---------------------------\n  -mainShmName    Main shared memory name\n  -shmShift       Shared memory address shift due to alignment and array \n                  overhead\n  -workerId       Worker ID\n  -intFolderPath  Relative folder path for intermediate files\n  -eNumber        E number\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-mainShmName",
+      "description": "Main shared memory name"
+    },
+    {
+      "flag": "-shmShift",
+      "description": "Shared memory address shift due to alignment and array overhead"
+    },
+    {
+      "flag": "-workerId",
+      "description": "Worker ID"
+    },
+    {
+      "flag": "-intFolderPath",
+      "description": "Relative folder path for intermediate files"
+    },
+    {
+      "flag": "-eNumber",
+      "description": "E number"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

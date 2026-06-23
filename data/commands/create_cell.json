@@ -1,0 +1,24 @@
+{
+  "name": "create_cell",
+  "short_description": "Create cells in the current design",
+  "full_help": "create_cell\n\nDescription: \nCreate cells in the current design\n\nSyntax: \ncreate_cell  -reference <arg> [-black_box] [-quiet] [-verbose] <cells>...\n\nUsage: \n  Name          Description\n  -------------------------\n  -reference    Library cell or design which cells reference\n  [-black_box]  Create black box instance\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  <cells>       Names of cells to create\n\nCategories: \nNetlist\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-reference",
+      "description": "Library cell or design which cells reference"
+    },
+    {
+      "flag": "-black_box",
+      "description": "Create black box instance"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

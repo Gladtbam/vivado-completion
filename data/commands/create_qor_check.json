@@ -1,0 +1,36 @@
+{
+  "name": "create_qor_check",
+  "short_description": "Add a new RQS suggestion",
+  "full_help": "create_qor_check\n\nDescription: \nAdd a new RQS suggestion\n\nSyntax: \ncreate_qor_check  -name <arg> [-type <arg>] -rule_body <arg>\n                  -property_values <args> [-opt_switches <arg>] [-quiet]\n                  [-verbose]\n\nUsage: \n  Name              Description\n  -----------------------------\n  -name             Suggestion ID of user suggestion to create\n  [-type]           Type of QoR check to create. Should be either \n                    \"suggestion\" or \"assessment\"\n                    Default: suggestion\n  -rule_body        List of names of TCL procs to execute as part of \n                    suggestion. First proc must return true or false. Second \n                    proc is executed to actually create COMMAND property of \n                    suggestion instance\n  -property_values  Properties of new check specified as list of key value \n                    pairs\n  [-opt_switches]   Switches to pass to opt_design which may be invoked as \n                    part of suggestion application\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nObject, Feasibility, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Suggestion ID of user suggestion to create"
+    },
+    {
+      "flag": "-type",
+      "description": "Type of QoR check to create. Should be either \"suggestion\" or \"assessment\" Default: suggestion"
+    },
+    {
+      "flag": "-rule_body",
+      "description": "List of names of TCL procs to execute as part of suggestion. First proc must return true or false. Second proc is executed to actually create COMMAND property of suggestion instance"
+    },
+    {
+      "flag": "-property_values",
+      "description": "Properties of new check specified as list of key value pairs"
+    },
+    {
+      "flag": "-opt_switches",
+      "description": "Switches to pass to opt_design which may be invoked as part of suggestion application"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

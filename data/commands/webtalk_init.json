@@ -1,0 +1,20 @@
+{
+  "name": "webtalk_init",
+  "short_description": "Initialize webtalk for use by an external client.",
+  "full_help": "webtalk_init\n\nDescription: \nInitialize webtalk for use by an external client.\n\nSyntax: \nwebtalk_init  [-webtalk_dir <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-webtalk_dir]  Directory that webtalk can use for temporary files. Must \n                  exist and be writable.\n                  Default: current working directory\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-webtalk_dir",
+      "description": "Directory that webtalk can use for temporary files. Must exist and be writable. Default: current working directory"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

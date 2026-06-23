@@ -1,0 +1,28 @@
+{
+  "name": "create_drc_violation",
+  "short_description": "Create a DRC violation",
+  "full_help": "create_drc_violation\n\nDescription: \nCreate a DRC violation\n\nSyntax: \ncreate_drc_violation  -name <arg> [-severity <arg>] [-msg <arg>] [-quiet]\n                      [-verbose] [<objects>...]\n\nUsage: \n  Name         Description\n  ------------------------\n  -name        Specify the name for this rule.  This is the typically a 4-6 \n               letter specification for your rule.\n  [-severity]  Specify severity level for a DRC rule.\n               Default: WARNING.\n               Values: FATAL, ERROR, CRITICAL WARNING, WARNING, ADVISORY.\n  [-msg]       Specify your message string for this DRC rule.\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  [<objects>]  Cells, ports, pins, nets, clock regions, sites, package banks \n               to query.\n\nCategories: \nDRC, Report\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Specify the name for this rule.  This is the typically a 4-6 letter specification for your rule."
+    },
+    {
+      "flag": "-severity",
+      "description": "Specify severity level for a DRC rule. Default: WARNING. Values: FATAL, ERROR, CRITICAL WARNING, WARNING, ADVISORY."
+    },
+    {
+      "flag": "-msg",
+      "description": "Specify your message string for this DRC rule."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "endgroup",
+  "short_description": "End a set of commands that can be undone/redone as a group",
+  "full_help": "endgroup\n\nDescription: \nEnd a set of commands that can be undone/redone as a group\n\nSyntax: \nendgroup  [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nGUIControl\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

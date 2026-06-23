@@ -1,0 +1,16 @@
+{
+  "name": "delete_qor_ruledeck",
+  "short_description": "Delete a user QoR ruledeck",
+  "full_help": "delete_qor_ruledeck\n\nDescription: \nDelete a user QoR ruledeck\n\nSyntax: \ndelete_qor_ruledeck  [-quiet] [-verbose] <name>...\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <name>      Name of QoR ruledeck to delete\n\nCategories: \nObject, Feasibility, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

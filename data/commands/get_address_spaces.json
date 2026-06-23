@@ -1,0 +1,20 @@
+{
+  "name": "get_address_spaces",
+  "short_description": "Get Address Spaces.",
+  "full_help": "get_address_spaces\n\nDescription: \nGet Address Spaces.\n\nSyntax: \nget_address_spaces  [-block <arg>] [-quiet] [-verbose] [<path>]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-block]    Current block.\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<path>]    Address Space path to search.\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-block",
+      "description": "Current block."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

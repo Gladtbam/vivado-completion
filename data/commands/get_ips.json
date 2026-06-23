@@ -1,0 +1,48 @@
+{
+  "name": "get_ips",
+  "short_description": "Get a list of IPs in the current design",
+  "full_help": "get_ips\n\nDescription: \nGet a list of IPs in the current design\n\nSyntax: \nget_ips  [-regexp] [-nocase] [-all] [-filter <arg>] [-gt_sources] [-gt_targets]\n         [-exclude_bd_ips] [-of_objects <args>] [-quiet] [-verbose]\n         [<patterns>...]\n\nReturns: \nlist of IP objects\n\nUsage: \n  Name               Description\n  ------------------------------\n  [-regexp]          Patterns are full regular expressions\n  [-nocase]          Perform case-insensitive matching\n  [-all]             Include subcore IP in search\n  [-filter]          Filter list with expression\n  [-gt_sources]      Return gt wizard peer IPs\n  [-gt_targets]      Return gt wizard IPs\n  [-exclude_bd_ips]  Exclude all IP owned by a block design.\n  [-of_objects]      Get 'ip' objects of these types: 'ip file'.\n  [-quiet]           Ignore command errors\n  [-verbose]         Suspend message limits during command execution\n  [<patterns>]       Match IP names against patterns\n                     Default: *\n                     Values: The default search pattern is the wildcard *, or\n                     .* when -regexp is specified.\n\nCategories: \nObject, Project, IPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching"
+    },
+    {
+      "flag": "-all",
+      "description": "Include subcore IP in search"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-gt_sources",
+      "description": "Return gt wizard peer IPs"
+    },
+    {
+      "flag": "-gt_targets",
+      "description": "Return gt wizard IPs"
+    },
+    {
+      "flag": "-exclude_bd_ips",
+      "description": "Exclude all IP owned by a block design."
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get 'ip' objects of these types: 'ip file'."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

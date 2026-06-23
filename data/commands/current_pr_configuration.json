@@ -1,0 +1,16 @@
+{
+  "name": "current_pr_configuration",
+  "short_description": "Get a list of PartitionDefs",
+  "full_help": "current_pr_configuration\n\nDescription: \nGet a list of PartitionDefs\n\nSyntax: \ncurrent_pr_configuration  [-quiet] [-verbose] [<config>...]\n\nReturns: \nlist of PartitionDef objects\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<config>]  Specify the PR configuration to be set as current (active); \n              optional\n\nCategories: \nObject, Partition\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

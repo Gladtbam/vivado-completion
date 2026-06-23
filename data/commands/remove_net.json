@@ -1,0 +1,20 @@
+{
+  "name": "remove_net",
+  "short_description": "Remove nets from the current design",
+  "full_help": "remove_net\n\nDescription: \nRemove nets from the current design\n\nSyntax: \nremove_net  [-prune] [-quiet] [-verbose] <nets>...\n\nUsage: \n  Name        Description\n  -----------------------\n  [-prune]    When performing net removal, remove pins and ports which are \n              left unconnected as a result of the remove_net operation.\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <nets>      List of nets to remove\n\nCategories: \nNetlist\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-prune",
+      "description": "When performing net removal, remove pins and ports which are left unconnected as a result of the remove_net operation."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

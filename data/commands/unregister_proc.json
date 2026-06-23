@@ -1,0 +1,16 @@
+{
+  "name": "unregister_proc",
+  "short_description": "Unregister a previously registered Tcl proc.",
+  "full_help": "unregister_proc\n\nDescription: \nUnregister a previously registered Tcl proc.\n\nSyntax: \nunregister_proc  [-quiet] [-verbose] <tasknm>\n\nReturns: \nNothing\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <tasknm>    Name of Tcl task to unregister.  The task must be wrapping a \n              proc.\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "encrypt_package",
+  "short_description": "Protect a packaged IP archive with an encryption wrapper.",
+  "full_help": "encrypt_package\n\nDescription: \nProtect a packaged IP archive with an encryption wrapper.\n\nSyntax: \nencrypt_package  [-customer_key <arg>] -ip_partner_private_key <arg>\n                 [-ip_partner_keyowner <arg>] -ip_partner_envelope <arg>\n                 [-output <arg>] [-exclude <arg>] [-quiet] [-verbose]\n                 <input>...\n\nUsage: \n  Name                     Description\n  ------------------------------------\n  [-customer_key]          The name of a PEM format file containing the IP \n                           customer's RSA public key. If not specified a key \n                           pair will be generated and the private key \n                           installed on the user's host when \n                           install_encrypted_package is run.\n  -ip_partner_private_key  The name of a PEM format file containing the IP \n                           partner's RSA private key. If the name specified \n                           does not include a file extension, .pem will be \n                           assumed.\n  [-ip_partner_keyowner]   If specified, will replace the value of \n                           key_keyowner in the encryption envelope specified \n                           by -ip_partner_envelope.\n  -ip_partner_envelope     Filename of the file containing the encryption \n                           envelope - the IP partner's public RSA key and the\n                           rights being granted the user. Note that this file\n                           is not included in the zip file in any form, it is\n                           only used to encrypt the HDL files in the package.\n  [-output]                Name of the output archive file. If not specified \n                           and the input is an archive, the input archive \n                           file will be overwritten. If the input is a \n                           directory, this name of the output archive must be\n                           specified.\n  [-exclude]               If input is directory, this option can be used to \n                           specify a comma-separated list of files to exclude\n                           from the packaged archive. Not valid if input is \n                           an archive.\n  [-quiet]                 Ignore command errors\n  [-verbose]               Suspend message limits during command execution\n  <input>                  Either the name of the input archive (zip) file, \n                           which should have been generated using the Vivado \n                           IP Packager to package an IP, or the name of a \n                           directory containing the files to include. If a \n                           directory is specified, it will be searched \n                           recursively for all the files to include in the \n                           output archive. HDL files will be encrypted.\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-customer_key",
+      "description": "The name of a PEM format file containing the IP customer's RSA public key. If not specified a key pair will be generated and the private key installed on the user's host when install_encrypted_package is run."
+    },
+    {
+      "flag": "-ip_partner_private_key",
+      "description": "The name of a PEM format file containing the IP partner's RSA private key. If the name specified does not include a file extension, .pem will be assumed."
+    },
+    {
+      "flag": "-ip_partner_keyowner",
+      "description": "If specified, will replace the value of key_keyowner in the encryption envelope specified by -ip_partner_envelope."
+    },
+    {
+      "flag": "-ip_partner_envelope",
+      "description": "Filename of the file containing the encryption envelope - the IP partner's public RSA key and the rights being granted the user. Note that this file is not included in the zip file in any form, it is only used to encrypt the HDL files in the package."
+    },
+    {
+      "flag": "-output",
+      "description": "Name of the output archive file. If not specified and the input is an archive, the input archive file will be overwritten. If the input is a directory, this name of the output archive must be specified."
+    },
+    {
+      "flag": "-exclude",
+      "description": "If input is directory, this option can be used to specify a comma-separated list of files to exclude from the packaged archive. Not valid if input is an archive."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

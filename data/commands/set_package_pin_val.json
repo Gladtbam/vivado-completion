@@ -1,0 +1,16 @@
+{
+  "name": "set_package_pin_val",
+  "short_description": "Set user columns on one or more package pins",
+  "full_help": "set_package_pin_val\n\nDescription: \nSet user columns on one or more package pins\n\nSyntax: \nset_package_pin_val  [-quiet] [-verbose] <column> <value> <package_pins>...\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n  <column>        User column name\n  <value>         Value to set\n  <package_pins>  Package pin names\n\nCategories: \nXDC, PinPlanning\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

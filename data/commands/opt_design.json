@@ -1,0 +1,108 @@
+{
+  "name": "opt_design",
+  "short_description": "Optimize the current netlist. This will perform the retarget, propconst, sweep and bram_power_opt optimizations by default.",
+  "full_help": "opt_design\n\nDescription: \nOptimize the current netlist. This will perform the retarget, propconst, sweep and bram_power_opt optimizations by default.\n\nSyntax: \nopt_design  [-retarget] [-propconst] [-sweep] [-bram_power_opt] [-remap]\n            [-aggressive_remap] [-resynth_remap] [-resynth_area]\n            [-resynth_seq_area] [-directive <arg>] [-muxf_remap]\n            [-hier_fanout_limit <arg>] [-bufg_opt] [-mbufg_opt]\n            [-shift_register_opt] [-dsp_register_opt] [-srl_remap_modes <arg>]\n            [-control_set_merge] [-control_set_opt] [-merge_equivalent_drivers]\n            [-carry_remap] [-debug_log] [-property_opt_only] [-quiet]\n            [-verbose]\n\nUsage: \n  Name                         Description\n  ----------------------------------------\n  [-retarget]                  Retarget\n  [-propconst]                 Propagate constants across leaf-level \n                               instances\n  [-sweep]                     Remove unconnected leaf-level instances\n  [-bram_power_opt]            Perform Block RAM power optimizations\n  [-remap]                     Remap logic optimally in LUTs\n  [-aggressive_remap]          High effort remap optimization\n  [-resynth_remap]             High effort re-synthesis to reduce the depth \n                               of logic in critical timing paths\n  [-resynth_area]              Resynthesis\n  [-resynth_seq_area]          Resynthesis (with Sequential optimizations)\n  [-directive]                 Mode of behavior (directive) for this command.\n                               Please refer to Arguments section of this help\n                               for values for this option\n                               Default: Default\n  [-muxf_remap]                Optimize all MuxFx cells to LUT3\n  [-hier_fanout_limit]         Replicate by module with threshold N\n  [-bufg_opt]                  Insert, Merge and Split BUFGs\n  [-mbufg_opt]                 Merge BUFGs to MBUFGs\n  [-shift_register_opt]        Pull register stage from shift register\n  [-dsp_register_opt]          Push/Pull Registers out of a DSP\n  [-srl_remap_modes]           Remap shift registers to flops or flops to \n                               shift registers\n  [-control_set_merge]         Merge all equivalent control set drivers to a \n                               single driver\n  [-control_set_opt]           Optimize control set, Versal only\n  [-merge_equivalent_drivers]  Merge all LUT,Flop equivalent driver \n                               replications\n  [-carry_remap]               Remap carries into luts\n  [-debug_log]                 Show debug message\n  [-property_opt_only]         Do targeted optimizations on tagged cells\n  [-quiet]                     Ignore command errors\n  [-verbose]                   Suspend message limits during command \n                               execution\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-retarget",
+      "description": "Retarget"
+    },
+    {
+      "flag": "-propconst",
+      "description": "Propagate constants across leaf-level instances"
+    },
+    {
+      "flag": "-sweep",
+      "description": "Remove unconnected leaf-level instances"
+    },
+    {
+      "flag": "-bram_power_opt",
+      "description": "Perform Block RAM power optimizations"
+    },
+    {
+      "flag": "-remap",
+      "description": "Remap logic optimally in LUTs"
+    },
+    {
+      "flag": "-aggressive_remap",
+      "description": "High effort remap optimization"
+    },
+    {
+      "flag": "-resynth_remap",
+      "description": "High effort re-synthesis to reduce the depth of logic in critical timing paths"
+    },
+    {
+      "flag": "-resynth_area",
+      "description": "Resynthesis"
+    },
+    {
+      "flag": "-resynth_seq_area",
+      "description": "Resynthesis (with Sequential optimizations)"
+    },
+    {
+      "flag": "-directive",
+      "description": "Mode of behavior (directive) for this command. Please refer to Arguments section of this help for values for this option Default: Default"
+    },
+    {
+      "flag": "-muxf_remap",
+      "description": "Optimize all MuxFx cells to LUT3"
+    },
+    {
+      "flag": "-hier_fanout_limit",
+      "description": "Replicate by module with threshold N"
+    },
+    {
+      "flag": "-bufg_opt",
+      "description": "Insert, Merge and Split BUFGs"
+    },
+    {
+      "flag": "-mbufg_opt",
+      "description": "Merge BUFGs to MBUFGs"
+    },
+    {
+      "flag": "-shift_register_opt",
+      "description": "Pull register stage from shift register"
+    },
+    {
+      "flag": "-dsp_register_opt",
+      "description": "Push/Pull Registers out of a DSP"
+    },
+    {
+      "flag": "-srl_remap_modes",
+      "description": "Remap shift registers to flops or flops to shift registers"
+    },
+    {
+      "flag": "-control_set_merge",
+      "description": "Merge all equivalent control set drivers to a single driver"
+    },
+    {
+      "flag": "-control_set_opt",
+      "description": "Optimize control set, Versal only"
+    },
+    {
+      "flag": "-merge_equivalent_drivers",
+      "description": "Merge all LUT,Flop equivalent driver replications"
+    },
+    {
+      "flag": "-carry_remap",
+      "description": "Remap carries into luts"
+    },
+    {
+      "flag": "-debug_log",
+      "description": "Show debug message"
+    },
+    {
+      "flag": "-property_opt_only",
+      "description": "Do targeted optimizations on tagged cells"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

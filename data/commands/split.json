@@ -1,0 +1,7 @@
+{
+  "name": "split",
+  "short_description": "",
+  "full_help": "\nTopic                  Description\nsplit_diff_pair_ports  Remove differential pair relationship between 2 ports\n\nFor help on an individual topic, type 'help <topic>'. For example:\n% help create_project\n",
+  "custom_snippet": null,
+  "arguments": []
+}

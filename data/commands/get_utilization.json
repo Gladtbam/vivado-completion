@@ -1,0 +1,44 @@
+{
+  "name": "get_utilization",
+  "short_description": "Compute utilization of device and returns a list of resources used for script processing",
+  "full_help": "get_utilization\n\nDescription: \nCompute utilization of device and returns a list of resources used for script processing\n\nSyntax: \nget_utilization  [-cells <args>] [-exclude_cells <args>] [-pblocks <args>]\n                 [-exclude_child_pblocks] [-exclude_non_assigned]\n                 [-supplyAsPblockAreaSLR] [-ranges <args>] [-quiet] [-verbose]\n\nReturns: \nReport\n\nUsage: \n  Name                      Description\n  -------------------------------------\n  [-cells]                  Report utilization of given list of cells\n  [-exclude_cells]          Report utilization of given list of excluded \n                            cells\n  [-pblocks]                get utilization of given pblock\n  [-exclude_child_pblocks]  get utilization with out child pblocks\n  [-exclude_non_assigned]   Pblock utilization with out Non-assigned Cells\n  [-supplyAsPblockAreaSLR]  For SLR wise report, Pblock supply per SLR is \n                            calculated on pblock area in the SLR\n  [-ranges]                 Site ranges(s)\n  [-quiet]                  Ignore command errors\n  [-verbose]                Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cells",
+      "description": "Report utilization of given list of cells"
+    },
+    {
+      "flag": "-exclude_cells",
+      "description": "Report utilization of given list of excluded cells"
+    },
+    {
+      "flag": "-pblocks",
+      "description": "get utilization of given pblock"
+    },
+    {
+      "flag": "-exclude_child_pblocks",
+      "description": "get utilization with out child pblocks"
+    },
+    {
+      "flag": "-exclude_non_assigned",
+      "description": "Pblock utilization with out Non-assigned Cells"
+    },
+    {
+      "flag": "-supplyAsPblockAreaSLR",
+      "description": "For SLR wise report, Pblock supply per SLR is calculated on pblock area in the SLR"
+    },
+    {
+      "flag": "-ranges",
+      "description": "Site ranges(s)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

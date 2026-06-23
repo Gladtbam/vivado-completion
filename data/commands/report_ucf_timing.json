@@ -1,0 +1,76 @@
+{
+  "name": "report_ucf_timing",
+  "short_description": "Report timing paths",
+  "full_help": "report_ucf_timing\n\nDescription: \nReport timing paths\n\nSyntax: \nreport_ucf_timing  [-file <arg>] [-append] [-name <arg>] [-return_string]\n                   [-speed <arg>] [-from <args>] [-to <args>] [-thru <args>]\n                   [-min_max <arg>] [-transition <arg>] [-sort_by <arg>]\n                   [-interconnect_type <arg>] [-maxpaths <arg>] [-nworst <arg>]\n                   [-required_times] [-quiet] [-verbose]\n\nUsage: \n  Name                  Description\n  ---------------------------------\n  [-file]               Filename to output results to. (send output to \n                        console if -file is not used)\n  [-append]             Append the results to file, don't overwrite the \n                        results file\n  [-name]               Output the results to GUI panel with this name\n                        Default: results_1\n  [-return_string]      return report as string\n  [-speed]              Speed grade name\n  [-from]               Filter by starting pin or instance name\n  [-to]                 Filter by ending pin or instance name\n  [-thru]               Filter by intermediate pin or instance names\n  [-min_max]            Run max (setup) or min (hold) timing analysis\n  [-transition]         Report rise or fall transitions\n  [-sort_by]            Sort criterion\n  [-interconnect_type]  Interconnect delay type\n  [-maxpaths]           Limit the report to this many paths\n                        Default: 1\n  [-nworst]             Limit the report to this many paths per endpoint\n                        Default: 1\n  [-required_times]     Calculate all required times\n  [-quiet]              Ignore command errors\n  [-verbose]            Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name Default: results_1"
+    },
+    {
+      "flag": "-return_string",
+      "description": "return report as string"
+    },
+    {
+      "flag": "-speed",
+      "description": "Speed grade name"
+    },
+    {
+      "flag": "-from",
+      "description": "Filter by starting pin or instance name"
+    },
+    {
+      "flag": "-to",
+      "description": "Filter by ending pin or instance name"
+    },
+    {
+      "flag": "-thru",
+      "description": "Filter by intermediate pin or instance names"
+    },
+    {
+      "flag": "-min_max",
+      "description": "Run max (setup) or min (hold) timing analysis"
+    },
+    {
+      "flag": "-transition",
+      "description": "Report rise or fall transitions"
+    },
+    {
+      "flag": "-sort_by",
+      "description": "Sort criterion"
+    },
+    {
+      "flag": "-interconnect_type",
+      "description": "Interconnect delay type"
+    },
+    {
+      "flag": "-maxpaths",
+      "description": "Limit the report to this many paths Default: 1"
+    },
+    {
+      "flag": "-nworst",
+      "description": "Limit the report to this many paths per endpoint Default: 1"
+    },
+    {
+      "flag": "-required_times",
+      "description": "Calculate all required times"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

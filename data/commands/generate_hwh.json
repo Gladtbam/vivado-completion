@@ -1,0 +1,24 @@
+{
+  "name": "generate_hwh",
+  "short_description": "Generate HWH file",
+  "full_help": "generate_hwh\n\nDescription: \nGenerate HWH file\n\nSyntax: \ngenerate_hwh  -connectivity_file <arg> -outdir <arg> [-quiet] [-verbose]\n              <state_file>\n\nReturns: \nParse the metadata files and generate the HWH file\n\nUsage: \n  Name                Description\n  -------------------------------\n  -connectivity_file  Path of the connectivity file to be read\n  -outdir             Path of the output directory\n  [-quiet]            Ignore command errors\n  [-verbose]          Suspend message limits during command execution\n  <state_file>        Path of the state json file\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-connectivity_file",
+      "description": "Path of the connectivity file to be read"
+    },
+    {
+      "flag": "-outdir",
+      "description": "Path of the output directory"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

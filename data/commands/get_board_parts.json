@@ -1,0 +1,36 @@
+{
+  "name": "get_board_parts",
+  "short_description": "Get the list of board_part available in the project",
+  "full_help": "get_board_parts\n\nDescription: \nGet the list of board_part available in the project\n\nSyntax: \nget_board_parts  [-regexp] [-nocase] [-latest_file_version]\n                 [-latest_hw_revision] [-filter <arg>] [-quiet] [-verbose]\n                 [<patterns>...]\n\nReturns: \nlist of board_part objects\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-regexp]               Patterns are full regular expressions\n  [-nocase]               Perform case-insensitive matching\n  [-latest_file_version]  Show only latest board parts by file version\n  [-latest_hw_revision]   Show only latest board parts by board revision\n  [-filter]               Filter list with expression\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n  [<patterns>]            Match Board Part names against patterns\n                          Default: *\n                          Values: The default search pattern is the wildcard \n                          *, or .* when -regexp is specified.\n\nCategories: \nObject, Project, XPS, Board\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching"
+    },
+    {
+      "flag": "-latest_file_version",
+      "description": "Show only latest board parts by file version"
+    },
+    {
+      "flag": "-latest_hw_revision",
+      "description": "Show only latest board parts by board revision"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

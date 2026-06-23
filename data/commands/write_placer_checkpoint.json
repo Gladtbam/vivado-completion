@@ -1,0 +1,20 @@
+{
+  "name": "write_placer_checkpoint",
+  "short_description": "Write Placer Checkpoint",
+  "full_help": "write_placer_checkpoint\n\nDescription: \nWrite Placer Checkpoint\n\nSyntax: \nwrite_placer_checkpoint  [-force] [-quiet] [-verbose] <directory>\n\nUsage: \n  Name         Description\n  ------------------------\n  [-force]     Overwrite existing checkpoint directory for current phase\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  <directory>  Design checkpoint directory\n               Values: A directory name with alphanumeric characters\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrite existing checkpoint directory for current phase"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

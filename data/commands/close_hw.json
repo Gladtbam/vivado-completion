@@ -1,0 +1,7 @@
+{
+  "name": "close_hw",
+  "short_description": "",
+  "full_help": "The command 'close_hw' is auto loaded by Tcl. To explicitly load the command type 'load_features labtools'.",
+  "custom_snippet": null,
+  "arguments": []
+}

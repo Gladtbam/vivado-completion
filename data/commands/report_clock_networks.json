@@ -1,0 +1,60 @@
+{
+  "name": "report_clock_networks",
+  "short_description": "Report clock networks",
+  "full_help": "report_clock_networks\n\nDescription: \nReport clock networks\n\nSyntax: \nreport_clock_networks  [-file <arg>] [-append] [-name <arg>] [-return_string]\n                       [-endpoints_only] [-levels <arg>] [-expand_buckets]\n                       [-suppress_endpoints <arg>] [-clocks <args>]\n                       [-unconstrained_roots <args>] [-quiet] [-verbose]\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-file]                 Filename to output results to. (send output to \n                          console if -file is not used)\n  [-append]               Append the results to file, don't overwrite the \n                          results file\n  [-name]                 Output the results to GUI panel with this name\n  [-return_string]        Return report as string\n  [-endpoints_only]       Dump clock network endpoints only; Not to be used \n                          in conjunction with -levels option\n  [-levels]               Expands clock network upto n levels of instances, \n                          Value: n > 0; Not to be used in conjunction with \n                          -endpoints_only option\n                          Default: 0\n  [-expand_buckets]       Expands bucketed endpoints and displays pins; By \n                          default, endpoint pins are bucketed by celltype; \n                          This option only works in conjunction with -levels \n                          option or -endpoints_only option\n  [-suppress_endpoints]   Suppress paths to clock or nonclock endpoint pins; \n                          Values: clock, nonclock\n  [-clocks]               List of clocks for clock network dump; if not \n                          specified, all clock networks are dumped\n  [-unconstrained_roots]  List of unconstrained root pins/ports for clock \n                          network dump; if not specified, all unconstrained \n                          clock roots are dumped\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-endpoints_only",
+      "description": "Dump clock network endpoints only; Not to be used in conjunction with -levels option"
+    },
+    {
+      "flag": "-levels",
+      "description": "Expands clock network upto n levels of instances, Value: n > 0; Not to be used in conjunction with"
+    },
+    {
+      "flag": "-endpoints_only",
+      "description": "option Default: 0"
+    },
+    {
+      "flag": "-expand_buckets",
+      "description": "Expands bucketed endpoints and displays pins; By default, endpoint pins are bucketed by celltype; This option only works in conjunction with -levels option or -endpoints_only option"
+    },
+    {
+      "flag": "-suppress_endpoints",
+      "description": "Suppress paths to clock or nonclock endpoint pins; Values: clock, nonclock"
+    },
+    {
+      "flag": "-clocks",
+      "description": "List of clocks for clock network dump; if not specified, all clock networks are dumped"
+    },
+    {
+      "flag": "-unconstrained_roots",
+      "description": "List of unconstrained root pins/ports for clock network dump; if not specified, all unconstrained clock roots are dumped"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

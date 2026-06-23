@@ -1,0 +1,16 @@
+{
+  "name": "set_propagated_clock",
+  "short_description": "Specify propagated clock latency",
+  "full_help": "set_propagated_clock\n\nDescription: \nSpecify propagated clock latency\n\nSyntax: \nset_propagated_clock  [-quiet] [-verbose] <objects>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <objects>   List of clocks, ports, or pins\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "write_hw_platform_metadata",
+  "short_description": "Write the unified JSON metadata file for the current design",
+  "full_help": "write_hw_platform_metadata\n\nDescription: \nWrite the unified JSON metadata file for the current design\n\nSyntax: \nwrite_hw_platform_metadata  [-quiet] [-verbose] [<file>]\n\nReturns: \nThe name of the unified JSON metadata file\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<file>]    Unified JSON metadata file\n              Values: A filename with alphanumeric characters and .json \n              extension.\n\nCategories: \nVitis, Platform, FileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "report_qor_assessment",
+  "short_description": "Feasibility Checks",
+  "full_help": "report_qor_assessment\n\nDescription: \nFeasibility Checks\n\nSyntax: \nreport_qor_assessment  [-file <arg>] [-csv_output_dir <arg>] [-name <arg>]\n                       [-append] [-exclude_methodology_checks]\n                       [-max_paths <arg>] [-return_string]\n                       [-full_assessment_details] [-quiet] [-verbose]\n\nUsage: \n  Name                           Description\n  ------------------------------------------\n  [-file]                        Filename to output results to. (send output \n                                 to console if -file is not used)\n  [-csv_output_dir]              Reports directory consisting of RQA timing \n                                 paths.csv and dont touch.csv \n  [-name]                        Output the results to GUI panel with this \n                                 name\n  [-append]                      Append the results to file, do not overwrite\n                                 the results file\n  [-exclude_methodology_checks]  Methodology checks are skipped\n  [-max_paths]                   Number of paths to consider for suggestion \n                                 analysis\n                                 Default: 100\n  [-return_string]               Return report as string\n  [-full_assessment_details]     Show detailed table\n  [-quiet]                       Ignore command errors\n  [-verbose]                     Suspend message limits during command \n                                 execution\n\nCategories: \nFeasibility, Report, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-csv_output_dir",
+      "description": "Reports directory consisting of RQA timing paths.csv and dont touch.csv"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, do not overwrite the results file"
+    },
+    {
+      "flag": "-exclude_methodology_checks",
+      "description": "Methodology checks are skipped"
+    },
+    {
+      "flag": "-max_paths",
+      "description": "Number of paths to consider for suggestion analysis Default: 100"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-full_assessment_details",
+      "description": "Show detailed table"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

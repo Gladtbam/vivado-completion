@@ -1,0 +1,16 @@
+{
+  "name": "update_module_reference",
+  "short_description": "Refresh module reference definition and instance(s)",
+  "full_help": "update_module_reference\n\nDescription: \nRefresh module reference definition and instance(s)\n\nSyntax: \nupdate_module_reference  [-quiet] [-verbose] [<ips>...]\n\nReturns: \nA return code indicating success or failure.\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<ips>]     module reference to be upgraded\n              Values: IP instance name(s) within the design\n\nCategories: \nIPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

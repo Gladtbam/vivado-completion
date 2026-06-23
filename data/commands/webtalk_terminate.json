@@ -1,0 +1,16 @@
+{
+  "name": "webtalk_terminate",
+  "short_description": "Terminate webtalk mgr previously initialized via webtalk_init.",
+  "full_help": "webtalk_terminate\n\nDescription: \nTerminate webtalk mgr previously initialized via webtalk_init.\n\nSyntax: \nwebtalk_terminate  [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

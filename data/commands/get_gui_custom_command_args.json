@@ -1,0 +1,28 @@
+{
+  "name": "get_gui_custom_command_args",
+  "short_description": "Get custom command arguments",
+  "full_help": "get_gui_custom_command_args\n\nDescription: \nGet custom command arguments\n\nSyntax: \nget_gui_custom_command_args  -command_name <arg> [-regexp] [-nocase] [-quiet]\n                             [-verbose] [<patterns>...]\n\nReturns: \nlist of custom command argument names\n\nUsage: \n  Name           Description\n  --------------------------\n  -command_name  Unique name of the custom command whose arguments need to be\n                 displayed.\n  [-regexp]      Patterns are full regular expressions\n  [-nocase]      Perform case-insensitive matching (valid only when -regexp \n                 specified)\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<patterns>]   Match the custom command argument names against patterns\n                 Default: *\n\nCategories: \nGUIControl\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-command_name",
+      "description": "Unique name of the custom command whose arguments need to be displayed."
+    },
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

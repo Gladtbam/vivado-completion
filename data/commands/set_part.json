@@ -1,0 +1,16 @@
+{
+  "name": "set_part",
+  "short_description": "Sets the part on the current project. If no project is open, then a diskless project is created.",
+  "full_help": "set_part\n\nDescription: \nSets the part on the current project. If no project is open, then a diskless project is created.\n\nSyntax: \nset_part  [-quiet] [-verbose] <part>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <part>      Set current project's part to this part.\n\nCategories: \nProject, PropertyAndParameter\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

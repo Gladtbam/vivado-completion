@@ -1,0 +1,48 @@
+{
+  "name": "set_clock_uncertainty",
+  "short_description": "set clock uncertainty",
+  "full_help": "set_clock_uncertainty\n\nDescription: \nset clock uncertainty\n\nSyntax: \nset_clock_uncertainty  [-setup] [-hold] [-from <args>] [-rise_from <args>]\n                       [-fall_from <args>] [-to <args>] [-rise_to <args>]\n                       [-fall_to <args>] [-quiet] [-verbose] <uncertainty>\n                       [<objects>]\n\nUsage: \n  Name           Description\n  --------------------------\n  [-setup]       Specify clock uncertainty for setup checks\n  [-hold]        Specify clock uncertainty for hold checks\n  [-from]        Specify inter-clock uncertainty source clock\n  [-rise_from]   Specify inter-clock uncertainty source clock with rising edge\n  [-fall_from]   Specify inter-clock uncertainty source clock with falling \n                 edge\n  [-to]          Specify inter-clock uncertainty destination clock\n  [-rise_to]     Specify inter-clock uncertainty destination clock with rising\n                 edge\n  [-fall_to]     Specify inter-clock uncertainty destination clock with \n                 falling edge\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  <uncertainty>  Uncertainty of clock network\n  [<objects>]    List of clocks, ports or pins\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-setup",
+      "description": "Specify clock uncertainty for setup checks"
+    },
+    {
+      "flag": "-hold",
+      "description": "Specify clock uncertainty for hold checks"
+    },
+    {
+      "flag": "-from",
+      "description": "Specify inter-clock uncertainty source clock"
+    },
+    {
+      "flag": "-rise_from",
+      "description": "Specify inter-clock uncertainty source clock with rising edge"
+    },
+    {
+      "flag": "-fall_from",
+      "description": "Specify inter-clock uncertainty source clock with falling edge"
+    },
+    {
+      "flag": "-to",
+      "description": "Specify inter-clock uncertainty destination clock"
+    },
+    {
+      "flag": "-rise_to",
+      "description": "Specify inter-clock uncertainty destination clock with rising edge"
+    },
+    {
+      "flag": "-fall_to",
+      "description": "Specify inter-clock uncertainty destination clock with falling edge"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

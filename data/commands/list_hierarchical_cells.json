@@ -1,0 +1,24 @@
+{
+  "name": "list_hierarchical_cells",
+  "short_description": "Returns the hierarchical paths of instances for the named reference.",
+  "full_help": "list_hierarchical_cells\n\nDescription: \nReturns the hierarchical paths of instances for the named reference.\n\nSyntax: \nlist_hierarchical_cells  [-fileset <arg>] [-top_only] [-quiet] [-verbose]\n                         [<reference_name>]\n\nReturns: \nlist of hierarchical paths\n\nUsage: \n  Name                Description\n  -------------------------------\n  [-fileset]          Specifies the fileset to operate on\n  [-top_only]         Only walk and list the hierarchy associated with the \n                      active top\n  [-quiet]            Ignore command errors\n  [-verbose]          Suspend message limits during command execution\n  [<reference_name>]  Specifies the name of the module/entity\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-fileset",
+      "description": "Specifies the fileset to operate on"
+    },
+    {
+      "flag": "-top_only",
+      "description": "Only walk and list the hierarchy associated with the active top"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "report_place_status",
+  "short_description": "Report on status of the placement.",
+  "full_help": "report_place_status\n\nDescription: \nReport on status of the placement.\n\nSyntax: \nreport_place_status  [-return_sites] [-return_string] [-file <arg>] [-append]\n                     [-of_objects <args>] [-site_type <arg>] [-list_all_sites]\n                     [-dump_placement] [-placement_type <arg>] [-quiet]\n                     [-verbose]\n\nUsage: \n  Name               Description\n  ------------------------------\n  [-return_sites]    Return a list of sites that match the given -site_type \n                     type\n  [-return_string]   Set the result of running the report in the Tcl \n                     interpreter's result variable\n  [-file]            Filename to output results to. (send output to console \n                     if -file is not used)\n  [-append]          Append the results to file, don't overwrite the results \n                     file\n  [-of_objects]      Report detailed placement status for these sites\n  [-site_type]       Only show sites with the given status: \n                     ROUTE_THRU_SITE|INVALID_RS|TIE_OFF_SITE|ILLEGAL_PL|PLACE\n                     D|HAS_ROUTE_THRUS|HAS_TIE_OFFS|HAS_INVERTED_IN|FIXED_CEL\n                     LS (ignored if -of_objects is used)\n  [-list_all_sites]  List full placement information for every site in the \n                     design (ignored if -of_objects is used)\n  [-dump_placement]  Show the full placement information for every used site \n                     in the design.  This is VERY VERBOSE.\n  [-placement_type]  Routed site type : PLACEDB|PREROUTE|WITH_ROUTING\n  [-quiet]           Ignore command errors\n  [-verbose]         Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-return_sites",
+      "description": "Return a list of sites that match the given -site_type type"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Set the result of running the report in the Tcl interpreter's result variable"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Report detailed placement status for these sites"
+    },
+    {
+      "flag": "-site_type",
+      "description": "Only show sites with the given status: ROUTE_THRU_SITE|INVALID_RS|TIE_OFF_SITE|ILLEGAL_PL|PLACE D|HAS_ROUTE_THRUS|HAS_TIE_OFFS|HAS_INVERTED_IN|FIXED_CEL LS (ignored if -of_objects is used)"
+    },
+    {
+      "flag": "-list_all_sites",
+      "description": "List full placement information for every site in the design (ignored if -of_objects is used)"
+    },
+    {
+      "flag": "-dump_placement",
+      "description": "Show the full placement information for every used site in the design.  This is VERY VERBOSE."
+    },
+    {
+      "flag": "-placement_type",
+      "description": "Routed site type : PLACEDB|PREROUTE|WITH_ROUTING"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

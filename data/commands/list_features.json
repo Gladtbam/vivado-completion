@@ -1,0 +1,16 @@
+{
+  "name": "list_features",
+  "short_description": "List available features.",
+  "full_help": "list_features\n\nDescription: \nList available features.\n\nSyntax: \nlist_features  [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

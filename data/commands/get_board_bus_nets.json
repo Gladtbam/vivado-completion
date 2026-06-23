@@ -1,0 +1,36 @@
+{
+  "name": "get_board_bus_nets",
+  "short_description": "Gets the list of board bus net objects",
+  "full_help": "get_board_bus_nets\n\nDescription: \nGets the list of board bus net objects\n\nSyntax: \nget_board_bus_nets  [-regexp] [-nocase] [-all] [-filter <arg>]\n                    -of_objects <args> [-quiet] [-verbose] [<patterns>...]\n\nReturns: \nlist of bus nets in the board\n\nUsage: \n  Name          Description\n  -------------------------\n  [-regexp]     Patterns are full regular expressions\n  [-nocase]     Perform case-insensitive matching\n  [-all]        Returns all enabled as well as disabled buses\n  [-filter]     Filter list with expression\n  -of_objects   Get 'board_bus_net' objects of these types: 'board_bus \n                board_component board_component_pin'.\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  [<patterns>]  match board net names against patterns\n                Default: *\n                Values: The default search pattern is the wildcard *, or .* \n                when -regexp is specified.\n\nCategories: \nObject, Board\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching"
+    },
+    {
+      "flag": "-all",
+      "description": "Returns all enabled as well as disabled buses"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get 'board_bus_net' objects of these types: 'board_bus board_component board_component_pin'."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

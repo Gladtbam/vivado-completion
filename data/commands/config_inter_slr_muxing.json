@@ -1,0 +1,44 @@
+{
+  "name": "config_inter_slr_muxing",
+  "short_description": "This command configures the properties of Inter SLR Muxing flow.",
+  "full_help": "config_inter_slr_muxing\n\nDescription: \nThis command configures the properties of Inter SLR Muxing flow.\n\nSyntax: \nconfig_inter_slr_muxing  [-insertion_mode <arg>] [-min_ratio <arg>]\n                         [-max_ratio <arg>] [-area_constraint <arg>]\n                         [-max_nets <arg>] [-isdut_mode <arg>]\n                         [-control_logic_sharing <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name                      Description\n  -------------------------------------\n  [-insertion_mode]         Enable the inter-SLR muxing flow\n                            Default: none\n  [-min_ratio]              Minimum ratio for the inter-SLR circuitry\n                            Default: 2\n  [-max_ratio]              Maximum ratio for the inter-SLR circuitry\n                            Default: 16\n  [-area_constraint]        Area constraint around the SLR crossing\n                            Default: 1\n  [-max_nets]               Maximum number of nets to be muxed\n                            Default: 10000000\n  [-isdut_mode]             Inheritance of property IS_DUT for the inserted \n                            logic\n                            Default: 2\n  [-control_logic_sharing]  Maximum number of IPs sharing the same control \n                            logic\n                            Default: 0\n  [-quiet]                  Ignore command errors\n  [-verbose]                Suspend message limits during command execution\n\nCategories: \nTools, Place\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-insertion_mode",
+      "description": "Enable the inter-SLR muxing flow Default: none"
+    },
+    {
+      "flag": "-min_ratio",
+      "description": "Minimum ratio for the inter-SLR circuitry Default: 2"
+    },
+    {
+      "flag": "-max_ratio",
+      "description": "Maximum ratio for the inter-SLR circuitry Default: 16"
+    },
+    {
+      "flag": "-area_constraint",
+      "description": "Area constraint around the SLR crossing Default: 1"
+    },
+    {
+      "flag": "-max_nets",
+      "description": "Maximum number of nets to be muxed Default: 10000000"
+    },
+    {
+      "flag": "-isdut_mode",
+      "description": "Inheritance of property IS_DUT for the inserted logic Default: 2"
+    },
+    {
+      "flag": "-control_logic_sharing",
+      "description": "Maximum number of IPs sharing the same control logic Default: 0"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

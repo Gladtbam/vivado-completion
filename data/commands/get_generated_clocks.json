@@ -1,0 +1,36 @@
+{
+  "name": "get_generated_clocks",
+  "short_description": "Get a list of generated clocks in the current design",
+  "full_help": "get_generated_clocks\n\nDescription: \nGet a list of generated clocks in the current design\n\nSyntax: \nget_generated_clocks  [-regexp] [-nocase] [-filter <arg>] [-of_objects <args>]\n                      [-match_style <arg>] [-quiet] [-verbose] [<patterns>]\n\nReturns: \nlist of clocks\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-regexp]       Patterns are full regular expressions\n  [-nocase]       Perform case-insensitive matching (valid only when -regexp \n                  specified)\n  [-filter]       Filter list with expression\n  [-of_objects]   Get generated clocks of these pins, ports or nets\n  [-match_style]  Style of pattern matching, valid values are ucf, sdc\n                  Default: sdc\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n  [<patterns>]    Match generated clock names against patterns\n                  Default: *\n\nCategories: \nXDC, Object\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get generated clocks of these pins, ports or nets"
+    },
+    {
+      "flag": "-match_style",
+      "description": "Style of pattern matching, valid values are ucf, sdc Default: sdc"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

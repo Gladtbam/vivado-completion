@@ -1,0 +1,16 @@
+{
+  "name": "current_dashboard",
+  "short_description": "Get the current Project summary dashboard",
+  "full_help": "current_dashboard\n\nDescription: \nGet the current Project summary dashboard\n\nSyntax: \ncurrent_dashboard  [-quiet] [-verbose] [<dashboard>...]\n\nUsage: \n  Name           Description\n  --------------------------\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<dashboard>]  Specify the dashboard to be set as current_dashboard\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

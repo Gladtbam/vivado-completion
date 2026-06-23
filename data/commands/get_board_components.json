@@ -1,0 +1,36 @@
+{
+  "name": "get_board_components",
+  "short_description": "Get the list of components available in the board",
+  "full_help": "get_board_components\n\nDescription: \nGet the list of components available in the board\n\nSyntax: \nget_board_components  [-regexp] [-nocase] [-all] [-filter <arg>]\n                      [-of_objects <args>] [-quiet] [-verbose] [<patterns>...]\n\nReturns: \nlist of component objects\n\nUsage: \n  Name           Description\n  --------------------------\n  [-regexp]      Patterns are full regular expressions\n  [-nocase]      Perform case-insensitive matching\n  [-all]         Returns all enabled as well as disabled components\n  [-filter]      Filter list with expression\n  [-of_objects]  Get 'board_component' objects of these types: 'board \n                 board_bus board_component_pin'.\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<patterns>]   Match component names against patterns\n                 Default: *\n                 Values: The default search pattern is the wildcard *, or .* \n                 when -regexp is specified.\n\nCategories: \nObject, Board\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching"
+    },
+    {
+      "flag": "-all",
+      "description": "Returns all enabled as well as disabled components"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get 'board_component' objects of these types: 'board board_bus board_component_pin'."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

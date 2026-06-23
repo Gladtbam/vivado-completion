@@ -1,0 +1,16 @@
+{
+  "name": "refresh_meminit",
+  "short_description": "Update and initialize the BRAM initialization strings with contents of elf files.",
+  "full_help": "refresh_meminit\n\nDescription: \nUpdate and initialize the BRAM initialization strings with contents of elf files.\n\nSyntax: \nrefresh_meminit  [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nFileIO, Project, Memory Initialization\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

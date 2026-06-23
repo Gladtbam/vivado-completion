@@ -1,0 +1,16 @@
+{
+  "name": "implement_debug_core",
+  "short_description": "Implement debug core",
+  "full_help": "implement_debug_core\n\nDescription: \nImplement debug core\n\nSyntax: \nimplement_debug_core  [-quiet] [-verbose] [<cores>...]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<cores>]   Debug core\n\nCategories: \nDebug\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

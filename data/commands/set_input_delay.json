@@ -1,0 +1,56 @@
+{
+  "name": "set_input_delay",
+  "short_description": "Set input delay on ports",
+  "full_help": "set_input_delay\n\nDescription: \nSet input delay on ports\n\nSyntax: \nset_input_delay  [-clock <args>] [-reference_pin <args>] [-clock_fall] [-rise]\n                 [-fall] [-max] [-min] [-add_delay] [-network_latency_included]\n                 [-source_latency_included] [-quiet] [-verbose] <delay>\n                 <objects>\n\nUsage: \n  Name                         Description\n  ----------------------------------------\n  [-clock]                     Relative clock\n  [-reference_pin]             Relative pin or port\n  [-clock_fall]                Delay is relative to falling edge of clock\n  [-rise]                      Specifies rising delay\n  [-fall]                      Specifies falling delay\n  [-max]                       Specifies maximum delay\n  [-min]                       Specifies minimum delay\n  [-add_delay]                 Don't remove existing input delay\n  [-network_latency_included]  Specifies network latency of clock already \n                               included\n  [-source_latency_included]   Specifies source latency of clock already \n                               included\n  [-quiet]                     Ignore command errors\n  [-verbose]                   Suspend message limits during command \n                               execution\n  <delay>                      Delay value\n  <objects>                    List of ports\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-clock",
+      "description": "Relative clock"
+    },
+    {
+      "flag": "-reference_pin",
+      "description": "Relative pin or port"
+    },
+    {
+      "flag": "-clock_fall",
+      "description": "Delay is relative to falling edge of clock"
+    },
+    {
+      "flag": "-rise",
+      "description": "Specifies rising delay"
+    },
+    {
+      "flag": "-fall",
+      "description": "Specifies falling delay"
+    },
+    {
+      "flag": "-max",
+      "description": "Specifies maximum delay"
+    },
+    {
+      "flag": "-min",
+      "description": "Specifies minimum delay"
+    },
+    {
+      "flag": "-add_delay",
+      "description": "Don't remove existing input delay"
+    },
+    {
+      "flag": "-network_latency_included",
+      "description": "Specifies network latency of clock already included"
+    },
+    {
+      "flag": "-source_latency_included",
+      "description": "Specifies source latency of clock already included"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

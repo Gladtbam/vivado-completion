@@ -1,0 +1,24 @@
+{
+  "name": "set_disable_timing",
+  "short_description": "Disable timing arcs",
+  "full_help": "set_disable_timing\n\nDescription: \nDisable timing arcs\n\nSyntax: \nset_disable_timing  [-from <arg>] [-to <arg>] [-quiet] [-verbose] <objects>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-from]     From pin on cell\n  [-to]       To pin on cell\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <objects>   List of cells or pins, ports, lib-cells, lib-pins, libcell/cell\n              timing-arcs\n\nCategories: \nSDC, XDC, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "From pin on cell"
+    },
+    {
+      "flag": "-to",
+      "description": "To pin on cell"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

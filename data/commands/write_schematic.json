@@ -1,0 +1,36 @@
+{
+  "name": "write_schematic",
+  "short_description": "Export schematic",
+  "full_help": "write_schematic\n\nDescription: \nExport schematic \n\nSyntax: \nwrite_schematic  [-force] [-format <arg>] [-orientation <arg>] [-scope <arg>]\n                 [-name <arg>] [-quiet] [-verbose] <file>\n\nReturns: \nname of the output file\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-force]        Overwrite existing file\n  [-format]       Values: native or pdf. read_schematic can be used to view \n                  native format.\n                  Default: native\n  [-orientation]  Values: landscape or portrait\n  [-scope]        Values: current_page, visible or all\n                  Default: current_page\n  [-name]         Schematic window title\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n  <file>          Output file\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-format",
+      "description": "Values: native or pdf. read_schematic can be used to view native format. Default: native"
+    },
+    {
+      "flag": "-orientation",
+      "description": "Values: landscape or portrait"
+    },
+    {
+      "flag": "-scope",
+      "description": "Values: current_page, visible or all Default: current_page"
+    },
+    {
+      "flag": "-name",
+      "description": "Schematic window title"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

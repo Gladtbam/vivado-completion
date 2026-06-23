@@ -1,0 +1,16 @@
+{
+  "name": "auto_detect_xpm",
+  "short_description": "Auto detect the XPM Libraries that are used in the design and set the XPM_LIBRARIES project property.",
+  "full_help": "auto_detect_xpm\n\nDescription: \nAuto detect the XPM Libraries that are used in the design and set the XPM_LIBRARIES project property.\n\nSyntax: \nauto_detect_xpm  [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nFileIO, Project\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

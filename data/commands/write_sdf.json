@@ -1,0 +1,48 @@
+{
+  "name": "write_sdf",
+  "short_description": "write_sdf command generates flat sdf delay files for event simulation",
+  "full_help": "write_sdf\n\nDescription: \nwrite_sdf command generates flat sdf delay files for event simulation\n\nSyntax: \nwrite_sdf  [-process_corner <arg>] [-cell <arg>] [-filter_cell <arg>]\n           [-rename_top <arg>] [-force] [-mode <arg>] [-gzip]\n           [-multithread <arg>] [-quiet] [-verbose] <file>\n\nUsage: \n  Name               Description\n  ------------------------------\n  [-process_corner]  Specify process corner for which SDF delays are \n                     required; Values: slow, fast\n                     Default: slow\n  [-cell]            Root of the design to write, e.g. des.subblk.cpu\n                     Default: whole design\n  [-filter_cell]     Confine sdf instances to those contained within this \n                     hierarchical cell and to nets which contain at least one\n                     pin within this hierarchical cell, e.g. des.subblk.cpu\n                     Default: whole design\n  [-rename_top]      Replace name of top module with custom name e.g. netlist\n                     Default: new top module name\n  [-force]           Overwrite existing SDF file\n  [-mode]            Specify sta (Static Timing Analysis) or timesim (Timing \n                     Simulation) mode for SDF\n                     Default: timesim\n  [-gzip]            write gzipped SDF\n  [-multithread]     Run in multithread mode with specified number of threads\n                     Default: -1\n  [-quiet]           Ignore command errors\n  [-verbose]         Suspend message limits during command execution\n  <file>             File name\n\nCategories: \nFileIO, Simulation, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-process_corner",
+      "description": "Specify process corner for which SDF delays are required; Values: slow, fast Default: slow"
+    },
+    {
+      "flag": "-cell",
+      "description": "Root of the design to write, e.g. des.subblk.cpu Default: whole design"
+    },
+    {
+      "flag": "-filter_cell",
+      "description": "Confine sdf instances to those contained within this hierarchical cell and to nets which contain at least one pin within this hierarchical cell, e.g. des.subblk.cpu Default: whole design"
+    },
+    {
+      "flag": "-rename_top",
+      "description": "Replace name of top module with custom name e.g. netlist Default: new top module name"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing SDF file"
+    },
+    {
+      "flag": "-mode",
+      "description": "Specify sta (Static Timing Analysis) or timesim (Timing Simulation) mode for SDF Default: timesim"
+    },
+    {
+      "flag": "-gzip",
+      "description": "write gzipped SDF"
+    },
+    {
+      "flag": "-multithread",
+      "description": "Run in multithread mode with specified number of threads Default: -1"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

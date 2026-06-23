@@ -1,0 +1,20 @@
+{
+  "name": "refresh_design",
+  "short_description": "Refresh the current design",
+  "full_help": "refresh_design\n\nDescription: \nRefresh the current design\n\nSyntax: \nrefresh_design  [-part <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-part]     Target part\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-part",
+      "description": "Target part"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

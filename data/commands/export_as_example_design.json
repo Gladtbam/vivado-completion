@@ -1,0 +1,32 @@
+{
+  "name": "export_as_example_design",
+  "short_description": "Export current design as a static example design",
+  "full_help": "export_as_example_design\n\nDescription: \nExport current design as a static example design\n\nSyntax: \nexport_as_example_design  -vlnv <arg> [-no_ip_version] [-force] [-quiet]\n                          [-verbose] -directory <arg>\n\nUsage: \n  Name              Description\n  -----------------------------\n  -vlnv             VLNV of the example design to be generated\n  [-no_ip_version]  Flag to not include the IP version as part of the IP VLNV\n                    in create_bd_cell commands.\n  [-force]          create a directory if it does not exist\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  -directory        Destination directory in which example design needs to be\n                    generated\n\nCategories: \nIPIntegrator\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-vlnv",
+      "description": "VLNV of the example design to be generated"
+    },
+    {
+      "flag": "-no_ip_version",
+      "description": "Flag to not include the IP version as part of the IP VLNV in create_bd_cell commands."
+    },
+    {
+      "flag": "-force",
+      "description": "create a directory if it does not exist"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    },
+    {
+      "flag": "-directory",
+      "description": "Destination directory in which example design needs to be generated"
+    }
+  ]
+}

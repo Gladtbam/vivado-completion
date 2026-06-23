@@ -1,0 +1,16 @@
+{
+  "name": "create_pblock",
+  "short_description": "Create a new Pblock",
+  "full_help": "create_pblock\n\nDescription: \nCreate a new Pblock\n\nSyntax: \ncreate_pblock  [-quiet] [-verbose] <name>\n\nReturns: \nnew pblock object\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <name>      Name of the new pblock\n\nCategories: \nXDC, Floorplan\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

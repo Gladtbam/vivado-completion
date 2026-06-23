@@ -1,0 +1,20 @@
+{
+  "name": "reset_methodology",
+  "short_description": "Remove Methodology report",
+  "full_help": "reset_methodology\n\nDescription: \nRemove Methodology report\n\nSyntax: \nreset_methodology  [-name <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-name]     Methodology result name\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nMethodology, Report\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Methodology result name"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

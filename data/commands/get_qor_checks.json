@@ -1,0 +1,32 @@
+{
+  "name": "get_qor_checks",
+  "short_description": "Get a list of available QoR suggestions",
+  "full_help": "get_qor_checks\n\nDescription: \nGet a list of available QoR suggestions\n\nSyntax: \nget_qor_checks  [-type <arg>] [-family <arg>] [-filter <arg>]\n                [-of_objects <args>] [-quiet] [-verbose]\n\nReturns: \nList of available qor suggestions\n\nUsage: \n  Name           Description\n  --------------------------\n  [-type]        Report available QoR checks of given type ('suggestion' or \n                 'assessment'\n                 Default: suggestion\n  [-family]      Reports available QoR suggestions for given family\n  [-filter]      Filter list with given expression\n  [-of_objects]  List of QoR checks for given Ruledecks\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n\nCategories: \nObject, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-type",
+      "description": "Report available QoR checks of given type ('suggestion' or 'assessment' Default: suggestion"
+    },
+    {
+      "flag": "-family",
+      "description": "Reports available QoR suggestions for given family"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with given expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "List of QoR checks for given Ruledecks"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

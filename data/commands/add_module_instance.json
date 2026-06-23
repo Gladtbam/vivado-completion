@@ -1,0 +1,32 @@
+{
+  "name": "add_module_instance",
+  "short_description": "Add CIPS instance in top module",
+  "full_help": "add_module_instance\n\nDescription: \nAdd CIPS instance in top module\n\nSyntax: \nadd_module_instance  -module_name <arg> -inst_name <arg> [-lib_name <arg>]\n                     [-force] [-quiet] [-verbose] [<file>]\n\nUsage: \n  Name          Description\n  -------------------------\n  -module_name  Primary unit name to be instantiated\n  -inst_name    Intance name of module/entity to be instantiated\n  [-lib_name]   Library name in which module_name is compiled\n  [-force]      Overwrite existing file\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  [<file>]      Output file to write. Update top file, If option not provided\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-module_name",
+      "description": "Primary unit name to be instantiated"
+    },
+    {
+      "flag": "-inst_name",
+      "description": "Intance name of module/entity to be instantiated"
+    },
+    {
+      "flag": "-lib_name",
+      "description": "Library name in which module_name is compiled"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

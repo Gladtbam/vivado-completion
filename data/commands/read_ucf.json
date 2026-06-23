@@ -1,0 +1,28 @@
+{
+  "name": "read_ucf",
+  "short_description": "Import physical constraints from a file.",
+  "full_help": "read_ucf\n\nDescription: \nImport physical constraints from a file.\n\nSyntax: \nread_ucf  [-cells <args>] [-ref <arg>] [-quiet_diff_pairs] [-quiet] [-verbose]\n          <file>\n\nReturns: \nlist of added files\n\nUsage: \n  Name                 Description\n  --------------------------------\n  [-cells]             Import constraints for these cells\n  [-ref]               Import constraints for this ref\n  [-quiet_diff_pairs]  Suppress warnings about differential pair inference \n                       when importing I/O ports\n  [-quiet]             Ignore command errors\n  [-verbose]           Suspend message limits during command execution\n  <file>               Input UCF file name\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cells",
+      "description": "Import constraints for these cells"
+    },
+    {
+      "flag": "-ref",
+      "description": "Import constraints for this ref"
+    },
+    {
+      "flag": "-quiet_diff_pairs",
+      "description": "Suppress warnings about differential pair inference when importing I/O ports"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

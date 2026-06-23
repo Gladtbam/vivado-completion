@@ -1,0 +1,156 @@
+{
+  "name": "report_design_analysis",
+  "short_description": "Report Design Analysis",
+  "full_help": "report_design_analysis\n\nDescription: \nReport Design Analysis\n\nSyntax: \nreport_design_analysis  [-file <arg>] [-csv <arg>] [-append] [-return_string]\n                        [-complexity] [-cells <args>] [-bounding_boxes <args>]\n                        [-hierarchical_depth <arg>] [-rent_greater_than <arg>]\n                        [-instances_greater_than <arg>]\n                        [-instances_lesser_than <arg>]\n                        [-av_fanout_greater_than <arg>] [-congestion]\n                        [-min_congestion_level <arg>] [-timing] [-setup]\n                        [-hold] [-show_all] [-full_logical_pin]\n                        [-routed_vs_estimated] [-logic_level_distribution]\n                        [-logic_level_dist_paths <arg>] [-min_level <arg>]\n                        [-max_level <arg>] [-return_timing_paths]\n                        [-of_timing_paths <args>] [-max_paths <arg>] [-extend]\n                        [-routes] [-end_point_clocks <args>]\n                        [-logic_levels <arg>] [-qor_summary] [-json <arg>]\n                        [-name <arg>] [-no_pr_attribute] [-quiet] [-verbose]\n\nUsage: \n  Name                         Description\n  ----------------------------------------\n  [-file]                      Filename to output results to. (send output to\n                               console if -file is not used)\n  [-csv]                       Write detailed tables to the CSV filename \n                               specified\n  [-append]                    Append the results to file, don't overwrite \n                               the results file\n  [-return_string]             Return report as string\n  [-complexity]                Finds the interconnection complexity (Rent) of\n                               the design\n  [-cells]                     Report analysis information for given list of \n                               cells\n  [-bounding_boxes]            Report interconnection complexity (Rent) for \n                               given list of bounding boxes\n                               Default: empty\n  [-hierarchical_depth]        Hierarchical depth option for -complexity\n                               Default: 1\n  [-rent_greater_than]         Threshold for Rent for a module to report \n                               complexity\n                               Default: 0.6\n  [-instances_greater_than]    Threshold for minimum number of instances for \n                               a module to report complexity\n                               Default: 15000\n  [-instances_lesser_than]     Threshold for maximum number of instances for \n                               a module to report complexity\n                               Default: 1000000\n  [-av_fanout_greater_than]    Threshold for minimum average fanout for a \n                               module to report complexity\n                               Default: 3.0\n  [-congestion]                Reports congestion of the design\n  [-min_congestion_level]      Minimum congestion level for reporting router \n                               congestion, integer value between 3 and 8\n                               Default: 5\n  [-timing]                    Reports characteristics of critical path\n  [-setup]                     Reports characteristics of critical SETUP path\n  [-hold]                      Reports characteristics of critical HOLD path\n  [-show_all]                  Adds more characteristics to the timing \n                               characteristics report\n  [-full_logical_pin]          Display hierarchical pin names in the report\n  [-routed_vs_estimated]       Reports relevant characteristics of critical \n                               path in estimated mode\n  [-logic_level_distribution]  Reports logic level distribution\n  [-logic_level_dist_paths]    Number of critical paths for analyzing logic \n                               level distribution used along with \n                               -logic_level_distribution\n                               Default: 1000\n  [-min_level]                 Group all paths with logic levels \n                               <min_level-1> and below into a single bin, \n                               value passed must be at least 1\n                               Default: Not Used\n  [-max_level]                 Group all paths with logic levels \n                               <max_level+1> and above into a single bin, \n                               where <max_level> must be the greater of zero \n                               or <min_level + 1> if -min_level is used\n                               Default: Not Used\n  [-return_timing_paths]       Returns timing path objects\n  [-of_timing_paths]           Reports characteristics for these paths\n  [-max_paths]                 Number of paths to consider for -timing option\n                               Default: 1\n  [-extend]                    Reports characteristics of worst path before \n                               the start point of critical path and worst \n                               path after the end of the critical path\n  [-routes]                    Reports distribution with respect to Routes \n                               instead of logic levels\n  [-end_point_clocks]          Returns timing path objects filtered by \n                               endpoint clock names as passed to this option\n  [-logic_levels]              Returns timing path objects bucketed under the\n                               bin name as passed to this option\n  [-qor_summary]               Design Flow summary\n  [-json]                      Write the report in JSON format to the \n                               filename specified\n  [-name]                      Output the results to GUI panel with this name\n  [-no_pr_attribute]           Report without PR attributes\n  [-quiet]                     Ignore command errors\n  [-verbose]                   Suspend message limits during command \n                               execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-csv",
+      "description": "Write detailed tables to the CSV filename specified"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-complexity",
+      "description": "Finds the interconnection complexity (Rent) of the design"
+    },
+    {
+      "flag": "-cells",
+      "description": "Report analysis information for given list of cells"
+    },
+    {
+      "flag": "-bounding_boxes",
+      "description": "Report interconnection complexity (Rent) for given list of bounding boxes Default: empty"
+    },
+    {
+      "flag": "-hierarchical_depth",
+      "description": "Hierarchical depth option for -complexity Default: 1"
+    },
+    {
+      "flag": "-rent_greater_than",
+      "description": "Threshold for Rent for a module to report complexity Default: 0.6"
+    },
+    {
+      "flag": "-instances_greater_than",
+      "description": "Threshold for minimum number of instances for a module to report complexity Default: 15000"
+    },
+    {
+      "flag": "-instances_lesser_than",
+      "description": "Threshold for maximum number of instances for a module to report complexity Default: 1000000"
+    },
+    {
+      "flag": "-av_fanout_greater_than",
+      "description": "Threshold for minimum average fanout for a module to report complexity Default: 3.0"
+    },
+    {
+      "flag": "-congestion",
+      "description": "Reports congestion of the design"
+    },
+    {
+      "flag": "-min_congestion_level",
+      "description": "Minimum congestion level for reporting router congestion, integer value between 3 and 8 Default: 5"
+    },
+    {
+      "flag": "-timing",
+      "description": "Reports characteristics of critical path"
+    },
+    {
+      "flag": "-setup",
+      "description": "Reports characteristics of critical SETUP path"
+    },
+    {
+      "flag": "-hold",
+      "description": "Reports characteristics of critical HOLD path"
+    },
+    {
+      "flag": "-show_all",
+      "description": "Adds more characteristics to the timing characteristics report"
+    },
+    {
+      "flag": "-full_logical_pin",
+      "description": "Display hierarchical pin names in the report"
+    },
+    {
+      "flag": "-routed_vs_estimated",
+      "description": "Reports relevant characteristics of critical path in estimated mode"
+    },
+    {
+      "flag": "-logic_level_distribution",
+      "description": "Reports logic level distribution"
+    },
+    {
+      "flag": "-logic_level_dist_paths",
+      "description": "Number of critical paths for analyzing logic level distribution used along with -logic_level_distribution Default: 1000"
+    },
+    {
+      "flag": "-min_level",
+      "description": "Group all paths with logic levels <min_level-1> and below into a single bin, value passed must be at least 1 Default: Not Used"
+    },
+    {
+      "flag": "-max_level",
+      "description": "Group all paths with logic levels <max_level+1> and above into a single bin, where <max_level> must be the greater of zero or <min_level + 1> if -min_level is used Default: Not Used"
+    },
+    {
+      "flag": "-return_timing_paths",
+      "description": "Returns timing path objects"
+    },
+    {
+      "flag": "-of_timing_paths",
+      "description": "Reports characteristics for these paths"
+    },
+    {
+      "flag": "-max_paths",
+      "description": "Number of paths to consider for -timing option Default: 1"
+    },
+    {
+      "flag": "-extend",
+      "description": "Reports characteristics of worst path before the start point of critical path and worst path after the end of the critical path"
+    },
+    {
+      "flag": "-routes",
+      "description": "Reports distribution with respect to Routes instead of logic levels"
+    },
+    {
+      "flag": "-end_point_clocks",
+      "description": "Returns timing path objects filtered by endpoint clock names as passed to this option"
+    },
+    {
+      "flag": "-logic_levels",
+      "description": "Returns timing path objects bucketed under the bin name as passed to this option"
+    },
+    {
+      "flag": "-qor_summary",
+      "description": "Design Flow summary"
+    },
+    {
+      "flag": "-json",
+      "description": "Write the report in JSON format to the filename specified"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-no_pr_attribute",
+      "description": "Report without PR attributes"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

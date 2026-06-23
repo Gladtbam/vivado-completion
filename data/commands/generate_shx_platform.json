@@ -1,0 +1,32 @@
+{
+  "name": "generate_shx_platform",
+  "short_description": "Move HD.RECONFIGURABLE and related properties to sub-cells",
+  "full_help": "generate_shx_platform\n\nDescription: \nMove HD.RECONFIGURABLE and related properties to sub-cells\n\nSyntax: \ngenerate_shx_platform  [-base_platform <arg>] [-wrapper <arg>] [-output <arg>]\n                       [-reconfig_platform <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name                  Description\n  ---------------------------------\n  [-base_platform]      Specify Base Platform DCP path.\n  [-wrapper]            Specify wrapper DCP path\n  [-output]             Specify output DCP name.\n  [-reconfig_platform]  Specify reconfigurable platform name\n  [-quiet]              Ignore command errors\n  [-verbose]            Suspend message limits during command execution\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-base_platform",
+      "description": "Specify Base Platform DCP path."
+    },
+    {
+      "flag": "-wrapper",
+      "description": "Specify wrapper DCP path"
+    },
+    {
+      "flag": "-output",
+      "description": "Specify output DCP name."
+    },
+    {
+      "flag": "-reconfig_platform",
+      "description": "Specify reconfigurable platform name"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

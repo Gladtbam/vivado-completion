@@ -1,0 +1,28 @@
+{
+  "name": "read_vcd",
+  "short_description": "Import simulation data in vcd format",
+  "full_help": "read_vcd\n\nDescription: \nImport simulation data in vcd format\n\nSyntax: \nread_vcd  [-strip_path <arg>] [-no_strip] [-out_file <arg>] [-quiet] [-verbose]\n          <file>\n\nUsage: \n  Name           Description\n  --------------------------\n  [-strip_path]  Specifies the name of the instance of the current design as \n                 it appears in the VCD file\n  [-no_strip]    Do not strip first two levels of hierarchy from VCD file\n  [-out_file]    Specifies the name of the output file that contains nets \n                 that could not be matched\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  <file>         Specifies the name of the VCD file to be read\n\nCategories: \nFileIO, Power, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-strip_path",
+      "description": "Specifies the name of the instance of the current design as it appears in the VCD file"
+    },
+    {
+      "flag": "-no_strip",
+      "description": "Do not strip first two levels of hierarchy from VCD file"
+    },
+    {
+      "flag": "-out_file",
+      "description": "Specifies the name of the output file that contains nets that could not be matched"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "send_msg_id",
+  "short_description": "Send message by id",
+  "full_help": "send_msg_id\n\nDescription: \nSend message by id\n\nSyntax: \nsend_msg_id  [-continue] [-quiet] [-verbose] [<id>] <severity> <msg>\n\nUsage: \n  Name         Description\n  ------------------------\n  [-continue]  Continue the execution of the current tcl script (if any) in \n               cases where severity is ERROR. Default behavior is to \n               terminate the currently executing script on ERROR.\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  [<id>]       Unique message prefix and id to be sent e.g. 'Common 17-1'.\n  <severity>   Message severity to send, e.g. \"ALL\", \"ERROR\" or \"CRITICAL \n               WARNING\"\n  <msg>        Complete formated message text in double quotes\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-continue",
+      "description": "Continue the execution of the current tcl script (if any) in cases where severity is ERROR. Default behavior is to terminate the currently executing script on ERROR."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

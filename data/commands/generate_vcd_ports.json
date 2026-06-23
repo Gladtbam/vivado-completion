@@ -1,0 +1,16 @@
+{
+  "name": "generate_vcd_ports",
+  "short_description": "Generate VCD ports for the instance",
+  "full_help": "generate_vcd_ports\n\nDescription: \nGenerate VCD ports for the instance\n\nSyntax: \ngenerate_vcd_ports  [-quiet] [-verbose] <scope>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <scope>     Instance scope hierarchy\n\nCategories: \nToolLaunch, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

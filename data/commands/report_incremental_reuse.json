@@ -1,0 +1,40 @@
+{
+  "name": "report_incremental_reuse",
+  "short_description": "Compute achievable incremental reuse for the given design-checkpoint and report",
+  "full_help": "report_incremental_reuse\n\nDescription: \nCompute achievable incremental reuse for the given design-checkpoint and report\n\nSyntax: \nreport_incremental_reuse  [-file <arg>] [-append] [-cells <args>]\n                          [-hierarchical] [-hierarchical_depth <arg>]\n                          [-return_string] [-quiet] [-verbose]\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-file]                Filename to output results to. (send output to \n                         console if -file is not used)\n  [-append]              Append to existing file\n  [-cells]               Report incremental reuse of given list of cells\n  [-hierarchical]        Generates text-based hierarchical incremental reuse \n                         report.\n  [-hierarchical_depth]  Specifies the depth level for textual hierachical \n                         incremental reuse report\n                         Default: 0\n  [-return_string]       Return report as string\n  [-quiet]               Ignore command errors\n  [-verbose]             Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append to existing file"
+    },
+    {
+      "flag": "-cells",
+      "description": "Report incremental reuse of given list of cells"
+    },
+    {
+      "flag": "-hierarchical",
+      "description": "Generates text-based hierarchical incremental reuse report."
+    },
+    {
+      "flag": "-hierarchical_depth",
+      "description": "Specifies the depth level for textual hierachical incremental reuse report Default: 0"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

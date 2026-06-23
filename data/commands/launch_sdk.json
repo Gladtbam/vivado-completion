@@ -1,0 +1,36 @@
+{
+  "name": "launch_sdk",
+  "short_description": "Launch Xilinx Software Development Kit (SDK)",
+  "full_help": "launch_sdk\n\nDescription: \nLaunch Xilinx Software Development Kit (SDK)\n\nSyntax: \nlaunch_sdk  [-bit <arg>] [-bmm <arg>] [-workspace <arg>] [-lp <arg>]\n            [-hwspec <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name          Description\n  -------------------------\n  [-bit]        Specify the bitstream file for FPGA programming\n  [-bmm]        Specify the BMM file for BRAM initialization\n  [-workspace]  Specify the workspace directory for SDK projects\n  [-lp]         Add <repository_path> to the list of Driver/OS/Library search\n                directories.\n  [-hwspec]     Specify the hardware platform specification file \n                (<system>.xml)\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n\nCategories: \nToolLaunch\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-bit",
+      "description": "Specify the bitstream file for FPGA programming"
+    },
+    {
+      "flag": "-bmm",
+      "description": "Specify the BMM file for BRAM initialization"
+    },
+    {
+      "flag": "-workspace",
+      "description": "Specify the workspace directory for SDK projects"
+    },
+    {
+      "flag": "-lp",
+      "description": "Add <repository_path> to the list of Driver/OS/Library search directories."
+    },
+    {
+      "flag": "-hwspec",
+      "description": "Specify the hardware platform specification file (<system>.xml)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

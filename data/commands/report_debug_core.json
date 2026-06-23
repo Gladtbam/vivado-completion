@@ -1,0 +1,36 @@
+{
+  "name": "report_debug_core",
+  "short_description": "Report details on debug cores",
+  "full_help": "report_debug_core\n\nDescription: \nReport details on debug cores\n\nSyntax: \nreport_debug_core  [-file <arg>] [-append] [-return_string] [-full_path]\n                   [-quiet] [-verbose]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-file]           Filename to output results to. (send output to console if\n                    -file is not used)\n  [-append]         Append the results to file, don't overwrite the results \n                    file\n  [-return_string]  Return report as a string\n  [-full_path]      Display full hierarchical net path in report\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nReport, Debug\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if"
+    },
+    {
+      "flag": "-file",
+      "description": "is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as a string"
+    },
+    {
+      "flag": "-full_path",
+      "description": "Display full hierarchical net path in report"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

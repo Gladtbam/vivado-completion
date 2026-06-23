@@ -1,0 +1,20 @@
+{
+  "name": "validate_board_files",
+  "short_description": "Check whether the XML files describing a board in the given directory are valid. Only supported for board XML files with schema_version>=2.0. The XML files must contain an appropriate DOCTYPE declaration to be fully validated. Examples: <!DOCTYPE board SYSTEM \"board.dtd\"> <!-- for board.xml --> <!DOCTYPE ip_presets SYSTEM \"preset.dtd\"> <!-- for preset.xml --> <!DOCTYPE part_info SYSTEM \"part0_pins.dtd\"> <!-- for part0_pins.xml -->  Note that if a project is open and an IP repository loaded, this command will also validate certain IP and Interface attributes used in the board definition against the current IP repository.",
+  "full_help": "validate_board_files\n\nDescription: \nCheck whether the XML files describing a board in the given directory are valid.\nOnly supported for board XML files with schema_version>=2.0.\nThe XML files must contain an appropriate DOCTYPE declaration to be fully validated. Examples:\n<!DOCTYPE board SYSTEM \"board.dtd\"> <!-- for board.xml -->\n<!DOCTYPE ip_presets SYSTEM \"preset.dtd\"> <!-- for preset.xml -->\n<!DOCTYPE part_info SYSTEM \"part0_pins.dtd\"> <!-- for part0_pins.xml -->\n\nNote that if a project is open and an IP repository loaded, this command will also validate\ncertain IP and Interface attributes used in the board definition against the current IP repository.\n\nSyntax: \nvalidate_board_files  [-doctype_inject <arg>] [-quiet] [-verbose] [<dir>]\n\nReturns: \nok if all board files are valid\n\nUsage: \n  Name               Description\n  ------------------------------\n  [-doctype_inject]  The name of a directory containing the dtd files \n                     (board.dtd, part0_pins.dtd, preset.dtd) for DOCTYPE \n                     injection in board files. If the path is invalid (or \n                     does not contain the dtd files), then the injection will\n                     not happen. Use \"\" to inject the default dtd files from \n                     the vivado install data path.\n  [-quiet]           Ignore command errors\n  [-verbose]         Suspend message limits during command execution\n  [<dir>]            The name of a directory containing the board files \n                     (board.xml, part0_pins.xml, preset.xml) to be checked\n\nCategories: \nObject, Project, XPS, Board\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-doctype_inject",
+      "description": "The name of a directory containing the dtd files (board.dtd, part0_pins.dtd, preset.dtd) for DOCTYPE injection in board files. If the path is invalid (or does not contain the dtd files), then the injection will not happen. Use \"\" to inject the default dtd files from the vivado install data path."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

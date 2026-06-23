@@ -1,0 +1,32 @@
+{
+  "name": "get_report_configs",
+  "short_description": "Get a list of Configurable Report objects",
+  "full_help": "get_report_configs\n\nDescription: \nGet a list of Configurable Report objects\n\nSyntax: \nget_report_configs  [-regexp] [-nocase] [-filter <arg>] [-of_objects <args>]\n                    [-quiet] [-verbose] [<patterns>]\n\nReturns: \nlist of Configurable Report objects\n\nUsage: \n  Name           Description\n  --------------------------\n  [-regexp]      Patterns are full regular expressions\n  [-nocase]      Perform case-insensitive matching (valid only when -regexp \n                 specified)\n  [-filter]      Filter list with expression\n  [-of_objects]  Get 'report' objects of these types: 'run'.\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<patterns>]   Match report names against patterns\n                 Default: *\n\nCategories: \nObject, Report\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get 'report' objects of these types: 'run'."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

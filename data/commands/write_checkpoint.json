@@ -1,0 +1,36 @@
+{
+  "name": "write_checkpoint",
+  "short_description": "Write a checkpoint of the current design",
+  "full_help": "write_checkpoint\n\nDescription: \nWrite a checkpoint of the current design\n\nSyntax: \nwrite_checkpoint  [-force] [-cell <arg>] [-logic_function_stripped] [-encrypt]\n                  [-key <arg>] [-quiet] [-verbose] [<file>]\n\nReturns: \nThe name of the checkpoint file\n\nUsage: \n  Name                        Description\n  ---------------------------------------\n  [-force]                    Overwrite existing checkpoint file\n  [-cell]                     Write a checkpoint of this cell\n  [-logic_function_stripped]  Convert INIT strings on LUTs & RAMBs to fixed \n                              values. Note that the resulting netlist will be\n                              nonfunctional.\n  [-encrypt]                  Encrypt unprotected modules using IEEE 1735 IP \n                              security version 2\n  [-key]                      Key file to be used with -encrypt option; \n                              Otherwise, use Xilinx public key\n  [-quiet]                    Ignore command errors\n  [-verbose]                  Suspend message limits during command execution\n  [<file>]                    Design checkpoint file\n                              Values: A filename with alphanumeric characters\n                              and .dcp extension.\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrite existing checkpoint file"
+    },
+    {
+      "flag": "-cell",
+      "description": "Write a checkpoint of this cell"
+    },
+    {
+      "flag": "-logic_function_stripped",
+      "description": "Convert INIT strings on LUTs & RAMBs to fixed values. Note that the resulting netlist will be nonfunctional."
+    },
+    {
+      "flag": "-encrypt",
+      "description": "Encrypt unprotected modules using IEEE 1735 IP security version 2"
+    },
+    {
+      "flag": "-key",
+      "description": "Key file to be used with -encrypt option; Otherwise, use Xilinx public key"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

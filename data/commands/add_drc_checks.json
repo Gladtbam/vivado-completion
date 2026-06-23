@@ -1,0 +1,36 @@
+{
+  "name": "add_drc_checks",
+  "short_description": "Add DRC rule check objects to a rule deck",
+  "full_help": "add_drc_checks\n\nDescription: \nAdd DRC rule check objects to a rule deck\n\nSyntax: \nadd_drc_checks  [-of_objects <args>] [-regexp] [-nocase] [-filter <arg>]\n                -ruledeck <arg> [-quiet] [-verbose] [<patterns>]\n\nReturns: \ndrc_check\n\nUsage: \n  Name           Description\n  --------------------------\n  [-of_objects]  Get 'rule_check' objects of these types: 'drc_ruledeck'.\n  [-regexp]      Patterns are full regular expressions\n  [-nocase]      Perform case-insensitive matching. (valid only when -regexp \n                 specified)\n  [-filter]      Filter list with expression\n  -ruledeck      DRC rule deck to modify\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<patterns>]   Match the 'rule_check' objects against patterns.\n                 Default: *\n\nCategories: \nDRC, Object\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-of_objects",
+      "description": "Get 'rule_check' objects of these types: 'drc_ruledeck'."
+    },
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching. (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-ruledeck",
+      "description": "DRC rule deck to modify"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "lint_files",
+  "short_description": "Run the Tcl linter on specified files.",
+  "full_help": "lint_files\n\nDescription: \nRun the Tcl linter on specified files.\n\nSyntax: \nlint_files  [-quiet] [-verbose] [<files>...]\n\nReturns: \nnothing.\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<files>]   List of Tcl files to lint\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

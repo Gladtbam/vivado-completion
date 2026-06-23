@@ -1,0 +1,124 @@
+{
+  "name": "phys_opt_design",
+  "short_description": "Optimize the current placed netlist.",
+  "full_help": "phys_opt_design\n\nDescription: \nOptimize the current placed netlist.\n\nSyntax: \nphys_opt_design  [-fanout_opt] [-placement_opt] [-routing_opt]\n                 [-slr_crossing_opt] [-insert_negative_edge_ffs]\n                 [-restruct_opt] [-interconnect_retime] [-lut_opt] [-casc_opt]\n                 [-cell_group_opt] [-critical_cell_opt] [-dsp_register_opt]\n                 [-bram_register_opt] [-uram_register_opt] [-bram_enable_opt]\n                 [-shift_register_opt] [-hold_fix] [-aggressive_hold_fix]\n                 [-retime] [-force_replication_on_nets <args>]\n                 [-directive <arg>] [-critical_pin_opt] [-clock_opt]\n                 [-path_groups <args>] [-tns_cleanup] [-sll_reg_hold_fix]\n                 [-memory_rewire_opt] [-quiet] [-verbose]\n\nUsage: \n  Name                          Description\n  -----------------------------------------\n  [-fanout_opt]                 Do cell-duplication based optimization on \n                                high-fanout timing critical nets\n  [-placement_opt]              Do placement based optimization on timing \n                                critical nets\n  [-routing_opt]                Do routing based optimization on timing \n                                critical nets\n  [-slr_crossing_opt]           Do placement optimization of SLR-crossing \n                                timing critical nets\n  [-insert_negative_edge_ffs]   Insert negative edge triggered FFs for hold \n                                optimization\n  [-restruct_opt]               Do LUT restructuring optimization\n  [-interconnect_retime]        Do interconnect retiming optimization\n  [-lut_opt]                    Do single LUT replacement/replication \n                                optimization\n  [-casc_opt]                   Do LUT cascade placement/replication \n                                optimization\n  [-cell_group_opt]             Do critical cell group optimization\n  [-critical_cell_opt]          Do cell-duplication based optimization on \n                                timing critical nets\n  [-dsp_register_opt]           Do DSP register optimization\n  [-bram_register_opt]          Do BRAM register optimization\n  [-uram_register_opt]          Do UltraRAM register optimization\n  [-bram_enable_opt]            Do BRAM enable optimization\n  [-shift_register_opt]         Do Shift register optimization\n  [-hold_fix]                   Attempt to improve slack of high hold \n                                violators\n  [-aggressive_hold_fix]        Attempt to aggressively improve slack of high\n                                hold violators\n  [-retime]                     Do retiming optimization\n  [-force_replication_on_nets]  Force replication optimization on nets\n  [-directive]                  Mode of behavior (directive) for this \n                                command. Please refer to Arguments section of\n                                this help for values for this option\n                                Default: Default\n  [-critical_pin_opt]           Do pin-swapping based optimization on timing \n                                critical nets\n  [-clock_opt]                  Do clock skew optimization in post-route \n                                optimization\n  [-path_groups]                Work only on specified path groups\n  [-tns_cleanup]                Work on all nets in the design that meet \n                                criteria for the specified optimizations to \n                                improve design tns\n  [-sll_reg_hold_fix]           Do hold fixing on SLL Tx-Rx paths\n  [-memory_rewire_opt]          Do memory pin-swapping based optimization on \n                                timing critical nets\n  [-quiet]                      Ignore command errors\n  [-verbose]                    Suspend message limits during command \n                                execution\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-fanout_opt",
+      "description": "Do cell-duplication based optimization on high-fanout timing critical nets"
+    },
+    {
+      "flag": "-placement_opt",
+      "description": "Do placement based optimization on timing critical nets"
+    },
+    {
+      "flag": "-routing_opt",
+      "description": "Do routing based optimization on timing critical nets"
+    },
+    {
+      "flag": "-slr_crossing_opt",
+      "description": "Do placement optimization of SLR-crossing timing critical nets"
+    },
+    {
+      "flag": "-insert_negative_edge_ffs",
+      "description": "Insert negative edge triggered FFs for hold optimization"
+    },
+    {
+      "flag": "-restruct_opt",
+      "description": "Do LUT restructuring optimization"
+    },
+    {
+      "flag": "-interconnect_retime",
+      "description": "Do interconnect retiming optimization"
+    },
+    {
+      "flag": "-lut_opt",
+      "description": "Do single LUT replacement/replication optimization"
+    },
+    {
+      "flag": "-casc_opt",
+      "description": "Do LUT cascade placement/replication optimization"
+    },
+    {
+      "flag": "-cell_group_opt",
+      "description": "Do critical cell group optimization"
+    },
+    {
+      "flag": "-critical_cell_opt",
+      "description": "Do cell-duplication based optimization on timing critical nets"
+    },
+    {
+      "flag": "-dsp_register_opt",
+      "description": "Do DSP register optimization"
+    },
+    {
+      "flag": "-bram_register_opt",
+      "description": "Do BRAM register optimization"
+    },
+    {
+      "flag": "-uram_register_opt",
+      "description": "Do UltraRAM register optimization"
+    },
+    {
+      "flag": "-bram_enable_opt",
+      "description": "Do BRAM enable optimization"
+    },
+    {
+      "flag": "-shift_register_opt",
+      "description": "Do Shift register optimization"
+    },
+    {
+      "flag": "-hold_fix",
+      "description": "Attempt to improve slack of high hold violators"
+    },
+    {
+      "flag": "-aggressive_hold_fix",
+      "description": "Attempt to aggressively improve slack of high hold violators"
+    },
+    {
+      "flag": "-retime",
+      "description": "Do retiming optimization"
+    },
+    {
+      "flag": "-force_replication_on_nets",
+      "description": "Force replication optimization on nets"
+    },
+    {
+      "flag": "-directive",
+      "description": "Mode of behavior (directive) for this command. Please refer to Arguments section of this help for values for this option Default: Default"
+    },
+    {
+      "flag": "-critical_pin_opt",
+      "description": "Do pin-swapping based optimization on timing critical nets"
+    },
+    {
+      "flag": "-clock_opt",
+      "description": "Do clock skew optimization in post-route optimization"
+    },
+    {
+      "flag": "-path_groups",
+      "description": "Work only on specified path groups"
+    },
+    {
+      "flag": "-tns_cleanup",
+      "description": "Work on all nets in the design that meet criteria for the specified optimizations to improve design tns"
+    },
+    {
+      "flag": "-sll_reg_hold_fix",
+      "description": "Do hold fixing on SLL Tx-Rx paths"
+    },
+    {
+      "flag": "-memory_rewire_opt",
+      "description": "Do memory pin-swapping based optimization on timing critical nets"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "report_fit",
+  "short_description": "Run FIT estimation and display report",
+  "full_help": "report_fit\n\nDescription: \nRun FIT estimation and display report\n\nSyntax: \nreport_fit  [-alt <arg>] [-long <arg>] [-lat <arg>] [-devices <arg>]\n            [-time <arg>] [-temp <arg>] [-revised_packaging_model]\n            [-file <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name                        Description\n  ---------------------------------------\n  [-alt]                      The altitude/elevation where the circuit will \n                              be deployed.  Default units are in meters.  Use\n                              set_units to change.\n                              Default: 0.0\n  [-long]                     The longitude where the circuit will be \n                              deployed:  Range 0 to 360\n                              Default: 285\n  [-lat]                      The latitude where the circuit will be \n                              deployed:  Range -90 to 90\n                              Default: 40\n  [-devices]                  The number of devices that will be deployed in \n                              the application.\n                              Default: 1\n  [-time]                     The time window in which the application will \n                              be running (in months).\n                              Default: 12\n  [-temp]                     The junction temperature in which the device(s)\n                              will be running (in degrees C):  25, 85, 100, \n                              or 125\n                              Default: 25\n  [-revised_packaging_model]  Use revised packaging model for FIT estimation\n  [-file]                     Filename to output results to. (send output to \n                              console if -file is not used)\n  [-quiet]                    Ignore command errors\n  [-verbose]                  Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-alt",
+      "description": "The altitude/elevation where the circuit will be deployed.  Default units are in meters.  Use set_units to change. Default: 0.0"
+    },
+    {
+      "flag": "-long",
+      "description": "The longitude where the circuit will be deployed:  Range 0 to 360 Default: 285"
+    },
+    {
+      "flag": "-lat",
+      "description": "The latitude where the circuit will be deployed:  Range -90 to 90 Default: 40"
+    },
+    {
+      "flag": "-devices",
+      "description": "The number of devices that will be deployed in the application. Default: 1"
+    },
+    {
+      "flag": "-time",
+      "description": "The time window in which the application will be running (in months). Default: 12"
+    },
+    {
+      "flag": "-temp",
+      "description": "The junction temperature in which the device(s) will be running (in degrees C):  25, 85, 100, or 125 Default: 25"
+    },
+    {
+      "flag": "-revised_packaging_model",
+      "description": "Use revised packaging model for FIT estimation"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

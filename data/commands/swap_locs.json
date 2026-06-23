@@ -1,0 +1,16 @@
+{
+  "name": "swap_locs",
+  "short_description": "Swap two locations",
+  "full_help": "swap_locs\n\nDescription: \nSwap two locations\n\nSyntax: \nswap_locs  [-quiet] [-verbose] <aloc> <bloc>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <aloc>      First location (port/cell/site - should be of same type as \n              'bloc')\n  <bloc>      Second location (port/cell/site - should be of same type as \n              'aloc')\n\nCategories: \nFloorplan\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

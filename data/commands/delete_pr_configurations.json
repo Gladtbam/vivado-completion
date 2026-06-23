@@ -1,0 +1,16 @@
+{
+  "name": "delete_pr_configurations",
+  "short_description": "Delete existing configurations",
+  "full_help": "delete_pr_configurations\n\nDescription: \nDelete existing configurations\n\nSyntax: \ndelete_pr_configurations  [-quiet] [-verbose] <configs>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <configs>   List of Configurations to delete\n\nCategories: \nPartition\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

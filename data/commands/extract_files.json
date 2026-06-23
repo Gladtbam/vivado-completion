@@ -1,0 +1,32 @@
+{
+  "name": "extract_files",
+  "short_description": "Extract files from a core container to disk",
+  "full_help": "extract_files\n\nDescription: \nExtract files from a core container to disk\n\nSyntax: \nextract_files  [-base_dir <arg>] [-force] [-no_ip_dir] [-no_paths] [-quiet]\n               [-verbose] <files>...\n\nReturns: \nlist of files that were extracted with the new paths\n\nUsage: \n  Name          Description\n  -------------------------\n  [-base_dir]   Base directory for extracted files\n                Default: ip_files\n  [-force]      Overwrite existing files\n  [-no_ip_dir]  Don't include the IP dir as part of the extract directory\n  [-no_paths]   Don't include directories when extracting files\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  <files>       Name of the file(s) to be extracted\n\nCategories: \nIPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-base_dir",
+      "description": "Base directory for extracted files Default: ip_files"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing files"
+    },
+    {
+      "flag": "-no_ip_dir",
+      "description": "Don't include the IP dir as part of the extract directory"
+    },
+    {
+      "flag": "-no_paths",
+      "description": "Don't include directories when extracting files"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

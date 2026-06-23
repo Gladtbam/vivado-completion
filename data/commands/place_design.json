@@ -1,0 +1,72 @@
+{
+  "name": "place_design",
+  "short_description": "Automatically place ports and leaf-level instances",
+  "full_help": "place_design\n\nDescription: \nAutomatically place ports and leaf-level instances\n\nSyntax: \nplace_design  [-directive <arg>] [-subdirective <args>] [-no_timing_driven]\n              [-eco] [-timing_summary] [-unplace] [-post_place_opt] [-no_psip]\n              [-sll_align_opt] [-clock_vtree_type <arg>] [-no_bufg_opt]\n              [-ultrathreads] [-no_noc_opt] [-net_delay_weight <arg>] [-quiet]\n              [-verbose]\n\nUsage: \n  Name                 Description\n  --------------------------------\n  [-directive]         Mode of behavior (directive) for this command. Please \n                       refer to Arguments section of this help for values for\n                       this option.\n                       Default: Default\n  [-subdirective]      (Advanced Flow) Mode of behavior (subdirective) for \n                       this command. Please refer to Arguments section of \n                       this help for values for this option.\n  [-no_timing_driven]  Do not run in timing driven mode\n  [-eco]               (Advanced Flow) Run placer in ECO mode\n  [-timing_summary]    Enable accurate post-placement timing summary.\n  [-unplace]           Unplace all the instances which are not locked by \n                       Constraints.\n  [-post_place_opt]    (Not applicable for Advanced Flow) Run only the post \n                       commit optimizer\n  [-no_psip]           Disable PSIP (Physical Synthesis In Placer) \n                       optimization during placement.\n  [-sll_align_opt]     (Not applicable for Advanced Flow) Run only the sll \n                       alignment optimizer in PCO\n  [-clock_vtree_type]  Specify v-tree template to be used in place_design, \n                       valid values are balanced, intraSLR, interSLR. For the\n                       Advanced Flow, the default is balanced; otherwise, \n                       default is interSLR.\n  [-no_bufg_opt]       (Not applicable for Advanced Flow) Disable global \n                       buffer insertion during placement\n  [-ultrathreads]      (Not applicable for Advanced Flow) Enable \n                       ultra-threads mode to speed up place_design\n  [-no_noc_opt]        To result in better NoC QoS during place_design\n  [-net_delay_weight]  Specify net delay weight to be used, valid options are\n                       low, medium, high\n                       Default: low\n  [-quiet]             Ignore command errors\n  [-verbose]           Suspend message limits during command execution\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-directive",
+      "description": "Mode of behavior (directive) for this command. Please refer to Arguments section of this help for values for this option. Default: Default"
+    },
+    {
+      "flag": "-subdirective",
+      "description": "(Advanced Flow) Mode of behavior (subdirective) for this command. Please refer to Arguments section of this help for values for this option."
+    },
+    {
+      "flag": "-no_timing_driven",
+      "description": "Do not run in timing driven mode"
+    },
+    {
+      "flag": "-eco",
+      "description": "(Advanced Flow) Run placer in ECO mode"
+    },
+    {
+      "flag": "-timing_summary",
+      "description": "Enable accurate post-placement timing summary."
+    },
+    {
+      "flag": "-unplace",
+      "description": "Unplace all the instances which are not locked by Constraints."
+    },
+    {
+      "flag": "-post_place_opt",
+      "description": "(Not applicable for Advanced Flow) Run only the post commit optimizer"
+    },
+    {
+      "flag": "-no_psip",
+      "description": "Disable PSIP (Physical Synthesis In Placer) optimization during placement."
+    },
+    {
+      "flag": "-sll_align_opt",
+      "description": "(Not applicable for Advanced Flow) Run only the sll alignment optimizer in PCO"
+    },
+    {
+      "flag": "-clock_vtree_type",
+      "description": "Specify v-tree template to be used in place_design, valid values are balanced, intraSLR, interSLR. For the Advanced Flow, the default is balanced; otherwise, default is interSLR."
+    },
+    {
+      "flag": "-no_bufg_opt",
+      "description": "(Not applicable for Advanced Flow) Disable global buffer insertion during placement"
+    },
+    {
+      "flag": "-ultrathreads",
+      "description": "(Not applicable for Advanced Flow) Enable ultra-threads mode to speed up place_design"
+    },
+    {
+      "flag": "-no_noc_opt",
+      "description": "To result in better NoC QoS during place_design"
+    },
+    {
+      "flag": "-net_delay_weight",
+      "description": "Specify net delay weight to be used, valid options are low, medium, high Default: low"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

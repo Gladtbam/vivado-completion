@@ -1,0 +1,16 @@
+{
+  "name": "write_guide_info",
+  "short_description": "Write placement information of instances and terms",
+  "full_help": "write_guide_info\n\nDescription: \nWrite placement information of instances and terms\n\nSyntax: \nwrite_guide_info  [-quiet] [-verbose] <file>\n\nReturns: \nname of the output file\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <file>      file name\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "import_files",
+  "short_description": "Import files and/or directories into the active fileset",
+  "full_help": "import_files\n\nDescription: \nImport files and/or directories into the active fileset\n\nSyntax: \nimport_files  [-fileset <arg>] [-force] [-of_objects <args>] [-norecurse]\n              [-flat] [-relative_to <arg>] [-quiet] [-verbose] [<files>...]\n\nReturns: \nA list of file objects that were imported\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-fileset]      Fileset name\n  [-force]        Overwrite files of the same name in project directory\n  [-of_objects]   RMs to import the files to\n  [-norecurse]    Disables the default behavior of recursive directory \n                  searches\n  [-flat]         Import the files into a flat directory structure\n  [-relative_to]  Import the files with respect to the given relative \n                  directory\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n  [<files>]       Name of the files to import into fileset\n\nCategories: \nProject, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-fileset",
+      "description": "Fileset name"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite files of the same name in project directory"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "RMs to import the files to"
+    },
+    {
+      "flag": "-norecurse",
+      "description": "Disables the default behavior of recursive directory searches"
+    },
+    {
+      "flag": "-flat",
+      "description": "Import the files into a flat directory structure"
+    },
+    {
+      "flag": "-relative_to",
+      "description": "Import the files with respect to the given relative directory"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

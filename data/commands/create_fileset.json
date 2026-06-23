@@ -1,0 +1,36 @@
+{
+  "name": "create_fileset",
+  "short_description": "Create a new fileset",
+  "full_help": "create_fileset\n\nDescription: \nCreate a new fileset\n\nSyntax: \ncreate_fileset  [-constrset] [-simset] [-blockset] [-clone_properties <arg>]\n                -define_from <arg> [-quiet] [-verbose] <name>\n\nReturns: \nnew fileset object\n\nUsage: \n  Name                 Description\n  --------------------------------\n  [-constrset]         Create fileset as constraints fileset (default)\n  [-simset]            Create fileset as simulation source fileset\n  [-blockset]          Create fileset as block source fileset\n  [-clone_properties]  Fileset to initialize properties from\n  -define_from         Name of the module in the source fileset to be the top\n                       of the blockset\n  [-quiet]             Ignore command errors\n  [-verbose]           Suspend message limits during command execution\n  <name>               Name of the fileset to be create\n\nCategories: \nProject, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-constrset",
+      "description": "Create fileset as constraints fileset (default)"
+    },
+    {
+      "flag": "-simset",
+      "description": "Create fileset as simulation source fileset"
+    },
+    {
+      "flag": "-blockset",
+      "description": "Create fileset as block source fileset"
+    },
+    {
+      "flag": "-clone_properties",
+      "description": "Fileset to initialize properties from"
+    },
+    {
+      "flag": "-define_from",
+      "description": "Name of the module in the source fileset to be the top of the blockset"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

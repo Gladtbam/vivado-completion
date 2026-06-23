@@ -1,0 +1,40 @@
+{
+  "name": "update_files",
+  "short_description": "Update file(s) in the project based on the file(s) or directory(ies) specified",
+  "full_help": "update_files\n\nDescription: \nUpdate file(s) in the project based on the file(s) or directory(ies) specified\n\nSyntax: \nupdate_files  [-from_files <args>] [-norecurse] [-to_files <args>]\n              [-filesets <args>] [-force] [-report_only] [-quiet] [-verbose]\n\nReturns: \nlist of the files updated\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-from_files]   New files and directories to use for updating\n  [-norecurse]    Recursively search in specified directories\n  [-to_files]     Existing project files and directories to limit updates to\n  [-filesets]     Fileset name\n  [-force]        Overwrite imported files in the project, even if read-only,\n                  if possible\n  [-report_only]  Do no actual file updates, but report on updates that \n                  otherwise would have been made\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from_files",
+      "description": "New files and directories to use for updating"
+    },
+    {
+      "flag": "-norecurse",
+      "description": "Recursively search in specified directories"
+    },
+    {
+      "flag": "-to_files",
+      "description": "Existing project files and directories to limit updates to"
+    },
+    {
+      "flag": "-filesets",
+      "description": "Fileset name"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite imported files in the project, even if read-only, if possible"
+    },
+    {
+      "flag": "-report_only",
+      "description": "Do no actual file updates, but report on updates that otherwise would have been made"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

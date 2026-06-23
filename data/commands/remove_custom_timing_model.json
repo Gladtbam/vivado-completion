@@ -1,0 +1,20 @@
+{
+  "name": "remove_custom_timing_model",
+  "short_description": "removing Custom timing model",
+  "full_help": "remove_custom_timing_model\n\nDescription: \nremoving Custom timing model\n\nSyntax: \nremove_custom_timing_model  [-all] [-quiet] [-verbose] [<cells>]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-all]      remove all CTM cells\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<cells>]   cells to be deleted\n\nCategories: \nTiming\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-all",
+      "description": "remove all CTM cells"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

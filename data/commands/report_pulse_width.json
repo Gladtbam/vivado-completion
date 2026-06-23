@@ -1,0 +1,88 @@
+{
+  "name": "report_pulse_width",
+  "short_description": "Report pulse width check",
+  "full_help": "report_pulse_width\n\nDescription: \nReport pulse width check\n\nSyntax: \nreport_pulse_width  [-file <arg>] [-append] [-name <arg>] [-return_string]\n                    [-warn_on_violation] [-all_violators]\n                    [-significant_digits <arg>] [-limit <arg>] [-min_period]\n                    [-max_period] [-low_pulse] [-high_pulse] [-max_skew]\n                    [-min_skew] [-clocks <args>] [-no_header] [-cells <args>]\n                    [-rpx <arg>] [-quiet] [-verbose] [<objects>]\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-file]                Filename to output results to. (send output to \n                         console if -file is not used)\n  [-append]              Append the results to file, don't overwrite the \n                         results file\n  [-name]                Results name in which to store output\n  [-return_string]       Return report as string\n  [-warn_on_violation]   Issue a critical warning when the report contains a \n                         timing violation\n  [-all_violators]       Only report pins/ports where check violations occur\n  [-significant_digits]  Number of digits to display: Range: 0 to 3\n                         Default: 3\n  [-limit]               Number of checks of a particular type to report per \n                         clock: Default is 1\n                         Default: 1\n  [-min_period]          Only report min period checks\n  [-max_period]          Only report max period checks\n  [-low_pulse]           Only report min low pulse width checks\n  [-high_pulse]          Only report min high pulse width checks\n  [-max_skew]            Only report max skew checks\n  [-min_skew]            Only report min skew checks\n  [-clocks]              List of clocks for which to report min pulse \n                         width/min period checks\n  [-no_header]           Do not generate a report header\n  [-cells]               Run report_pulse_width on the specified cell(s)\n  [-rpx]                 Filename to output interactive results to.\n  [-quiet]               Ignore command errors\n  [-verbose]             Suspend message limits during command execution\n  [<objects>]            List of objects to check min pulse width with\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-name",
+      "description": "Results name in which to store output"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-warn_on_violation",
+      "description": "Issue a critical warning when the report contains a timing violation"
+    },
+    {
+      "flag": "-all_violators",
+      "description": "Only report pins/ports where check violations occur"
+    },
+    {
+      "flag": "-significant_digits",
+      "description": "Number of digits to display: Range: 0 to 3 Default: 3"
+    },
+    {
+      "flag": "-limit",
+      "description": "Number of checks of a particular type to report per clock: Default is 1 Default: 1"
+    },
+    {
+      "flag": "-min_period",
+      "description": "Only report min period checks"
+    },
+    {
+      "flag": "-max_period",
+      "description": "Only report max period checks"
+    },
+    {
+      "flag": "-low_pulse",
+      "description": "Only report min low pulse width checks"
+    },
+    {
+      "flag": "-high_pulse",
+      "description": "Only report min high pulse width checks"
+    },
+    {
+      "flag": "-max_skew",
+      "description": "Only report max skew checks"
+    },
+    {
+      "flag": "-min_skew",
+      "description": "Only report min skew checks"
+    },
+    {
+      "flag": "-clocks",
+      "description": "List of clocks for which to report min pulse width/min period checks"
+    },
+    {
+      "flag": "-no_header",
+      "description": "Do not generate a report header"
+    },
+    {
+      "flag": "-cells",
+      "description": "Run report_pulse_width on the specified cell(s)"
+    },
+    {
+      "flag": "-rpx",
+      "description": "Filename to output interactive results to."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

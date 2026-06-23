@@ -1,0 +1,48 @@
+{
+  "name": "write_hwx",
+  "short_description": "Writes the hardware files archive for the current design for use in the Labtool",
+  "full_help": "write_hwx\n\nDescription: \nWrites the hardware files archive for the current design for use in the Labtool\n\nSyntax: \nwrite_hwx  [-force] [-bit <arg>] [-bin <arg>] [-ll <arg>] [-msk <arg>]\n           [-nky <arg>] [-rbt <arg>] [-ltx <arg>] [-quiet] [-verbose] <file>\n\nReturns: \nThe name of the hw file\n\nUsage: \n  Name        Description\n  -----------------------\n  [-force]    Overwrite existing hardware archive file\n  [-bit]      Bitstream file \n  [-bin]      Binary configuration data file with no header information\n  [-ll]       Logical location file\n  [-msk]      Mask file\n  [-nky]      Encryption key file\n  [-rbt]      Raw bit file\n  [-ltx]      Debug probes file\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <file>      Hardware archive file\n              Values: A filename with alphanumeric characters and .hwx \n              extension.\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrite existing hardware archive file"
+    },
+    {
+      "flag": "-bit",
+      "description": "Bitstream file"
+    },
+    {
+      "flag": "-bin",
+      "description": "Binary configuration data file with no header information"
+    },
+    {
+      "flag": "-ll",
+      "description": "Logical location file"
+    },
+    {
+      "flag": "-msk",
+      "description": "Mask file"
+    },
+    {
+      "flag": "-nky",
+      "description": "Encryption key file"
+    },
+    {
+      "flag": "-rbt",
+      "description": "Raw bit file"
+    },
+    {
+      "flag": "-ltx",
+      "description": "Debug probes file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

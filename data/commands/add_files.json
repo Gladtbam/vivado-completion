@@ -1,0 +1,40 @@
+{
+  "name": "add_files",
+  "short_description": "Add sources to the active fileset",
+  "full_help": "add_files\n\nDescription: \nAdd sources to the active fileset\n\nSyntax: \nadd_files  [-fileset <arg>] [-of_objects <args>] [-norecurse] [-copy_to <arg>]\n           [-force] [-scan_for_includes] [-quiet] [-verbose] [<files>...]\n\nReturns: \nlist of file objects that were added\n\nUsage: \n  Name                  Description\n  ---------------------------------\n  [-fileset]            Fileset name\n  [-of_objects]         Filesets or sub-designs or RMs to add the files to\n  [-norecurse]          Do not recursively search in specified directories\n  [-copy_to]            Copy the file to the specified directory before \n                        adding it to project\n  [-force]              Overwrite the existing file when -copy_to is used\n  [-scan_for_includes]  Scan and add any included files found in the \n                        fileset's RTL sources\n  [-quiet]              Ignore command errors\n  [-verbose]            Suspend message limits during command execution\n  [<files>]             Name of the files and/or directories to add. Must be \n                        specified if -scan_for_includes is not used.\n\nCategories: \nProject, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-fileset",
+      "description": "Fileset name"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Filesets or sub-designs or RMs to add the files to"
+    },
+    {
+      "flag": "-norecurse",
+      "description": "Do not recursively search in specified directories"
+    },
+    {
+      "flag": "-copy_to",
+      "description": "Copy the file to the specified directory before adding it to project"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite the existing file when -copy_to is used"
+    },
+    {
+      "flag": "-scan_for_includes",
+      "description": "Scan and add any included files found in the fileset's RTL sources"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

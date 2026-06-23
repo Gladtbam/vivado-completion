@@ -1,0 +1,7 @@
+{
+  "name": "close",
+  "short_description": "",
+  "full_help": "\nTopic              Description\nclose_bd_design    This command is auto loaded by Tcl. To explicitly load the command type 'load_features ipintegrator'.\nclose_design       Close the current design\nclose_hw           This command is auto loaded by Tcl. To explicitly load the command type 'load_features labtools'.\nclose_hw_manager   This command is auto loaded by Tcl. To explicitly load the command type 'load_features labtools'.\nclose_hw_target    This command is auto loaded by Tcl. To explicitly load the command type 'load_features labtools'.\nclose_project      Close current opened project\nclose_saif         This command is auto loaded by Tcl. To explicitly load the command type 'load_features simulator'.\nclose_sim          This command is auto loaded by Tcl. To explicitly load the command type 'load_features simulator'.\nclose_vcd          This command is auto loaded by Tcl. To explicitly load the command type 'load_features simulator'.\nclose_wave_config  This command is auto loaded by Tcl. To explicitly load the command type 'load_features simulator'.\n\nFor help on an individual topic, type 'help <topic>'. For example:\n% help create_project\n",
+  "custom_snippet": null,
+  "arguments": []
+}

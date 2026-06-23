@@ -1,0 +1,7 @@
+{
+  "name": "read_hw",
+  "short_description": "",
+  "full_help": "The command 'read_hw' is auto loaded by Tcl. To explicitly load the command type 'load_features labtools'.",
+  "custom_snippet": null,
+  "arguments": []
+}

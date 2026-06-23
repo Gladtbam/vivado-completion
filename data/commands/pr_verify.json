@@ -1,0 +1,44 @@
+{
+  "name": "pr_verify",
+  "short_description": "Verify whether the design check points are replaceable on board. This command supports these formats:\r  (1) 'pr_verify DCP1 DCP2 -full_check';\r  (2) 'pr_verify -initial DCP1 -additional {DCP2 DCP3 DCP4 ...}';\r  (3) 'pr_verify -in_memory -additional {DCP2 DCP3 ...}';\r  For format (3), it must have an in-memory design opened.",
+  "full_help": "pr_verify\n\nDescription: \nVerify whether the design check points are replaceable on board. This command supports these formats:\r\n (1) 'pr_verify DCP1 DCP2 -full_check';\r\n (2) 'pr_verify -initial DCP1 -additional {DCP2 DCP3 DCP4 ...}';\r\n (3) 'pr_verify -in_memory -additional {DCP2 DCP3 ...}';\r\n For format (3), it must have an in-memory design opened.\n\nSyntax: \npr_verify  [-full_check] [-file <arg>] [-initial <arg>] [-additional <arg>]\n           [-in_memory] [-quiet] [-verbose] [<file1>] [<file2>]\n\nUsage: \n  Name           Description\n  --------------------------\n  [-full_check]  Default behavior is to report the first difference only; if \n                 this option is set to true, pr_verify will report complete \n                 difference in placement or routing\n  [-file]        Filename to output results to. Send output to console if \n                 -file is not used.\n  [-initial]     Initial checkpoint (.dcp)\n  [-additional]  Additional checkpoints (.dcp)\n  [-in_memory]   use in-memory design for comparison, combined with \n                 -additional option\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<file1>]      Design checkpoint (.dcp) file one\n  [<file2>]      Design checkpoint (.dcp) file two\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-full_check",
+      "description": "Default behavior is to report the first difference only; if this option is set to true, pr_verify will report complete difference in placement or routing"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. Send output to console if"
+    },
+    {
+      "flag": "-file",
+      "description": "is not used."
+    },
+    {
+      "flag": "-initial",
+      "description": "Initial checkpoint (.dcp)"
+    },
+    {
+      "flag": "-additional",
+      "description": "Additional checkpoints (.dcp)"
+    },
+    {
+      "flag": "-in_memory",
+      "description": "use in-memory design for comparison, combined with"
+    },
+    {
+      "flag": "-additional",
+      "description": "option"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

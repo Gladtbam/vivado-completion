@@ -1,0 +1,24 @@
+{
+  "name": "list_property_value",
+  "short_description": "List legal property values of object",
+  "full_help": "list_property_value\n\nDescription: \nList legal property values of object\n\nSyntax: \nlist_property_value  [-default] [-class <arg>] [-quiet] [-verbose] <name>\n                     [<object>]\n\nReturns: \nlist of property values\n\nUsage: \n  Name        Description\n  -----------------------\n  [-default]  Show only the default value.\n  [-class]    Object type to query for legal property values. Ignored if \n              object is specified.\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <name>      Name of property whose legal values is to be retrieved\n  [<object>]  Object to query for legal properties values\n\nCategories: \nObject, PropertyAndParameter\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-default",
+      "description": "Show only the default value."
+    },
+    {
+      "flag": "-class",
+      "description": "Object type to query for legal property values. Ignored if object is specified."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

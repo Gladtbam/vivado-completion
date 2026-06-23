@@ -1,0 +1,72 @@
+{
+  "name": "report_route_status",
+  "short_description": "Report on status of the routing.",
+  "full_help": "report_route_status\n\nDescription: \nReport on status of the routing.\n\nSyntax: \nreport_route_status  [-return_nets] [-return_string] [-file <arg>] [-append]\n                     [-of_objects <args>] [-route_type <arg>] [-list_all_nets]\n                     [-show_all] [-dump_routes] [-has_routing]\n                     [-boolean_check <arg>] [-ignore_cache] [-to_load <args>]\n                     [-quiet] [-verbose]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-return_nets]    Return a list of nets that match the given -route_type \n                    type\n  [-return_string]  Set the result of running the report in the Tcl \n                    interpreter's result variable\n  [-file]           Filename to output results to. (send output to console if\n                    -file is not used)\n  [-append]         Append the results to file, don't overwrite the results \n                    file\n  [-of_objects]     Report detailed routing for these routes\n  [-route_type]     Only show routes with the given status: \n                    UNPLACED|UNPLACED_ALL|UNROUTED|PARTIAL|GAPS|CONFLICTS|ANT\n                    ENNAS|NODRIVER|MULTI_DRIVER|LOCKED_NODES|HAS_ROUTING|INTR\n                    ASITE|NOLOADS|HIERPORT|ROUTED (ignored if -of_objects is \n                    used)\n  [-list_all_nets]  List full route information for every net in the design \n                    (ignored if -of_objects is used)\n  [-show_all]       List all relevant pins for routes marked as UNPLACED or \n                    PARTIAL routes and list all relevant nodes for routes \n                    marked as ANTENNAS or CONFLICTS routes (by default only \n                    the first 15 pins or nodes are listed for a route)\n  [-dump_routes]    Show the full routing tree for every routed net in the \n                    design.  This is VERY VERBOSE.\n  [-has_routing]    Returns 0 if there is no routing currently stored for \n                    this design and 1 if there is. All other options are \n                    ignored.\n  [-boolean_check]  Returns 1 if the given flag is true and 0 if it is not.  \n                    Value flags that can be checked are: \n                    PLACED_FULLY|PARTIALLY_ROUTED|ROUTED_FULLY|ERRORS_IN_ROUT\n                    ES. All other options are ignored (cannot be used with \n                    -has_routing).\n  [-ignore_cache]   Throw away all cached information and recalculate the \n                    route status for the entire design (slow)\n  [-to_load]        Show just one branch of the given route from the driver \n                    to the given load\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-return_nets",
+      "description": "Return a list of nets that match the given -route_type type"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Set the result of running the report in the Tcl interpreter's result variable"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if"
+    },
+    {
+      "flag": "-file",
+      "description": "is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Report detailed routing for these routes"
+    },
+    {
+      "flag": "-route_type",
+      "description": "Only show routes with the given status: UNPLACED|UNPLACED_ALL|UNROUTED|PARTIAL|GAPS|CONFLICTS|ANT ENNAS|NODRIVER|MULTI_DRIVER|LOCKED_NODES|HAS_ROUTING|INTR ASITE|NOLOADS|HIERPORT|ROUTED (ignored if -of_objects is used)"
+    },
+    {
+      "flag": "-list_all_nets",
+      "description": "List full route information for every net in the design (ignored if -of_objects is used)"
+    },
+    {
+      "flag": "-show_all",
+      "description": "List all relevant pins for routes marked as UNPLACED or PARTIAL routes and list all relevant nodes for routes marked as ANTENNAS or CONFLICTS routes (by default only the first 15 pins or nodes are listed for a route)"
+    },
+    {
+      "flag": "-dump_routes",
+      "description": "Show the full routing tree for every routed net in the design.  This is VERY VERBOSE."
+    },
+    {
+      "flag": "-has_routing",
+      "description": "Returns 0 if there is no routing currently stored for this design and 1 if there is. All other options are ignored."
+    },
+    {
+      "flag": "-boolean_check",
+      "description": "Returns 1 if the given flag is true and 0 if it is not. Value flags that can be checked are: PLACED_FULLY|PARTIALLY_ROUTED|ROUTED_FULLY|ERRORS_IN_ROUT ES. All other options are ignored (cannot be used with -has_routing)."
+    },
+    {
+      "flag": "-ignore_cache",
+      "description": "Throw away all cached information and recalculate the route status for the entire design (slow)"
+    },
+    {
+      "flag": "-to_load",
+      "description": "Show just one branch of the given route from the driver to the given load"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

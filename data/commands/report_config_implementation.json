@@ -1,0 +1,36 @@
+{
+  "name": "report_config_implementation",
+  "short_description": "Report Implementation flow Config param",
+  "full_help": "report_config_implementation\n\nDescription: \nReport Implementation flow Config param\n\nSyntax: \nreport_config_implementation  [-file <arg>] [-force] [-append] [-return_string]\n                              [-quiet] [-verbose]\n\nReturns: \nReport\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-file]           Filename to output results to. Send output to console if \n                    -file is not used.\n  [-force]          Overwrite existing file\n  [-append]         Append to existing file\n  [-return_string]  Return report as string\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. Send output to console if"
+    },
+    {
+      "flag": "-file",
+      "description": "is not used."
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-append",
+      "description": "Append to existing file"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

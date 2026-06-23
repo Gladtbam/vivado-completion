@@ -1,0 +1,20 @@
+{
+  "name": "config_design_analysis",
+  "short_description": "This command configures general features of design analysis.",
+  "full_help": "config_design_analysis\n\nDescription: \nThis command configures general features of design analysis.\n\nSyntax: \nconfig_design_analysis  [-max_common_paths <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name                 Description\n  --------------------------------\n  [-max_common_paths]  Number of paths to consider for finding common paths \n                       across phases (< 20000)\n                       Default: 1000\n  [-quiet]             Ignore command errors\n  [-verbose]           Suspend message limits during command execution\n\nCategories: \nTiming\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-max_common_paths",
+      "description": "Number of paths to consider for finding common paths across phases (< 20000) Default: 1000"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

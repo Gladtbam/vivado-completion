@@ -1,0 +1,16 @@
+{
+  "name": "get_dashboards",
+  "short_description": "Get list of Project summary dashboards",
+  "full_help": "get_dashboards\n\nDescription: \nGet list of Project summary dashboards\n\nSyntax: \nget_dashboards  [-quiet] [-verbose] [<patterns>...]\n\nUsage: \n  Name          Description\n  -------------------------\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  [<patterns>]  Match gadget names against patterns\n                Default: *\n                Values: The default search pattern is the wildcard *\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

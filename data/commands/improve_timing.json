@@ -1,0 +1,16 @@
+{
+  "name": "improve_timing",
+  "short_description": "Automatically place ports and leaf-level instances",
+  "full_help": "improve_timing\n\nDescription: \nAutomatically place ports and leaf-level instances\n\nSyntax: \nimprove_timing  [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "write_bxn",
+  "short_description": "Export the current netlist as binary netlist",
+  "full_help": "write_bxn\n\nDescription: \nExport the current netlist as binary netlist\n\nSyntax: \nwrite_bxn  [-force] [-quiet] [-verbose] <file>\n\nReturns: \nthe name of the output file\n\nUsage: \n  Name        Description\n  -----------------------\n  [-force]    Overwrite existing file\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <file>      Output file\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

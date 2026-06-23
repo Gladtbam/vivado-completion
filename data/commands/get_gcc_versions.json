@@ -1,0 +1,16 @@
+{
+  "name": "get_gcc_versions",
+  "short_description": "Get supported GCC version(s) for the specified simulator",
+  "full_help": "get_gcc_versions\n\nDescription: \nGet supported GCC version(s) for the specified simulator\n\nSyntax: \nget_gcc_versions  [-quiet] [-verbose] [<name>]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<name>]    Simulator name\n\nCategories: \nToolLaunch, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

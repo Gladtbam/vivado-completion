@@ -1,0 +1,16 @@
+{
+  "name": "make_diff_pair_ports",
+  "short_description": "Make differential pair for 2 ports",
+  "full_help": "make_diff_pair_ports\n\nDescription: \nMake differential pair for 2 ports\n\nSyntax: \nmake_diff_pair_ports  [-quiet] [-verbose] <ports>...\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <ports>     Ports to join\n\nCategories: \nXDC, PinPlanning\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

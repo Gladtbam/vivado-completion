@@ -1,0 +1,20 @@
+{
+  "name": "synth_ip",
+  "short_description": "Generate a synthesis netlist for an IP",
+  "full_help": "synth_ip\n\nDescription: \nGenerate a synthesis netlist for an IP\n\nSyntax: \nsynth_ip  [-force] [-quiet] [-verbose] <objects>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-force]    Force regeneration of the netlist.\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <objects>   All the objects for which a netlist needs to be generated for.\n\nCategories: \nProject, IPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Force regeneration of the netlist."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

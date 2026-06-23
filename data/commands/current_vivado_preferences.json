@@ -1,0 +1,16 @@
+{
+  "name": "current_vivado_preferences",
+  "short_description": "Returns the vivado prefernces object.",
+  "full_help": "current_vivado_preferences\n\nDescription: \nReturns the vivado prefernces object.\n\nSyntax: \ncurrent_vivado_preferences  [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nvivado_preferences\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

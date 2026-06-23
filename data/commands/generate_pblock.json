@@ -1,0 +1,32 @@
+{
+  "name": "generate_pblock",
+  "short_description": "Generate PBLOCK by exclude static",
+  "full_help": "generate_pblock\n\nDescription: \nGenerate PBLOCK by exclude static \n\nSyntax: \ngenerate_pblock  [-cell <arg>] [-inverse_pblock <arg>] [-nested_pblock <arg>]\n                 [-nested_width <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name               Description\n  ------------------------------\n  [-cell]            Specify cell to add to pblock.\n  [-inverse_pblock]  Specify name of the inverse pblock.  The pblock will \n                     cover everything that the static pblock does not.\n  [-nested_pblock]   Specify name of nested pblock inside inverse_pblock left\n                     adjacent to static pblock.\n  [-nested_width]    Specify the width of the nested pblock.  The nested \n                     pblock height is the same as the adjacent static pblock.\n                     Default: 3\n  [-quiet]           Ignore command errors\n  [-verbose]         Suspend message limits during command execution\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cell",
+      "description": "Specify cell to add to pblock."
+    },
+    {
+      "flag": "-inverse_pblock",
+      "description": "Specify name of the inverse pblock.  The pblock will cover everything that the static pblock does not."
+    },
+    {
+      "flag": "-nested_pblock",
+      "description": "Specify name of nested pblock inside inverse_pblock left adjacent to static pblock."
+    },
+    {
+      "flag": "-nested_width",
+      "description": "Specify the width of the nested pblock.  The nested pblock height is the same as the adjacent static pblock. Default: 3"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "report_power",
+  "short_description": "Run power estimation and display report",
+  "full_help": "report_power\n\nDescription: \nRun power estimation and display report\n\nSyntax: \nreport_power  [-no_propagation] [-hier <arg>] [-hierarchical_depth <arg>]\n              [-vid] [-advisory] [-file <arg>] [-name <arg>] [-format <arg>]\n              [-xpe <arg>] [-l <arg>] [-return_string] [-append] [-rpx <arg>]\n              [-quiet] [-verbose]\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-no_propagation]      Disables the propagation engine to estimate the \n                         switching activity of nets.\n  [-hier]                Hierarchy report style (logic, power, or all)\n                         Default: power\n  [-hierarchical_depth]  Specifies the depth level for textual hierarchical \n                         report\n                         Default: 4\n  [-vid]                 Voltage ID (VID) of device is used\n  [-advisory]            Dump power advisory text report\n  [-file]                Filename to output results to. (send output to \n                         console if -file is not used)\n  [-name]                Output the results to GUI panel with this name\n  [-format]              Format for the power estimation report: text, xml\n                         Default: text\n  [-xpe]                 Output the results to XML file for importing into \n                         XPE\n  [-l]                   Maximum number of lines to report in detailed \n                         reports (l >= 0)\n                         Default: 10\n  [-return_string]       Return report as string\n  [-append]              Append power report to end of file\n  [-rpx]                 Filename to output interactive results to.\n  [-quiet]               Ignore command errors\n  [-verbose]             Suspend message limits during command execution\n\nCategories: \nReport, Power\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-no_propagation",
+      "description": "Disables the propagation engine to estimate the switching activity of nets."
+    },
+    {
+      "flag": "-hier",
+      "description": "Hierarchy report style (logic, power, or all) Default: power"
+    },
+    {
+      "flag": "-hierarchical_depth",
+      "description": "Specifies the depth level for textual hierarchical report Default: 4"
+    },
+    {
+      "flag": "-vid",
+      "description": "Voltage ID (VID) of device is used"
+    },
+    {
+      "flag": "-advisory",
+      "description": "Dump power advisory text report"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-format",
+      "description": "Format for the power estimation report: text, xml Default: text"
+    },
+    {
+      "flag": "-xpe",
+      "description": "Output the results to XML file for importing into XPE"
+    },
+    {
+      "flag": "-l",
+      "description": "Maximum number of lines to report in detailed reports (l >= 0) Default: 10"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-append",
+      "description": "Append power report to end of file"
+    },
+    {
+      "flag": "-rpx",
+      "description": "Filename to output interactive results to."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

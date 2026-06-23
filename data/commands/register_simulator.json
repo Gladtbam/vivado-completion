@@ -1,0 +1,24 @@
+{
+  "name": "register_simulator",
+  "short_description": "Register specified simulator with Vivado application",
+  "full_help": "register_simulator\n\nDescription: \nRegister specified simulator with Vivado application\n\nSyntax: \nregister_simulator  -description <arg> [-bootstrap <arg>] [-quiet] [-verbose]\n                    <name>\n\nUsage: \n  Name          Description\n  -------------------------\n  -description  Specify a short description of the simulator\n  [-bootstrap]  Specify the command to 'load' a Tcl app or source a Tcl \n                script\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  <name>        Specify the name of the simulator to register\n\nCategories: \nToolLaunch, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-description",
+      "description": "Specify a short description of the simulator"
+    },
+    {
+      "flag": "-bootstrap",
+      "description": "Specify the command to 'load' a Tcl app or source a Tcl script"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

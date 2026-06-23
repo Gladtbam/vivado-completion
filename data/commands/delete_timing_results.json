@@ -1,0 +1,20 @@
+{
+  "name": "delete_timing_results",
+  "short_description": "Clear a set of timing results from memory",
+  "full_help": "delete_timing_results\n\nDescription: \nClear a set of timing results from memory\n\nSyntax: \ndelete_timing_results  [-type <arg>] [-quiet] [-verbose] <name>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-type]     Type of timing results to clear; Values: bus_skew, \n              check_timing, clock_interaction, clock_domain_crossings, \n              config_timing, datasheet, pulse_width, slack_histogram, \n              timing_path, timing_summary\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <name>      Name for the set of results to clear\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-type",
+      "description": "Type of timing results to clear; Values: bus_skew, check_timing, clock_interaction, clock_domain_crossings, config_timing, datasheet, pulse_width, slack_histogram, timing_path, timing_summary"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

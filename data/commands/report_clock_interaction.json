@@ -1,0 +1,72 @@
+{
+  "name": "report_clock_interaction",
+  "short_description": "Report on clock timing paths and unclocked registers",
+  "full_help": "report_clock_interaction\n\nDescription: \nReport on clock timing paths and unclocked registers\n\nSyntax: \nreport_clock_interaction  [-from <args>] [-to <args>] [-delay_type <arg>]\n                          [-setup] [-hold] [-significant_digits <arg>]\n                          [-no_header] [-file <arg>] [-append] [-name <arg>]\n                          [-return_string] [-cells <args>] [-quiet] [-verbose]\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-from]                From clocks\n  [-to]                  To clocks\n  [-delay_type]          Type of path delay: Values: max, min, min_max\n                         Default: max\n  [-setup]               Consider max delay timing paths (equivalent to \n                         -delay_type max)\n  [-hold]                Consider min delay timing paths (equivalent to \n                         -delay_type min)\n  [-significant_digits]  Number of digits to display: Range: 0 to 3\n                         Default: 2\n  [-no_header]           Do not generate a report header\n  [-file]                Filename to output results to. (send output to \n                         console if -file is not used)\n  [-append]              Append the results to file, don't overwrite the \n                         results file\n  [-name]                Output the results to GUI panel with this name\n  [-return_string]       Return report as string\n  [-cells]               Run report_clock_interaction on the specified \n                         cell(s)\n  [-quiet]               Ignore command errors\n  [-verbose]             Suspend message limits during command execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "From clocks"
+    },
+    {
+      "flag": "-to",
+      "description": "To clocks"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "Type of path delay: Values: max, min, min_max Default: max"
+    },
+    {
+      "flag": "-setup",
+      "description": "Consider max delay timing paths (equivalent to"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "max)"
+    },
+    {
+      "flag": "-hold",
+      "description": "Consider min delay timing paths (equivalent to"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "min)"
+    },
+    {
+      "flag": "-significant_digits",
+      "description": "Number of digits to display: Range: 0 to 3 Default: 2"
+    },
+    {
+      "flag": "-no_header",
+      "description": "Do not generate a report header"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-cells",
+      "description": "Run report_clock_interaction on the specified cell(s)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

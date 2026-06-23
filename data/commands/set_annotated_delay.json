@@ -1,0 +1,44 @@
+{
+  "name": "set_annotated_delay",
+  "short_description": "set annotated delay",
+  "full_help": "set_annotated_delay\n\nDescription: \nset annotated delay\n\nSyntax: \nset_annotated_delay  [-from <args>] [-to <args>] [-cell] [-net] [-min] [-max]\n                     [-of_objects <args>] [-quiet] [-verbose] <delay>\n\nUsage: \n  Name           Description\n  --------------------------\n  [-from]        From pins or top level ports\n  [-to]          To pins or top level ports\n  [-cell]        Specifies that the annotated delay is for a cell\n  [-net]         Specifies that the annotated delay is for a net\n  [-min]         Specifies that the annotated delay is the minimum delay\n  [-max]         Specifies that the annotated delay is the maximum delay\n  [-of_objects]  List of timing arcs\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  <delay>        Annotated delay value\n\nCategories: \nTiming\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "From pins or top level ports"
+    },
+    {
+      "flag": "-to",
+      "description": "To pins or top level ports"
+    },
+    {
+      "flag": "-cell",
+      "description": "Specifies that the annotated delay is for a cell"
+    },
+    {
+      "flag": "-net",
+      "description": "Specifies that the annotated delay is for a net"
+    },
+    {
+      "flag": "-min",
+      "description": "Specifies that the annotated delay is the minimum delay"
+    },
+    {
+      "flag": "-max",
+      "description": "Specifies that the annotated delay is the maximum delay"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "List of timing arcs"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

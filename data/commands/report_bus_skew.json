@@ -1,0 +1,88 @@
+{
+  "name": "report_bus_skew",
+  "short_description": "Report timing paths",
+  "full_help": "report_bus_skew\n\nDescription: \nReport timing paths\n\nSyntax: \nreport_bus_skew  [-delay_type <arg>] [-setup] [-hold] [-no_detailed_paths]\n                 [-max_paths <arg>] [-nworst <arg>] [-unique_pins]\n                 [-path_type <arg>] [-sort_by_slack] [-input_pins] [-no_header]\n                 [-significant_digits <arg>] [-file <arg>] [-append]\n                 [-return_string] [-warn_on_violation] [-rpx <arg>]\n                 [-cells <args>] [-quiet] [-verbose]\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-delay_type]          Type of path delay: Values: max, min, min_max\n                         Default: min_max\n  [-setup]               Report max delay endpoint timing paths (equivalent \n                         to -delay_type max)\n  [-hold]                Report min delay endpoint timing paths (equivalent \n                         to -delay_type min)\n  [-no_detailed_paths]   Only report top level summary table\n  [-max_paths]           Maximum number of paths to output per bus skew \n                         constraint: Value >=1\n                         Default: 1\n  [-nworst]              List up to N worst paths per endpoint per \n                         constraint: Value >=1\n                         Default: 1\n  [-unique_pins]         For each unique set of pins, show at most 1 path per\n                         bus skew constraint\n  [-path_type]           Format for path report: Values: short, full, \n                         full_clock, full_clock_expanded\n                         Default: full_clock_expanded\n  [-sort_by_slack]       Sort summary and per-constraint sections by slack\n  [-input_pins]          Show input pins in path\n  [-no_header]           Do not generate a report header\n  [-significant_digits]  Number of digits to display: Range: 0 to 3\n                         Default: 3\n  [-file]                Filename to output results to. (send output to \n                         console if -file is not used)\n  [-append]              Append the results to file, don't overwrite the \n                         results file\n  [-return_string]       Return report as string\n  [-warn_on_violation]   Issue a critical warning when the report contains a \n                         timing violation\n  [-rpx]                 Filename to output interactive results to.\n  [-cells]               Run report_bus_skew on the specified hierarchical \n                         cell(s)\n  [-quiet]               Ignore command errors\n  [-verbose]             Suspend message limits during command execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-delay_type",
+      "description": "Type of path delay: Values: max, min, min_max Default: min_max"
+    },
+    {
+      "flag": "-setup",
+      "description": "Report max delay endpoint timing paths (equivalent to -delay_type max)"
+    },
+    {
+      "flag": "-hold",
+      "description": "Report min delay endpoint timing paths (equivalent to -delay_type min)"
+    },
+    {
+      "flag": "-no_detailed_paths",
+      "description": "Only report top level summary table"
+    },
+    {
+      "flag": "-max_paths",
+      "description": "Maximum number of paths to output per bus skew constraint: Value >=1 Default: 1"
+    },
+    {
+      "flag": "-nworst",
+      "description": "List up to N worst paths per endpoint per constraint: Value >=1 Default: 1"
+    },
+    {
+      "flag": "-unique_pins",
+      "description": "For each unique set of pins, show at most 1 path per bus skew constraint"
+    },
+    {
+      "flag": "-path_type",
+      "description": "Format for path report: Values: short, full, full_clock, full_clock_expanded Default: full_clock_expanded"
+    },
+    {
+      "flag": "-sort_by_slack",
+      "description": "Sort summary and per-constraint sections by slack"
+    },
+    {
+      "flag": "-input_pins",
+      "description": "Show input pins in path"
+    },
+    {
+      "flag": "-no_header",
+      "description": "Do not generate a report header"
+    },
+    {
+      "flag": "-significant_digits",
+      "description": "Number of digits to display: Range: 0 to 3 Default: 3"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-warn_on_violation",
+      "description": "Issue a critical warning when the report contains a timing violation"
+    },
+    {
+      "flag": "-rpx",
+      "description": "Filename to output interactive results to."
+    },
+    {
+      "flag": "-cells",
+      "description": "Run report_bus_skew on the specified hierarchical cell(s)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

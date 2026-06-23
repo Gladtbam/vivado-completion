@@ -1,0 +1,44 @@
+{
+  "name": "customize_kernel",
+  "short_description": "Customize a baseline RTL kernel by assigning values for parameters on the top module to create a new customized kernel while keeping the baseline IP definition the same. The customized kernel cannot be incrementally customized again.",
+  "full_help": "customize_kernel\n\nDescription: \nCustomize a baseline RTL kernel by assigning values for parameters on the top module to create a new customized kernel while keeping the baseline IP definition the same. The customized kernel cannot be incrementally customized again.\n\nSyntax: \ncustomize_kernel  -xo_path <arg> [-output_xo_path <arg>] -kernel_name <arg>\n                  [-output_kernel <arg>] [-ip_params <args>]\n                  [-ip_params_file <arg>] [-target_board <arg>] [-quiet]\n                  [-verbose]\n\nReturns: \nPath to destination object file\n\nUsage: \n  Name               Description\n  ------------------------------\n  -xo_path           Absolute path to the object file that contains the named\n                     kernel\n  [-output_xo_path]  Write results to the given .xo file, leaving input file \n                     unmodified\n  -kernel_name       Kernel to customize\n  [-output_kernel]   A kernel name. Must differ from the value specified by \n                     -kernel_name\n  [-ip_params]       Customize RTL based IP used by the kernel. A list of \n                     config name/value pairs.\n  [-ip_params_file]  Customize RTL based IP used by the kernel. Reads input \n                     from file.\n  [-target_board]    Customize DCP based IP used by the kernel. Add the \n                     support for the target board.\n  [-quiet]           Ignore command errors\n  [-verbose]         Suspend message limits during command execution\n\nCategories: \nVitis, Acceleration, FileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-xo_path",
+      "description": "Absolute path to the object file that contains the named kernel"
+    },
+    {
+      "flag": "-output_xo_path",
+      "description": "Write results to the given .xo file, leaving input file unmodified"
+    },
+    {
+      "flag": "-kernel_name",
+      "description": "Kernel to customize"
+    },
+    {
+      "flag": "-output_kernel",
+      "description": "A kernel name. Must differ from the value specified by -kernel_name"
+    },
+    {
+      "flag": "-ip_params",
+      "description": "Customize RTL based IP used by the kernel. A list of config name/value pairs."
+    },
+    {
+      "flag": "-ip_params_file",
+      "description": "Customize RTL based IP used by the kernel. Reads input from file."
+    },
+    {
+      "flag": "-target_board",
+      "description": "Customize DCP based IP used by the kernel. Add the support for the target board."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

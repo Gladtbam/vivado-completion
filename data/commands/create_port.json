@@ -1,0 +1,36 @@
+{
+  "name": "create_port",
+  "short_description": "Create scalar or bus port",
+  "full_help": "create_port\n\nDescription: \nCreate scalar or bus port\n\nSyntax: \ncreate_port  -direction <arg> [-from <arg>] [-to <arg>] [-diff_pair]\n             [-interface <arg>] [-quiet] [-verbose] <name> [<negative_name>]\n\nReturns: \nlist of port objects that were created\n\nUsage: \n  Name               Description\n  ------------------------------\n  -direction         Direction of port. Valid arguments are IN, OUT and INOUT\n  [-from]            Beginning index of new bus\n  [-to]              Ending index of new bus\n  [-diff_pair]       Create differential pair of ports\n  [-interface]       Assign new port to this interface\n  [-quiet]           Ignore command errors\n  [-verbose]         Suspend message limits during command execution\n  <name>             Name of the port\n  [<negative_name>]  Optional negative name of a diff-pair\n\nCategories: \nPinPlanning\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-direction",
+      "description": "Direction of port. Valid arguments are IN, OUT and INOUT"
+    },
+    {
+      "flag": "-from",
+      "description": "Beginning index of new bus"
+    },
+    {
+      "flag": "-to",
+      "description": "Ending index of new bus"
+    },
+    {
+      "flag": "-diff_pair",
+      "description": "Create differential pair of ports"
+    },
+    {
+      "flag": "-interface",
+      "description": "Assign new port to this interface"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

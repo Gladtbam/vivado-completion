@@ -1,0 +1,44 @@
+{
+  "name": "report_constant_paths",
+  "short_description": "Report constant paths",
+  "full_help": "report_constant_paths\n\nDescription: \nReport constant paths\n\nSyntax: \nreport_constant_paths  [-max_paths_per_endpoint <arg>] [-column_style <arg>]\n                       [-file <arg>] [-append] [-no_header]\n                       [-of_objects <args>] [-return_string] [-quiet]\n                       [-verbose] [<objects>]\n\nUsage: \n  Name                       Description\n  --------------------------------------\n  [-max_paths_per_endpoint]  Number of branches per endpoint to report traces\n                             for\n                             Default: 1\n  [-column_style]            Style for path report columns: Values: \n                             variable_width, anchor_left, fixed_width\n                             Default: variable_width\n  [-file]                    Filename to output results to. (send output to \n                             console if -file is not used)\n  [-append]                  Append the results to file, don't overwrite the \n                             results file\n  [-no_header]               Do not generate a report header\n  [-of_objects]              Report constant paths for these constant paths\n  [-return_string]           Return report as string\n  [-quiet]                   Ignore command errors\n  [-verbose]                 Suspend message limits during command execution\n  [<objects>]                Endpoint pins or instances\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-max_paths_per_endpoint",
+      "description": "Number of branches per endpoint to report traces for Default: 1"
+    },
+    {
+      "flag": "-column_style",
+      "description": "Style for path report columns: Values: variable_width, anchor_left, fixed_width Default: variable_width"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-no_header",
+      "description": "Do not generate a report header"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Report constant paths for these constant paths"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

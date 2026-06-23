@@ -1,0 +1,16 @@
+{
+  "name": "delete_property",
+  "short_description": "Delete user defined property for class of object(s)",
+  "full_help": "delete_property\n\nDescription: \nDelete user defined property for class of object(s)\n\nSyntax: \ndelete_property  [-quiet] [-verbose] <name> <class>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <name>      Name of property to delete\n  <class>     Object type to delete property for; valid values are: design, \n              net, cell, pin, port, pblock, interface, fileset\n\nCategories: \nPropertyAndParameter\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

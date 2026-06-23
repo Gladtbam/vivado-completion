@@ -1,0 +1,36 @@
+{
+  "name": "open_report",
+  "short_description": "Open report from .rpx file",
+  "full_help": "open_report\n\nDescription: \nOpen report from .rpx file\n\nSyntax: \nopen_report  [-file <arg>] [-append] [-console] [-name <arg>] [-return_string]\n             [-quiet] [-verbose] <rpx>\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-file]           Filename to output results to\n  [-append]         Append the results to file, don't overwrite the results \n                    file\n  [-console]        Send output to console\n  [-name]           Output the results to GUI panel with this name\n  [-return_string]  Return report as string\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  <rpx>             Report data file to be read\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-console",
+      "description": "Send output to console"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

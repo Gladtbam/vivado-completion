@@ -1,0 +1,20 @@
+{
+  "name": "modify_debug_ports",
+  "short_description": "Modify routed probe connections to debug cores.",
+  "full_help": "modify_debug_ports\n\nDescription: \nModify routed probe connections to debug cores.\n\nSyntax: \nmodify_debug_ports  [-probes <args>] [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-probes]   List of probes to be connected: debug core pin, channel index, \n              and logical net for each probe connection.\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nDebug\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-probes",
+      "description": "List of probes to be connected: debug core pin, channel index, and logical net for each probe connection."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

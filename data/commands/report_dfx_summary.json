@@ -1,0 +1,32 @@
+{
+  "name": "report_dfx_summary",
+  "short_description": "Report DFX Summary",
+  "full_help": "report_dfx_summary\n\nDescription: \nReport DFX Summary\n\nSyntax: \nreport_dfx_summary  [-file <arg>] [-return_string] [-append] [-force] [-quiet]\n                    [-verbose]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-file]           report file\n                    Values: A filename with alphanumeric characters.\n  [-return_string]  Return report as string\n  [-append]         Append the results to file, don't overwrite the results \n                    file\n  [-force]          Overwrite existing file\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nXDC, Methodology\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "report file Values: A filename with alphanumeric characters."
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

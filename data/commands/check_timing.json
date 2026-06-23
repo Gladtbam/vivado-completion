@@ -1,0 +1,60 @@
+{
+  "name": "check_timing",
+  "short_description": "Check the design for possible timing problems",
+  "full_help": "check_timing\n\nDescription: \nCheck the design for possible timing problems\n\nSyntax: \ncheck_timing  [-file <arg>] [-no_header] [-loop_limit <arg>] [-append]\n              [-name <arg>] [-override_defaults <args>] [-include <args>]\n              [-exclude <args>] [-return_string] [-rpx <arg>] [-cells <args>]\n              [-verbose] [-quiet]\n\nUsage: \n  Name                  Description\n  ---------------------------------\n  [-file]               Filename to output results to. (send output to \n                        console if -file is not used)\n  [-no_header]          do not generate a report header\n  [-loop_limit]         Limit the number of loops reported for loops check\n                        Default: 100\n  [-append]             Append the results to file, don't overwrite the \n                        results file\n  [-name]               Output the results to GUI panel with this name\n  [-override_defaults]  Overrides the checks in the default timing checks \n                        listed below\n  [-include]            Add this list of checks to be performed along with \n                        default timing checks listed below\n  [-exclude]            Exclude this list of checks to be performed from the \n                        default timing checks listed below\n  [-return_string]      return report as string\n  [-rpx]                Filename to output interactive results to.\n  [-cells]              run check_timing on the specified cell(s)\n  [-verbose]            Return a detailed list of all timing problems found\n  [-quiet]              Ignore command errors\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-no_header",
+      "description": "do not generate a report header"
+    },
+    {
+      "flag": "-loop_limit",
+      "description": "Limit the number of loops reported for loops check Default: 100"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-override_defaults",
+      "description": "Overrides the checks in the default timing checks listed below"
+    },
+    {
+      "flag": "-include",
+      "description": "Add this list of checks to be performed along with default timing checks listed below"
+    },
+    {
+      "flag": "-exclude",
+      "description": "Exclude this list of checks to be performed from the default timing checks listed below"
+    },
+    {
+      "flag": "-return_string",
+      "description": "return report as string"
+    },
+    {
+      "flag": "-rpx",
+      "description": "Filename to output interactive results to."
+    },
+    {
+      "flag": "-cells",
+      "description": "run check_timing on the specified cell(s)"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Return a detailed list of all timing problems found"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    }
+  ]
+}

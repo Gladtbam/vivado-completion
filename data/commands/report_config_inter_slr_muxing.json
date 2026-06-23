@@ -1,0 +1,36 @@
+{
+  "name": "report_config_inter_slr_muxing",
+  "short_description": "Get information about all parameters",
+  "full_help": "report_config_inter_slr_muxing\n\nDescription: \nGet information about all parameters\n\nSyntax: \nreport_config_inter_slr_muxing  [-file <arg>] [-append] [-force]\n                                [-return_string] [-quiet] [-verbose]\n\nReturns: \nparam report\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-file]           Filename to output results to. (send output to console if\n                    -file is not used)\n  [-append]         Append to existing file\n  [-force]          Overwrite existing file\n  [-return_string]  Return report as string\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nTools, Place\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if"
+    },
+    {
+      "flag": "-file",
+      "description": "is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append to existing file"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

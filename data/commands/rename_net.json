@@ -1,0 +1,20 @@
+{
+  "name": "rename_net",
+  "short_description": "rename a net",
+  "full_help": "rename_net\n\nDescription: \nrename a net\n\nSyntax: \nrename_net  -to <arg> [-quiet] [-verbose] <net>...\n\nUsage: \n  Name        Description\n  -----------------------\n  -to         New name\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <net>       Net to rename\n\nCategories: \nNetlist\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-to",
+      "description": "New name"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

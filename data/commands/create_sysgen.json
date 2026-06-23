@@ -1,0 +1,16 @@
+{
+  "name": "create_sysgen",
+  "short_description": "Create DSP source for Xilinx System Generator and add to the source fileset",
+  "full_help": "create_sysgen\n\nDescription: \nCreate DSP source for Xilinx System Generator and add to the source fileset\n\nSyntax: \ncreate_sysgen  [-quiet] [-verbose] <name>\n\nReturns: \nName for the new sub module\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <name>      Sub module name\n\nCategories: \nSysGen\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

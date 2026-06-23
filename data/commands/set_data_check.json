@@ -1,0 +1,52 @@
+{
+  "name": "set_data_check",
+  "short_description": "Create data to data checks",
+  "full_help": "set_data_check\n\nDescription: \nCreate data to data checks\n\nSyntax: \nset_data_check  [-from <args>] [-to <args>] [-rise_from <args>]\n                [-fall_from <args>] [-rise_to <args>] [-fall_to <args>]\n                [-setup] [-hold] [-clock <args>] [-quiet] [-verbose] <value>\n\nUsage: \n  Name          Description\n  -------------------------\n  [-from]       From pin/port of data to data check\n  [-to]         To pin/port of the data to data check\n  [-rise_from]  Rise from pin/port of data to data check\n  [-fall_from]  Fall from pin/port of data to data check\n  [-rise_to]    Rise to pin/port of data to data check\n  [-fall_to]    Fall to pin/port of data to data check\n  [-setup]      Specify data check setup time\n  [-hold]       Specify data check hold time\n  [-clock]      Specify the clock domain at related pin/port of the checks\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  <value>       Setup or hold time of the defined checks\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "From pin/port of data to data check"
+    },
+    {
+      "flag": "-to",
+      "description": "To pin/port of the data to data check"
+    },
+    {
+      "flag": "-rise_from",
+      "description": "Rise from pin/port of data to data check"
+    },
+    {
+      "flag": "-fall_from",
+      "description": "Fall from pin/port of data to data check"
+    },
+    {
+      "flag": "-rise_to",
+      "description": "Rise to pin/port of data to data check"
+    },
+    {
+      "flag": "-fall_to",
+      "description": "Fall to pin/port of data to data check"
+    },
+    {
+      "flag": "-setup",
+      "description": "Specify data check setup time"
+    },
+    {
+      "flag": "-hold",
+      "description": "Specify data check hold time"
+    },
+    {
+      "flag": "-clock",
+      "description": "Specify the clock domain at related pin/port of the checks"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

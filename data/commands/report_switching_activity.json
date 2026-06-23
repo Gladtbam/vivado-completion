@@ -1,0 +1,64 @@
+{
+  "name": "report_switching_activity",
+  "short_description": "Get switching activity on specified objects",
+  "full_help": "report_switching_activity\n\nDescription: \nGet switching activity on specified objects\n\nSyntax: \nreport_switching_activity  [-static_probability] [-signal_rate] [-toggle_rate]\n                           [-default_static_probability] [-default_toggle_rate]\n                           [-average] [-file <arg>] [-return_string] [-append]\n                           [-hier] [-all] [-type <args>] [-quiet] [-verbose]\n                           [<objects>...]\n\nUsage: \n  Name                           Description\n  ------------------------------------------\n  [-static_probability]          Report static probability\n  [-signal_rate]                 Report signal rate\n  [-toggle_rate]                 Report toggle rate\n  [-default_static_probability]  Report default static probability\n  [-default_toggle_rate]         Report default toggle rate\n  [-average]                     Report the average switching activity for \n                                 the specified objects.\n  [-file]                        Filename to output results to. (send output \n                                 to console if -file is not used)\n  [-return_string]               Return switching activity as string\n  [-append]                      Append switching activity to end of file\n  [-hier]                        Hierarchically reports the switching \n                                 activity on nets within a hierarchical \n                                 instance provided via <objects> option.\n  [-all]                         Report switching activities for all nets for\n                                 the design.\n  [-type]                        Specify nodes in a specific category.  List \n                                 of valid type values: io_output, \n                                 io_bidir_enable, register, lut_ram, lut, \n                                 dsp, bram_enable, bram_wr_enable, gt_txdata,\n                                 gt_rxdata.\n  [-quiet]                       Ignore command errors\n  [-verbose]                     Suspend message limits during command \n                                 execution\n  [<objects>]                    objects\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-static_probability",
+      "description": "Report static probability"
+    },
+    {
+      "flag": "-signal_rate",
+      "description": "Report signal rate"
+    },
+    {
+      "flag": "-toggle_rate",
+      "description": "Report toggle rate"
+    },
+    {
+      "flag": "-default_static_probability",
+      "description": "Report default static probability"
+    },
+    {
+      "flag": "-default_toggle_rate",
+      "description": "Report default toggle rate"
+    },
+    {
+      "flag": "-average",
+      "description": "Report the average switching activity for the specified objects."
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return switching activity as string"
+    },
+    {
+      "flag": "-append",
+      "description": "Append switching activity to end of file"
+    },
+    {
+      "flag": "-hier",
+      "description": "Hierarchically reports the switching activity on nets within a hierarchical instance provided via <objects> option."
+    },
+    {
+      "flag": "-all",
+      "description": "Report switching activities for all nets for the design."
+    },
+    {
+      "flag": "-type",
+      "description": "Specify nodes in a specific category.  List of valid type values: io_output, io_bidir_enable, register, lut_ram, lut, dsp, bram_enable, bram_wr_enable, gt_txdata, gt_rxdata."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

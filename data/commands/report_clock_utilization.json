@@ -1,0 +1,44 @@
+{
+  "name": "report_clock_utilization",
+  "short_description": "Report information about clock nets in design",
+  "full_help": "report_clock_utilization\n\nDescription: \nReport information about clock nets in design\n\nSyntax: \nreport_clock_utilization  [-file <arg>] [-append] [-write_xdc <arg>]\n                          [-cells <args>] [-clock_roots_only] [-return_string]\n                          [-name <arg>] [-quiet] [-verbose]\n\nReturns: \nReport\n\nUsage: \n  Name                 Description\n  --------------------------------\n  [-file]              Filename to output results to. (send output to console\n                       if -file is not used)\n  [-append]            Append to existing file\n  [-write_xdc]         File to output clock constraint. File name must be \n                       given.\n  [-cells]             Cells/bel_instances for which to report clock \n                       utilization\n  [-clock_roots_only]  Report only the Clock Root Assignments\n  [-return_string]     Return report as string\n  [-name]              Output the results to GUI panel with this name\n  [-quiet]             Ignore command errors\n  [-verbose]           Suspend message limits during command execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append to existing file"
+    },
+    {
+      "flag": "-write_xdc",
+      "description": "File to output clock constraint. File name must be given."
+    },
+    {
+      "flag": "-cells",
+      "description": "Cells/bel_instances for which to report clock utilization"
+    },
+    {
+      "flag": "-clock_roots_only",
+      "description": "Report only the Clock Root Assignments"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

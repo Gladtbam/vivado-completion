@@ -1,0 +1,16 @@
+{
+  "name": "delete_noc_connection",
+  "short_description": "Delete NOC Connection.",
+  "full_help": "delete_noc_connection\n\nDescription: \nDelete NOC Connection.\n\nSyntax: \ndelete_noc_connection  [-quiet] [-verbose] <connection>\n\nUsage: \n  Name          Description\n  -------------------------\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  <connection>  NOC Connection to delete.\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

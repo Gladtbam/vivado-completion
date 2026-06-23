@@ -1,0 +1,36 @@
+{
+  "name": "write_qor_suggestions",
+  "short_description": "Write QoR Suggestions to the given file",
+  "full_help": "write_qor_suggestions\n\nDescription: \nWrite QoR Suggestions to the given file\n\nSyntax: \nwrite_qor_suggestions  [-strategy_dir <arg>] [-tcl_output_dir <arg>] [-force]\n                       [-of_objects <args>] [-disable_dont_touch] [-quiet]\n                       [-verbose] <file>\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-strategy_dir]        Directory to create Strategy RQS & TCL files\n                         Values: If passed a directory path, for each \n                         strategy suggested one set of RQS and TCL files will\n                         be generated.\n  [-tcl_output_dir]      Directory to create TCL files\n                         Values: TCL files for the QoR suggestions will be \n                         generated in the provided directory.\n  [-force]               Overwrite existing suggestions file\n  [-of_objects]          List of QoR suggestion objects\n  [-disable_dont_touch]  write suggestion command having DONT_TOUCH to file\n  [-quiet]               Ignore command errors\n  [-verbose]             Suspend message limits during command execution\n  <file>                 QoR suggestions file\n                         Values: A filename with alphanumeric characters and \n                         .rqs extension.\n\nCategories: \nFileIO, Feasibility, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-strategy_dir",
+      "description": "Directory to create Strategy RQS & TCL files Values: If passed a directory path, for each strategy suggested one set of RQS and TCL files will be generated."
+    },
+    {
+      "flag": "-tcl_output_dir",
+      "description": "Directory to create TCL files Values: TCL files for the QoR suggestions will be generated in the provided directory."
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing suggestions file"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "List of QoR suggestion objects"
+    },
+    {
+      "flag": "-disable_dont_touch",
+      "description": "write suggestion command having DONT_TOUCH to file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "import_xst",
+  "short_description": "Imports the given XST project file",
+  "full_help": "import_xst\n\nDescription: \nImports the given XST project file\n\nSyntax: \nimport_xst  [-copy_sources] [-quiet] [-verbose] <file>\n\nReturns: \nlist of files object that were imported from the XST file\n\nUsage: \n  Name             Description\n  ----------------------------\n  [-copy_sources]  Copy all the sources from xst project file into the \n                   created project\n  [-quiet]         Ignore command errors\n  [-verbose]       Suspend message limits during command execution\n  <file>           Name of the XST project file to be imported\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-copy_sources",
+      "description": "Copy all the sources from xst project file into the created project"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

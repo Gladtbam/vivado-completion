@@ -1,0 +1,16 @@
+{
+  "name": "reset_ucf",
+  "short_description": "Clear floorplan constraints read in from a file",
+  "full_help": "reset_ucf\n\nDescription: \nClear floorplan constraints read in from a file\n\nSyntax: \nreset_ucf  [-quiet] [-verbose] <file>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <file>      UCF file to be reset\n\nCategories: \nFloorplan\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

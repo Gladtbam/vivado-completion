@@ -1,0 +1,36 @@
+{
+  "name": "implement_xphy_cores",
+  "short_description": "Call IP Services to regenerate an IP, then stitch it into the current netlist",
+  "full_help": "implement_xphy_cores\n\nDescription: \nCall IP Services to regenerate an IP, then stitch it into the current netlist\n\nSyntax: \nimplement_xphy_cores  [-output_dir <arg>] [-rtl_only] [-force] [-debug_output]\n                      [-update_delay_value_only] [-quiet] [-verbose]\n\nUsage: \n  Name                        Description\n  ---------------------------------------\n  [-output_dir]               Target Output Directory for PHY IP Generated \n                              Files\n                              Default: empty\n  [-rtl_only]                 Run the complete process to generate the PHY \n                              RTL code but do not replace the PHY core \n                              netlist\n  [-force]                    Implement all non-optimized memory cores.  When\n                              use with -rtl_only, optimized cores will be \n                              included, as well.\n  [-debug_output]             Enable debugging output.\n  [-update_delay_value_only]  Update latest Delay value.\n  [-quiet]                    Ignore command errors\n  [-verbose]                  Suspend message limits during command execution\n\nCategories: \nMemory\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-output_dir",
+      "description": "Target Output Directory for PHY IP Generated Files Default: empty"
+    },
+    {
+      "flag": "-rtl_only",
+      "description": "Run the complete process to generate the PHY RTL code but do not replace the PHY core netlist"
+    },
+    {
+      "flag": "-force",
+      "description": "Implement all non-optimized memory cores.  When use with -rtl_only, optimized cores will be included, as well."
+    },
+    {
+      "flag": "-debug_output",
+      "description": "Enable debugging output."
+    },
+    {
+      "flag": "-update_delay_value_only",
+      "description": "Update latest Delay value."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

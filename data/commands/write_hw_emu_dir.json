@@ -1,0 +1,20 @@
+{
+  "name": "write_hw_emu_dir",
+  "short_description": "Write the Xilinx Shell Archive for the current design",
+  "full_help": "write_hw_emu_dir\n\nDescription: \nWrite the Xilinx Shell Archive for the current design\n\nSyntax: \nwrite_hw_emu_dir  [-force] [-quiet] [-verbose] [<output_dir>]\n\nReturns: \nThe name of the Shell file\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-force]        Overwrite existing output directory\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n  [<output_dir>]  Output directory name\n                  Default: .\n\nCategories: \nVitis, Platform, FileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrite existing output directory"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

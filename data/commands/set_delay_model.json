@@ -1,0 +1,20 @@
+{
+  "name": "set_delay_model",
+  "short_description": "Sets the interconnect delay model for timing analysis.",
+  "full_help": "set_delay_model\n\nDescription: \nSets the interconnect delay model for timing analysis.\n\nSyntax: \nset_delay_model  [-interconnect <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name             Description\n  ----------------------------\n  [-interconnect]  Interconnect delay model used for timing analysis: Values:\n                   estimated, actual(default), none\n  [-quiet]         Ignore command errors\n  [-verbose]       Suspend message limits during command execution\n\nCategories: \nTiming\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-interconnect",
+      "description": "Interconnect delay model used for timing analysis: Values: estimated, actual(default), none"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

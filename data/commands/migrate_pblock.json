@@ -1,0 +1,32 @@
+{
+  "name": "migrate_pblock",
+  "short_description": "Migrate pblocks from sites to tiles",
+  "full_help": "migrate_pblock\n\nDescription: \nMigrate pblocks from sites to tiles\n\nSyntax: \nmigrate_pblock  [-name <arg>] [-names <args>] [-to_sites] [-to_tiles] [-quiet]\n                [-verbose]\n\nReturns: \nNew area constraints\n\nUsage: \n  Name         Description\n  ------------------------\n  [-name]      Name of the pblock to migrate\n  [-names]     List of pblocks to migrate\n  [-to_sites]  Migrate pblocks to sites.\n  [-to_tiles]  Migrate pblocks to tiles.\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n\nCategories: \nXDC, Floorplan\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Name of the pblock to migrate"
+    },
+    {
+      "flag": "-names",
+      "description": "List of pblocks to migrate"
+    },
+    {
+      "flag": "-to_sites",
+      "description": "Migrate pblocks to sites."
+    },
+    {
+      "flag": "-to_tiles",
+      "description": "Migrate pblocks to tiles."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

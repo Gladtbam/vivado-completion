@@ -1,0 +1,28 @@
+{
+  "name": "create_pin",
+  "short_description": "Create pins in the current design",
+  "full_help": "create_pin\n\nDescription: \nCreate pins in the current design\n\nSyntax: \ncreate_pin  [-from <arg>] [-to <arg>] -direction <arg> [-quiet] [-verbose]\n            <pins>...\n\nUsage: \n  Name        Description\n  -----------------------\n  [-from]     Starting bus index\n  [-to]       Ending bus index\n  -direction  Pin direction\n              Values: IN, OUT, INOUT\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <pins>      Names of pins to create\n\nCategories: \nNetlist\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "Starting bus index"
+    },
+    {
+      "flag": "-to",
+      "description": "Ending bus index"
+    },
+    {
+      "flag": "-direction",
+      "description": "Pin direction Values: IN, OUT, INOUT"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

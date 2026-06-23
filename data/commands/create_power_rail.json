@@ -1,0 +1,32 @@
+{
+  "name": "create_power_rail",
+  "short_description": "Create a new Power Rail",
+  "full_help": "create_power_rail\n\nDescription: \nCreate a new Power Rail\n\nSyntax: \ncreate_power_rail  [-power_sources <args>] [-phased_power_source <args>]\n                   [-direct] [-num_phases <arg>] [-quiet] [-verbose] <name>\n\nReturns: \nnew power_rail object\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-power_sources]        List of power sources. Can be power rails and/or \n                          power supplies\n  [-phased_power_source]  Pair of phased power source and its phase value. \n                          Power source can be a phased power rail.\n  [-direct]               Implies if the power is a direct rail\n  [-num_phases]           Number of phases\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n  <name>                  Name of the new power rail\n\nCategories: \nXDC, Floorplan\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-power_sources",
+      "description": "List of power sources. Can be power rails and/or power supplies"
+    },
+    {
+      "flag": "-phased_power_source",
+      "description": "Pair of phased power source and its phase value. Power source can be a phased power rail."
+    },
+    {
+      "flag": "-direct",
+      "description": "Implies if the power is a direct rail"
+    },
+    {
+      "flag": "-num_phases",
+      "description": "Number of phases"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

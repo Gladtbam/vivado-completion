@@ -1,0 +1,32 @@
+{
+  "name": "get_reconfig_modules",
+  "short_description": "Get a list of ReconfigModules",
+  "full_help": "get_reconfig_modules\n\nDescription: \nGet a list of ReconfigModules\n\nSyntax: \nget_reconfig_modules  [-regexp] [-nocase] [-filter <arg>] [-of_objects <args>]\n                      [-quiet] [-verbose] [<patterns>]\n\nReturns: \nlist of ReconfigModule objects\n\nUsage: \n  Name           Description\n  --------------------------\n  [-regexp]      Patterns are full regular expressions\n  [-nocase]      Perform case-insensitive matching (valid only when -regexp \n                 specified)\n  [-filter]      Filter list with expression\n  [-of_objects]  Get 'reconfig_module' objects of these types: \n                 'partition_def'.\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<patterns>]   Match reconfigurable module names against patterns\n                 Default: *\n\nCategories: \nObject, Partition\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get 'reconfig_module' objects of these types: 'partition_def'."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

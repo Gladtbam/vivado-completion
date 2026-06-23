@@ -1,0 +1,20 @@
+{
+  "name": "write_fdts",
+  "short_description": "Writes flattened device tree",
+  "full_help": "write_fdts\n\nDescription: \nWrites flattened device tree\n\nSyntax: \nwrite_fdts  [-force] [-quiet] [-verbose] <file>\n\nReturns: \nsuccess/failure status of applied action.\n\nUsage: \n  Name        Description\n  -----------------------\n  [-force]    Overwrites the existing fdts file\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <file>      fdts file (Values: A filename with alphanumeric characters and \n              .dts extention.) \n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrites the existing fdts file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "rename_ref",
+  "short_description": "rename a cell ref",
+  "full_help": "rename_ref\n\nDescription: \nrename a cell ref\n\nSyntax: \nrename_ref  [-ref <arg>] [-to <arg>] [-prefix_all <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name           Description\n  --------------------------\n  [-ref]         Cell ref to rename\n  [-to]          New name\n  [-prefix_all]  Rename all eligible hierarchical cell refs in the current \n                 design.  Construct the new name using the given prefix plus \n                 the original name\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n\nCategories: \nNetlist\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-ref",
+      "description": "Cell ref to rename"
+    },
+    {
+      "flag": "-to",
+      "description": "New name"
+    },
+    {
+      "flag": "-prefix_all",
+      "description": "Rename all eligible hierarchical cell refs in the current design.  Construct the new name using the given prefix plus the original name"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

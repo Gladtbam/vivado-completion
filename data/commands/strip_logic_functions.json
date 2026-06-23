@@ -1,0 +1,24 @@
+{
+  "name": "strip_logic_functions",
+  "short_description": "Strip the logic functions from LUTs, RAMBs, etc.",
+  "full_help": "strip_logic_functions\n\nDescription: \nStrip the logic functions from LUTs, RAMBs, etc.\n\nSyntax: \nstrip_logic_functions  [-cells <args>] [-exclude_cells <args>] [-quiet]\n                       [-verbose]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-cells]          Strip logic functions only for the given list of cells \n                    (not valid with -exclude_cells)\n  [-exclude_cells]  Strip logic functions from the entire design with the \n                    exception of the given list of cells (not valid with \n                    -cells)\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cells",
+      "description": "Strip logic functions only for the given list of cells (not valid with -exclude_cells)"
+    },
+    {
+      "flag": "-exclude_cells",
+      "description": "Strip logic functions from the entire design with the exception of the given list of cells (not valid with -cells)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

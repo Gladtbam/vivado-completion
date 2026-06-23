@@ -1,0 +1,60 @@
+{
+  "name": "get_nodes",
+  "short_description": "Get a list of nodes in the device.",
+  "full_help": "get_nodes\n\nDescription: \nGet a list of nodes in the device.\n\nSyntax: \nget_nodes  [-of_objects <args>] [-regexp] [-nocase] [-filter <arg>] [-uphill]\n           [-downhill] [-flyover] [-from <args>] [-to <args>]\n           [-slls_between <args>] [-quiet] [-verbose] [<patterns>]\n\nReturns: \nnodes\n\nUsage: \n  Name             Description\n  ----------------------------\n  [-of_objects]    Get 'node' objects of these types: 'net tile node bel_pin \n                   site_pin wire pip speed_model pin'.\n  [-regexp]        Patterns are full regular expressions\n  [-nocase]        Perform case-insensitive matching. (valid only when \n                   -regexp specified)\n  [-filter]        Filter list with expression\n  [-uphill]        Get the nodes uphill (driver) from the site_pin, pip, node\n                   or tile(s) provided in the -of_objects.\n  [-downhill]      Get the nodes downhill (loads) from the site_pin, pip, \n                   node or tile(s) provided in the -of_objects.\n  [-flyover]       Get the nodes that fly over the given tile(s).\n  [-from]          -from <pip/site pin> Return the nodes beginning at this \n                   pip or site pin.  May be used in combination with uphill. \n                   Default is downhill.  -all is implied.\n  [-to]            -to <pip/site pin> Return the nodes ending at this wire or\n                   site pin.  May be used in combination with uphill.  \n                   Default is downhill.  -all is implied.\n  [-slls_between]  -slls_between takes SLR1 and SLR2 and returns intermediate\n                   SLL nodes. May be used with -filter.\n  [-quiet]         Ignore command errors\n  [-verbose]       Suspend message limits during command execution\n  [<patterns>]     Match the 'node' objects against patterns.\n                   Default: *\n\nCategories: \nDevice, Object, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-of_objects",
+      "description": "Get 'node' objects of these types: 'net tile node bel_pin site_pin wire pip speed_model pin'."
+    },
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching. (valid only when"
+    },
+    {
+      "flag": "-regexp",
+      "description": "specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-uphill",
+      "description": "Get the nodes uphill (driver) from the site_pin, pip, node or tile(s) provided in the -of_objects."
+    },
+    {
+      "flag": "-downhill",
+      "description": "Get the nodes downhill (loads) from the site_pin, pip, node or tile(s) provided in the -of_objects."
+    },
+    {
+      "flag": "-flyover",
+      "description": "Get the nodes that fly over the given tile(s)."
+    },
+    {
+      "flag": "-from",
+      "description": "-from <pip/site pin> Return the nodes beginning at this pip or site pin.  May be used in combination with uphill. Default is downhill.  -all is implied."
+    },
+    {
+      "flag": "-to",
+      "description": "-to <pip/site pin> Return the nodes ending at this wire or site pin.  May be used in combination with uphill. Default is downhill.  -all is implied."
+    },
+    {
+      "flag": "-slls_between",
+      "description": "-slls_between takes SLR1 and SLR2 and returns intermediate SLL nodes. May be used with -filter."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

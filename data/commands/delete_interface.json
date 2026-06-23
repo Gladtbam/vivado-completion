@@ -1,0 +1,20 @@
+{
+  "name": "delete_interface",
+  "short_description": "Delete I/O port interfaces from the project",
+  "full_help": "delete_interface\n\nDescription: \nDelete I/O port interfaces from the project\n\nSyntax: \ndelete_interface  [-all] [-quiet] [-verbose] <interfaces>...\n\nUsage: \n  Name          Description\n  -------------------------\n  [-all]        Also remove all of the ports and buses belonging to the \n                interface\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  <interfaces>  I/O port interfaces to remove\n\nCategories: \nPinPlanning\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-all",
+      "description": "Also remove all of the ports and buses belonging to the interface"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

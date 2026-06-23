@@ -1,0 +1,72 @@
+{
+  "name": "write_verilog",
+  "short_description": "Export the current netlist in Verilog format",
+  "full_help": "write_verilog\n\nDescription: \nExport the current netlist in Verilog format\n\nSyntax: \nwrite_verilog  [-cell <arg>] [-mode <arg>] [-lib] [-port_diff_buffers]\n               [-write_all_overrides] [-keep_vcc_gnd] [-rename_top <arg>]\n               [-sdf_anno <arg>] [-sdf_file <arg>] [-force]\n               [-include_xilinx_libs] [-logic_function_stripped]\n               [-skip_clock_attributes] [-quiet] [-verbose] <file>\n\nReturns: \nthe name of the output file or directory\n\nUsage: \n  Name                        Description\n  ---------------------------------------\n  [-cell]                     Root of the design to write, e.g. \n                              des.subblk.cpu\n                              Default: whole design\n  [-mode]                     Values: design, pin_planning, synth_stub, sta, \n                              funcsim, timesim\n                              Default: design\n  [-lib]                      Write each library into a separate file\n  [-port_diff_buffers]        Output differential buffers when writing in \n                              -port mode\n  [-write_all_overrides]      Write parameter overrides on Xilinx primitives \n                              even if the override value is the same as the \n                              default value\n  [-keep_vcc_gnd]             Don't replace VCC/GND instances by literal \n                              constants on load terminals.  For simulation \n                              modes only.\n  [-rename_top]               Replace top module name with custom name e.g. \n                              netlist\n                              Default: new top module name\n  [-sdf_anno]                 Specify if sdf_annotate system task statement \n                              is generated\n  [-sdf_file]                 Full path to sdf file location\n                              Default: <file>.sdf\n  [-force]                    Overwrite existing file\n  [-include_xilinx_libs]      Include simulation models directly in netlist \n                              instead of linking to library\n  [-logic_function_stripped]  Convert INIT strings on LUTs & RAMBs to fixed \n                              values.  Resulting netlist will not behave \n                              correctly.\n  [-skip_clock_attributes]    Do not write the default special clock signal \n                              attributes when writing the synthesis directive\n                              in synth_stub mode.\n  [-quiet]                    Ignore command errors\n  [-verbose]                  Suspend message limits during command execution\n  <file>                      Which file to write\n\nCategories: \nFileIO, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cell",
+      "description": "Root of the design to write, e.g. des.subblk.cpu Default: whole design"
+    },
+    {
+      "flag": "-mode",
+      "description": "Values: design, pin_planning, synth_stub, sta, funcsim, timesim Default: design"
+    },
+    {
+      "flag": "-lib",
+      "description": "Write each library into a separate file"
+    },
+    {
+      "flag": "-port_diff_buffers",
+      "description": "Output differential buffers when writing in"
+    },
+    {
+      "flag": "-port",
+      "description": "mode"
+    },
+    {
+      "flag": "-write_all_overrides",
+      "description": "Write parameter overrides on Xilinx primitives even if the override value is the same as the default value"
+    },
+    {
+      "flag": "-keep_vcc_gnd",
+      "description": "Don't replace VCC/GND instances by literal constants on load terminals.  For simulation modes only."
+    },
+    {
+      "flag": "-rename_top",
+      "description": "Replace top module name with custom name e.g. netlist Default: new top module name"
+    },
+    {
+      "flag": "-sdf_anno",
+      "description": "Specify if sdf_annotate system task statement is generated"
+    },
+    {
+      "flag": "-sdf_file",
+      "description": "Full path to sdf file location Default: <file>.sdf"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-include_xilinx_libs",
+      "description": "Include simulation models directly in netlist instead of linking to library"
+    },
+    {
+      "flag": "-logic_function_stripped",
+      "description": "Convert INIT strings on LUTs & RAMBs to fixed values.  Resulting netlist will not behave correctly."
+    },
+    {
+      "flag": "-skip_clock_attributes",
+      "description": "Do not write the default special clock signal attributes when writing the synthesis directive in synth_stub mode."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

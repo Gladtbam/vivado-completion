@@ -1,0 +1,16 @@
+{
+  "name": "report_guide_info",
+  "short_description": "Reports reuse metric for read_guide_info",
+  "full_help": "report_guide_info\n\nDescription: \nReports reuse metric for read_guide_info\n\nSyntax: \nreport_guide_info  [-quiet] [-verbose] [<file>]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<file>]    Filename to output results to. (send output to console if -file\n              is not used)\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

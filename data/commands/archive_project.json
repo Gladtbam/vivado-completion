@@ -1,0 +1,44 @@
+{
+  "name": "archive_project",
+  "short_description": "Archive the current project",
+  "full_help": "archive_project\n\nDescription: \nArchive the current project\n\nSyntax: \narchive_project  [-temp_dir <arg>] [-force] [-exclude_run_results]\n                 [-include_config_settings] [-include_runs_in_progress]\n                 [-include_local_ip_cache] [-quiet] [-verbose] [<file>]\n\nReturns: \ntrue\n\nUsage: \n  Name                         Description\n  ----------------------------------------\n  [-temp_dir]                  specify temporary location to save project \n                               copy to archive\n                               Default: .\n  [-force]                     Overwrite existing archived file\n  [-exclude_run_results]       Exclude run results from the archive\n  [-include_config_settings]   Include current project environment \n                               configuration settings/files in archive\n  [-include_runs_in_progress]  Include run result even if the run is in \n                               progress, this switch will be ignored if \n                               -exclude_run_results is specified\n  [-include_local_ip_cache]    Include IP cache results in the archive\n  [-quiet]                     Ignore command errors\n  [-verbose]                   Suspend message limits during command \n                               execution\n  [<file>]                     Name of the archive file\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-temp_dir",
+      "description": "specify temporary location to save project copy to archive Default: ."
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing archived file"
+    },
+    {
+      "flag": "-exclude_run_results",
+      "description": "Exclude run results from the archive"
+    },
+    {
+      "flag": "-include_config_settings",
+      "description": "Include current project environment configuration settings/files in archive"
+    },
+    {
+      "flag": "-include_runs_in_progress",
+      "description": "Include run result even if the run is in progress, this switch will be ignored if"
+    },
+    {
+      "flag": "-exclude_run_results",
+      "description": "is specified"
+    },
+    {
+      "flag": "-include_local_ip_cache",
+      "description": "Include IP cache results in the archive"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "disconnect_net",
+  "short_description": "Disconnect a net from pins or ports",
+  "full_help": "disconnect_net\n\nDescription: \nDisconnect a net from pins or ports\n\nSyntax: \ndisconnect_net  [-prune] [-net <arg>] [-objects <args>] [-pinlist <args>]\n                [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-prune]    When performing disconnect, remove the net and any pin/net \n              chain up to the pin on any primitive instance as long as each \n              object in the chain has only 1 remaining connection.\n  [-net]      Net to disconnect - optional, net attached to first pin or port\n              object is used if not specified.\n  [-objects]  List of pin and port names to disconnect. String expressions \n              are supported.\n  [-pinlist]  List of pin and port objects to disconnect.\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nNetlist\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-prune",
+      "description": "When performing disconnect, remove the net and any pin/net chain up to the pin on any primitive instance as long as each object in the chain has only 1 remaining connection."
+    },
+    {
+      "flag": "-net",
+      "description": "Net to disconnect - optional, net attached to first pin or port object is used if not specified."
+    },
+    {
+      "flag": "-objects",
+      "description": "List of pin and port names to disconnect. String expressions are supported."
+    },
+    {
+      "flag": "-pinlist",
+      "description": "List of pin and port objects to disconnect."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

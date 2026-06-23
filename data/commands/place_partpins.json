@@ -1,0 +1,28 @@
+{
+  "name": "place_partpins",
+  "short_description": "Automatically place a set of partition pins in ooc mode",
+  "full_help": "place_partpins\n\nDescription: \nAutomatically place a set of partition pins in ooc mode\n\nSyntax: \nplace_partpins  [-num_locs_per_tile <arg>] [-start_tile <arg>]\n                [-end_tile <arg>] [-quiet] [-verbose] [<ports>...]\n\nUsage: \n  Name                  Description\n  ---------------------------------\n  [-num_locs_per_tile]  Number of locs per tile\n                        Default: 5\n  [-start_tile]         Lower Left Int tile\n  [-end_tile]           Upper Right Int tile\n  [-quiet]              Ignore command errors\n  [-verbose]            Suspend message limits during command execution\n  [<ports>]             Ports to place (if omitted, all ports will be placed)\n\nCategories: \nPinPlanning\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-num_locs_per_tile",
+      "description": "Number of locs per tile Default: 5"
+    },
+    {
+      "flag": "-start_tile",
+      "description": "Lower Left Int tile"
+    },
+    {
+      "flag": "-end_tile",
+      "description": "Upper Right Int tile"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

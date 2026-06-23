@@ -1,0 +1,92 @@
+{
+  "name": "report_utilization",
+  "short_description": "Compute utilization of device and display report",
+  "full_help": "report_utilization\n\nDescription: \nCompute utilization of device and display report\n\nSyntax: \nreport_utilization  [-file <arg>] [-append] [-pblocks <args>]\n                    [-evaluate_pblock] [-exclude_child_pblocks]\n                    [-exclude_non_assigned] [-cells <args>] [-return_string]\n                    [-slr] [-packthru] [-name <arg>] [-no_primitives]\n                    [-omit_locs] [-hierarchical] [-spreadsheet_file <arg>]\n                    [-spreadsheet_table <arg>] [-spreadsheet_depth <arg>]\n                    [-hierarchical_depth <arg>] [-hierarchical_percentages]\n                    [-quiet] [-verbose]\n\nReturns: \nReport\n\nUsage: \n  Name                         Description\n  ----------------------------------------\n  [-file]                      Filename to output results to. (send output to\n                               console if -file is not used)\n  [-append]                    Append the results to file, don't overwrite \n                               the results file\n  [-pblocks]                   Report utilization of given pblock\n  [-evaluate_pblock]           Report utilization with demand as specified \n                               cells and supply as specified pblock area\n  [-exclude_child_pblocks]     Report utilization with out child pblocks\n  [-exclude_non_assigned]      Pblock utilization with out Non-assigned Cells\n  [-cells]                     Report utilization of given list of cells\n  [-return_string]             Return report as string\n  [-slr]                       SLR wise utilization of resources\n  [-packthru]                  Reports LUTs used exclusively as pack-thru\n  [-name]                      Output the results to GUI panel with this name\n  [-no_primitives]             Removes \"Primitives Section\" from \n                               report_utilization o/p.\n  [-omit_locs]                 Removes \"Loced\" column from report_utilization\n                               o/p.\n  [-hierarchical]              Generates text-based hierarchical report.\n  [-spreadsheet_file]          Specify file for exporting utilization tables \n                               as spreadsheets. This feature is available \n                               only in GUI mode.\n  [-spreadsheet_table]         Choose a particular utilization table to \n                               export as spreadsheet file. Default value : \n                               Hierarchy\n  [-spreadsheet_depth]         Specifies the depth level for spreadsheet. \n                               Default value : 8\n                               Default: 8\n  [-hierarchical_depth]        Specifies the depth level for textual \n                               hierarchical report\n                               Default: 0\n  [-hierarchical_percentages]  Report percentages in textual hierarchical \n                               report\n  [-quiet]                     Ignore command errors\n  [-verbose]                   Suspend message limits during command \n                               execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-pblocks",
+      "description": "Report utilization of given pblock"
+    },
+    {
+      "flag": "-evaluate_pblock",
+      "description": "Report utilization with demand as specified cells and supply as specified pblock area"
+    },
+    {
+      "flag": "-exclude_child_pblocks",
+      "description": "Report utilization with out child pblocks"
+    },
+    {
+      "flag": "-exclude_non_assigned",
+      "description": "Pblock utilization with out Non-assigned Cells"
+    },
+    {
+      "flag": "-cells",
+      "description": "Report utilization of given list of cells"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-slr",
+      "description": "SLR wise utilization of resources"
+    },
+    {
+      "flag": "-packthru",
+      "description": "Reports LUTs used exclusively as pack-thru"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-no_primitives",
+      "description": "Removes \"Primitives Section\" from report_utilization o/p."
+    },
+    {
+      "flag": "-omit_locs",
+      "description": "Removes \"Loced\" column from report_utilization o/p."
+    },
+    {
+      "flag": "-hierarchical",
+      "description": "Generates text-based hierarchical report."
+    },
+    {
+      "flag": "-spreadsheet_file",
+      "description": "Specify file for exporting utilization tables as spreadsheets. This feature is available only in GUI mode."
+    },
+    {
+      "flag": "-spreadsheet_table",
+      "description": "Choose a particular utilization table to export as spreadsheet file. Default value : Hierarchy"
+    },
+    {
+      "flag": "-spreadsheet_depth",
+      "description": "Specifies the depth level for spreadsheet. Default value : 8 Default: 8"
+    },
+    {
+      "flag": "-hierarchical_depth",
+      "description": "Specifies the depth level for textual hierarchical report Default: 0"
+    },
+    {
+      "flag": "-hierarchical_percentages",
+      "description": "Report percentages in textual hierarchical report"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "check_integrity",
+  "short_description": "Check the integrity of a design checkpoint",
+  "full_help": "check_integrity\n\nDescription: \nCheck the integrity of a design checkpoint\n\nSyntax: \ncheck_integrity  [-quiet] [-verbose] <file>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <file>      Design checkpoint file\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "setup_pr_configurations",
+  "short_description": "Creates minimum PR Configurations and Child Impl runs automatically based on the combination of Partition Instances and RMs",
+  "full_help": "setup_pr_configurations\n\nDescription: \nCreates minimum PR Configurations and Child Impl runs automatically based on the combination of Partition Instances and RMs\n\nSyntax: \nsetup_pr_configurations  [-partitions <args>] [-use_netlist] [-force]\n                         [-run <arg>] [-dfx_mode <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-partitions]   List of partition instances and reconfig modules pairs\n  [-use_netlist]  Use netlist for getting instances of partition_defs to \n                  creating PR Configurations\n  [-force]        Using force deletes active parent impl run's PR \n                  Configuration and it's child runs and PR Configurations, \n                  and then creates new PR Configurations and runs\n  [-run]          Parent impl run to which child impl runs and PR \n                  Configurations need to be created\n  [-dfx_mode]     dynamic function exchange mode\n                  Default: STANDARD\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n\nCategories: \nPartition\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-partitions",
+      "description": "List of partition instances and reconfig modules pairs"
+    },
+    {
+      "flag": "-use_netlist",
+      "description": "Use netlist for getting instances of partition_defs to creating PR Configurations"
+    },
+    {
+      "flag": "-force",
+      "description": "Using force deletes active parent impl run's PR Configuration and it's child runs and PR Configurations, and then creates new PR Configurations and runs"
+    },
+    {
+      "flag": "-run",
+      "description": "Parent impl run to which child impl runs and PR Configurations need to be created"
+    },
+    {
+      "flag": "-dfx_mode",
+      "description": "dynamic function exchange mode Default: STANDARD"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

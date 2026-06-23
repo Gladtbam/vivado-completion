@@ -1,0 +1,44 @@
+{
+  "name": "reorder_files",
+  "short_description": "Change the order of source files in the active fileset",
+  "full_help": "reorder_files\n\nDescription: \nChange the order of source files in the active fileset\n\nSyntax: \nreorder_files  [-fileset <arg>] [-before <arg>] [-after <arg>] [-front] [-back]\n               [-auto] [-disable_unused] [-quiet] [-verbose] <files>...\n\nUsage: \n  Name               Description\n  ------------------------------\n  [-fileset]         Fileset to reorder\n  [-before]          Move the listed files before this file\n  [-after]           Move the listed files after this file\n  [-front]           Move the listed files to the front (default)\n  [-back]            Move the listed files to the back\n  [-auto]            Automatically re-orders the given fileset\n  [-disable_unused]  Disables all files not associated with the TOP design \n                     unit\n  [-quiet]           Ignore command errors\n  [-verbose]         Suspend message limits during command execution\n  <files>            Files to move\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-fileset",
+      "description": "Fileset to reorder"
+    },
+    {
+      "flag": "-before",
+      "description": "Move the listed files before this file"
+    },
+    {
+      "flag": "-after",
+      "description": "Move the listed files after this file"
+    },
+    {
+      "flag": "-front",
+      "description": "Move the listed files to the front (default)"
+    },
+    {
+      "flag": "-back",
+      "description": "Move the listed files to the back"
+    },
+    {
+      "flag": "-auto",
+      "description": "Automatically re-orders the given fileset"
+    },
+    {
+      "flag": "-disable_unused",
+      "description": "Disables all files not associated with the TOP design unit"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

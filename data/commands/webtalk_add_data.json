@@ -1,0 +1,40 @@
+{
+  "name": "webtalk_add_data",
+  "short_description": "Internal task add data to the Webtalk manager's data model.",
+  "full_help": "webtalk_add_data\n\nDescription: \nInternal task add data to the Webtalk manager's data model.\n\nSyntax: \nwebtalk_add_data  -client <arg> [-context <arg>] -key <arg> [-value <arg>]\n                  [-desc <arg>] [-html <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  -client     string value that is the client name. Must have been registered\n              via webtalk_register_client.\n  [-context]  string value that is the context for the data.\n              Default: empty\n  -key        string value that is the key for the data.\n  [-value]    string value that is the value for the data.\n              Default: empty\n  [-desc]     string value that is the description for the data.\n              Default: empty\n  [-html]     string value that is the html tag for the data.\n              Default: empty\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-client",
+      "description": "string value that is the client name. Must have been registered via webtalk_register_client."
+    },
+    {
+      "flag": "-context",
+      "description": "string value that is the context for the data. Default: empty"
+    },
+    {
+      "flag": "-key",
+      "description": "string value that is the key for the data."
+    },
+    {
+      "flag": "-value",
+      "description": "string value that is the value for the data. Default: empty"
+    },
+    {
+      "flag": "-desc",
+      "description": "string value that is the description for the data. Default: empty"
+    },
+    {
+      "flag": "-html",
+      "description": "string value that is the html tag for the data. Default: empty"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

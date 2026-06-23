@@ -1,0 +1,20 @@
+{
+  "name": "remove_from_power_rail",
+  "short_description": "Remove power sources from Power Rail",
+  "full_help": "remove_from_power_rail\n\nDescription: \nRemove power sources from Power Rail\n\nSyntax: \nremove_from_power_rail  [-power_sources <args>] [-quiet] [-verbose]\n                        <power_rail>\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-power_sources]  List of power sources to remove. Can be power rails \n                    and/or power supplies\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  <power_rail>      Power rail to remove power sources from\n\nCategories: \nXDC, Floorplan\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-power_sources",
+      "description": "List of power sources to remove. Can be power rails and/or power supplies"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

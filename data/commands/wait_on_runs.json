@@ -1,0 +1,24 @@
+{
+  "name": "wait_on_runs",
+  "short_description": "Block execution of further Tcl commands until the specified run(s) complete(s).",
+  "full_help": "wait_on_runs\n\nDescription: \nBlock execution of further Tcl commands until the specified run(s) complete(s).\n\nSyntax: \nwait_on_runs  [-timeout <arg>] [-exit_condition <arg>] [-quiet] [-verbose]\n              <runs>...\n\nUsage: \n  Name               Description\n  ------------------------------\n  [-timeout]         Maximum time to wait for the run(s) to complete (in \n                     minutes)\n                     Default: -1\n  [-exit_condition]  Exit condition for wait on run, \n                      1) ALL \n                      2. ANY_ONE \n                      3. ANY_ONE_MET_TIMING\n                     Default: ALL\n  [-quiet]           Ignore command errors\n  [-verbose]         Suspend message limits during command execution\n  <runs>             Runs to wait on\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-timeout",
+      "description": "Maximum time to wait for the run(s) to complete (in minutes) Default: -1"
+    },
+    {
+      "flag": "-exit_condition",
+      "description": "Exit condition for wait on run, 1) ALL 2. ANY_ONE 3. ANY_ONE_MET_TIMING Default: ALL"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

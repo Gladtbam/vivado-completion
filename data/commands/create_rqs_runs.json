@@ -1,0 +1,20 @@
+{
+  "name": "create_rqs_runs",
+  "short_description": "Create ML Strategy implementation runs",
+  "full_help": "create_rqs_runs\n\nDescription: \nCreate ML Strategy implementation runs\n\nSyntax: \ncreate_rqs_runs  [-reference_run <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-reference_run]  Reference implementation run name\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nTiming\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-reference_run",
+      "description": "Reference implementation run name"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

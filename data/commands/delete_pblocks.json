@@ -1,0 +1,20 @@
+{
+  "name": "delete_pblocks",
+  "short_description": "Remove Pblock",
+  "full_help": "delete_pblocks\n\nDescription: \nRemove Pblock\n\nSyntax: \ndelete_pblocks  [-hier] [-quiet] [-verbose] <pblocks>...\n\nUsage: \n  Name        Description\n  -----------------------\n  [-hier]     Also delete all the children of Pblock\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <pblocks>   Pblocks to delete\n\nCategories: \nFloorplan, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-hier",
+      "description": "Also delete all the children of Pblock"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

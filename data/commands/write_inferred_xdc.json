@@ -1,0 +1,64 @@
+{
+  "name": "write_inferred_xdc",
+  "short_description": "Write file with inferred xdc timing constraints",
+  "full_help": "write_inferred_xdc\n\nDescription: \nWrite file with inferred xdc timing constraints\n\nSyntax: \nwrite_inferred_xdc  [-force] [-all] [-append] [-async_clocks] [-all_async_reg]\n                    [-clock_groups] [-clocks] [-excl_clocks] [-exceptions]\n                    [-io_constraints] [-merge_existing_constraints]\n                    [-name <arg>] [-quiet] [-verbose] [<file>]\n\nUsage: \n  Name                           Description\n  ------------------------------------------\n  [-force]                       Overwrite existing file.\n  [-all]                         Generate all constraints except missing \n                                 clocks which are generated with the -clocks \n                                 option\n  [-append]                      Append the constraints to file, don't \n                                 overwrite the constraints file\n  [-async_clocks]                Find asynchronous clock groups\n  [-all_async_reg]               Find the missing ASYNC_REG property for safe\n                                 and unsafe Clock Domain Crossing\n  [-clock_groups]                Find asynchronous and exclusive clock \n                                 groups, equivalent to options -async_clocks \n                                 -excl_clocks\n  [-clocks]                      Find missing clock definitions\n  [-excl_clocks]                 Find logically and physically exclusive \n                                 clock groups\n  [-exceptions]                  Find missing exceptions\n  [-io_constraints]              Find missing input and output delays\n  [-merge_existing_constraints]  Add existing user defined constraints to the\n                                 generated constraints\n  [-name]                        Start constraints wizard in a GUI panel with\n                                 this name. Do other command options can be \n                                 combined with -name.\n  [-quiet]                       Ignore command errors\n  [-verbose]                     Suspend message limits during command \n                                 execution\n  [<file>]                       Filename to write constraints into\n\nCategories: \nFileIO, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file."
+    },
+    {
+      "flag": "-all",
+      "description": "Generate all constraints except missing clocks which are generated with the -clocks option"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the constraints to file, don't overwrite the constraints file"
+    },
+    {
+      "flag": "-async_clocks",
+      "description": "Find asynchronous clock groups"
+    },
+    {
+      "flag": "-all_async_reg",
+      "description": "Find the missing ASYNC_REG property for safe and unsafe Clock Domain Crossing"
+    },
+    {
+      "flag": "-clock_groups",
+      "description": "Find asynchronous and exclusive clock groups, equivalent to options -async_clocks -excl_clocks"
+    },
+    {
+      "flag": "-clocks",
+      "description": "Find missing clock definitions"
+    },
+    {
+      "flag": "-excl_clocks",
+      "description": "Find logically and physically exclusive clock groups"
+    },
+    {
+      "flag": "-exceptions",
+      "description": "Find missing exceptions"
+    },
+    {
+      "flag": "-io_constraints",
+      "description": "Find missing input and output delays"
+    },
+    {
+      "flag": "-merge_existing_constraints",
+      "description": "Add existing user defined constraints to the generated constraints"
+    },
+    {
+      "flag": "-name",
+      "description": "Start constraints wizard in a GUI panel with this name. Do other command options can be combined with -name."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

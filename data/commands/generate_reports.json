@@ -1,0 +1,20 @@
+{
+  "name": "generate_reports",
+  "short_description": "Generate a set of configurable report objects",
+  "full_help": "generate_reports\n\nDescription: \nGenerate a set of configurable report objects\n\nSyntax: \ngenerate_reports  [-jobs <arg>] [-quiet] [-verbose] <report_configs>...\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-jobs]           Number of jobs\n                    Default: 1\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  <report_configs>  List of configurable report objects to generate\n\nCategories: \nObject, Report\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-jobs",
+      "description": "Number of jobs Default: 1"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "precompile_kernel",
+  "short_description": "Pre-synthesize a kernel IP",
+  "full_help": "precompile_kernel\n\nDescription: \nPre-synthesize a kernel IP\n\nSyntax: \nprecompile_kernel  [-synthesis_options <args>] [-kernel_name <arg>] [-force]\n                   [-output_xo <arg>] [-hw_platform <arg>] [-platform <arg>]\n                   [-user_ip_repo_paths <args>] -xo_path <arg> [-quiet]\n                   [-verbose]\n\nReturns: \nThe path to the packaged XO container\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-synthesis_options]   Dictionary (Tcl dict) of synthesis run properties \n                         (e.g. {property1 value1 property2 value2 ...}) to be\n                         applied for synthesis.\n  [-kernel_name]         The name of the kernel\n  [-force]               Overwrite existing XO file\n  [-output_xo]           The name of the output XO\n  [-hw_platform]         The XSA or hardware platform to target for \n                         precompilation\n  [-platform]            The platform to target for precompilation\n  [-user_ip_repo_paths]  Add existing directories to the list of IP \n                         repositories. Value is an absolute path or a partial\n                         path relative the current working directory.\n  -xo_path               The path of the XO container to precompile\n  [-quiet]               Ignore command errors\n  [-verbose]             Suspend message limits during command execution\n\nCategories: \nVitis, Acceleration, FileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-synthesis_options",
+      "description": "Dictionary (Tcl dict) of synthesis run properties (e.g. {property1 value1 property2 value2 ...}) to be applied for synthesis."
+    },
+    {
+      "flag": "-kernel_name",
+      "description": "The name of the kernel"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing XO file"
+    },
+    {
+      "flag": "-output_xo",
+      "description": "The name of the output XO"
+    },
+    {
+      "flag": "-hw_platform",
+      "description": "The XSA or hardware platform to target for precompilation"
+    },
+    {
+      "flag": "-platform",
+      "description": "The platform to target for precompilation"
+    },
+    {
+      "flag": "-user_ip_repo_paths",
+      "description": "Add existing directories to the list of IP repositories. Value is an absolute path or a partial path relative the current working directory."
+    },
+    {
+      "flag": "-xo_path",
+      "description": "The path of the XO container to precompile"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

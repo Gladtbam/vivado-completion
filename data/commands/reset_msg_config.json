@@ -1,0 +1,48 @@
+{
+  "name": "reset_msg_config",
+  "short_description": "Resets or removes a message control rule previously defined by the set_msg_config command.",
+  "full_help": "reset_msg_config\n\nDescription: \nResets or removes a message control rule previously defined by the set_msg_config command.\n\nSyntax: \nreset_msg_config  [-string <args>] [-id <arg>] [-severity <arg>] [-limit]\n                  [-suppress] [-count] [-default_severity] [-regexp] [-quiet]\n                  [-verbose]\n\nUsage: \n  Name                 Description\n  --------------------------------\n  [-string]            A qualifier, only a rule created with a matching \n                       string qualifier will be reset/removed\n                       Default: empty\n  [-id]                A qualifier, only a rule created with a matching id \n                       qualifier will be reset/removed\n  [-severity]          A qualifier, only a rule created with a matching \n                       severity qualifier will be reset/removed\n  [-limit]             reset the limit values for message controls that match\n                       the given qualifiers for the current project\n  [-suppress]          stop suppressing messages that match the given \n                       qualifiers for the current project\n  [-count]             reset the count of messages for all message controls \n                       that match the given qualifiers for the current \n                       project. This will prevent messages from being \n                       suppressed by a -limit control until the message count\n                       once again exceeds the specified limit.\n  [-default_severity]  reset the message severity of all messages controls \n                       for the current project that match the given \n                       qualifiers to their default value\n  [-regexp]            The values used for -string are full regular \n                       expressions\n  [-quiet]             Ignore command errors\n  [-verbose]           Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-string",
+      "description": "A qualifier, only a rule created with a matching string qualifier will be reset/removed Default: empty"
+    },
+    {
+      "flag": "-id",
+      "description": "A qualifier, only a rule created with a matching id qualifier will be reset/removed"
+    },
+    {
+      "flag": "-severity",
+      "description": "A qualifier, only a rule created with a matching severity qualifier will be reset/removed"
+    },
+    {
+      "flag": "-limit",
+      "description": "reset the limit values for message controls that match the given qualifiers for the current project"
+    },
+    {
+      "flag": "-suppress",
+      "description": "stop suppressing messages that match the given qualifiers for the current project"
+    },
+    {
+      "flag": "-count",
+      "description": "reset the count of messages for all message controls that match the given qualifiers for the current project. This will prevent messages from being suppressed by a -limit control until the message count once again exceeds the specified limit."
+    },
+    {
+      "flag": "-default_severity",
+      "description": "reset the message severity of all messages controls for the current project that match the given qualifiers to their default value"
+    },
+    {
+      "flag": "-regexp",
+      "description": "The values used for -string are full regular expressions"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "update_noc_qos",
+  "short_description": "Update the NoC solution",
+  "full_help": "update_noc_qos\n\nDescription: \nUpdate the NoC solution\n\nSyntax: \nupdate_noc_qos  [-force] [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-force]    Force update even if the existing solution is invalid\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Force update even if the existing solution is invalid"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

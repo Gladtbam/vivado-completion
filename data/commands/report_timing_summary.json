@@ -1,0 +1,128 @@
+{
+  "name": "report_timing_summary",
+  "short_description": "Report timing summary",
+  "full_help": "report_timing_summary\n\nDescription: \nReport timing summary\n\nSyntax: \nreport_timing_summary  [-check_timing_verbose] [-delay_type <arg>]\n                       [-no_detailed_paths] [-setup] [-hold] [-max_paths <arg>]\n                       [-nworst <arg>] [-unique_pins] [-path_type <arg>]\n                       [-no_reused_label] [-input_pins] [-no_pr_attribute]\n                       [-no_pblock] [-routable_nets] [-slack_lesser_than <arg>]\n                       [-report_unconstrained] [-significant_digits <arg>]\n                       [-no_header] [-file <arg>] [-append] [-name <arg>]\n                       [-return_string] [-warn_on_violation] [-datasheet]\n                       [-cells <args>] [-rpx <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name                     Description\n  ------------------------------------\n  [-check_timing_verbose]  Produce a verbose report when checking the design \n                           for potential timing problems\n  [-delay_type]            Type of path delay: Values: max, min, min_max\n                           Default: min_max\n  [-no_detailed_paths]     Do not report timing paths for each clock and path\n                           group analyzed\n  [-setup]                 Report max delay timing paths (equivalent to \n                           -delay_type max)\n  [-hold]                  Report min delay timing paths (equivalent to \n                           -delay_type min)\n  [-max_paths]             Maximum number of paths to report per clock or \n                           path group: Value >=1\n                           Default: 1\n  [-nworst]                List up to N worst paths to endpoint: Value >=1\n                           Default: 1\n  [-unique_pins]           For each unique set of pins, show at most 1 path \n                           per path group\n  [-path_type]             Format for path report: Values: end summary short \n                           full full_clock full_clock_expanded\n                           Default: full_clock_expanded\n  [-no_reused_label]       Do not label reuse status on pins in the report\n  [-input_pins]            Show input pins in path\n  [-no_pr_attribute]       For Dynamic Function eXchange designs, do not \n                           report whether netlist resources are in the static\n                           or reconfigurable regions\n  [-no_pblock]             Report timing summary without pblock column\n  [-routable_nets]         Store the number of routable nets traversed as a \n                           property on timing paths.\n  [-slack_lesser_than]     Display paths with slack less than this\n                           Default: 1e+30\n  [-report_unconstrained]  Report unconstrained and user ignored paths\n  [-significant_digits]    Number of digits to display: Range: 0 to 3\n                           Default: 3\n  [-no_header]             Do not generate a report header\n  [-file]                  Filename to output results to. (send output to \n                           console if -file is not used)\n  [-append]                Append the results to file, don't overwrite the \n                           results file\n  [-name]                  Output the results to GUI panel with this name\n  [-return_string]         Return report as string\n  [-warn_on_violation]     Issue a critical warning when the report contains \n                           a timing violation\n  [-datasheet]             Include data sheet report\n  [-cells]                 Run report_timing_summary on the specified cell(s)\n  [-rpx]                   Filename to output interactive results to.\n  [-quiet]                 Ignore command errors\n  [-verbose]               Suspend message limits during command execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-check_timing_verbose",
+      "description": "Produce a verbose report when checking the design for potential timing problems"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "Type of path delay: Values: max, min, min_max Default: min_max"
+    },
+    {
+      "flag": "-no_detailed_paths",
+      "description": "Do not report timing paths for each clock and path group analyzed"
+    },
+    {
+      "flag": "-setup",
+      "description": "Report max delay timing paths (equivalent to"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "max)"
+    },
+    {
+      "flag": "-hold",
+      "description": "Report min delay timing paths (equivalent to"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "min)"
+    },
+    {
+      "flag": "-max_paths",
+      "description": "Maximum number of paths to report per clock or path group: Value >=1 Default: 1"
+    },
+    {
+      "flag": "-nworst",
+      "description": "List up to N worst paths to endpoint: Value >=1 Default: 1"
+    },
+    {
+      "flag": "-unique_pins",
+      "description": "For each unique set of pins, show at most 1 path per path group"
+    },
+    {
+      "flag": "-path_type",
+      "description": "Format for path report: Values: end summary short full full_clock full_clock_expanded Default: full_clock_expanded"
+    },
+    {
+      "flag": "-no_reused_label",
+      "description": "Do not label reuse status on pins in the report"
+    },
+    {
+      "flag": "-input_pins",
+      "description": "Show input pins in path"
+    },
+    {
+      "flag": "-no_pr_attribute",
+      "description": "For Dynamic Function eXchange designs, do not report whether netlist resources are in the static or reconfigurable regions"
+    },
+    {
+      "flag": "-no_pblock",
+      "description": "Report timing summary without pblock column"
+    },
+    {
+      "flag": "-routable_nets",
+      "description": "Store the number of routable nets traversed as a property on timing paths."
+    },
+    {
+      "flag": "-slack_lesser_than",
+      "description": "Display paths with slack less than this Default: 1e+30"
+    },
+    {
+      "flag": "-report_unconstrained",
+      "description": "Report unconstrained and user ignored paths"
+    },
+    {
+      "flag": "-significant_digits",
+      "description": "Number of digits to display: Range: 0 to 3 Default: 3"
+    },
+    {
+      "flag": "-no_header",
+      "description": "Do not generate a report header"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-warn_on_violation",
+      "description": "Issue a critical warning when the report contains a timing violation"
+    },
+    {
+      "flag": "-datasheet",
+      "description": "Include data sheet report"
+    },
+    {
+      "flag": "-cells",
+      "description": "Run report_timing_summary on the specified cell(s)"
+    },
+    {
+      "flag": "-rpx",
+      "description": "Filename to output interactive results to."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

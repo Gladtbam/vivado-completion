@@ -1,0 +1,28 @@
+{
+  "name": "create_partition_def",
+  "short_description": "Create new PartitionDef",
+  "full_help": "create_partition_def\n\nDescription: \nCreate new PartitionDef\n\nSyntax: \ncreate_partition_def  -name <arg> -module <arg> [-library <arg>] [-quiet]\n                      [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  -name       Name of the PartitionDef\n  -module     Module name of the PartitionDef\n  [-library]  Library name of the module of PartitionDef\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nObject, Partition\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Name of the PartitionDef"
+    },
+    {
+      "flag": "-module",
+      "description": "Module name of the PartitionDef"
+    },
+    {
+      "flag": "-library",
+      "description": "Library name of the module of PartitionDef"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

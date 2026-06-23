@@ -1,0 +1,16 @@
+{
+  "name": "current_project",
+  "short_description": "Set or get current project",
+  "full_help": "current_project\n\nDescription: \nSet or get current project\n\nSyntax: \ncurrent_project  [-quiet] [-verbose] [<project>]\n\nReturns: \ncurrent or newly set project object\n\nUsage: \n  Name         Description\n  ------------------------\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  [<project>]  Project to set as current\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

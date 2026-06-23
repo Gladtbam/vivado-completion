@@ -1,0 +1,20 @@
+{
+  "name": "write_bmm",
+  "short_description": "Write a bmm file",
+  "full_help": "write_bmm\n\nDescription: \nWrite a bmm file\n\nSyntax: \nwrite_bmm  [-force] [-quiet] [-verbose] <file>\n\nReturns: \nThe name of the bmm file\n\nUsage: \n  Name        Description\n  -----------------------\n  [-force]    Overwrite existing BMM file.\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <file>      Design bmm file\n              Values: A filename with alphanumeric characters and .bmm \n              extension.\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrite existing BMM file."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

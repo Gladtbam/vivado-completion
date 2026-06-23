@@ -1,0 +1,16 @@
+{
+  "name": "add_design_id",
+  "short_description": "Calculate design id and add it to design.",
+  "full_help": "add_design_id\n\nDescription: \nCalculate design id and add it to design.\n\nSyntax: \nadd_design_id  [-quiet] [-verbose]\n\nReturns: \nNothing\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

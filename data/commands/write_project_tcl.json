@@ -1,0 +1,76 @@
+{
+  "name": "write_project_tcl",
+  "short_description": "(User-written application) Export Tcl script for re-creating the current project",
+  "full_help": "write_project_tcl\n\nDescription: \n(User-written application)\nExport Tcl script for re-creating the current project\n\n\nSyntax: \nwrite_project_tcl  [-paths_relative_to <arg>] [-origin_dir_override <arg>]\n                   [-target_proj_dir <arg>] [-force] [-all_properties]\n                   [-no_copy_sources] [-absolute_remote_path] [-no_ip_version]\n                   [-absolute_path] [-dump_project_info] [-use_bd_files]\n                   [-no_bd_xlnoc] [-internal] [-validate]\n                   [-ignore_msg_control_rules] [-quiet] [-verbose] <file>\n\nReturns: \ntrue (0) if success, false (1) otherwise\n\n\nUsage: \n  Name                         Description\n  ----------------------------------------\n  [-paths_relative_to]         Override the reference directory variable for \n                               source file relative paths\n                               Default: Script output directory path\n  [-origin_dir_override]       Set 'origin_dir' directory variable to the \n                               specified value (Default is value specified \n                               with the -paths_relative_to switch)\n                               Default: None\n  [-target_proj_dir]           Directory where the project needs to be \n                               restored\n                               Default: Current project directory path\n  [-force]                     Overwrite existing tcl script file\n  [-all_properties]            Write all properties (default & non-default) \n                               for the project object(s)\n  [-no_copy_sources]           Do not import sources even if they were local \n                               in the original project\n                               Default: 1\n  [-absolute_remote_path]      Write remote sources with absolute paths\n  [-no_ip_version]             Flag to not include the IP version as part of \n                               the IP VLNV in create_bd_cell commands.\n                               Default: 1\n  [-absolute_path]             Make all file paths absolute wrt the original \n                               project directory\n  [-dump_project_info]         Write object values\n  [-use_bd_files]              Use BD sources directly instead of writing out\n                               procs to create them\n  [-no_bd_xlnoc]               Do not create BD xlnoc cell\n                               Default: 1\n  [-internal]                  Print basic header information in the \n                               generated tcl script\n  [-validate]                  Runs a validate script before recreating the \n                               project. To test if the files and paths \n                               refrenced in the tcl file exists or not.\n  [-ignore_msg_control_rules]  Do not imports message control rules in tcl \n                               script\n  [-quiet]                     Execute the command quietly, returning no \n                               messages from the command.\n  [-verbose]                   Suspend message limits during command \n                               execution\n  <file>                       Name of the tcl script file to generate\n\nCategories: \nxilinxtclstore, projutils, user-written\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-paths_relative_to",
+      "description": "Override the reference directory variable for source file relative paths Default: Script output directory path"
+    },
+    {
+      "flag": "-origin_dir_override",
+      "description": "Set 'origin_dir' directory variable to the specified value (Default is value specified with the -paths_relative_to switch) Default: None"
+    },
+    {
+      "flag": "-target_proj_dir",
+      "description": "Directory where the project needs to be restored Default: Current project directory path"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing tcl script file"
+    },
+    {
+      "flag": "-all_properties",
+      "description": "Write all properties (default & non-default) for the project object(s)"
+    },
+    {
+      "flag": "-no_copy_sources",
+      "description": "Do not import sources even if they were local in the original project Default: 1"
+    },
+    {
+      "flag": "-absolute_remote_path",
+      "description": "Write remote sources with absolute paths"
+    },
+    {
+      "flag": "-no_ip_version",
+      "description": "Flag to not include the IP version as part of the IP VLNV in create_bd_cell commands. Default: 1"
+    },
+    {
+      "flag": "-absolute_path",
+      "description": "Make all file paths absolute wrt the original project directory"
+    },
+    {
+      "flag": "-dump_project_info",
+      "description": "Write object values"
+    },
+    {
+      "flag": "-use_bd_files",
+      "description": "Use BD sources directly instead of writing out procs to create them"
+    },
+    {
+      "flag": "-no_bd_xlnoc",
+      "description": "Do not create BD xlnoc cell Default: 1"
+    },
+    {
+      "flag": "-internal",
+      "description": "Print basic header information in the generated tcl script"
+    },
+    {
+      "flag": "-validate",
+      "description": "Runs a validate script before recreating the project. To test if the files and paths refrenced in the tcl file exists or not."
+    },
+    {
+      "flag": "-ignore_msg_control_rules",
+      "description": "Do not imports message control rules in tcl script"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Execute the command quietly, returning no messages from the command."
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

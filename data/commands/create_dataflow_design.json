@@ -1,0 +1,24 @@
+{
+  "name": "create_dataflow_design",
+  "short_description": "New design for dataflow",
+  "full_help": "create_dataflow_design\n\nDescription: \nNew design for dataflow\n\nSyntax: \ncreate_dataflow_design  [-name <arg>] [-min_bus_width <arg>] [-quiet]\n                        [-verbose]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-name]           Design name\n  [-min_bus_width]  Minimum width of Data buses in Dataflow Design\n                    Default: 16\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nNetlist, Project\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Design name"
+    },
+    {
+      "flag": "-min_bus_width",
+      "description": "Minimum width of Data buses in Dataflow Design Default: 16"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

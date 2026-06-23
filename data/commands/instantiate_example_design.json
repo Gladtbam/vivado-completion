@@ -1,0 +1,36 @@
+{
+  "name": "instantiate_example_design",
+  "short_description": "Creates an example design from a predefined template in an open project.",
+  "full_help": "instantiate_example_design\n\nDescription: \nCreates an example design from a predefined template in an open project.\n\nSyntax: \ninstantiate_example_design  [-design <arg>] [-hier <arg>] [-project <arg>]\n                            [-project_location <arg>] [-options <args>]\n                            [-quiet] [-verbose] <template>\n\nReturns: \nReturns the name of the template applied.\n\nUsage: \n  Name                 Description\n  --------------------------------\n  [-design]            Block Design Name\n  [-hier]              Hierarchy Block\n  [-project]           Project Name\n  [-project_location]  Project location\n                       Default: .\n  [-options]           Configurable options\n  [-quiet]             Ignore command errors\n  [-verbose]           Suspend message limits during command execution\n  <template>           Configurable Design Name\n\nCategories: \nIPIntegrator\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-design",
+      "description": "Block Design Name"
+    },
+    {
+      "flag": "-hier",
+      "description": "Hierarchy Block"
+    },
+    {
+      "flag": "-project",
+      "description": "Project Name"
+    },
+    {
+      "flag": "-project_location",
+      "description": "Project location Default: ."
+    },
+    {
+      "flag": "-options",
+      "description": "Configurable options"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

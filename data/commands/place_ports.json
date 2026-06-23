@@ -1,0 +1,28 @@
+{
+  "name": "place_ports",
+  "short_description": "Automatically place a set of ports",
+  "full_help": "place_ports\n\nDescription: \nAutomatically place a set of ports\n\nSyntax: \nplace_ports  [-skip_unconnected_ports] [-check_only] [-iobank <args>] [-quiet]\n             [-verbose] [<ports>...]\n\nUsage: \n  Name                       Description\n  --------------------------------------\n  [-skip_unconnected_ports]  Do not place unconnected ports\n  [-check_only]              Only check IO/Clock placement DRCs\n  [-iobank]                  Limit placement to the following banks\n  [-quiet]                   Ignore command errors\n  [-verbose]                 Suspend message limits during command execution\n  [<ports>]                  Ports to place (if omitted, all ports will be \n                             placed).  If the arguments are interleaved \n                             objects of ports and package pins, then manual \n                             placement is performed\n\nCategories: \nPinPlanning\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-skip_unconnected_ports",
+      "description": "Do not place unconnected ports"
+    },
+    {
+      "flag": "-check_only",
+      "description": "Only check IO/Clock placement DRCs"
+    },
+    {
+      "flag": "-iobank",
+      "description": "Limit placement to the following banks"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

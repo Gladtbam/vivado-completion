@@ -1,0 +1,24 @@
+{
+  "name": "open_project",
+  "short_description": "Open a Vivado project file (.xpr)",
+  "full_help": "open_project\n\nDescription: \nOpen a Vivado project file (.xpr)\n\nSyntax: \nopen_project  [-part <arg>] [-read_only] [-quiet] [-verbose] <file>\n\nReturns: \nopened project object\n\nUsage: \n  Name          Description\n  -------------------------\n  [-part]       Open the project using this part (overrides project's part)\n  [-read_only]  Open the project in read-only mode\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  <file>        Project file to be read\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-part",
+      "description": "Open the project using this part (overrides project's part)"
+    },
+    {
+      "flag": "-read_only",
+      "description": "Open the project in read-only mode"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

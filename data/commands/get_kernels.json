@@ -1,0 +1,20 @@
+{
+  "name": "get_kernels",
+  "short_description": "Get kernel definitions in a Xilinx object file",
+  "full_help": "get_kernels\n\nDescription: \nGet kernel definitions in a Xilinx object file\n\nSyntax: \nget_kernels  -xo_path <arg> [-quiet] [-verbose]\n\nReturns: \nList of kernel definitions\n\nUsage: \n  Name        Description\n  -----------------------\n  -xo_path    Absolute path to the Xilinx object file\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nSDAccel, Kernel\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-xo_path",
+      "description": "Absolute path to the Xilinx object file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

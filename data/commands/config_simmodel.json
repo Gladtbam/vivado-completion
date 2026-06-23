@@ -1,0 +1,32 @@
+{
+  "name": "config_simmodel",
+  "short_description": "Configure settings for simulation models",
+  "full_help": "config_simmodel\n\nDescription: \nConfigure settings for simulation models\n\nSyntax: \nconfig_simmodel  [-name <arg>] [-value <arg>] [-report] [-reset] [-quiet]\n                 [-verbose] <simulator>\n\nUsage: \n  Name         Description\n  ------------------------\n  [-name]      Name of the configuration (<simulator>.compile.<compiler>.<simm\n               odel>)\n  [-value]     Value of the configuration\n  [-report]    Print the list of configuration settings of the specified \n               simulator\n  [-reset]     Reset configuration settings of the specified simulator\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  <simulator>  Name of the simulator\n\nCategories: \nSimulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Name of the configuration (<simulator>.compile.<compiler>.<simm odel>)"
+    },
+    {
+      "flag": "-value",
+      "description": "Value of the configuration"
+    },
+    {
+      "flag": "-report",
+      "description": "Print the list of configuration settings of the specified simulator"
+    },
+    {
+      "flag": "-reset",
+      "description": "Reset configuration settings of the specified simulator"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

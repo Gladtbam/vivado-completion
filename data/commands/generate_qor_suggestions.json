@@ -1,0 +1,28 @@
+{
+  "name": "generate_qor_suggestions",
+  "short_description": "Generate QoR Suggestions",
+  "full_help": "generate_qor_suggestions\n\nDescription: \nGenerate QoR Suggestions\n\nSyntax: \ngenerate_qor_suggestions  [-max_paths <arg>] [-evaluate_pipelining]\n                          [-cell <args>] [-quiet] [-verbose]\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-max_paths]            Number of paths to consider for suggestion analysis\n                          Default: 100\n  [-evaluate_pipelining]  Generate DSP/BRAM pipelining xdc file\n  [-cell]                 Report QOR suggestions for a given cell\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n\nCategories: \nFeasibility, Report, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-max_paths",
+      "description": "Number of paths to consider for suggestion analysis Default: 100"
+    },
+    {
+      "flag": "-evaluate_pipelining",
+      "description": "Generate DSP/BRAM pipelining xdc file"
+    },
+    {
+      "flag": "-cell",
+      "description": "Report QOR suggestions for a given cell"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

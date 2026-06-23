@@ -1,0 +1,20 @@
+{
+  "name": "create_interface",
+  "short_description": "Create a new I/O port interface",
+  "full_help": "create_interface\n\nDescription: \nCreate a new I/O port interface\n\nSyntax: \ncreate_interface  [-parent <arg>] [-quiet] [-verbose] <name>\n\nReturns: \nnew interface object\n\nUsage: \n  Name        Description\n  -----------------------\n  [-parent]   Assign new interface to this parent interface\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <name>      Name for new I/O port interface\n\nCategories: \nPinPlanning\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-parent",
+      "description": "Assign new interface to this parent interface"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "create_gui_custom_command_arg",
+  "short_description": "Create a custom command argument for a custom command in the GUI",
+  "full_help": "create_gui_custom_command_arg\n\nDescription: \nCreate a custom command argument for a custom command in the GUI\n\nSyntax: \ncreate_gui_custom_command_arg  -command_name <arg> -arg_name <arg>\n                               [-default <arg>] [-comment <arg>] [-optional]\n                               [-quiet] [-verbose]\n\nUsage: \n  Name           Description\n  --------------------------\n  -command_name  Unique name of the custom command for which an argument is \n                 being created.\n  -arg_name      Unique name of the custom command argument to create.\n  [-default]     Default value of the custom command argument.\n  [-comment]     Comment for the custom command argument.\n  [-optional]    Make the custom command argument optional.\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n\nCategories: \nGUIControl\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-command_name",
+      "description": "Unique name of the custom command for which an argument is being created."
+    },
+    {
+      "flag": "-arg_name",
+      "description": "Unique name of the custom command argument to create."
+    },
+    {
+      "flag": "-default",
+      "description": "Default value of the custom command argument."
+    },
+    {
+      "flag": "-comment",
+      "description": "Comment for the custom command argument."
+    },
+    {
+      "flag": "-optional",
+      "description": "Make the custom command argument optional."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

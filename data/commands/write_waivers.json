@@ -1,0 +1,32 @@
+{
+  "name": "write_waivers",
+  "short_description": "Write out one or more DRC/METHODOLOGY/CDC message waivers in command form",
+  "full_help": "write_waivers\n\nDescription: \nWrite out one or more DRC/METHODOLOGY/CDC message waivers in command form\n\nSyntax: \nwrite_waivers  [-type <arg>] [-objects <args>] [-return_string] [-force]\n               [-quiet] [-verbose] [<file>]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-type]           Type of waiver(s) - ALL, DRC, METHODOLOGY, CDC, LINT to \n                    write\n  [-objects]        List of DRC/METHODOLOGY/CDC waiver objects to be written\n  [-return_string]  Return report results as a string object\n  [-force]          Overwrite existing file\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  [<file>]          Name of file to write waivers\n\nCategories: \nWaiver, Object\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-type",
+      "description": "Type of waiver(s) - ALL, DRC, METHODOLOGY, CDC, LINT to write"
+    },
+    {
+      "flag": "-objects",
+      "description": "List of DRC/METHODOLOGY/CDC waiver objects to be written"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report results as a string object"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

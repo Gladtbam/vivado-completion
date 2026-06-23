@@ -1,0 +1,64 @@
+{
+  "name": "set_min_delay",
+  "short_description": "Specify minimum delay for timing paths",
+  "full_help": "set_min_delay\n\nDescription: \nSpecify minimum delay for timing paths\n\nSyntax: \nset_min_delay  [-rise] [-fall] [-reset_path] [-from <args>] [-rise_from <args>]\n               [-fall_from <args>] [-to <args>] [-rise_to <args>]\n               [-fall_to <args>] [-through <args>] [-rise_through <args>]\n               [-fall_through <args>] [-quiet] [-verbose] <delay>\n\nUsage: \n  Name             Description\n  ----------------------------\n  [-rise]          Delay value applies to rising path delays\n  [-fall]          Delay value applies to falling path delays\n  [-reset_path]    Reset this path before setting min delay\n  [-from]          List of path startpoints or clocks\n  [-rise_from]     Apply to paths rising from the list of startpoints or \n                   clocks\n  [-fall_from]     Apply to paths falling from the list of startpoints or \n                   clocks\n  [-to]            List of path endpoints or clocks\n  [-rise_to]       Apply to paths with rise transition at the list of \n                   endpoints or clocks\n  [-fall_to]       Apply to paths with fall transition at the list of \n                   endpoints or clocks\n  [-through]       List of through pins, cells or nets\n  [-rise_through]  Apply to paths rising through pins, cells or nets\n  [-fall_through]  Apply to paths falling through pins, cells or nets\n  [-quiet]         Ignore command errors\n  [-verbose]       Suspend message limits during command execution\n  <delay>          Delay value\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-rise",
+      "description": "Delay value applies to rising path delays"
+    },
+    {
+      "flag": "-fall",
+      "description": "Delay value applies to falling path delays"
+    },
+    {
+      "flag": "-reset_path",
+      "description": "Reset this path before setting min delay"
+    },
+    {
+      "flag": "-from",
+      "description": "List of path startpoints or clocks"
+    },
+    {
+      "flag": "-rise_from",
+      "description": "Apply to paths rising from the list of startpoints or clocks"
+    },
+    {
+      "flag": "-fall_from",
+      "description": "Apply to paths falling from the list of startpoints or clocks"
+    },
+    {
+      "flag": "-to",
+      "description": "List of path endpoints or clocks"
+    },
+    {
+      "flag": "-rise_to",
+      "description": "Apply to paths with rise transition at the list of endpoints or clocks"
+    },
+    {
+      "flag": "-fall_to",
+      "description": "Apply to paths with fall transition at the list of endpoints or clocks"
+    },
+    {
+      "flag": "-through",
+      "description": "List of through pins, cells or nets"
+    },
+    {
+      "flag": "-rise_through",
+      "description": "Apply to paths rising through pins, cells or nets"
+    },
+    {
+      "flag": "-fall_through",
+      "description": "Apply to paths falling through pins, cells or nets"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "compile_c",
+  "short_description": "Compile C code into RTL",
+  "full_help": "compile_c\n\nDescription: \nCompile C code into RTL\n\nSyntax: \ncompile_c  [-force] [-quiet] [-verbose] <objects>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-force]    Force generate product state regeneration\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <objects>   The objects which need C to RTL conversion\n\nCategories: \nProject, IPFlow, IPIntegrator\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Force generate product state regeneration"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

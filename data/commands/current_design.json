@@ -1,0 +1,16 @@
+{
+  "name": "current_design",
+  "short_description": "Set or get the current design.",
+  "full_help": "current_design\n\nDescription: \nSet or get the current design.\n\nSyntax: \ncurrent_design  [-quiet] [-verbose] [<design>]\n\nReturns: \ndesign object\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<design>]  Name of current design to be set\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

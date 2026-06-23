@@ -1,0 +1,7 @@
+{
+  "name": "report_clock",
+  "short_description": "",
+  "full_help": "\nTopic                     Description\nreport_clock_interaction  Report on clock timing paths and unclocked registers\nreport_clock_networks     Report clock networks\nreport_clock_utilization  Report information about clock nets in design\nreport_clocks             Report clocks\n\nFor help on an individual topic, type 'help <topic>'. For example:\n% help create_project\n",
+  "custom_snippet": null,
+  "arguments": []
+}

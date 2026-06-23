@@ -1,0 +1,24 @@
+{
+  "name": "connect_debug_cores",
+  "short_description": "Connect debug slave instances to the master instance. A valid master is a debug bridge or debug hub instance configured in \"From BSCAN To DebugHUB\" mode. A valid slave could be any of the following debug cores (Ex: ILA, VIO, JTAG_to_AXI). connect_debug_cores can only connect master and slave instances that exist in the same region (either in Reconfigurable Partition or static)",
+  "full_help": "connect_debug_cores\n\nDescription: \nConnect debug slave instances to the master instance. A valid master is a debug bridge or debug hub instance configured in \"From BSCAN To DebugHUB\" mode. A valid slave could be any of the following debug cores (Ex: ILA, VIO, JTAG_to_AXI). connect_debug_cores can only connect master and slave instances that exist in the same region (either in Reconfigurable Partition or static)\n\nSyntax: \nconnect_debug_cores  -master <args> -slaves <args> [-quiet] [-verbose]\n\nReturns: \ndebug master and slave instances\n\nUsage: \n  Name        Description\n  -----------------------\n  -master     A valid debug bridge or debug hub instance configured in \"From \n              BSCAN To DebugHUB\" mode. Only one master instance is allowed.\n              \n  -slaves     List of valid slave instances. A valid slave instance is any of\n              the following debug cores (Ex: ILA, VIO, JTAG_to_AXI)\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nDebug, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-master",
+      "description": "A valid debug bridge or debug hub instance configured in \"From BSCAN To DebugHUB\" mode. Only one master instance is allowed."
+    },
+    {
+      "flag": "-slaves",
+      "description": "List of valid slave instances. A valid slave instance is any of the following debug cores (Ex: ILA, VIO, JTAG_to_AXI)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

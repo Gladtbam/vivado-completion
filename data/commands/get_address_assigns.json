@@ -1,0 +1,28 @@
+{
+  "name": "get_address_assigns",
+  "short_description": "Get Address Assignments.",
+  "full_help": "get_address_assigns\n\nDescription: \nGet Address Assignments.\n\nSyntax: \nget_address_assigns  [-source <arg>] [-target <arg>] [-block <arg>] [-quiet]\n                     [-verbose] [<path>]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-source]   Filter by source Address Block.\n  [-target]   Filter by target Address Space.\n  [-block]    Current block.\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<path>]    Address Assignment path to search.\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-source",
+      "description": "Filter by source Address Block."
+    },
+    {
+      "flag": "-target",
+      "description": "Filter by target Address Space."
+    },
+    {
+      "flag": "-block",
+      "description": "Current block."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

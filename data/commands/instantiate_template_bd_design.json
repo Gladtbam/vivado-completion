@@ -1,0 +1,28 @@
+{
+  "name": "instantiate_template_bd_design",
+  "short_description": "Creates a block design in IP integrator from a predefined template.",
+  "full_help": "instantiate_template_bd_design\n\nDescription: \nCreates a block design in IP integrator from a predefined template.\n\nSyntax: \ninstantiate_template_bd_design  -design <arg> [-hier <arg>] [-options <args>]\n                                [-quiet] [-verbose] <template>\n\nReturns: \nReturns the name of the template applied.\n\nUsage: \n  Name        Description\n  -----------------------\n  -design     Block Design Name\n  [-hier]     Hierarchy Block\n  [-options]  Configurable options\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <template>  Configurable Design Name\n\nCategories: \nIPIntegrator\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-design",
+      "description": "Block Design Name"
+    },
+    {
+      "flag": "-hier",
+      "description": "Hierarchy Block"
+    },
+    {
+      "flag": "-options",
+      "description": "Configurable options"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

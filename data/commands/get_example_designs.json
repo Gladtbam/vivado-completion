@@ -1,0 +1,28 @@
+{
+  "name": "get_example_designs",
+  "short_description": "Get a list of example designs",
+  "full_help": "get_example_designs\n\nDescription: \nGet a list of example designs\n\nSyntax: \nget_example_designs  [-regexp] [-nocase] [-filter <arg>] [-quiet] [-verbose]\n                     [<patterns>...]\n\nReturns: \nlist of design objects\n\nUsage: \n  Name          Description\n  -------------------------\n  [-regexp]     Patterns are full regular expressions\n  [-nocase]     Perform case-insensitive matching\n  [-filter]     Filter list with expression\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  [<patterns>]  The patterns to match against\n                Default: *\n                Values: The default search pattern is the wildcard *, or .* \n                when -regexp is specified.\n\nCategories: \nIPIntegrator\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

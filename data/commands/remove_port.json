@@ -1,0 +1,16 @@
+{
+  "name": "remove_port",
+  "short_description": "Remove the given list of top ports from the netlist.",
+  "full_help": "remove_port\n\nDescription: \nRemove the given list of top ports from the netlist.\n\nSyntax: \nremove_port  [-quiet] [-verbose] <ports>...\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <ports>     Ports and/or bus ports to remove\n\nCategories: \nPinPlanning\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

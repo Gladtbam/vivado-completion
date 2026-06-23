@@ -1,0 +1,56 @@
+{
+  "name": "create_ip",
+  "short_description": "Create an instance of a configurable IP and add it to the fileset",
+  "full_help": "create_ip\n\nDescription: \nCreate an instance of a configurable IP and add it to the fileset\n\nSyntax: \ncreate_ip  [-vlnv <arg>] -module_name <arg> [-dir <arg>] [-force]\n           [-allow_hidden] [-vendor <arg>] [-library <arg>] [-name <arg>]\n           [-version <arg>] [-revision <arg>] [-quiet] [-verbose]\n\nReturns: \nlist of file objects that were added\n\nUsage: \n  Name             Description\n  ----------------------------\n  [-vlnv]          VLNV string for the Catalog IP from which the new IP will \n                   be created (colon delimited Vendor, Library, Name, \n                   Version)\n  -module_name     Name for the new IP that will be added to the project\n  [-dir]           Directory path for remote IP to be created and managed \n                   outside the project\n  [-force]         Overwrite existing IP instance; allowed only with -dir \n                   option\n  [-allow_hidden]  Allow hidden cores to be instantiated\n  [-vendor]        IP Vendor name\n  [-library]       IP Library name\n  [-name]          IP Name\n  [-version]       IP Version\n  [-revision]      (Optional) IP core revision\n  [-quiet]         Ignore command errors\n  [-verbose]       Suspend message limits during command execution\n\nCategories: \nIPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-vlnv",
+      "description": "VLNV string for the Catalog IP from which the new IP will be created (colon delimited Vendor, Library, Name, Version)"
+    },
+    {
+      "flag": "-module_name",
+      "description": "Name for the new IP that will be added to the project"
+    },
+    {
+      "flag": "-dir",
+      "description": "Directory path for remote IP to be created and managed outside the project"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing IP instance; allowed only with -dir option"
+    },
+    {
+      "flag": "-allow_hidden",
+      "description": "Allow hidden cores to be instantiated"
+    },
+    {
+      "flag": "-vendor",
+      "description": "IP Vendor name"
+    },
+    {
+      "flag": "-library",
+      "description": "IP Library name"
+    },
+    {
+      "flag": "-name",
+      "description": "IP Name"
+    },
+    {
+      "flag": "-version",
+      "description": "IP Version"
+    },
+    {
+      "flag": "-revision",
+      "description": "(Optional) IP core revision"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "combine_hw_platforms",
+  "short_description": "Add a hw_emu Xilinx Shell Archive to an existing hw Xilinx Shell Archive",
+  "full_help": "combine_hw_platforms\n\nDescription: \nAdd a hw_emu Xilinx Shell Archive to an existing hw Xilinx Shell Archive\n\nSyntax: \ncombine_hw_platforms  [-hw <arg>] [-hw_emu <arg>] [-o <arg>] [-force] [-quiet]\n                      [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-hw]       A hw Xilinx Shell Archive\n              Values: A filename with alphanumeric characters and .xsa \n              extension.\n  [-hw_emu]   A hw_emu Xilinx Shell Archive\n              Values: A filename with alphanumeric characters and .xsa \n              extension.\n  [-o]        The (optional) output Xilinx Shell Archive. If not specified, \n              the hw_emu will be added to the hw file, overwriting the \n              original file.\n              Values: A filename with alphanumeric characters and .xsa \n              extension.\n  [-force]    Overwrite existing Xilinx Shell Archive file\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nVitis, Platform, FileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-hw",
+      "description": "A hw Xilinx Shell Archive Values: A filename with alphanumeric characters and .xsa extension."
+    },
+    {
+      "flag": "-hw_emu",
+      "description": "A hw_emu Xilinx Shell Archive Values: A filename with alphanumeric characters and .xsa extension."
+    },
+    {
+      "flag": "-o",
+      "description": "The (optional) output Xilinx Shell Archive. If not specified, the hw_emu will be added to the hw file, overwriting the original file. Values: A filename with alphanumeric characters and .xsa extension."
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing Xilinx Shell Archive file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

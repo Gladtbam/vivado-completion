@@ -1,0 +1,44 @@
+{
+  "name": "read_checkpoint",
+  "short_description": "Read a design checkpoint",
+  "full_help": "read_checkpoint\n\nDescription: \nRead a design checkpoint\n\nSyntax: \nread_checkpoint  [-cell <arg>] [-incremental] [-directive <arg>]\n                 [-auto_incremental] [-fix_objects <args>]\n                 [-dcp_cell_list <args>] [-force_incr] [-quiet] [-verbose]\n                 [<file>]\n\nUsage: \n  Name                 Description\n  --------------------------------\n  [-cell]              Replace this cell with the checkpoint. The cell must \n                       be a black box.\n  [-incremental]       Input design checkpoint file to be used for re-using \n                       implementation.\n  [-directive]         Mode of behavior (directive) for this command. Please \n                       refer to Arguments section of this help for values for\n                       this option.\n                       Default: RuntimeOptimized\n  [-auto_incremental]  Enters automatic mode for incremental compile. This is\n                       less aggressive than the standard incremental mode and\n                       will readily switch from incremental algorithms to the\n                       default algorithms if results might not be maintained.\n                       Should not be used with -reuse_objects.\n  [-fix_objects]       Fix only given list of cells, clock regions, SLRs or \n                       Design\n  [-dcp_cell_list]     A list of cell/dcp pairs, e.g. {<cell1> <dcp1> <cell2>\n                       <dcp2>}. The option value should be in curly braces.\n  [-force_incr]        Force switch to forcefully run incremental flow \n                       irrespective of rule/ML based criteria\n  [-quiet]             Ignore command errors\n  [-verbose]           Suspend message limits during command execution\n  [<file>]             Design checkpoint file\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cell",
+      "description": "Replace this cell with the checkpoint. The cell must be a black box."
+    },
+    {
+      "flag": "-incremental",
+      "description": "Input design checkpoint file to be used for re-using implementation."
+    },
+    {
+      "flag": "-directive",
+      "description": "Mode of behavior (directive) for this command. Please refer to Arguments section of this help for values for this option. Default: RuntimeOptimized"
+    },
+    {
+      "flag": "-auto_incremental",
+      "description": "Enters automatic mode for incremental compile. This is less aggressive than the standard incremental mode and will readily switch from incremental algorithms to the default algorithms if results might not be maintained. Should not be used with -reuse_objects."
+    },
+    {
+      "flag": "-fix_objects",
+      "description": "Fix only given list of cells, clock regions, SLRs or Design"
+    },
+    {
+      "flag": "-dcp_cell_list",
+      "description": "A list of cell/dcp pairs, e.g. {<cell1> <dcp1> <cell2> <dcp2>}. The option value should be in curly braces."
+    },
+    {
+      "flag": "-force_incr",
+      "description": "Force switch to forcefully run incremental flow irrespective of rule/ML based criteria"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

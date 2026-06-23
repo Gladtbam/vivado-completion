@@ -1,0 +1,32 @@
+{
+  "name": "set_load",
+  "short_description": "Set capacitance on output ports and output pins",
+  "full_help": "set_load\n\nDescription: \nSet capacitance on output ports and output pins\n\nSyntax: \nset_load  [-rise] [-fall] [-max] [-min] [-quiet] [-verbose] <capacitance>\n          <objects>\n\nUsage: \n  Name           Description\n  --------------------------\n  [-rise]        Specify the rise capacitance value (for ports only)\n  [-fall]        Specify the fall capacitance value (for ports only)\n  [-max]         Specify the maximum capacitance value\n  [-min]         Specify the minimum capacitance value\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  <capacitance>  Capacitance value\n  <objects>      List of output ports and output pins\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-rise",
+      "description": "Specify the rise capacitance value (for ports only)"
+    },
+    {
+      "flag": "-fall",
+      "description": "Specify the fall capacitance value (for ports only)"
+    },
+    {
+      "flag": "-max",
+      "description": "Specify the maximum capacitance value"
+    },
+    {
+      "flag": "-min",
+      "description": "Specify the minimum capacitance value"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

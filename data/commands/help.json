@@ -1,0 +1,44 @@
+{
+  "name": "help",
+  "short_description": "Display help for one or more topics",
+  "full_help": "help\n\nDescription: \nDisplay help for one or more topics\n\nSyntax: \nhelp  [-category <arg>] [-args] [-syntax] [-long] [-prop <arg>] [-class <arg>]\n      [-message <arg>] [-quiet] [-verbose] [<pattern_or_object>]\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-category]            Search for topics in the specified category\n  [-args]                Display arguments description\n  [-syntax]              Display syntax description\n  [-long]                Display long help description\n  [-prop]                Display property help for matching property names\n                         Default: *\n  [-class]               Display object type help\n  [-message]             Display information about the message with the given \n                         message. Every message delivered by the tool has a \n                         unique global message ID that consists of an \n                         application sub-system code and a message identifier. \n                         Example: -message {Common 17-8}.\n  [-quiet]               Ignore command errors\n  [-verbose]             Suspend message limits during command execution\n  [<pattern_or_object>]  Display help for topics that match the specified \n                         pattern\n                         Default: *\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-category",
+      "description": "Search for topics in the specified category"
+    },
+    {
+      "flag": "-args",
+      "description": "Display arguments description"
+    },
+    {
+      "flag": "-syntax",
+      "description": "Display syntax description"
+    },
+    {
+      "flag": "-long",
+      "description": "Display long help description"
+    },
+    {
+      "flag": "-prop",
+      "description": "Display property help for matching property names Default: *"
+    },
+    {
+      "flag": "-class",
+      "description": "Display object type help"
+    },
+    {
+      "flag": "-message",
+      "description": "Display information about the message with the given message. Every message delivered by the tool has a unique global message ID that consists of an application sub-system code and a message identifier. Example: -message {Common 17-8}."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

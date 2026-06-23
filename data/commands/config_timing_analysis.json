@@ -1,0 +1,48 @@
+{
+  "name": "config_timing_analysis",
+  "short_description": "Configure timing analysis general settings",
+  "full_help": "config_timing_analysis\n\nDescription: \nConfigure timing analysis general settings\n\nSyntax: \nconfig_timing_analysis  [-enable_input_delay_default_clock <arg>]\n                        [-enable_preset_clear_arcs <arg>]\n                        [-ignore_io_paths <arg>] [-disable_flight_delays <arg>]\n                        [-merge_exceptions <arg>]\n                        [-timing_early_launch_at_borrowing_latches <arg>]\n                        [-enable_time_borrowing_for_max_delay_exceptions <arg>]\n                        [-inter_slr_compensation <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name                                               Description\n  --------------------------------------------------------------\n  [-enable_input_delay_default_clock]                Launch SDC unclocked \n                                                     input delays from an \n                                                     internally defined \n                                                     clock: Values: true, \n                                                     false; This option is \n                                                     not supported for UCF \n                                                     constraints\n  [-enable_preset_clear_arcs]                        Time paths through \n                                                     asynchronous preset or \n                                                     clear timing arcs: true,\n                                                     false; \n  [-ignore_io_paths]                                 Ignore paths from \n                                                     primary inputs and paths\n                                                     to primary outputs: \n                                                     Values: true, false\n  [-disable_flight_delays]                           Disable adding package \n                                                     times to IO Calculations\n                                                     : Values: true, false; \n  [-merge_exceptions]                                Allow/Prevent the timing\n                                                     engine from merging \n                                                     timing exceptions : \n                                                     Values: true, false; \n  [-timing_early_launch_at_borrowing_latches]        Remove clock latency \n                                                     pessimism from the \n                                                     launching enable of \n                                                     paths through \n                                                     transparent latches. \n                                                     Values: auto, true, \n                                                     false\n                                                     Default: auto\n  [-enable_time_borrowing_for_max_delay_exceptions]  Allow timing paths \n                                                     covered by set_max_delay\n                                                     timing exceptions to \n                                                     borrow time. Values: \n                                                     true, false\n  [-inter_slr_compensation]                          Allow a choice of \n                                                     inter-SLR compensation \n                                                     between a conservative \n                                                     mode with runtime/memory\n                                                     advantages or a relaxed \n                                                     mode with qor \n                                                     advantages. Values: \n                                                     conservative, relaxed\n  [-quiet]                                           Ignore command errors\n  [-verbose]                                         Suspend message limits \n                                                     during command execution\n\nCategories: \nTiming\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-enable_input_delay_default_clock",
+      "description": "Launch SDC unclocked input delays from an internally defined clock: Values: true, false; This option is not supported for UCF constraints"
+    },
+    {
+      "flag": "-enable_preset_clear_arcs",
+      "description": "Time paths through asynchronous preset or clear timing arcs: true, false;"
+    },
+    {
+      "flag": "-ignore_io_paths",
+      "description": "Ignore paths from primary inputs and paths to primary outputs: Values: true, false"
+    },
+    {
+      "flag": "-disable_flight_delays",
+      "description": "Disable adding package times to IO Calculations : Values: true, false;"
+    },
+    {
+      "flag": "-merge_exceptions",
+      "description": "Allow/Prevent the timing engine from merging timing exceptions : Values: true, false;"
+    },
+    {
+      "flag": "-timing_early_launch_at_borrowing_latches",
+      "description": "Remove clock latency pessimism from the launching enable of paths through transparent latches. Values: auto, true, false Default: auto"
+    },
+    {
+      "flag": "-enable_time_borrowing_for_max_delay_exceptions",
+      "description": "Allow timing paths covered by set_max_delay timing exceptions to borrow time. Values: true, false"
+    },
+    {
+      "flag": "-inter_slr_compensation",
+      "description": "Allow a choice of inter-SLR compensation between a conservative mode with runtime/memory advantages or a relaxed mode with qor advantages. Values: conservative, relaxed"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

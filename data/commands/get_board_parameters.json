@@ -1,0 +1,32 @@
+{
+  "name": "get_board_parameters",
+  "short_description": "Gets the list of board parameter objects",
+  "full_help": "get_board_parameters\n\nDescription: \nGets the list of board parameter objects\n\nSyntax: \nget_board_parameters  [-regexp] [-nocase] [-filter <arg>] [-of_objects <args>]\n                      [-quiet] [-verbose] [<patterns>...]\n\nReturns: \nlist of parameters in the board\n\nUsage: \n  Name           Description\n  --------------------------\n  [-regexp]      Patterns are full regular expressions\n  [-nocase]      Perform case-insensitive matching\n  [-filter]      Filter list with expression\n  [-of_objects]  Get 'board_parameter' objects of these types: 'board \n                 board_component board_component_interface'.\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<patterns>]   match parameter names against patterns\n                 Default: *\n                 Values: The default search pattern is the wildcard *, or .* \n                 when -regexp is specified.\n\nCategories: \nObject, Board\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get 'board_parameter' objects of these types: 'board board_component board_component_interface'."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

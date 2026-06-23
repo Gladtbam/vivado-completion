@@ -1,0 +1,20 @@
+{
+  "name": "set_property",
+  "short_description": "Set property on object(s)",
+  "full_help": "set_property\n\nDescription: \nSet property on object(s)\n\nSyntax: \nset_property  [-dict <args>] [-quiet] [-verbose] <name> <value> <objects>...\n\nUsage: \n  Name        Description\n  -----------------------\n  [-dict]     list of name/value pairs of properties to set\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <name>      Name of property to set. Not valid with -dict option\n  <value>     Value of property to set. Not valid with -dict option\n  <objects>   Objects to set properties on\n\nCategories: \nObject, PropertyAndParameter, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-dict",
+      "description": "list of name/value pairs of properties to set"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "get_speed_models",
+  "short_description": "Get a list of speed_models in the device.",
+  "full_help": "get_speed_models\n\nDescription: \nGet a list of speed_models in the device.\n\nSyntax: \nget_speed_models  [-of_objects <args>] [-regexp] [-nocase] [-patterns <arg>]\n                  [-filter <arg>] [-speed_pattern <arg>] [-quiet] [-verbose]\n\nReturns: \nspeed_models\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-of_objects]     Get 'speed_model' objects of these types: 'node bel pip \n                    cell'.\n  [-regexp]         Patterns are full regular expressions\n  [-nocase]         Perform case-insensitive matching. (valid only when \n                    -regexp specified)\n  [-patterns]       Match the 'speed_model' objects against patterns.\n                    Default: *\n  [-filter]         Filter list with expression\n  [-speed_pattern]  Returns a single model that exactly matches the pattern.\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nDevice, Object, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-of_objects",
+      "description": "Get 'speed_model' objects of these types: 'node bel pip cell'."
+    },
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching. (valid only when"
+    },
+    {
+      "flag": "-regexp",
+      "description": "specified)"
+    },
+    {
+      "flag": "-patterns",
+      "description": "Match the 'speed_model' objects against patterns. Default: *"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-speed_pattern",
+      "description": "Returns a single model that exactly matches the pattern."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

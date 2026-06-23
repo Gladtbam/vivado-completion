@@ -1,0 +1,24 @@
+{
+  "name": "install_encrypted_package",
+  "short_description": "Install an IP package previously protected by the encrypt_package command.",
+  "full_help": "install_encrypted_package\n\nDescription: \nInstall an IP package previously protected by the encrypt_package command.\n\nSyntax: \ninstall_encrypted_package  [-repo <arg>] [-force] [-quiet] [-verbose]\n                           <archive>...\n\nUsage: \n  Name        Description\n  -----------------------\n  [-repo]     A directory containing an IP repo where the IP should be \n              installed to.\n              Default: cwd\n  [-force]    Force the overwrite of an existing output files.\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <archive>   Name of file containing the protected IP archive.\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-repo",
+      "description": "A directory containing an IP repo where the IP should be installed to. Default: cwd"
+    },
+    {
+      "flag": "-force",
+      "description": "Force the overwrite of an existing output files."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

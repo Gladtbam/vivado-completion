@@ -1,0 +1,32 @@
+{
+  "name": "get_board_ip_preferences",
+  "short_description": "Gets the list of ip preference objects",
+  "full_help": "get_board_ip_preferences\n\nDescription: \nGets the list of ip preference objects\n\nSyntax: \nget_board_ip_preferences  [-regexp] [-nocase] [-filter <arg>]\n                          -of_objects <args> [-quiet] [-verbose]\n                          [<patterns>...]\n\nReturns: \nlist of ip preferences for the component\n\nUsage: \n  Name          Description\n  -------------------------\n  [-regexp]     Patterns are full regular expressions\n  [-nocase]     Perform case-insensitive matching\n  [-filter]     Filter list with expression\n  -of_objects   Get 'ip_preference' objects of these types: \n                'board_component_mode board_component_interface'.\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  [<patterns>]  match ip preferences against patterns\n                Default: *\n                Values: The default search pattern is the wildcard *, or .* \n                when -regexp is specified.\n\nCategories: \nObject, Board\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get 'ip_preference' objects of these types: 'board_component_mode board_component_interface'."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

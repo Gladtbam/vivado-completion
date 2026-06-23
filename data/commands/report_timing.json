@@ -1,0 +1,176 @@
+{
+  "name": "report_timing",
+  "short_description": "Report timing paths",
+  "full_help": "report_timing\n\nDescription: \nReport timing paths\n\nSyntax: \nreport_timing  [-from <args>] [-rise_from <args>] [-fall_from <args>]\n               [-to <args>] [-rise_to <args>] [-fall_to <args>]\n               [-through <args>] [-rise_through <args>] [-fall_through <args>]\n               [-delay_type <arg>] [-setup] [-hold] [-max_paths <arg>]\n               [-nworst <arg>] [-unique_pins] [-path_type <arg>] [-input_pins]\n               [-no_header] [-no_reused_label] [-slack_lesser_than <arg>]\n               [-slack_greater_than <arg>] [-group <args>] [-sort_by <arg>]\n               [-no_report_unconstrained] [-user_ignored] [-of_objects <args>]\n               [-significant_digits <arg>] [-column_style <arg>] [-file <arg>]\n               [-append] [-name <arg>] [-no_pr_attribute] [-no_pblock]\n               [-routable_nets] [-return_string] [-warn_on_violation]\n               [-cells <args>] [-rpx <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name                        Description\n  ---------------------------------------\n  [-from]                     From pins, ports, cells or clocks\n  [-rise_from]                Rising from pins, ports, cells or clocks\n  [-fall_from]                Falling from pins, ports, cells  or clocks\n  [-to]                       To pins, ports, cells or clocks\n  [-rise_to]                  Rising to pins, ports, cells or clocks\n  [-fall_to]                  Falling to pins, ports, cells or clocks\n  [-through]                  Through pins, ports, cells or nets\n  [-rise_through]             Rising through pins, ports, cells or nets\n  [-fall_through]             Falling through pins, ports, cells or nets\n  [-delay_type]               Type of path delay: Values: max, min, min_max, \n                              max_rise, max_fall, min_rise, min_fall\n                              Default: max\n  [-setup]                    Report max delay timing paths (equivalent to \n                              -delay_type max)\n  [-hold]                     Report min delay timing paths (equivalent to \n                              -delay_type min)\n  [-max_paths]                Maximum number of paths to output when sorted \n                              by slack, or per path group when sorted by \n                              group: Value >=1\n                              Default: 1\n  [-nworst]                   List up to N worst paths to endpoint: Value >=1\n                              Default: 1\n  [-unique_pins]              For each unique set of pins, show at most 1 \n                              path per path group\n  [-path_type]                Format for path report: Values: end, summary, \n                              short, full, full_clock, full_clock_expanded\n                              Default: full_clock_expanded\n  [-input_pins]               Show input pins in path\n  [-no_header]                Do not generate a report header\n  [-no_reused_label]          Do not label reuse status on pins in the report\n  [-slack_lesser_than]        Display paths with slack less than this\n                              Default: 1e+30\n  [-slack_greater_than]       Display paths with slack greater than this\n                              Default: -1e+30\n  [-group]                    Limit report to paths in this group(s)\n  [-sort_by]                  Sorting order of paths: Values: group, slack\n                              Default: slack\n  [-no_report_unconstrained]  Do not report infinite slack paths\n  [-user_ignored]             Only report paths which have infinite slack \n                              because of set_false_path or set_clock_groups \n                              timing constraints\n  [-of_objects]               Report timing for these paths\n  [-significant_digits]       Number of digits to display: Range: 0 to 3\n                              Default: 3\n  [-column_style]             Style for path report columns: Values: \n                              variable_width, anchor_left, fixed_width\n                              Default: anchor_left\n  [-file]                     Filename to output results to. (send output to \n                              console if -file is not used)\n  [-append]                   Append the results to file, don't overwrite the\n                              results file\n  [-name]                     Output the results to GUI panel with this name\n  [-no_pr_attribute]          For Dynamic Function eXchange designs, do not \n                              report whether netlist resources are in the \n                              static or reconfigurable regions\n  [-no_pblock]                Report timing without pblock column\n  [-routable_nets]            Store the number of routable nets traversed as \n                              a property on timing paths.\n  [-return_string]            Return report as string\n  [-warn_on_violation]        Issue a critical warning when the report \n                              contains a timing violation\n  [-cells]                    Run report_timing on the specified cell(s)\n  [-rpx]                      Filename to output interactive results to.\n  [-quiet]                    Ignore command errors\n  [-verbose]                  Suspend message limits during command execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "From pins, ports, cells or clocks"
+    },
+    {
+      "flag": "-rise_from",
+      "description": "Rising from pins, ports, cells or clocks"
+    },
+    {
+      "flag": "-fall_from",
+      "description": "Falling from pins, ports, cells  or clocks"
+    },
+    {
+      "flag": "-to",
+      "description": "To pins, ports, cells or clocks"
+    },
+    {
+      "flag": "-rise_to",
+      "description": "Rising to pins, ports, cells or clocks"
+    },
+    {
+      "flag": "-fall_to",
+      "description": "Falling to pins, ports, cells or clocks"
+    },
+    {
+      "flag": "-through",
+      "description": "Through pins, ports, cells or nets"
+    },
+    {
+      "flag": "-rise_through",
+      "description": "Rising through pins, ports, cells or nets"
+    },
+    {
+      "flag": "-fall_through",
+      "description": "Falling through pins, ports, cells or nets"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "Type of path delay: Values: max, min, min_max, max_rise, max_fall, min_rise, min_fall Default: max"
+    },
+    {
+      "flag": "-setup",
+      "description": "Report max delay timing paths (equivalent to"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "max)"
+    },
+    {
+      "flag": "-hold",
+      "description": "Report min delay timing paths (equivalent to"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "min)"
+    },
+    {
+      "flag": "-max_paths",
+      "description": "Maximum number of paths to output when sorted by slack, or per path group when sorted by group: Value >=1 Default: 1"
+    },
+    {
+      "flag": "-nworst",
+      "description": "List up to N worst paths to endpoint: Value >=1 Default: 1"
+    },
+    {
+      "flag": "-unique_pins",
+      "description": "For each unique set of pins, show at most 1 path per path group"
+    },
+    {
+      "flag": "-path_type",
+      "description": "Format for path report: Values: end, summary, short, full, full_clock, full_clock_expanded Default: full_clock_expanded"
+    },
+    {
+      "flag": "-input_pins",
+      "description": "Show input pins in path"
+    },
+    {
+      "flag": "-no_header",
+      "description": "Do not generate a report header"
+    },
+    {
+      "flag": "-no_reused_label",
+      "description": "Do not label reuse status on pins in the report"
+    },
+    {
+      "flag": "-slack_lesser_than",
+      "description": "Display paths with slack less than this Default: 1e+30"
+    },
+    {
+      "flag": "-slack_greater_than",
+      "description": "Display paths with slack greater than this Default: -1e+30"
+    },
+    {
+      "flag": "-group",
+      "description": "Limit report to paths in this group(s)"
+    },
+    {
+      "flag": "-sort_by",
+      "description": "Sorting order of paths: Values: group, slack Default: slack"
+    },
+    {
+      "flag": "-no_report_unconstrained",
+      "description": "Do not report infinite slack paths"
+    },
+    {
+      "flag": "-user_ignored",
+      "description": "Only report paths which have infinite slack because of set_false_path or set_clock_groups timing constraints"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Report timing for these paths"
+    },
+    {
+      "flag": "-significant_digits",
+      "description": "Number of digits to display: Range: 0 to 3 Default: 3"
+    },
+    {
+      "flag": "-column_style",
+      "description": "Style for path report columns: Values: variable_width, anchor_left, fixed_width Default: anchor_left"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-no_pr_attribute",
+      "description": "For Dynamic Function eXchange designs, do not report whether netlist resources are in the static or reconfigurable regions"
+    },
+    {
+      "flag": "-no_pblock",
+      "description": "Report timing without pblock column"
+    },
+    {
+      "flag": "-routable_nets",
+      "description": "Store the number of routable nets traversed as a property on timing paths."
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-warn_on_violation",
+      "description": "Issue a critical warning when the report contains a timing violation"
+    },
+    {
+      "flag": "-cells",
+      "description": "Run report_timing on the specified cell(s)"
+    },
+    {
+      "flag": "-rpx",
+      "description": "Filename to output interactive results to."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

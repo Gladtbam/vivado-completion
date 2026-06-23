@@ -1,0 +1,28 @@
+{
+  "name": "lock_design",
+  "short_description": "Locks or unlocks netlist, placement or routing of a design. The 'lock/unlock' will only applied on physically placed cells and routed nets",
+  "full_help": "lock_design\n\nDescription: \nLocks or unlocks netlist, placement or routing of a design. The 'lock/unlock' will only applied on physically placed cells and routed nets\n\nSyntax: \nlock_design  [-level <arg>] [-unlock] [-export] [-quiet] [-verbose] [<cell>]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-level]    specify the locking and unlocking level;  Valid values are \n              logical, placement, and routing.\n              Default: placement\n  [-unlock]   Unlock cells, if cells are not specified, whole design is \n              unlocked;  '-level' parameter must be specified for unlocking.\n  [-export]   mark that the constraints can be exported.\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<cell>]    Lock cells, if cells are not specified, whole design is locked.\n              Notice only placed cells and routed nets will be locked.\n              Default: *\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-level",
+      "description": "specify the locking and unlocking level;  Valid values are logical, placement, and routing. Default: placement"
+    },
+    {
+      "flag": "-unlock",
+      "description": "Unlock cells, if cells are not specified, whole design is unlocked;  '-level' parameter must be specified for unlocking."
+    },
+    {
+      "flag": "-export",
+      "description": "mark that the constraints can be exported."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

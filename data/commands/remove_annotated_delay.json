@@ -1,0 +1,32 @@
+{
+  "name": "remove_annotated_delay",
+  "short_description": "remove annotated delay",
+  "full_help": "remove_annotated_delay\n\nDescription: \nremove annotated delay\n\nSyntax: \nremove_annotated_delay  [-from <args>] [-to <args>] [-all] [-of_objects <args>]\n                        [-quiet] [-verbose]\n\nUsage: \n  Name           Description\n  --------------------------\n  [-from]        From pins or top level ports\n  [-to]          To pins or top level ports\n  [-all]         Specifies that all annotated delays are removed\n  [-of_objects]  List of timing arcs\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n\nCategories: \nTiming\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "From pins or top level ports"
+    },
+    {
+      "flag": "-to",
+      "description": "To pins or top level ports"
+    },
+    {
+      "flag": "-all",
+      "description": "Specifies that all annotated delays are removed"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "List of timing arcs"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

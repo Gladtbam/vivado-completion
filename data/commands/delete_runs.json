@@ -1,0 +1,20 @@
+{
+  "name": "delete_runs",
+  "short_description": "Delete existing runs",
+  "full_help": "delete_runs\n\nDescription: \nDelete existing runs\n\nSyntax: \ndelete_runs  [-noclean_dir] [-quiet] [-verbose] <runs>\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-noclean_dir]  Do not remove all output files and directories from disk\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n  <runs>          Run to modify\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-noclean_dir",
+      "description": "Do not remove all output files and directories from disk"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "get_cdc_violations",
+  "short_description": "Get a list of CDC violations from a previous report_cdc run",
+  "full_help": "get_cdc_violations\n\nDescription: \nGet a list of CDC violations from a previous report_cdc run\n\nSyntax: \nget_cdc_violations  [-name <arg>] [-regexp] [-filter <arg>] [-nocase] [-quiet]\n                    [-verbose] [<patterns>]\n\nReturns: \nlist of CDC violation objects\n\nUsage: \n  Name          Description\n  -------------------------\n  [-name]       Get the results with this name\n  [-regexp]     Patterns are full regular expressions\n  [-filter]     Filter list with expression\n  [-nocase]     Perform case-insensitive matching (valid only when -regexp \n                specified)\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  [<patterns>]  Match CDC violations against patterns\n                Default: *\n                Values: The default search pattern is the wildcard *, or .* \n                when -regexp is specified.\n\nCategories: \nCDC, Object\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Get the results with this name"
+    },
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

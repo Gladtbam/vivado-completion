@@ -1,0 +1,16 @@
+{
+  "name": "load_core_init",
+  "short_description": "Load parts, drc checks and init scripts",
+  "full_help": "load_core_init\n\nDescription: \nLoad parts, drc checks and init scripts\n\nSyntax: \nload_core_init  [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nObject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

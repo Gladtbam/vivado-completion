@@ -1,0 +1,76 @@
+{
+  "name": "create_slack_histogram",
+  "short_description": "Create histogram",
+  "full_help": "create_slack_histogram\n\nDescription: \nCreate histogram\n\nSyntax: \ncreate_slack_histogram  [-to <args>] [-delay_type <arg>] [-num_bins <arg>]\n                        [-max_paths <arg>] [-slack_less_than <arg>]\n                        [-slack_greater_than <arg>] [-group <args>]\n                        [-significant_digits <arg>] [-scale <arg>]\n                        [-file <arg>] [-append] [-details] [-no_header]\n                        [-name <arg>] [-cells <args>] [-quiet] [-verbose]\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-to]                  To clock\n  [-delay_type]          Type of path delay: Values: max, min, min_max\n                         Default: max\n  [-num_bins]            Maximum number of bins: Valid Range (1-100)\n                         Default: 10\n  [-max_paths]           Number of paths to consider for -timing option\n                         Default: INT_MAX\n  [-slack_less_than]     Display paths with slack less than this\n                         Default: 1e+30\n  [-slack_greater_than]  Display paths with slack greater than this\n                         Default: -1e+30\n  [-group]               Limit report to paths in this group(s)\n  [-significant_digits]  Number of digits to display: Range: 0 to 3\n                         Default: 3\n  [-scale]               Type of scale on which to draw the histogram; \n                         Values: linear, logarithmic\n                         Default: linear\n  [-file]                Filename to output results to. (send output to \n                         console if -file is not used)\n  [-append]              Append the results to file, don't overwrite the \n                         results file\n  [-details]             Report will generate detailed table\n  [-no_header]           do not generate a report header\n  [-name]                Output the results to GUI panel with this name\n  [-cells]               run create_slack_histogram on the specified cell(s)\n  [-quiet]               Ignore command errors\n  [-verbose]             Suspend message limits during command execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-to",
+      "description": "To clock"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "Type of path delay: Values: max, min, min_max Default: max"
+    },
+    {
+      "flag": "-num_bins",
+      "description": "Maximum number of bins: Valid Range (1-100) Default: 10"
+    },
+    {
+      "flag": "-max_paths",
+      "description": "Number of paths to consider for -timing option Default: INT_MAX"
+    },
+    {
+      "flag": "-slack_less_than",
+      "description": "Display paths with slack less than this Default: 1e+30"
+    },
+    {
+      "flag": "-slack_greater_than",
+      "description": "Display paths with slack greater than this Default: -1e+30"
+    },
+    {
+      "flag": "-group",
+      "description": "Limit report to paths in this group(s)"
+    },
+    {
+      "flag": "-significant_digits",
+      "description": "Number of digits to display: Range: 0 to 3 Default: 3"
+    },
+    {
+      "flag": "-scale",
+      "description": "Type of scale on which to draw the histogram; Values: linear, logarithmic Default: linear"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-details",
+      "description": "Report will generate detailed table"
+    },
+    {
+      "flag": "-no_header",
+      "description": "do not generate a report header"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-cells",
+      "description": "run create_slack_histogram on the specified cell(s)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

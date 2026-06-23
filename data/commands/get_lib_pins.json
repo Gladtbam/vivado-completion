@@ -1,0 +1,32 @@
+{
+  "name": "get_lib_pins",
+  "short_description": "Get a list of Library Cell Pins",
+  "full_help": "get_lib_pins\n\nDescription: \nGet a list of Library Cell Pins\n\nSyntax: \nget_lib_pins  [-regexp] [-filter <arg>] [-nocase] [-of_objects <args>] [-quiet]\n              [-verbose] <patterns>\n\nReturns: \nlist of library cell pins\n\nUsage: \n  Name           Description\n  --------------------------\n  [-regexp]      Patterns are regular expressions\n  [-filter]      Filter list with expression\n  [-nocase]      Perform case-insensitive matching when a pattern has been \n                 specified. This argument applies to the use of -regexp only.\n  [-of_objects]  Get the library cell pins of the objects passed in here. \n                 Valid objects are cells or instances (ie, get_cells), cell \n                 pins (ie, get_pins) and library cells (ie get_lib_cells).\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  <patterns>     Match library cell pin names against patterns of the form \n                 <library cell pattern>/<library pin pattern>.\n\nCategories: \nObject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are regular expressions"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching when a pattern has been specified. This argument applies to the use of -regexp only."
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get the library cell pins of the objects passed in here. Valid objects are cells or instances (ie, get_cells), cell pins (ie, get_pins) and library cells (ie get_lib_cells)."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

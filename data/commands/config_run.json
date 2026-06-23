@@ -1,0 +1,16 @@
+{
+  "name": "config_run",
+  "short_description": "Configure individual program options for a run",
+  "full_help": "config_run\n\nDescription: \nConfigure individual program options for a run\n\nSyntax: \nconfig_run  [-quiet] [-verbose] <run> <program> <option> <value>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <run>       Run to modify\n  <program>   Name of the program to set an option for\n  <option>    Name of option to set\n  <value>     Value of the argument to set for the option\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

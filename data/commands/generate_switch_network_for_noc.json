@@ -1,0 +1,24 @@
+{
+  "name": "generate_switch_network_for_noc",
+  "short_description": "Generate switch network and simulation wrapper for NoC",
+  "full_help": "generate_switch_network_for_noc\n\nDescription: \nGenerate switch network and simulation wrapper for NoC\n\nSyntax: \ngenerate_switch_network_for_noc  [-mode <arg>] [-type <arg>] [-quiet]\n                                 [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-mode]     Simulation mode. Values: behavioral, post-synthesis, \n              post-implementation\n              Default: behavioral\n  [-type]     Netlist type. Values: functional, timing. This is only \n              applicable when mode is set to post-synthesis or post-impleme  \n                ntation\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nToolLaunch, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-mode",
+      "description": "Simulation mode. Values: behavioral, post-synthesis, post-implementation Default: behavioral"
+    },
+    {
+      "flag": "-type",
+      "description": "Netlist type. Values: functional, timing. This is only applicable when mode is set to post-synthesis or post-impleme ntation"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

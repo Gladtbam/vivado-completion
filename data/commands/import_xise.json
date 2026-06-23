@@ -1,0 +1,20 @@
+{
+  "name": "import_xise",
+  "short_description": "Import XISE project file settings into the created project",
+  "full_help": "import_xise\n\nDescription: \nImport XISE project file settings into the created project\n\nSyntax: \nimport_xise  [-copy_sources] [-quiet] [-verbose] <file>\n\nReturns: \ntrue\n\nUsage: \n  Name             Description\n  ----------------------------\n  [-copy_sources]  Copy all ISE sources into the created project\n  [-quiet]         Ignore command errors\n  [-verbose]       Suspend message limits during command execution\n  <file>           Name of the XISE project file to be imported\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-copy_sources",
+      "description": "Copy all ISE sources into the created project"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

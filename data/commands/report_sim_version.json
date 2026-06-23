@@ -1,0 +1,36 @@
+{
+  "name": "report_sim_version",
+  "short_description": "Report the list of correct SIM_VERSION attribute values for cell types in the target part",
+  "full_help": "report_sim_version\n\nDescription: \nReport the list of correct SIM_VERSION attribute values for cell types in the target part\n\nSyntax: \nreport_sim_version  [-part <arg>] [-file <arg>] [-append] [-return_string]\n                    [-unisim <arg>] [-quiet] [-verbose]\n\nReturns: \nReport\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-part]           Part\n  [-file]           Output file\n  [-append]         Append the results to file\n  [-return_string]  Return report as string\n  [-unisim]         Return the SIM_VERSION for the unisim if present\n  [-quiet]          Quiet option\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-part",
+      "description": "Part"
+    },
+    {
+      "flag": "-file",
+      "description": "Output file"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-unisim",
+      "description": "Return the SIM_VERSION for the unisim if present"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Quiet option"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "compile_simlib",
+  "short_description": "Compile simulation libraries",
+  "full_help": "compile_simlib\n\nDescription: \nCompile simulation libraries\n\nSyntax: \ncompile_simlib  [-directory <arg>] [-family <arg>] [-force] [-language <arg>]\n                [-library <arg>] [-print_library_info <arg>] -simulator <arg>\n                [-simulator_exec_path <arg>] [-gcc_exec_path <arg>]\n                [-source_library_path <arg>] [-no_ip_compile]\n                [-no_systemc_compile] [-skip_libraries <args>] [-quiet]\n                [-verbose]\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-directory]            Directory path for saving the compiled results\n                          Default: .\n  [-family]               Select device architecture\n                          Default: all\n  [-force]                Overwrite the pre-compiled libraries\n  [-language]             Compile libraries for this language\n                          Default: all\n  [-library]              Select library to compile\n                          Default: all\n  [-print_library_info]   Print Pre-Compiled library information\n  -simulator              Compile libraries for this simulator\n  [-simulator_exec_path]  Use simulator executables from this directory\n  [-gcc_exec_path]        Use GNU executables from this directory\n  [-source_library_path]  If specified, this directory will be searched for \n                          the library source files before searching the \n                          default path(s) found in environment variable \n                          XILINX_VIVADO for Vivado\n  [-no_ip_compile]        Do not compile IP static files from repository\n  [-no_systemc_compile]   Do not compile models for system simulation\n  [-skip_libraries]       Name of the libraries to skip for compilation\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n\nCategories: \nSimulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-directory",
+      "description": "Directory path for saving the compiled results Default: ."
+    },
+    {
+      "flag": "-family",
+      "description": "Select device architecture Default: all"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite the pre-compiled libraries"
+    },
+    {
+      "flag": "-language",
+      "description": "Compile libraries for this language Default: all"
+    },
+    {
+      "flag": "-library",
+      "description": "Select library to compile Default: all"
+    },
+    {
+      "flag": "-print_library_info",
+      "description": "Print Pre-Compiled library information"
+    },
+    {
+      "flag": "-simulator",
+      "description": "Compile libraries for this simulator"
+    },
+    {
+      "flag": "-simulator_exec_path",
+      "description": "Use simulator executables from this directory"
+    },
+    {
+      "flag": "-gcc_exec_path",
+      "description": "Use GNU executables from this directory"
+    },
+    {
+      "flag": "-source_library_path",
+      "description": "If specified, this directory will be searched for the library source files before searching the default path(s) found in environment variable XILINX_VIVADO for Vivado"
+    },
+    {
+      "flag": "-no_ip_compile",
+      "description": "Do not compile IP static files from repository"
+    },
+    {
+      "flag": "-no_systemc_compile",
+      "description": "Do not compile models for system simulation"
+    },
+    {
+      "flag": "-skip_libraries",
+      "description": "Name of the libraries to skip for compilation"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

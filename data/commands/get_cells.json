@@ -1,0 +1,52 @@
+{
+  "name": "get_cells",
+  "short_description": "Get a list of cells in the current design",
+  "full_help": "get_cells\n\nDescription: \nGet a list of cells in the current design\n\nSyntax: \nget_cells  [-hsc <arg>] [-hierarchical] [-regexp] [-nocase] [-filter <arg>]\n           [-of_objects <args>] [-match_style <arg>] [-leaf]\n           [-include_replicated_objects] [-quiet] [-verbose] [<patterns>]\n\nReturns: \nlist of cell objects\n\nUsage: \n  Name                           Description\n  ------------------------------------------\n  [-hsc]                         Hierarchy separator\n                                 Default: /\n  [-hierarchical]                Search level-by-level in current instance\n  [-regexp]                      Patterns are full regular expressions\n  [-nocase]                      Perform case-insensitive matching (valid \n                                 only when -regexp specified)\n  [-filter]                      Filter list with expression\n  [-of_objects]                  Get cells of these pins, timing paths, nets,\n                                 bels, clock regions, sites, or drc \n                                 violations\n  [-match_style]                 Style of pattern matching\n                                 Default: sdc\n                                 Values: ucf, sdc\n  [-leaf]                        Replace hierarchical cells with leaf cells.\n  [-include_replicated_objects]  Include replicated objects when searching \n                                 for patterns. This option is valid only when\n                                 patterns is specified.\n  [-quiet]                       Ignore command errors\n  [-verbose]                     Suspend message limits during command \n                                 execution\n  [<patterns>]                   Match cell names against patterns\n                                 Default: *\n\nCategories: \nSDC, XDC, Object\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-hsc",
+      "description": "Hierarchy separator Default: /"
+    },
+    {
+      "flag": "-hierarchical",
+      "description": "Search level-by-level in current instance"
+    },
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get cells of these pins, timing paths, nets, bels, clock regions, sites, or drc violations"
+    },
+    {
+      "flag": "-match_style",
+      "description": "Style of pattern matching Default: sdc Values: ucf, sdc"
+    },
+    {
+      "flag": "-leaf",
+      "description": "Replace hierarchical cells with leaf cells."
+    },
+    {
+      "flag": "-include_replicated_objects",
+      "description": "Include replicated objects when searching for patterns. This option is valid only when patterns is specified."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

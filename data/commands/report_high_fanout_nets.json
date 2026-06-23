@@ -1,0 +1,80 @@
+{
+  "name": "report_high_fanout_nets",
+  "short_description": "Report high fanout nets",
+  "full_help": "report_high_fanout_nets\n\nDescription: \nReport high fanout nets\n\nSyntax: \nreport_high_fanout_nets  [-file <arg>] [-format <arg>] [-append] [-ascending]\n                         [-timing] [-histogram] [-load_types] [-clock_regions]\n                         [-slr] [-max_nets <arg>] [-fanout_greater_than <arg>]\n                         [-fanout_lesser_than <arg>] [-name <arg>]\n                         [-cells <args>] [-clocks <args>] [-return_string]\n                         [-quiet] [-verbose]\n\nReturns: \nReport\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-file]                 Filename to output results to. (send output to \n                          console if -file is not used)\n  [-format]               Specifies how to format the report: text, xml. \n                          Default is 'text'. Only applies if -file is used. \n                          If xml output is used, -append is not allowed.\n                          Default: text\n  [-append]               Append to existing file\n  [-ascending]            Report nets in ascending order\n  [-timing]               Report worst slack and worst delay values on nets\n  [-histogram]            Report histogram for high fanout nets\n  [-load_types]           Report load  details\n  [-clock_regions]        Report clock region wise load distribution\n  [-slr]                  Report SLR wise load distribution\n  [-max_nets]             Number of nets for which report is to be generated\n                          Default: 10\n  [-fanout_greater_than]  Report nets that have fanout greater than the \n                          specified integer, default 0\n                          Default: 0\n  [-fanout_lesser_than]   Report nets that have fanout less than the \n                          specified integer, default INT_MAX\n                          Default: INT_MAX\n  [-name]                 Output the results to GUI panel with this name\n  [-cells]                Report the nets of the specified cells\n  [-clocks]               Report the nets of the specified clocks\n  [-return_string]        Return report as string\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-format",
+      "description": "Specifies how to format the report: text, xml. Default is 'text'. Only applies if -file is used. If xml output is used, -append is not allowed. Default: text"
+    },
+    {
+      "flag": "-append",
+      "description": "Append to existing file"
+    },
+    {
+      "flag": "-ascending",
+      "description": "Report nets in ascending order"
+    },
+    {
+      "flag": "-timing",
+      "description": "Report worst slack and worst delay values on nets"
+    },
+    {
+      "flag": "-histogram",
+      "description": "Report histogram for high fanout nets"
+    },
+    {
+      "flag": "-load_types",
+      "description": "Report load  details"
+    },
+    {
+      "flag": "-clock_regions",
+      "description": "Report clock region wise load distribution"
+    },
+    {
+      "flag": "-slr",
+      "description": "Report SLR wise load distribution"
+    },
+    {
+      "flag": "-max_nets",
+      "description": "Number of nets for which report is to be generated Default: 10"
+    },
+    {
+      "flag": "-fanout_greater_than",
+      "description": "Report nets that have fanout greater than the specified integer, default 0 Default: 0"
+    },
+    {
+      "flag": "-fanout_lesser_than",
+      "description": "Report nets that have fanout less than the specified integer, default INT_MAX Default: INT_MAX"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-cells",
+      "description": "Report the nets of the specified cells"
+    },
+    {
+      "flag": "-clocks",
+      "description": "Report the nets of the specified clocks"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "read_xdc",
+  "short_description": "read physical and timing constraints from one of more files.",
+  "full_help": "read_xdc\n\nDescription: \nread physical and timing constraints from one of more files.\n\nSyntax: \nread_xdc  [-cells <args>] [-ref <arg>] [-quiet_diff_pairs] [-mode <arg>]\n          [-unmanaged] [-no_add] [-quiet] [-verbose] <files>\n\nReturns: \nlist of files\n\nUsage: \n  Name                 Description\n  --------------------------------\n  [-cells]             Import constraints for these cells\n  [-ref]               Import constraints for this ref\n  [-quiet_diff_pairs]  Suppress warnings about differential pair inference \n                       when importing I/O ports\n  [-mode]              Import constraints as out_of_context. Values: default,\n                       out_of_context\n                       Default: default\n  [-unmanaged]         treat this file as unmanaged constraints file\n  [-no_add]            don't add this file to constraints fileset\n  [-quiet]             Ignore command errors\n  [-verbose]           Suspend message limits during command execution\n  <files>              Input file(s) to read\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cells",
+      "description": "Import constraints for these cells"
+    },
+    {
+      "flag": "-ref",
+      "description": "Import constraints for this ref"
+    },
+    {
+      "flag": "-quiet_diff_pairs",
+      "description": "Suppress warnings about differential pair inference when importing I/O ports"
+    },
+    {
+      "flag": "-mode",
+      "description": "Import constraints as out_of_context. Values: default, out_of_context Default: default"
+    },
+    {
+      "flag": "-unmanaged",
+      "description": "treat this file as unmanaged constraints file"
+    },
+    {
+      "flag": "-no_add",
+      "description": "don't add this file to constraints fileset"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "diff_board",
+  "short_description": "Print a summary of the differences between the current board part and the given newer version of that board part.  Currently only differences in the pins of the board part and their properties are reported.",
+  "full_help": "diff_board\n\nDescription: \nPrint a summary of the differences between the current board part and the given newer version of that board part.  Currently only differences in the pins of the board part and their properties are reported.\n\nSyntax: \ndiff_board  [-file <arg>] [-quiet] [-verbose] <version>\n\nReturns: \nnew board version\n\nUsage: \n  Name        Description\n  -----------------------\n  [-file]     the output file\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <version>   the other board version to compare\n\nCategories: \nObject, Board\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "the output file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

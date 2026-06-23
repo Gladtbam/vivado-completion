@@ -1,0 +1,28 @@
+{
+  "name": "unmark_objects",
+  "short_description": "Unmark items that are currently marked",
+  "full_help": "unmark_objects\n\nDescription: \nUnmark items that are currently marked\n\nSyntax: \nunmark_objects  [-color_index <arg>] [-rgb <args>] [-color <arg>] [-quiet]\n                [-verbose] [<objects>]\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-color_index]  Color index\n  [-rgb]          RGB color index list\n  [-color]        Valid values are red green blue magenta yellow cyan and \n                  orange\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n  [<objects>]     Objects to unmark\n\nCategories: \nGUIControl\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-color_index",
+      "description": "Color index"
+    },
+    {
+      "flag": "-rgb",
+      "description": "RGB color index list"
+    },
+    {
+      "flag": "-color",
+      "description": "Valid values are red green blue magenta yellow cyan and orange"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

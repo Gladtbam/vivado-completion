@@ -1,0 +1,24 @@
+{
+  "name": "reset_timing",
+  "short_description": "Resets the timing information on the current design",
+  "full_help": "reset_timing\n\nDescription: \nResets the timing information on the current design\n\nSyntax: \nreset_timing  [-invalid] [-clock_reservation] [-quiet] [-verbose]\n\nUsage: \n  Name                  Description\n  ---------------------------------\n  [-invalid]            Resets invalid timing constraints in addition to \n                        valid timing constraints.\n  [-clock_reservation]  Resets clock name reservations for auto-derived \n                        clocks in addition to valid timing constraints.\n  [-quiet]              Ignore command errors\n  [-verbose]            Suspend message limits during command execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-invalid",
+      "description": "Resets invalid timing constraints in addition to valid timing constraints."
+    },
+    {
+      "flag": "-clock_reservation",
+      "description": "Resets clock name reservations for auto-derived clocks in addition to valid timing constraints."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

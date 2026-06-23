@@ -1,0 +1,20 @@
+{
+  "name": "update_macro",
+  "short_description": "Update a macro",
+  "full_help": "update_macro\n\nDescription: \nUpdate a macro\n\nSyntax: \nupdate_macro  [-absolute_grid] [-quiet] [-verbose] <macro> <rlocs>\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-absolute_grid]  Use absolute grid for relative locations\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  <macro>           Macro to update\n  <rlocs>           a list interleaved instances and site names\n\nCategories: \nXDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-absolute_grid",
+      "description": "Use absolute grid for relative locations"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "reset_msg_count",
+  "short_description": "Reset message count",
+  "full_help": "reset_msg_count\n\nDescription: \nReset message count\n\nSyntax: \nreset_msg_count  [-quiet] [-verbose] <id>\n\nReturns: \nnew message count\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <id>        Unique message Id to be reset, e.g. \"Common 17-99\".\n              \"reset_msg_count -id *\" reset all counters\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

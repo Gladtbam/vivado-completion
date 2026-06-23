@@ -1,0 +1,24 @@
+{
+  "name": "read_noc_solution",
+  "short_description": "Read NOC solution from JSON file",
+  "full_help": "read_noc_solution\n\nDescription: \nRead NOC solution from JSON file\n\nSyntax: \nread_noc_solution  -file <arg> [-no_update <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name          Description\n  -------------------------\n  -file         Input NOC solution file In JSON format\n  [-no_update]  Do not run NoC compiler after reading in NoC solution\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n\nCategories: \nNOC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Input NOC solution file In JSON format"
+    },
+    {
+      "flag": "-no_update",
+      "description": "Do not run NoC compiler after reading in NoC solution"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "get_qor_ruledecks",
+  "short_description": "Get a list of QoR ruledecks",
+  "full_help": "get_qor_ruledecks\n\nDescription: \nGet a list of QoR ruledecks\n\nSyntax: \nget_qor_ruledecks  [-filter <arg>] [-quiet] [-verbose]\n\nReturns: \nList of QoR ruledecks\n\nUsage: \n  Name        Description\n  -----------------------\n  [-filter]   Filter list with given expression\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nNetlist, Project\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-filter",
+      "description": "Filter list with given expression"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

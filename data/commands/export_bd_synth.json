@@ -1,0 +1,24 @@
+{
+  "name": "export_bd_synth",
+  "short_description": "(User-written application) Create and write a single design checkpoint and stub files for a Block Design (BD), for use with third party synthesis tools. Perform synthesis as necessary.",
+  "full_help": "export_bd_synth\n\nDescription: \n(User-written application)\nCreate and write a single design checkpoint and stub files for a Block Design (BD), for use with third party synthesis tools. Perform synthesis as necessary.\n\n\nSyntax: \nexport_bd_synth  [-force] [-keep] [-verbose] [-quiet] <file>\n\nReturns: \n(none) An error will be thrown if the command is not successful\n\n\nUsage: \n  Name        Description\n  -----------------------\n  [-force]    Overwrite existing design checkpoint and stub files\n  [-keep]     Keep the temporary directory and project\n  [-verbose]  Print verbose messaging\n  [-quiet]    Ignore command errors\n  <file>      The Block Design file to write a synthesized checkpoint for\n\nCategories: \nsynthesis, xilinxtclstore, projutils, user-written\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrite existing design checkpoint and stub files"
+    },
+    {
+      "flag": "-keep",
+      "description": "Keep the temporary directory and project"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Print verbose messaging"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    }
+  ]
+}

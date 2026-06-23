@@ -1,0 +1,16 @@
+{
+  "name": "list_targets",
+  "short_description": "List applicable targets for the specified source",
+  "full_help": "list_targets\n\nDescription: \nList applicable targets for the specified source\n\nSyntax: \nlist_targets  [-quiet] [-verbose] <files>\n\nReturns: \nlist of targets\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <files>     Source file for which the targets needs to be listed\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "name": "create_waiver",
+  "short_description": "Create a DRC/METHODOLOGY/CDC/LINT message waiver",
+  "full_help": "create_waiver\n\nDescription: \nCreate a DRC/METHODOLOGY/CDC/LINT message waiver\n\nSyntax: \ncreate_waiver  [-type <arg>] [-id <arg>] [-objects <args>] [-from <args>]\n               [-to <args>] [-strings <args>] [-rtl_name <args>]\n               [-rtl_hierarchy <args>] [-rtl_file <args>] [-of_objects <args>]\n               [-user <arg>] -description <arg> [-tags <arg>]\n               [-timestamp <arg>] [-scoped] [-quiet] [-verbose]\n\nReturns: \nwaiver\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-type]           Type of waiver - DRC, METHODOLOGY, CDC, LINT\n  [-id]             ID of the DRC/METHODOLOGY/CDC/LINT message being waived, \n                    not needed for -of_objects use\n  [-objects]        List of inserted message objects for which a \n                    DRC/METHODOLOGY waiver will be set (i.e. %ELG, %SIG, etc.\n                    for cells or nets, etc., sites, etc., or '*CELL', '*NET',\n                    '*SITE', etc. as wildcards\n  [-from]           List of source (driver) pins or ports (or '*PORT', '*PIN'\n                    as wildcard) for which a CDC waiver will be set\n  [-to]             List of target (load) pins or ports (or '*PORT', '*PIN' \n                    as wildcard) for which a CDC waiver will be set\n  [-strings]        List of inserted message string values for which a \n                    DRC/METHODOLOGY waiver will be set (i.e. %STR for \n                    strings, or '*' as wildcard)\n  [-rtl_name]       List of rtl_name values for the LINT waiver ('*' as \n                    wildcard)\n  [-rtl_hierarchy]  List of rtl_hierarchy values for the LINT waiver ('*' as \n                    wildcard)\n  [-rtl_file]       List of rtl_file values for the LINT waiver ('*' as \n                    wildcard)\n  [-of_objects]     List of DRC/METHODOLOGY/CDC violation objects for which \n                    waiver(s) will be set\n  [-user]           Name of the user creating the waiver (required, but if \n                    not specified, the waivers will take the USER name from \n                    the environment if it is available)\n  -description      Description string of the cause for the waiver\n  [-tags]           Optional list of one or more tags to aid in subsequent \n                    waiver identification or categorization\n  [-timestamp]      Timestamp of waiver - for restaining the original time of\n                    a waiver being (re)created after being written\n  [-scoped]         Flag waiver to interpret object wildcards as scoped to \n                    the current_instance that is set\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nWaiver, XDC, DRC, Methodology, CDC, Lint, Object\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-type",
+      "description": "Type of waiver - DRC, METHODOLOGY, CDC, LINT"
+    },
+    {
+      "flag": "-id",
+      "description": "ID of the DRC/METHODOLOGY/CDC/LINT message being waived, not needed for -of_objects use"
+    },
+    {
+      "flag": "-objects",
+      "description": "List of inserted message objects for which a DRC/METHODOLOGY waiver will be set (i.e. %ELG, %SIG, etc. for cells or nets, etc., sites, etc., or '*CELL', '*NET', '*SITE', etc. as wildcards"
+    },
+    {
+      "flag": "-from",
+      "description": "List of source (driver) pins or ports (or '*PORT', '*PIN' as wildcard) for which a CDC waiver will be set"
+    },
+    {
+      "flag": "-to",
+      "description": "List of target (load) pins or ports (or '*PORT', '*PIN' as wildcard) for which a CDC waiver will be set"
+    },
+    {
+      "flag": "-strings",
+      "description": "List of inserted message string values for which a DRC/METHODOLOGY waiver will be set (i.e. %STR for strings, or '*' as wildcard)"
+    },
+    {
+      "flag": "-rtl_name",
+      "description": "List of rtl_name values for the LINT waiver ('*' as wildcard)"
+    },
+    {
+      "flag": "-rtl_hierarchy",
+      "description": "List of rtl_hierarchy values for the LINT waiver ('*' as wildcard)"
+    },
+    {
+      "flag": "-rtl_file",
+      "description": "List of rtl_file values for the LINT waiver ('*' as wildcard)"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "List of DRC/METHODOLOGY/CDC violation objects for which waiver(s) will be set"
+    },
+    {
+      "flag": "-user",
+      "description": "Name of the user creating the waiver (required, but if not specified, the waivers will take the USER name from the environment if it is available)"
+    },
+    {
+      "flag": "-description",
+      "description": "Description string of the cause for the waiver"
+    },
+    {
+      "flag": "-tags",
+      "description": "Optional list of one or more tags to aid in subsequent waiver identification or categorization"
+    },
+    {
+      "flag": "-timestamp",
+      "description": "Timestamp of waiver - for restaining the original time of a waiver being (re)created after being written"
+    },
+    {
+      "flag": "-scoped",
+      "description": "Flag waiver to interpret object wildcards as scoped to the current_instance that is set"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

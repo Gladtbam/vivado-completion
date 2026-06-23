@@ -1,0 +1,28 @@
+{
+  "name": "add_custom_timing_model",
+  "short_description": "Custom timing model",
+  "full_help": "add_custom_timing_model\n\nDescription: \nCustom timing model\n\nSyntax: \nadd_custom_timing_model  -from <args> -to <args> -delays <args> [-quiet]\n                         [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  -from       From pin\n  -to         To pin\n  -delays     Delays in ns\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nTiming\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "From pin"
+    },
+    {
+      "flag": "-to",
+      "description": "To pin"
+    },
+    {
+      "flag": "-delays",
+      "description": "Delays in ns"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

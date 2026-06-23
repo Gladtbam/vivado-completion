@@ -1,0 +1,48 @@
+{
+  "name": "report_compile_order",
+  "short_description": "Report the compile order by analyzing files and constructing a hierarchy.",
+  "full_help": "report_compile_order\n\nDescription: \nReport the compile order by analyzing files and constructing a hierarchy.\n\nSyntax: \nreport_compile_order  [-fileset <arg>] [-missing_instances] [-constraints]\n                      [-sources] [-used_in <arg>] [-file <arg>] [-append]\n                      [-of_objects <args>] [-quiet] [-verbose]\n\nUsage: \n  Name                  Description\n  ---------------------------------\n  [-fileset]            FileSet to parse to determine compile order\n  [-missing_instances]  Report missing instances in the design hierarchy\n  [-constraints]        Report the constraint compile order\n  [-sources]            Report the source compile order\n  [-used_in]            Specify the used in filter.\n  [-file]               Filename to output results to.\n  [-append]             Append output to existing file\n  [-of_objects]         Get 'file' objects of these types: 'file fileset ip \n                        reconfig_module'.\n  [-quiet]              Ignore command errors\n  [-verbose]            Suspend message limits during command execution\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-fileset",
+      "description": "FileSet to parse to determine compile order"
+    },
+    {
+      "flag": "-missing_instances",
+      "description": "Report missing instances in the design hierarchy"
+    },
+    {
+      "flag": "-constraints",
+      "description": "Report the constraint compile order"
+    },
+    {
+      "flag": "-sources",
+      "description": "Report the source compile order"
+    },
+    {
+      "flag": "-used_in",
+      "description": "Specify the used in filter."
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to."
+    },
+    {
+      "flag": "-append",
+      "description": "Append output to existing file"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get 'file' objects of these types: 'file fileset ip reconfig_module'."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

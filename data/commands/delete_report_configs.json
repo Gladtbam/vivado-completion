@@ -1,0 +1,16 @@
+{
+  "name": "delete_report_configs",
+  "short_description": "Delete a set of existing configurable report objects",
+  "full_help": "delete_report_configs\n\nDescription: \nDelete a set of existing configurable report objects\n\nSyntax: \ndelete_report_configs  [-quiet] [-verbose] <report_configs>...\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  <report_configs>  List of configurable report objects to delete\n\nCategories: \nObject, Report\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

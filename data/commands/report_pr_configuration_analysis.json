@@ -1,0 +1,52 @@
+{
+  "name": "report_pr_configuration_analysis",
+  "short_description": "Report reconfigurable partition analysis across multiple configurations",
+  "full_help": "report_pr_configuration_analysis\n\nDescription: \nReport reconfigurable partition analysis across multiple configurations\n\nSyntax: \nreport_pr_configuration_analysis  [-complexity] [-clocking] [-timing]\n                                  [-cells <args>] [-dcps <args>] [-rent]\n                                  [-nworst <arg>] [-file <arg>] [-quiet]\n                                  [-verbose]\n\nUsage: \n  Name           Description\n  --------------------------\n  [-complexity]  Run complexity analysis\n  [-clocking]    Run clocking analysis\n  [-timing]      Run boundary net timing analysis\n  [-cells]       List of reconfigurable cell names\n  [-dcps]        List of design checkpoints for each reconfigurable cell. The\n                 order of dcps must match that of the -cells option.\n  [-rent]        Compute Rents component as part of complexity analysis.  \n                 Runtime intensive for large designs.\n  [-nworst]      Specifies the N worst boundary paths.\n                 Default: 10\n  [-file]        Filename to output results to. (send output to console if \n                 -file is not used)\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-complexity",
+      "description": "Run complexity analysis"
+    },
+    {
+      "flag": "-clocking",
+      "description": "Run clocking analysis"
+    },
+    {
+      "flag": "-timing",
+      "description": "Run boundary net timing analysis"
+    },
+    {
+      "flag": "-cells",
+      "description": "List of reconfigurable cell names"
+    },
+    {
+      "flag": "-dcps",
+      "description": "List of design checkpoints for each reconfigurable cell. The order of dcps must match that of the -cells option."
+    },
+    {
+      "flag": "-rent",
+      "description": "Compute Rents component as part of complexity analysis. Runtime intensive for large designs."
+    },
+    {
+      "flag": "-nworst",
+      "description": "Specifies the N worst boundary paths. Default: 10"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if"
+    },
+    {
+      "flag": "-file",
+      "description": "is not used)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

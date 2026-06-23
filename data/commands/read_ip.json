@@ -1,0 +1,16 @@
+{
+  "name": "read_ip",
+  "short_description": "Read one or more IP files",
+  "full_help": "read_ip\n\nDescription: \nRead one or more IP files\n\nSyntax: \nread_ip  [-quiet] [-verbose] <files>\n\nReturns: \nlist of IP file objects that were added\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <files>     IP file name(s)\n\nCategories: \nFileIO, IPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

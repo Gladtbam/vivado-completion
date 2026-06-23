@@ -1,0 +1,16 @@
+{
+  "name": "list_repo_boards",
+  "short_description": "List available boards from Board Store",
+  "full_help": "list_repo_boards\n\nDescription: \nList available boards from Board Store\n\nSyntax: \nlist_repo_boards  [-quiet] [-verbose] [<board>]\n\nReturns: \nNothing\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<board>]   Name of boards to list, default is to list all boards\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

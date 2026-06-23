@@ -1,0 +1,40 @@
+{
+  "name": "create_report_config",
+  "short_description": "Create Configurable Report objects.",
+  "full_help": "create_report_config\n\nDescription: \nCreate Configurable Report objects.\n\nSyntax: \ncreate_report_config  [-report_name <arg>] [-report_type <arg>] -steps <args>\n                      -runs <args> [-options <arg>] [-copy_of <args>] [-quiet]\n                      [-verbose]\n\nReturns: \nList of configurable report objects\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-report_name]  Name of configurable report object created. Can not be used\n                  when creating multiple objects\n  [-report_type]  Type of configurable report object(s) created. Not required\n                  with '-copy_of'\n  -steps          List of run step(s) for object(s) created\n  -runs           List of run(s) for object(s) created\n  [-options]      options for report command to be set at creation of \n                  configurable report object, except with '-copy_of'\n  [-copy_of]      configurable report object to be copied\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n\nCategories: \nObject, Report\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-report_name",
+      "description": "Name of configurable report object created. Can not be used when creating multiple objects"
+    },
+    {
+      "flag": "-report_type",
+      "description": "Type of configurable report object(s) created. Not required with '-copy_of'"
+    },
+    {
+      "flag": "-steps",
+      "description": "List of run step(s) for object(s) created"
+    },
+    {
+      "flag": "-runs",
+      "description": "List of run(s) for object(s) created"
+    },
+    {
+      "flag": "-options",
+      "description": "options for report command to be set at creation of configurable report object, except with '-copy_of'"
+    },
+    {
+      "flag": "-copy_of",
+      "description": "configurable report object to be copied"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

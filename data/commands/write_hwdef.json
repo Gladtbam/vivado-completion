@@ -1,0 +1,20 @@
+{
+  "name": "write_hwdef",
+  "short_description": "Writes hardware definition for use in the software development",
+  "full_help": "write_hwdef\n\nDescription: \nWrites hardware definition for use in the software development\n\nSyntax: \nwrite_hwdef  [-force] [-quiet] [-verbose] <file>\n\nReturns: \nsuccess/failure status of applied action.\n\nUsage: \n  Name        Description\n  -----------------------\n  [-force]    Overwrites the existing hardware definition file\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <file>      Hardware definition file (Values: A filename with alphanumeric \n              characters and .hwdef extention.) \n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrites the existing hardware definition file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

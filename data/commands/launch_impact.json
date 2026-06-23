@@ -1,0 +1,24 @@
+{
+  "name": "launch_impact",
+  "short_description": "Issues an error that you can not run this command",
+  "full_help": "launch_impact\n\nDescription: \nIssues an error that you can not run this command\n\nSyntax: \nlaunch_impact  [-run <arg>] [-ipf <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-run]      Implemented run to launch iMPACT with\n  [-ipf]      Project for iMPACT\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nToolLaunch\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-run",
+      "description": "Implemented run to launch iMPACT with"
+    },
+    {
+      "flag": "-ipf",
+      "description": "Project for iMPACT"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

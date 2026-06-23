@@ -1,0 +1,16 @@
+{
+  "name": "terminate_runs",
+  "short_description": "Terminate the runs",
+  "full_help": "terminate_runs\n\nDescription: \nTerminate the runs\n\nSyntax: \nterminate_runs  [-quiet] [-verbose] <runs>...\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <runs>      Runs to terminate\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

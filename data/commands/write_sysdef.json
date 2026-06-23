@@ -1,0 +1,36 @@
+{
+  "name": "write_sysdef",
+  "short_description": "Writes hardware definition for use in the software development",
+  "full_help": "write_sysdef\n\nDescription: \nWrites hardware definition for use in the software development\n\nSyntax: \nwrite_sysdef  [-force] [-hwdef <arg>] [-bitfile <arg>] [-pdifile <arg>]\n              [-meminfo <arg>] [-quiet] [-verbose] <file>\n\nReturns: \nsuccess/failure status of applied action.\n\nUsage: \n  Name        Description\n  -----------------------\n  [-force]    Overwrites the existing hardware definition file\n  [-hwdef]    Input Hardware definition file \n  [-bitfile]  Bitstream file \n  [-pdifile]  PDI file for Versal \n  [-meminfo]  BRAM file \n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <file>      System definition file (Values: A filename with alphanumeric \n              characters and .sysdef extention.) \n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrites the existing hardware definition file"
+    },
+    {
+      "flag": "-hwdef",
+      "description": "Input Hardware definition file"
+    },
+    {
+      "flag": "-bitfile",
+      "description": "Bitstream file"
+    },
+    {
+      "flag": "-pdifile",
+      "description": "PDI file for Versal"
+    },
+    {
+      "flag": "-meminfo",
+      "description": "BRAM file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

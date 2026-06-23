@@ -1,0 +1,32 @@
+{
+  "name": "config_compile_simlib",
+  "short_description": "Configure settings for compile_simlib",
+  "full_help": "config_compile_simlib\n\nDescription: \nConfigure settings for compile_simlib\n\nSyntax: \nconfig_compile_simlib  [-cfgopt <arg>] [-cfgval <arg>] [-simulator <arg>]\n                       [-reset] [-quiet] [-verbose]\n\nUsage: \n  Name          Description\n  -------------------------\n  [-cfgopt]     Name of the configuration to set\n  [-cfgval]     Get the value of specified configuration\n  [-simulator]  Print the list of configurations for the specified simulator\n  [-reset]      Initialize configurations to default value\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n\nCategories: \nSimulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cfgopt",
+      "description": "Name of the configuration to set"
+    },
+    {
+      "flag": "-cfgval",
+      "description": "Get the value of specified configuration"
+    },
+    {
+      "flag": "-simulator",
+      "description": "Print the list of configurations for the specified simulator"
+    },
+    {
+      "flag": "-reset",
+      "description": "Initialize configurations to default value"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "update_design",
+  "short_description": "update the netlist of the current design",
+  "full_help": "update_design\n\nDescription: \nupdate the netlist of the current design\n\nSyntax: \nupdate_design  -cells <args> [-strict] [-from_file <arg>] [-from_design <arg>]\n               [-from_cell <arg>] [-black_box] [-buffer_ports] [-quiet]\n               [-verbose]\n\nUsage: \n  Name             Description\n  ----------------------------\n  -cells           List of cells to update with a new sub-netlist.\n  [-strict]        Require exact ports match for replacing cell (otherwise \n                   extra ports are allowed).\n  [-from_file]     Name of the file containing the new sub-netlist.\n  [-from_design]   Name of the an open netlist design containing the new \n                   sub-netlist.\n  [-from_cell]     Name of cell in the from_design which defines the new \n                   sub-netlist.\n  [-black_box]     Update the cell to a black_box.\n  [-buffer_ports]  buffer all the ports of black box\n  [-quiet]         Ignore command errors\n  [-verbose]       Suspend message limits during command execution\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cells",
+      "description": "List of cells to update with a new sub-netlist."
+    },
+    {
+      "flag": "-strict",
+      "description": "Require exact ports match for replacing cell (otherwise extra ports are allowed)."
+    },
+    {
+      "flag": "-from_file",
+      "description": "Name of the file containing the new sub-netlist."
+    },
+    {
+      "flag": "-from_design",
+      "description": "Name of the an open netlist design containing the new sub-netlist."
+    },
+    {
+      "flag": "-from_cell",
+      "description": "Name of cell in the from_design which defines the new sub-netlist."
+    },
+    {
+      "flag": "-black_box",
+      "description": "Update the cell to a black_box."
+    },
+    {
+      "flag": "-buffer_ports",
+      "description": "buffer all the ports of black box"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

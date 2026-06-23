@@ -1,0 +1,44 @@
+{
+  "name": "report_disable_timing",
+  "short_description": "Report disabled timing arcs",
+  "full_help": "report_disable_timing\n\nDescription: \nReport disabled timing arcs\n\nSyntax: \nreport_disable_timing  [-user_disabled] [-column_style <arg>] [-file <arg>]\n                       [-append] [-cells <args>] [-return_string] [-quiet]\n                       [-verbose]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-user_disabled]  Report only user disabled arcs\n  [-column_style]   Style for path report columns: Values: variable_width, \n                    anchor_left\n                    Default: variable_width\n  [-file]           Filename to output results to. (send output to console if\n                    -file is not used)\n  [-append]         Append the results to file, don't overwrite the results \n                    file\n  [-cells]          Run report_disable_timing on the specified cell(s)\n  [-return_string]  Return report as string\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-user_disabled",
+      "description": "Report only user disabled arcs"
+    },
+    {
+      "flag": "-column_style",
+      "description": "Style for path report columns: Values: variable_width, anchor_left Default: variable_width"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if"
+    },
+    {
+      "flag": "-file",
+      "description": "is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-cells",
+      "description": "Run report_disable_timing on the specified cell(s)"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

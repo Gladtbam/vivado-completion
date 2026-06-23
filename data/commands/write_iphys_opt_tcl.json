@@ -1,0 +1,24 @@
+{
+  "name": "write_iphys_opt_tcl",
+  "short_description": "Write iPhysOpt script.",
+  "full_help": "write_iphys_opt_tcl\n\nDescription: \nWrite iPhysOpt script.\n\nSyntax: \nwrite_iphys_opt_tcl  [-place] [-binary] [-quiet] [-verbose] [<output>]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-place]    write out placement information\n  [-binary]   write out in binary format\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  [<output>]  tcl file containing iPhysOpt script\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-place",
+      "description": "write out placement information"
+    },
+    {
+      "flag": "-binary",
+      "description": "write out in binary format"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

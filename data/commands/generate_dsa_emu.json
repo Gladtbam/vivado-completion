@@ -1,0 +1,24 @@
+{
+  "name": "generate_dsa_emu",
+  "short_description": "Used to generate the emulation section for DSAs.",
+  "full_help": "generate_dsa_emu\n\nDescription: \nUsed to generate the emulation section for DSAs.\n\nSyntax: \ngenerate_dsa_emu  [-dsa <arg>] [-platform <arg>] [-prop-json-path <arg>]\n                  [-output-dir-path <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name                Description\n  -------------------------------\n  [-dsa]              The target DSA\n  [-platform]         The target PLATFORM\n  [-prop-json-path]   emu properties json file\n  [-output-dir-path]  Output path where to dump the emulation output\n  [-quiet]            Ignore command errors\n  [-verbose]          Suspend message limits during command execution\n\nCategories: \nVitis, Platform, FileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-dsa",
+      "description": "The target DSA"
+    },
+    {
+      "flag": "-platform",
+      "description": "The target PLATFORM [-prop-json-path]   emu properties json file [-output-dir-path]  Output path where to dump the emulation output"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

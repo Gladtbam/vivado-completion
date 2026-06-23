@@ -1,0 +1,60 @@
+{
+  "name": "report_drc",
+  "short_description": "Run DRC",
+  "full_help": "report_drc\n\nDescription: \nRun DRC\n\nSyntax: \nreport_drc  [-name <arg>] [-upgrade_cw] [-checks <args>] [-ruledecks <args>]\n            [-file <arg>] [-rpx <arg>] [-append] [-waived] [-no_waivers]\n            [-return_string] [-quiet] [-verbose]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-name]           Output the results to GUI panel with this name\n  [-upgrade_cw]     Specifies if report_drc should upgrade all \n                    CRITICAL_WARNING violations to ERROR.\n  [-checks]         DRC checks (see get_drc_checks for available checks)\n  [-ruledecks]      Containers of DRC rule checks\n                    Default: default\n  [-file]           Filename to output results to. (send output to console if\n                    -file is not used)\n  [-rpx]            Report filename for persisted results.\n  [-append]         Append the results to file, do not overwrite the results \n                    file\n  [-waived]         Output result is Waived checks\n  [-no_waivers]     Disable waivers for checks\n  [-return_string]  Return report as string\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nDRC, Report, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-upgrade_cw",
+      "description": "Specifies if report_drc should upgrade all CRITICAL_WARNING violations to ERROR."
+    },
+    {
+      "flag": "-checks",
+      "description": "DRC checks (see get_drc_checks for available checks)"
+    },
+    {
+      "flag": "-ruledecks",
+      "description": "Containers of DRC rule checks Default: default"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if"
+    },
+    {
+      "flag": "-file",
+      "description": "is not used)"
+    },
+    {
+      "flag": "-rpx",
+      "description": "Report filename for persisted results."
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, do not overwrite the results file"
+    },
+    {
+      "flag": "-waived",
+      "description": "Output result is Waived checks"
+    },
+    {
+      "flag": "-no_waivers",
+      "description": "Disable waivers for checks"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

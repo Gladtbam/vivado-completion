@@ -1,0 +1,52 @@
+{
+  "name": "set_switching_activity",
+  "short_description": "Set switching activity on specified objects or default types",
+  "full_help": "set_switching_activity\n\nDescription: \nSet switching activity on specified objects or default types\n\nSyntax: \nset_switching_activity  [-toggle_rate <arg>] [-default_toggle_rate <arg>]\n                        [-type <args>] [-all] [-static_probability <arg>]\n                        [-default_static_probability <arg>]\n                        [-signal_rate <arg>] [-hier] [-deassert_resets]\n                        [-quiet] [-verbose] [<objects>...]\n\nUsage: \n  Name                           Description\n  ------------------------------------------\n  [-toggle_rate]                 Toggle rate (%) is the rate at which the \n                                 output of synchronous logic element switches\n                                 compared to a given clock input.  It is \n                                 modeled as a percentage between 0 - 200%.  A\n                                 toggle rate of 100% means that on average \n                                 the output toggles once during every clock \n                                 cycle, changing on either the rising or \n                                 falling clock edges, and making the \n                                 effective output signal frequency half of \n                                 the clock frequency.\n                                 Default: 0.0\n  [-default_toggle_rate]         The default toggle rate to be used in power \n                                 analysis on the primary inputs of the \n                                 design.  The default toggle rate is set on \n                                 those primary input nets whose switching \n                                 activity is not specified by the user, \n                                 simulation data or constraints of the \n                                 design.  Valid values are:  0 <= value < \n                                 200.  The default value is 12.5.\n                                 Default: 12.5\n  [-type]                        Specify nodes in a specific category.  List \n                                 of valid type values: io_output, \n                                 io_bidir_enable, register, lut_ram, lut, \n                                 dsp, bram_enable, bram_wr_enable, gt_txdata,\n                                 gt_rxdata.\n  [-all]                         Used together with -type, set switching \n                                 activity on -type nets within an instance\n  [-static_probability]          Static probability value: 0 <= Value <= 1\n                                 Default: 0.5\n  [-default_static_probability]  The default static probability to be used in\n                                 power analysis on the design.  The default \n                                 static probability is set on those primary \n                                 inputs whose switching activity is not \n                                 specified by the user, simulation data or \n                                 constraints of the design.  Valid values \n                                 are:  0 <= Value <= 1.  The default value is\n                                 0.5.\n                                 Default: 0.5\n  [-signal_rate]                 The number of times an element changed state\n                                 (high-to-low and low-to-high) per second.  \n                                 Xilinx tools express this as millions of \n                                 transitions per second (Mtr/s).\n                                 Default: 0.0\n  [-hier]                        Hierarchically sets the switching activity \n                                 on a hierarchical instance provided via \n                                 <objects> option.  This option should be \n                                 used only with <objects> option\n  [-deassert_resets]             A switch to elegantly auto deassert all \n                                 set,reset,preset and clear signals that do \n                                 not have conflicted polarities\n  [-quiet]                       Ignore command errors\n  [-verbose]                     Suspend message limits during command \n                                 execution\n  [<objects>]                    Objects to set switching activity on\n\nCategories: \nXDC, Power\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-toggle_rate",
+      "description": "Toggle rate (%) is the rate at which the output of synchronous logic element switches compared to a given clock input.  It is modeled as a percentage between 0 - 200%.  A toggle rate of 100% means that on average the output toggles once during every clock cycle, changing on either the rising or falling clock edges, and making the effective output signal frequency half of the clock frequency. Default: 0.0"
+    },
+    {
+      "flag": "-default_toggle_rate",
+      "description": "The default toggle rate to be used in power analysis on the primary inputs of the design.  The default toggle rate is set on those primary input nets whose switching activity is not specified by the user, simulation data or constraints of the design.  Valid values are:  0 <= value < 200.  The default value is 12.5. Default: 12.5"
+    },
+    {
+      "flag": "-type",
+      "description": "Specify nodes in a specific category.  List of valid type values: io_output, io_bidir_enable, register, lut_ram, lut, dsp, bram_enable, bram_wr_enable, gt_txdata, gt_rxdata."
+    },
+    {
+      "flag": "-all",
+      "description": "Used together with -type, set switching activity on -type nets within an instance"
+    },
+    {
+      "flag": "-static_probability",
+      "description": "Static probability value: 0 <= Value <= 1 Default: 0.5"
+    },
+    {
+      "flag": "-default_static_probability",
+      "description": "The default static probability to be used in power analysis on the design.  The default static probability is set on those primary inputs whose switching activity is not specified by the user, simulation data or constraints of the design.  Valid values are:  0 <= Value <= 1.  The default value is 0.5. Default: 0.5"
+    },
+    {
+      "flag": "-signal_rate",
+      "description": "The number of times an element changed state (high-to-low and low-to-high) per second. Xilinx tools express this as millions of transitions per second (Mtr/s). Default: 0.0"
+    },
+    {
+      "flag": "-hier",
+      "description": "Hierarchically sets the switching activity on a hierarchical instance provided via"
+    },
+    {
+      "flag": "-deassert_resets",
+      "description": "A switch to elegantly auto deassert all set,reset,preset and clear signals that do not have conflicted polarities"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

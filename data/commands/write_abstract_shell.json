@@ -1,0 +1,24 @@
+{
+  "name": "write_abstract_shell",
+  "short_description": "Write an abstract shell checkpoint of the current design",
+  "full_help": "write_abstract_shell\n\nDescription: \nWrite an abstract shell checkpoint of the current design\n\nSyntax: \nwrite_abstract_shell  -cell <arg> [-force] [-quiet] [-verbose] <file>\n\nReturns: \nThe name of the checkpoint file\n\nUsage: \n  Name        Description\n  -----------------------\n  -cell       Create an abstract shell for this reconfigurable cell\n  [-force]    Overwrite existing checkpoint file\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <file>      Design checkpoint file\n              Values: A filename with alphanumeric characters and .dcp \n              extension.\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cell",
+      "description": "Create an abstract shell for this reconfigurable cell"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing checkpoint file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

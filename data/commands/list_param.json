@@ -1,0 +1,16 @@
+{
+  "name": "list_param",
+  "short_description": "Get all parameter names",
+  "full_help": "list_param\n\nDescription: \nGet all parameter names\n\nSyntax: \nlist_param  [-quiet] [-verbose]\n\nReturns: \nlist\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nPropertyAndParameter\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

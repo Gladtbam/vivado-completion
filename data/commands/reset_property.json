@@ -1,0 +1,16 @@
+{
+  "name": "reset_property",
+  "short_description": "Reset property on object(s)",
+  "full_help": "reset_property\n\nDescription: \nReset property on object(s)\n\nSyntax: \nreset_property  [-quiet] [-verbose] <property_name> <objects>...\n\nReturns: \nThe value that was set if success, \"\" if failure\n\nUsage: \n  Name             Description\n  ----------------------------\n  [-quiet]         Ignore command errors\n  [-verbose]       Suspend message limits during command execution\n  <property_name>  Name of property to reset\n  <objects>        Objects to set properties\n\nCategories: \nObject, PropertyAndParameter\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

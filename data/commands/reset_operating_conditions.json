@@ -1,0 +1,76 @@
+{
+  "name": "reset_operating_conditions",
+  "short_description": "Reset operating conditions to tool default for power estimation",
+  "full_help": "reset_operating_conditions\n\nDescription: \nReset operating conditions to tool default for power estimation\n\nSyntax: \nreset_operating_conditions  [-voltage <args>] [-grade] [-process]\n                            [-junction_temp] [-ambient_temp] [-thetaja]\n                            [-thetasa] [-airflow] [-heatsink] [-thetajb]\n                            [-board] [-board_temp] [-board_layers]\n                            [-design_power_budget]\n                            [-supply_current_budget <args>] [-quiet] [-verbose]\n\nUsage: \n  Name                      Description\n  -------------------------------------\n  [-voltage]                Resets voltage value. Supported voltage supplies \n                            vary by family.\n  [-grade]                  Resets temperature grade\n  [-process]                Resets process\n  [-junction_temp]          Resets Junction Temperature\n  [-ambient_temp]           Resets Ambient Temperature\n  [-thetaja]                Resets ThetaJA\n  [-thetasa]                Resets ThetaSA\n  [-airflow]                Resets Airflow\n  [-heatsink]               Resets dimensions of heatsink\n  [-thetajb]                Resets ThetaJB\n  [-board]                  Resets Board type\n  [-board_temp]             Resets Board Temperature\n  [-board_layers]           Resets Board layers\n  [-design_power_budget]    Design Power Budget (W)\n  [-supply_current_budget]  Resets list of supply current budget 'name value'\n                            pairs. Supported voltage supplies vary by family.\n  [-quiet]                  Ignore command errors\n  [-verbose]                Suspend message limits during command execution\n\nCategories: \nPower, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-voltage",
+      "description": "Resets voltage value. Supported voltage supplies vary by family."
+    },
+    {
+      "flag": "-grade",
+      "description": "Resets temperature grade"
+    },
+    {
+      "flag": "-process",
+      "description": "Resets process"
+    },
+    {
+      "flag": "-junction_temp",
+      "description": "Resets Junction Temperature"
+    },
+    {
+      "flag": "-ambient_temp",
+      "description": "Resets Ambient Temperature"
+    },
+    {
+      "flag": "-thetaja",
+      "description": "Resets ThetaJA"
+    },
+    {
+      "flag": "-thetasa",
+      "description": "Resets ThetaSA"
+    },
+    {
+      "flag": "-airflow",
+      "description": "Resets Airflow"
+    },
+    {
+      "flag": "-heatsink",
+      "description": "Resets dimensions of heatsink"
+    },
+    {
+      "flag": "-thetajb",
+      "description": "Resets ThetaJB"
+    },
+    {
+      "flag": "-board",
+      "description": "Resets Board type"
+    },
+    {
+      "flag": "-board_temp",
+      "description": "Resets Board Temperature"
+    },
+    {
+      "flag": "-board_layers",
+      "description": "Resets Board layers"
+    },
+    {
+      "flag": "-design_power_budget",
+      "description": "Design Power Budget (W)"
+    },
+    {
+      "flag": "-supply_current_budget",
+      "description": "Resets list of supply current budget 'name value' pairs. Supported voltage supplies vary by family."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

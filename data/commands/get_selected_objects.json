@@ -1,0 +1,20 @@
+{
+  "name": "get_selected_objects",
+  "short_description": "Get selected objects",
+  "full_help": "get_selected_objects\n\nDescription: \nGet selected objects\n\nSyntax: \nget_selected_objects  [-primary] [-quiet] [-verbose]\n\nReturns: \nlist of selected objects\n\nUsage: \n  Name        Description\n  -----------------------\n  [-primary]  Do not include objects that were selected due to selection \n              rules\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nObject, GUIControl\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-primary",
+      "description": "Do not include objects that were selected due to selection rules"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

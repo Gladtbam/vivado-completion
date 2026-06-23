@@ -1,0 +1,20 @@
+{
+  "name": "write_noc_solution",
+  "short_description": "Write Solution To JSON File",
+  "full_help": "write_noc_solution\n\nDescription: \nWrite Solution To JSON File\n\nSyntax: \nwrite_noc_solution  -file <arg> [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  -file       Output Solution File In JSON Format\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nNOC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Output Solution File In JSON Format"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

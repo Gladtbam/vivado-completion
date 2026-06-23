@@ -1,0 +1,16 @@
+{
+  "name": "set_param",
+  "short_description": "Set a parameter value",
+  "full_help": "set_param\n\nDescription: \nSet a parameter value\n\nSyntax: \nset_param  [-quiet] [-verbose] <name> <value>\n\nReturns: \nnewly set parameter value\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <name>      Parameter name\n  <value>     Parameter value\n\nCategories: \nPropertyAndParameter\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "get_pblocks",
+  "short_description": "Get a list of Pblocks in the current design",
+  "full_help": "get_pblocks\n\nDescription: \nGet a list of Pblocks in the current design\n\nSyntax: \nget_pblocks  [-regexp] [-nocase] [-filter <arg>] [-of_objects <args>]\n             [-include_nested_pblocks] [-quiet] [-verbose] [<patterns>]\n\nReturns: \nlist of Pblock objects\n\nUsage: \n  Name                       Description\n  --------------------------------------\n  [-regexp]                  Patterns are full regular expressions\n  [-nocase]                  Perform case-insensitive matching (valid only \n                             when -regexp specified)\n  [-filter]                  Filter list with expression\n  [-of_objects]              Get Pblocks of these cells\n  [-include_nested_pblocks]  Display the the list of nested pblocks\n  [-quiet]                   Ignore command errors\n  [-verbose]                 Suspend message limits during command execution\n  [<patterns>]               Match Pblock names against patterns\n                             Default: *\n\nCategories: \nObject, Floorplan, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get Pblocks of these cells"
+    },
+    {
+      "flag": "-include_nested_pblocks",
+      "description": "Display the the list of nested pblocks"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

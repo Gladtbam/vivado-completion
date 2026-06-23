@@ -1,0 +1,24 @@
+{
+  "name": "pr_subdivide",
+  "short_description": "Subdivide a Reconfigurable Partition into one or more lower-level Reconfigurable Partitions when using the Hierarchical Dynamic Function eXchange solution.",
+  "full_help": "pr_subdivide\n\nDescription: \nSubdivide a Reconfigurable Partition into one or more lower-level Reconfigurable Partitions when using the Hierarchical Dynamic Function eXchange solution.\n\nSyntax: \npr_subdivide  [-cell <arg>] [-subcells <arg>] [-quiet] [-verbose] [<from_dcp>]\n\nUsage: \n  Name          Description\n  -------------------------\n  [-cell]       (Required) Specify parent reconfigurable partition module name\n  [-subcells]   (Required) Specify child reconfigurable partition module names\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  [<from_dcp>]  (Required) Specify OOC synthesized checkpoint path for the \n                reconfigurable module specified by option -cell\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-cell",
+      "description": "(Required) Specify parent reconfigurable partition module name"
+    },
+    {
+      "flag": "-subcells",
+      "description": "(Required) Specify child reconfigurable partition module names"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "undo",
+  "short_description": "Un-do previous command",
+  "full_help": "undo\n\nDescription: \nUn-do previous command\n\nSyntax: \nundo  [-list] [-quiet] [-verbose]\n\nReturns: \nwith -list, the list of undoable tasks\n\nUsage: \n  Name        Description\n  -----------------------\n  [-list]     Show a list of undoable tasks\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nGUIControl\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-list",
+      "description": "Show a list of undoable tasks"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

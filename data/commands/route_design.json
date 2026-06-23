@@ -1,0 +1,88 @@
+{
+  "name": "route_design",
+  "short_description": "Route the current design",
+  "full_help": "route_design\n\nDescription: \nRoute the current design\n\nSyntax: \nroute_design  [-unroute] [-release_memory] [-nets <args>] [-physical_nets]\n              [-pins <arg>] [-directive <arg>] [-tns_cleanup]\n              [-no_timing_driven] [-preserve] [-delay] [-auto_delay]\n              -max_delay <arg> -min_delay <arg> [-timing_summary] [-finalize]\n              [-ultrathreads] [-eco] [-no_psir] [-quiet] [-verbose]\n\nUsage: \n  Name                 Description\n  --------------------------------\n  [-unroute]           Unroute whole design or the given nets/pins if used \n                       with -nets or -pins.\n  [-release_memory]    Release Router memory. Not compatible with any other \n                       options.\n  [-nets]              Operate on the given nets.\n  [-physical_nets]     Operate on all physical nets.\n  [-pins]              Operate on the given pins.\n  [-directive]         Mode of behavior (directive) for this command. Please \n                       refer to Arguments section of this help for values for\n                       this option.\n                       Default: Default\n  [-tns_cleanup]       Do optional TNS clean up.\n  [-no_timing_driven]  Do not run in timing driven mode.\n  [-preserve]          Preserve existing routing.\n  [-delay]             Use with -nets or -pins option to route in delay \n                       driven mode.\n  [-auto_delay]        Use with -nets or -pins option to route in constraint \n                       driven mode.\n  -max_delay           Use with -pins option to specify the max_delay \n                       constraint on the pins.When specified -delay is \n                       implicit.\n  -min_delay           Use with -pins option to specify the max_delay \n                       constraint on the pins.When specified -delay is \n                       implicit.\n  [-timing_summary]    Enable post-router signoff timing summary.\n  [-finalize]          finalize route_design in interactive mode.\n  [-ultrathreads]      Enable Turbo mode routing.\n  [-eco]               runs incremental router if there was eco modification \n                       on routed netlist.\n  [-no_psir]           skips Physical Synthesis in Router phase.\n  [-quiet]             Ignore command errors\n  [-verbose]           Suspend message limits during command execution\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-unroute",
+      "description": "Unroute whole design or the given nets/pins if used with -nets or -pins."
+    },
+    {
+      "flag": "-release_memory",
+      "description": "Release Router memory. Not compatible with any other options."
+    },
+    {
+      "flag": "-nets",
+      "description": "Operate on the given nets."
+    },
+    {
+      "flag": "-physical_nets",
+      "description": "Operate on all physical nets."
+    },
+    {
+      "flag": "-pins",
+      "description": "Operate on the given pins."
+    },
+    {
+      "flag": "-directive",
+      "description": "Mode of behavior (directive) for this command. Please refer to Arguments section of this help for values for this option. Default: Default"
+    },
+    {
+      "flag": "-tns_cleanup",
+      "description": "Do optional TNS clean up."
+    },
+    {
+      "flag": "-no_timing_driven",
+      "description": "Do not run in timing driven mode."
+    },
+    {
+      "flag": "-preserve",
+      "description": "Preserve existing routing."
+    },
+    {
+      "flag": "-delay",
+      "description": "Use with -nets or -pins option to route in delay driven mode."
+    },
+    {
+      "flag": "-auto_delay",
+      "description": "Use with -nets or -pins option to route in constraint driven mode."
+    },
+    {
+      "flag": "-max_delay",
+      "description": "Use with -pins option to specify the max_delay constraint on the pins.When specified -delay is implicit."
+    },
+    {
+      "flag": "-min_delay",
+      "description": "Use with -pins option to specify the max_delay constraint on the pins.When specified -delay is implicit."
+    },
+    {
+      "flag": "-timing_summary",
+      "description": "Enable post-router signoff timing summary."
+    },
+    {
+      "flag": "-finalize",
+      "description": "finalize route_design in interactive mode."
+    },
+    {
+      "flag": "-ultrathreads",
+      "description": "Enable Turbo mode routing."
+    },
+    {
+      "flag": "-eco",
+      "description": "runs incremental router if there was eco modification on routed netlist."
+    },
+    {
+      "flag": "-no_psir",
+      "description": "skips Physical Synthesis in Router phase."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

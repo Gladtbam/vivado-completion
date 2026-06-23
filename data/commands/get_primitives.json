@@ -1,0 +1,44 @@
+{
+  "name": "get_primitives",
+  "short_description": "Get a list of available unisim primitives for a part",
+  "full_help": "get_primitives\n\nDescription: \nGet a list of available unisim primitives for a part\n\nSyntax: \nget_primitives  [-regexp] [-nocase] [-filter <arg>] [-part <arg>] [-retarget]\n                [-macro] [-hierarchy] [-quiet] [-verbose] [<patterns>]\n\nReturns: \nprimitive types\n\nUsage: \n  Name          Description\n  -------------------------\n  [-regexp]     Patterns are full regular expressions\n  [-nocase]     Perform case-insensitive matching. (valid only when -regexp \n                specified)\n  [-filter]     Filter list with expression\n  [-part]       Part to get primitives for\n  [-retarget]   Include primitive types that will be automatically retargeted\n                to the current (or specified) part\n  [-macro]      Include primitive types that always convert into more basic, \n                natively supported primitives, such as logic gates\n  [-hierarchy]  Include primitive types that will be automatically expanded \n                into a hierarchy of leaf cells during implementation\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  [<patterns>]  Match primitive types against patterns\n                Default: *\n\nCategories: \nObject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching. (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-part",
+      "description": "Part to get primitives for"
+    },
+    {
+      "flag": "-retarget",
+      "description": "Include primitive types that will be automatically retargeted to the current (or specified) part"
+    },
+    {
+      "flag": "-macro",
+      "description": "Include primitive types that always convert into more basic, natively supported primitives, such as logic gates"
+    },
+    {
+      "flag": "-hierarchy",
+      "description": "Include primitive types that will be automatically expanded into a hierarchy of leaf cells during implementation"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

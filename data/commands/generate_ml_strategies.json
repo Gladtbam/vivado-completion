@@ -1,0 +1,36 @@
+{
+  "name": "generate_ml_strategies",
+  "short_description": "Generate ML strategies for a run",
+  "full_help": "generate_ml_strategies\n\nDescription: \nGenerate ML strategies for a run\n\nSyntax: \ngenerate_ml_strategies  [-jobs <arg>] [-details] [-force] [-keep_launch_dir]\n                        [-suggestions_filter <arg>] [-quiet] [-verbose]\n                        <runs>...\n\nUsage: \n  Name                   Description\n  ----------------------------------\n  [-jobs]                Number of jobs\n                         Default: 1\n  [-details]             Prints job details\n  [-force]               Force to regenerate the ml strategies.\n  [-keep_launch_dir]     Keep the launch directory and files for analysis\n  [-suggestions_filter]  Filter for the internal call to write_qor_suggestion\n                         command\n                         Default: Category==Strategy\n  [-quiet]               Ignore command errors\n  [-verbose]             Suspend message limits during command execution\n  <runs>                 List of runs to generate ML strategies for\n\nCategories: \nObject, Run\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-jobs",
+      "description": "Number of jobs Default: 1"
+    },
+    {
+      "flag": "-details",
+      "description": "Prints job details"
+    },
+    {
+      "flag": "-force",
+      "description": "Force to regenerate the ml strategies."
+    },
+    {
+      "flag": "-keep_launch_dir",
+      "description": "Keep the launch directory and files for analysis"
+    },
+    {
+      "flag": "-suggestions_filter",
+      "description": "Filter for the internal call to write_qor_suggestion command Default: Category==Strategy"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

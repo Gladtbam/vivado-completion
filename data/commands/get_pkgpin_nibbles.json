@@ -1,0 +1,32 @@
+{
+  "name": "get_pkgpin_nibbles",
+  "short_description": "Get a list of pkgpin nibbles.",
+  "full_help": "get_pkgpin_nibbles\n\nDescription: \nGet a list of pkgpin nibbles.\n\nSyntax: \nget_pkgpin_nibbles  [-regexp] [-nocase] [-filter <arg>] [-of_objects <args>]\n                    [-quiet] [-verbose] [<patterns>]\n\nReturns: \npin_nibble\n\nUsage: \n  Name           Description\n  --------------------------\n  [-regexp]      Patterns are full regular expressions\n  [-nocase]      Perform case-insensitive matching. (valid only when -regexp \n                 specified)\n  [-filter]      Filter list with expression\n  [-of_objects]  Get the pin_nibble of these package_pins, iobank, site, or \n                 port.\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<patterns>]   Match pin_nibble against patterns\n                 Default: *\n\nCategories: \nDevice, XDC, Object\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching. (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get the pin_nibble of these package_pins, iobank, site, or port."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

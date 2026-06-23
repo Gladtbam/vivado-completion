@@ -1,0 +1,16 @@
+{
+  "name": "unplace_cell",
+  "short_description": "Unplace one or more instances.",
+  "full_help": "unplace_cell\n\nDescription: \nUnplace one or more instances. \n\nSyntax: \nunplace_cell  [-quiet] [-verbose] <cell_list>...\n\nUsage: \n  Name         Description\n  ------------------------\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  <cell_list>  a list of cells to be unplaced \n\nCategories: \nFloorplan\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

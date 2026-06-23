@@ -1,0 +1,28 @@
+{
+  "name": "find_top",
+  "short_description": "Find top module candidates in the supplied files, fileset, or active fileset. Returns a rank ordered list of candidates.",
+  "full_help": "find_top\n\nDescription: \nFind top module candidates in the supplied files, fileset, or active fileset. Returns a rank ordered list of candidates.\n\nSyntax: \nfind_top  [-fileset <arg>] [-files <args>] [-return_file_paths] [-quiet]\n          [-verbose]\n\nUsage: \n  Name                  Description\n  ---------------------------------\n  [-fileset]            Fileset to parse to search for top candidates\n  [-files]              Files to parse to search for top candidates\n  [-return_file_paths]  For each top returned, also include the associated \n                        file path. The returned value will be a single list \n                        of strings, alternating top names and file paths.\n  [-quiet]              Ignore command errors\n  [-verbose]            Suspend message limits during command execution\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-fileset",
+      "description": "Fileset to parse to search for top candidates"
+    },
+    {
+      "flag": "-files",
+      "description": "Files to parse to search for top candidates"
+    },
+    {
+      "flag": "-return_file_paths",
+      "description": "For each top returned, also include the associated file path. The returned value will be a single list of strings, alternating top names and file paths."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

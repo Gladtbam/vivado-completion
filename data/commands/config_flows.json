@@ -1,0 +1,20 @@
+{
+  "name": "config_flows",
+  "short_description": "Config Flow",
+  "full_help": "config_flows\n\nDescription: \nConfig Flow\n\nSyntax: \nconfig_flows  [-mark_debug <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name           Description\n  --------------------------\n  [-mark_debug]  Allows nets with MARK_DEBUG to be optimized instead of \n                 preserved.\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-mark_debug",
+      "description": "Allows nets with MARK_DEBUG to be optimized instead of preserved."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

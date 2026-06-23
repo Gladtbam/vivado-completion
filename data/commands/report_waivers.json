@@ -1,0 +1,44 @@
+{
+  "name": "report_waivers",
+  "short_description": "Report status of DRC/METHODOLOGY/CDC/LINT message waivers",
+  "full_help": "report_waivers\n\nDescription: \nReport status of DRC/METHODOLOGY/CDC/LINT message waivers\n\nSyntax: \nreport_waivers  [-file <arg>] [-type <arg>] [-write_valid_waivers]\n                [-write_ignored_waivers] [-append] [-return_string]\n                [-show_msgs_with_no_waivers] [-quiet] [-verbose]\n\nUsage: \n  Name                          Description\n  -----------------------------------------\n  [-file]                       Name of file to report waivers\n  [-type]                       Type of waiver - ALL, DRC, METHODOLOGY, CDC, \n                                LINT\n  [-write_valid_waivers]        (special) Specifies writing out the specific \n                                waivers which were used in the last \n                                report_drc/methodology/cdc/lint run(s)\n  [-write_ignored_waivers]      (special) Specifies writing out the specific \n                                waivers which were NOT used in the last \n                                report_drc/methodology/cdc/lint run(s)\n  [-append]                     Append the current report results to the file\n                                specified with -file\n  [-return_string]              Return report results as a string object\n  [-show_msgs_with_no_waivers]  Also list report_drc/methodology/cdc/lint \n                                messages which have no defined waivers\n  [-quiet]                      Ignore command errors\n  [-verbose]                    Suspend message limits during command \n                                execution\n\nCategories: \nWaiver, Report, Object\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Name of file to report waivers"
+    },
+    {
+      "flag": "-type",
+      "description": "Type of waiver - ALL, DRC, METHODOLOGY, CDC, LINT"
+    },
+    {
+      "flag": "-write_valid_waivers",
+      "description": "(special) Specifies writing out the specific waivers which were used in the last report_drc/methodology/cdc/lint run(s)"
+    },
+    {
+      "flag": "-write_ignored_waivers",
+      "description": "(special) Specifies writing out the specific waivers which were NOT used in the last report_drc/methodology/cdc/lint run(s)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the current report results to the file specified with -file"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report results as a string object"
+    },
+    {
+      "flag": "-show_msgs_with_no_waivers",
+      "description": "Also list report_drc/methodology/cdc/lint messages which have no defined waivers"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

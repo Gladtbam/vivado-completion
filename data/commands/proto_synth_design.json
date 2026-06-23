@@ -1,0 +1,188 @@
+{
+  "name": "proto_synth_design",
+  "short_description": "Synthesize a design using Vivado Prototyping Synthesis and open that design",
+  "full_help": "proto_synth_design\n\nDescription: \nSynthesize a design using Vivado Prototyping Synthesis and open that design\n\nSyntax: \nproto_synth_design  [-name <arg>] [-part <arg>] [-constrset <arg>] [-top <arg>]\n                    [-include_dirs <args>] [-generic <args>]\n                    [-verilog_define <args>] [-flatten_hierarchy <arg>]\n                    [-gated_clock_conversion <arg>] [-directive <arg>] [-rtl]\n                    [-lint] [-file <arg>] [-dataflow] [-bufg <arg>] [-no_lc]\n                    [-shreg_min_size <arg>] [-mode <arg>]\n                    [-fsm_extraction <arg>] [-rtl_skip_mlo] [-rtl_skip_ip]\n                    [-rtl_skip_constraints] [-srl_style <arg>]\n                    [-keep_equivalent_registers] [-resource_sharing <arg>]\n                    [-cascade_dsp <arg>] [-control_set_opt_threshold <arg>]\n                    [-incremental_mode <arg>] [-max_bram <arg>]\n                    [-max_uram <arg>] [-max_dsp <arg>]\n                    [-max_bram_cascade_height <arg>]\n                    [-max_uram_cascade_height <arg>] [-retiming] [-no_retiming]\n                    [-no_srlextract] [-assert] [-no_timing_driven] [-sfcu]\n                    [-debug_log] [-quiet] [-verbose]\n\nReturns: \ndesign object\n\nUsage: \n  Name                          Description\n  -----------------------------------------\n  [-name]                       Design name\n  [-part]                       Target part\n  [-constrset]                  Constraint fileset to use\n  [-top]                        Specify the top module name\n  [-include_dirs]               Specify verilog search directories\n  [-generic]                    Specify generic parameters. Syntax: -generic \n                                <name>=<value> -generic <name>=<value> ...\n  [-verilog_define]             Specify verilog defines. Syntax: \n                                -verilog_define <macro_name>[=<macro_text>] \n                                -verilog_define <macro_name>[=<macro_text>] \n                                ...\n  [-flatten_hierarchy]          Flatten hierarchy during LUT mapping. Values:\n                                full, none, rebuilt\n                                Default: rebuilt\n  [-gated_clock_conversion]     Convert clock gating logic to flop enable. \n                                Values: off, on, auto\n                                Default: off\n  [-directive]                  Synthesis directive. Values: default, \n                                RuntimeOptimized, AreaOptimized_high, \n                                AreaOptimized_medium, AlternateRoutability, \n                                AreaMapLargeShiftRegToBRAM, \n                                AreaMultThresholdDSP, FewerCarryChains, \n                                PerformanceOptimized, LogicCompaction, \n                                PowerOptimized_high, PowerOptimized_medium\n                                Default: default\n  [-rtl]                        Elaborate and open an rtl design\n  [-lint]                       Run RTL Linter on source files. Recommended \n                                to run before RTL simulation and synthesis to\n                                identify potential issues at early design \n                                cycle.\n  [-file]                       Linter Filename to output results to. (send \n                                output to console if -file is not used)\n  [-dataflow]                   Present the Dataflow view of the RTL design\n  [-bufg]                       Max number of global clock buffers used by \n                                synthesis\n                                Default: 12\n  [-no_lc]                      Disable LUT combining. Do not allow combining\n                                LUT pairs into single dual output LUTs.\n  [-shreg_min_size]             Minimum length for chain of registers to be \n                                mapped onto SRL\n                                Default: 3\n  [-mode]                       The design mode. Values: default, \n                                out_of_context\n                                Default: default\n  [-fsm_extraction]             FSM Extraction Encoding. Values: off, \n                                one_hot, sequential, johnson, gray, \n                                user_encoding, auto\n                                Default: auto\n  [-rtl_skip_mlo]               Skip mandatory logic optimization for RTL \n                                elaboration of the design; requires -rtl \n                                option.\n  [-rtl_skip_ip]                Exclude subdesign checkpoints in the RTL \n                                elaboration of the design; requires -rtl \n                                option.\n  [-rtl_skip_constraints]       Do not load and validate constraints against \n                                elaborated design; requires -rtl option.\n  [-srl_style]                  Static SRL Implementation Style. Values: \n                                register, srl, srl_reg, reg_srl, reg_srl_reg\n  [-keep_equivalent_registers]  Prevents registers sourced by the same logic \n                                from being merged. (Note that the merging can\n                                otherwise be prevented using the synthesis \n                                KEEP attribute)\n  [-resource_sharing]           Sharing arithmetic operators. Value: auto, \n                                on, off\n                                Default: auto\n  [-cascade_dsp]                Controls how adders summing DSP block outputs\n                                will be implemented. Value: auto, tree, force\n                                Default: auto\n  [-control_set_opt_threshold]  Threshold for synchronous control set \n                                optimization to lower number of control sets.\n                                Valid values are 'auto' and non-negative \n                                integers. The higher the number, the more \n                                control set optimization will be performed \n                                and fewer control sets will result. To \n                                disable control set optimization completely, \n                                set to 0.\n                                Default: auto\n  [-incremental_mode]           Mode of incremental synthesis \n                                (aggressive/default/off/quick)\n                                Default: default\n  [-max_bram]                   Maximum number of block RAM allowed in \n                                design. (Note -1 means that the tool will \n                                choose the max number allowed for the part in\n                                question)\n                                Default: -1\n  [-max_uram]                   Maximum number of Ultra RAM blocks allowed in\n                                design. (Note -1 means that the tool will \n                                choose the max number allowed for the part in\n                                question)\n                                Default: -1\n  [-max_dsp]                    Maximum number of block DSP allowed in \n                                design. (Note -1 means that the tool will \n                                choose the max number allowed for the part in\n                                question)\n                                Default: -1\n  [-max_bram_cascade_height]    Controls the maximum number of BRAM that can \n                                be cascaded by the tool. (Note -1 means that \n                                the tool will choose the max number allowed \n                                for the part in question)\n                                Default: -1\n  [-max_uram_cascade_height]    Controls the maximum number of URAM that can \n                                be cascaded by the tool. (Note -1 means that \n                                the tool will choose the max number allowed \n                                for the part in question)\n                                Default: -1\n  [-retiming]                   For non-Versal devices where retiming is off \n                                by default. Seeks to improve circuit \n                                performance for intra-clock sequential paths \n                                by automatically moving registers (register \n                                balancing) across combinatorial gates or \n                                LUTs.  It maintains the original behavior and\n                                latency of the circuit and does not require \n                                changes to the RTL sources.\n  [-no_retiming]                Turn off retiming feature for Versal devices \n                                where retiming is on by default. If both \n                                -retiming and -no_retiming are set, retiming \n                                will not occur\n  [-no_srlextract]              Prevents the extraction of shift registers so\n                                that they get implemented as simple registers\n  [-assert]                     Enable VHDL assert statements to be \n                                evaluated. A severity level of failure will \n                                stop the synthesis flow and produce an error.\n  [-no_timing_driven]           Do not run in timing driven mode\n  [-sfcu]                       Run in single-file compilation unit mode\n  [-debug_log]                  Print detailed log files for debugging\n  [-quiet]                      Ignore command errors\n  [-verbose]                    Suspend message limits during command \n                                execution\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Design name"
+    },
+    {
+      "flag": "-part",
+      "description": "Target part"
+    },
+    {
+      "flag": "-constrset",
+      "description": "Constraint fileset to use"
+    },
+    {
+      "flag": "-top",
+      "description": "Specify the top module name"
+    },
+    {
+      "flag": "-include_dirs",
+      "description": "Specify verilog search directories"
+    },
+    {
+      "flag": "-generic",
+      "description": "Specify generic parameters. Syntax: -generic <name>=<value> -generic <name>=<value> ..."
+    },
+    {
+      "flag": "-verilog_define",
+      "description": "Specify verilog defines. Syntax:"
+    },
+    {
+      "flag": "-verilog_define",
+      "description": "<macro_name>[=<macro_text>]"
+    },
+    {
+      "flag": "-verilog_define",
+      "description": "<macro_name>[=<macro_text>] ..."
+    },
+    {
+      "flag": "-flatten_hierarchy",
+      "description": "Flatten hierarchy during LUT mapping. Values: full, none, rebuilt Default: rebuilt"
+    },
+    {
+      "flag": "-gated_clock_conversion",
+      "description": "Convert clock gating logic to flop enable. Values: off, on, auto Default: off"
+    },
+    {
+      "flag": "-directive",
+      "description": "Synthesis directive. Values: default, RuntimeOptimized, AreaOptimized_high, AreaOptimized_medium, AlternateRoutability, AreaMapLargeShiftRegToBRAM, AreaMultThresholdDSP, FewerCarryChains, PerformanceOptimized, LogicCompaction, PowerOptimized_high, PowerOptimized_medium Default: default"
+    },
+    {
+      "flag": "-rtl",
+      "description": "Elaborate and open an rtl design"
+    },
+    {
+      "flag": "-lint",
+      "description": "Run RTL Linter on source files. Recommended to run before RTL simulation and synthesis to identify potential issues at early design cycle."
+    },
+    {
+      "flag": "-file",
+      "description": "Linter Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-dataflow",
+      "description": "Present the Dataflow view of the RTL design"
+    },
+    {
+      "flag": "-bufg",
+      "description": "Max number of global clock buffers used by synthesis Default: 12"
+    },
+    {
+      "flag": "-no_lc",
+      "description": "Disable LUT combining. Do not allow combining LUT pairs into single dual output LUTs."
+    },
+    {
+      "flag": "-shreg_min_size",
+      "description": "Minimum length for chain of registers to be mapped onto SRL Default: 3"
+    },
+    {
+      "flag": "-mode",
+      "description": "The design mode. Values: default, out_of_context Default: default"
+    },
+    {
+      "flag": "-fsm_extraction",
+      "description": "FSM Extraction Encoding. Values: off, one_hot, sequential, johnson, gray, user_encoding, auto Default: auto"
+    },
+    {
+      "flag": "-rtl_skip_mlo",
+      "description": "Skip mandatory logic optimization for RTL elaboration of the design; requires -rtl option."
+    },
+    {
+      "flag": "-rtl_skip_ip",
+      "description": "Exclude subdesign checkpoints in the RTL elaboration of the design; requires -rtl option."
+    },
+    {
+      "flag": "-rtl_skip_constraints",
+      "description": "Do not load and validate constraints against elaborated design; requires -rtl option."
+    },
+    {
+      "flag": "-srl_style",
+      "description": "Static SRL Implementation Style. Values: register, srl, srl_reg, reg_srl, reg_srl_reg"
+    },
+    {
+      "flag": "-keep_equivalent_registers",
+      "description": "Prevents registers sourced by the same logic from being merged. (Note that the merging can otherwise be prevented using the synthesis KEEP attribute)"
+    },
+    {
+      "flag": "-resource_sharing",
+      "description": "Sharing arithmetic operators. Value: auto, on, off Default: auto"
+    },
+    {
+      "flag": "-cascade_dsp",
+      "description": "Controls how adders summing DSP block outputs will be implemented. Value: auto, tree, force Default: auto"
+    },
+    {
+      "flag": "-control_set_opt_threshold",
+      "description": "Threshold for synchronous control set optimization to lower number of control sets. Valid values are 'auto' and non-negative integers. The higher the number, the more control set optimization will be performed and fewer control sets will result. To disable control set optimization completely, set to 0. Default: auto"
+    },
+    {
+      "flag": "-incremental_mode",
+      "description": "Mode of incremental synthesis (aggressive/default/off/quick) Default: default"
+    },
+    {
+      "flag": "-max_bram",
+      "description": "Maximum number of block RAM allowed in design. (Note -1 means that the tool will choose the max number allowed for the part in question) Default: -1"
+    },
+    {
+      "flag": "-max_uram",
+      "description": "Maximum number of Ultra RAM blocks allowed in design. (Note -1 means that the tool will choose the max number allowed for the part in question) Default: -1"
+    },
+    {
+      "flag": "-max_dsp",
+      "description": "Maximum number of block DSP allowed in design. (Note -1 means that the tool will choose the max number allowed for the part in question) Default: -1"
+    },
+    {
+      "flag": "-max_bram_cascade_height",
+      "description": "Controls the maximum number of BRAM that can be cascaded by the tool. (Note -1 means that the tool will choose the max number allowed for the part in question) Default: -1"
+    },
+    {
+      "flag": "-max_uram_cascade_height",
+      "description": "Controls the maximum number of URAM that can be cascaded by the tool. (Note -1 means that the tool will choose the max number allowed for the part in question) Default: -1"
+    },
+    {
+      "flag": "-retiming",
+      "description": "For non-Versal devices where retiming is off by default. Seeks to improve circuit performance for intra-clock sequential paths by automatically moving registers (register balancing) across combinatorial gates or LUTs.  It maintains the original behavior and latency of the circuit and does not require changes to the RTL sources."
+    },
+    {
+      "flag": "-no_retiming",
+      "description": "Turn off retiming feature for Versal devices where retiming is on by default. If both"
+    },
+    {
+      "flag": "-retiming",
+      "description": "and -no_retiming are set, retiming will not occur"
+    },
+    {
+      "flag": "-no_srlextract",
+      "description": "Prevents the extraction of shift registers so that they get implemented as simple registers"
+    },
+    {
+      "flag": "-assert",
+      "description": "Enable VHDL assert statements to be evaluated. A severity level of failure will stop the synthesis flow and produce an error."
+    },
+    {
+      "flag": "-no_timing_driven",
+      "description": "Do not run in timing driven mode"
+    },
+    {
+      "flag": "-sfcu",
+      "description": "Run in single-file compilation unit mode"
+    },
+    {
+      "flag": "-debug_log",
+      "description": "Print detailed log files for debugging"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

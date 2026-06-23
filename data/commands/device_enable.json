@@ -1,0 +1,16 @@
+{
+  "name": "device_enable",
+  "short_description": "Enable specified devices",
+  "full_help": "device_enable\n\nDescription: \nEnable specified devices\n\nSyntax: \ndevice_enable  [-quiet] [-verbose] <enable>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <enable>    Enable the given part\n\nCategories: \nDebug\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "redo",
+  "short_description": "Re-do previous command",
+  "full_help": "redo\n\nDescription: \nRe-do previous command\n\nSyntax: \nredo  [-list] [-quiet] [-verbose]\n\nReturns: \nwith -list, the list of redoable tasks\n\nUsage: \n  Name        Description\n  -----------------------\n  [-list]     Show a list of redoable tasks\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nGUIControl\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-list",
+      "description": "Show a list of redoable tasks"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "set_units",
+  "short_description": "Set units for checking",
+  "full_help": "set_units\n\nDescription: \nSet units for checking\n\nSyntax: \nset_units  [-capacitance <arg>] [-current <arg>] [-voltage <arg>]\n           [-power <arg>] [-resistance <arg>] [-altitude <arg>] [-quiet]\n           [-verbose]\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-capacitance]  Capacitance unit in farad. Valid values are from kF-fF.\n                  Default: pF\n  [-current]      Current unit in ampere. Valid values are from kA-fA.\n                  Default: mA\n  [-voltage]      Voltage unit in volt. Valid values are from kV-fV.\n                  Default: V\n  [-power]        Wattage unit in watts. Valid values are from kW-fW.\n                  Default: mW\n  [-resistance]   Resistance unit in ohm. Valid values are from kOhm-fOhm.\n                  Default: ohm\n  [-altitude]     Altitude in metric or standard units.  Valid values are \n                  meters and feet.\n                  Default: meters\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-capacitance",
+      "description": "Capacitance unit in farad. Valid values are from kF-fF. Default: pF"
+    },
+    {
+      "flag": "-current",
+      "description": "Current unit in ampere. Valid values are from kA-fA. Default: mA"
+    },
+    {
+      "flag": "-voltage",
+      "description": "Voltage unit in volt. Valid values are from kV-fV. Default: V"
+    },
+    {
+      "flag": "-power",
+      "description": "Wattage unit in watts. Valid values are from kW-fW. Default: mW"
+    },
+    {
+      "flag": "-resistance",
+      "description": "Resistance unit in ohm. Valid values are from kOhm-fOhm. Default: ohm"
+    },
+    {
+      "flag": "-altitude",
+      "description": "Altitude in metric or standard units.  Valid values are meters and feet. Default: meters"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "get_timing_arcs",
+  "short_description": "Get a list of timing arcs",
+  "full_help": "get_timing_arcs\n\nDescription: \nGet a list of timing arcs\n\nSyntax: \nget_timing_arcs  [-from <args>] [-to <args>] [-filter <arg>]\n                 [-of_objects <args>] [-quiet] [-verbose]\n\nReturns: \nlist of timing arc objects\n\nUsage: \n  Name           Description\n  --------------------------\n  [-from]        List of pin or ports\n  [-to]          List of pin or ports\n  [-filter]      Filter list with expression\n  [-of_objects]  Get timing arcs for these cells\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n\nCategories: \nXDC, Object, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "List of pin or ports"
+    },
+    {
+      "flag": "-to",
+      "description": "List of pin or ports"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get timing arcs for these cells"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

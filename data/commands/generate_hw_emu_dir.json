@@ -1,0 +1,16 @@
+{
+  "name": "generate_hw_emu_dir",
+  "short_description": "Used to generate the emulation section for DSAs.",
+  "full_help": "generate_hw_emu_dir\n\nDescription: \nUsed to generate the emulation section for DSAs.\n\nSyntax: \ngenerate_hw_emu_dir  [-platform-name <arg>] [-emu-prop-dict <arg>]\n                     [-output-dir-path <arg>] [-working-dir <arg>] [-quiet]\n                     [-verbose]\n\nUsage: \n  Name                Description\n  -------------------------------\n  [-platform-name]    Arguments\n  [-emu-prop-dict]    emu properties dict file\n  [-output-dir-path]  Output path where to place the emulation output\n  [-working-dir]      Staging files are created in the path and deleted post \n                      completion\n  [-quiet]            Ignore command errors\n  [-verbose]          Suspend message limits during command execution\n\nCategories: \nVitis, Platform, FileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

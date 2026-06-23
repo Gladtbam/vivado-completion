@@ -1,0 +1,40 @@
+{
+  "name": "all_fanout",
+  "short_description": "Get a list of pins or cells in fanout of specified sources",
+  "full_help": "all_fanout\n\nDescription: \nGet a list of pins or cells in fanout of specified sources\n\nSyntax: \nall_fanout  [-endpoints_only] [-flat] [-only_cells] [-levels <arg>]\n            [-pin_levels <arg>] [-trace_arcs <arg>] [-quiet] [-verbose] <from>\n\nReturns: \nlist of cell or pin objects\n\nUsage: \n  Name               Description\n  ------------------------------\n  [-endpoints_only]  Find only the timing endpoints\n  [-flat]            Hierarchy is ignored\n  [-only_cells]      Only cells\n  [-levels]          Maximum number of cell levels to traverse:Value >= 0\n                     Default: 0\n  [-pin_levels]      Maximum number of pin levels to traverse:Value >= 0\n                     Default: 0\n  [-trace_arcs]      Type of network arcs to trace: Values: timing, enabled, \n                     all\n  [-quiet]           Ignore command errors\n  [-verbose]         Suspend message limits during command execution\n  <from>             List of source pins, ports, or nets\n\nCategories: \nXDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-endpoints_only",
+      "description": "Find only the timing endpoints"
+    },
+    {
+      "flag": "-flat",
+      "description": "Hierarchy is ignored"
+    },
+    {
+      "flag": "-only_cells",
+      "description": "Only cells"
+    },
+    {
+      "flag": "-levels",
+      "description": "Maximum number of cell levels to traverse:Value >= 0 Default: 0"
+    },
+    {
+      "flag": "-pin_levels",
+      "description": "Maximum number of pin levels to traverse:Value >= 0 Default: 0"
+    },
+    {
+      "flag": "-trace_arcs",
+      "description": "Type of network arcs to trace: Values: timing, enabled, all"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

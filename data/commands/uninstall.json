@@ -1,0 +1,16 @@
+{
+  "name": "uninstall",
+  "short_description": "Install board",
+  "full_help": "uninstall\n\nDescription: \nInstall board\n\nSyntax: \nuninstall  [-quiet] [-verbose] <board>\n\nReturns: \nNothing\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <board>     Name of board to uninstall\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

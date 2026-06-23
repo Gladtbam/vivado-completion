@@ -1,0 +1,28 @@
+{
+  "name": "validate_noc",
+  "short_description": "Generate the block data model of the design and validate NoC",
+  "full_help": "validate_noc\n\nDescription: \nGenerate the block data model of the design and validate NoC\n\nSyntax: \nvalidate_noc  [-force] [-part <arg>] [-pr_config <arg>] [-quiet] [-verbose]\n              [<fileset>]\n\nUsage: \n  Name          Description\n  -------------------------\n  [-force]      Force validate design\n  [-part]       Target part\n  [-pr_config]  Partition configuration to validate\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  [<fileset>]   Current fileset to validate\n\nCategories: \nVivado, Design\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Force validate design"
+    },
+    {
+      "flag": "-part",
+      "description": "Target part"
+    },
+    {
+      "flag": "-pr_config",
+      "description": "Partition configuration to validate"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

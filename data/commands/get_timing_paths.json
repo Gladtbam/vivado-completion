@@ -1,0 +1,128 @@
+{
+  "name": "get_timing_paths",
+  "short_description": "Get timing paths",
+  "full_help": "get_timing_paths\n\nDescription: \nGet timing paths\n\nSyntax: \nget_timing_paths  [-from <args>] [-rise_from <args>] [-fall_from <args>]\n                  [-to <args>] [-rise_to <args>] [-fall_to <args>]\n                  [-through <args>] [-rise_through <args>]\n                  [-fall_through <args>] [-delay_type <arg>] [-setup] [-hold]\n                  [-max_paths <arg>] [-nworst <arg>] [-unique_pins]\n                  [-slack_lesser_than <arg>] [-slack_greater_than <arg>]\n                  [-group <args>] [-no_report_unconstrained] [-user_ignored]\n                  [-routable_nets] [-sort_by <arg>] [-filter <arg>] [-regexp]\n                  [-nocase] [-cell <args>] [-quiet] [-verbose]\n\nUsage: \n  Name                        Description\n  ---------------------------------------\n  [-from]                     From pins, ports, cells or clocks\n  [-rise_from]                Rising from pins, ports, cells or clocks\n  [-fall_from]                Falling from pins, ports, cells  or clocks\n  [-to]                       To pins, ports, cells or clocks\n  [-rise_to]                  Rising to pins, ports, cells or clocks\n  [-fall_to]                  Falling to pins, ports, cells or clocks\n  [-through]                  Through pins, ports, cells or nets\n  [-rise_through]             Rising through pins, ports, cells or nets\n  [-fall_through]             Falling through pins, ports, cells or nets\n  [-delay_type]               Type of path delay: Values: max, min, min_max, \n                              max_rise, max_fall, min_rise, min_fall\n                              Default: max\n  [-setup]                    Get max delay timing paths (equivalent to \n                              -delay_type max)\n  [-hold]                     Get min delay timing paths (equivalent to \n                              -delay_type min)\n  [-max_paths]                Maximum number of paths to return: Value >=1\n                              Default: 1\n  [-nworst]                   List N worst paths to endpoint: Value >=1\n                              Default: 1\n  [-unique_pins]              for each unique set of pins, show at most 1 \n                              path per path group\n  [-slack_lesser_than]        Include paths with slack less than this\n                              Default: 1e+30\n  [-slack_greater_than]       Include paths with slack greater than this\n                              Default: -1e+30\n  [-group]                    Limit paths in this group(s)\n  [-no_report_unconstrained]  Do not get unconstrained paths\n  [-user_ignored]             only report paths which have infinite slack \n                              because of set_false_path or set_clock_groups \n                              timing constraints\n  [-routable_nets]            store the number of routable nets traversed as \n                              a property on timing paths.\n  [-sort_by]                  Sorting order of paths: Values: group, slack\n                              Default: slack\n  [-filter]                   Filter list with expression\n  [-regexp]                   Patterns specified in filter are full regular \n                              expressions\n  [-nocase]                   Perform case-insensitive matching for patterns \n                              specified in filter (valid only when -regexp \n                              specified)\n  [-cell]                     run get_timing_paths on the cell\n  [-quiet]                    Ignore command errors\n  [-verbose]                  Suspend message limits during command execution\n\nCategories: \nObject, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "From pins, ports, cells or clocks"
+    },
+    {
+      "flag": "-rise_from",
+      "description": "Rising from pins, ports, cells or clocks"
+    },
+    {
+      "flag": "-fall_from",
+      "description": "Falling from pins, ports, cells  or clocks"
+    },
+    {
+      "flag": "-to",
+      "description": "To pins, ports, cells or clocks"
+    },
+    {
+      "flag": "-rise_to",
+      "description": "Rising to pins, ports, cells or clocks"
+    },
+    {
+      "flag": "-fall_to",
+      "description": "Falling to pins, ports, cells or clocks"
+    },
+    {
+      "flag": "-through",
+      "description": "Through pins, ports, cells or nets"
+    },
+    {
+      "flag": "-rise_through",
+      "description": "Rising through pins, ports, cells or nets"
+    },
+    {
+      "flag": "-fall_through",
+      "description": "Falling through pins, ports, cells or nets"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "Type of path delay: Values: max, min, min_max, max_rise, max_fall, min_rise, min_fall Default: max"
+    },
+    {
+      "flag": "-setup",
+      "description": "Get max delay timing paths (equivalent to"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "max)"
+    },
+    {
+      "flag": "-hold",
+      "description": "Get min delay timing paths (equivalent to"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "min)"
+    },
+    {
+      "flag": "-max_paths",
+      "description": "Maximum number of paths to return: Value >=1 Default: 1"
+    },
+    {
+      "flag": "-nworst",
+      "description": "List N worst paths to endpoint: Value >=1 Default: 1"
+    },
+    {
+      "flag": "-unique_pins",
+      "description": "for each unique set of pins, show at most 1 path per path group"
+    },
+    {
+      "flag": "-slack_lesser_than",
+      "description": "Include paths with slack less than this Default: 1e+30"
+    },
+    {
+      "flag": "-slack_greater_than",
+      "description": "Include paths with slack greater than this Default: -1e+30"
+    },
+    {
+      "flag": "-group",
+      "description": "Limit paths in this group(s)"
+    },
+    {
+      "flag": "-no_report_unconstrained",
+      "description": "Do not get unconstrained paths"
+    },
+    {
+      "flag": "-user_ignored",
+      "description": "only report paths which have infinite slack because of set_false_path or set_clock_groups timing constraints"
+    },
+    {
+      "flag": "-routable_nets",
+      "description": "store the number of routable nets traversed as a property on timing paths."
+    },
+    {
+      "flag": "-sort_by",
+      "description": "Sorting order of paths: Values: group, slack Default: slack"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-regexp",
+      "description": "Patterns specified in filter are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching for patterns specified in filter (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-cell",
+      "description": "run get_timing_paths on the cell"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

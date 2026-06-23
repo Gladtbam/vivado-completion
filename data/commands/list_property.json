@@ -1,0 +1,24 @@
+{
+  "name": "list_property",
+  "short_description": "List properties of object",
+  "full_help": "list_property\n\nDescription: \nList properties of object\n\nSyntax: \nlist_property  [-class <arg>] [-regexp] [-quiet] [-verbose] [<object>]\n               [<pattern>]\n\nReturns: \nlist of property names\n\nUsage: \n  Name         Description\n  ------------------------\n  [-class]     Object type to query for properties. Ignored if object is \n               specified.\n  [-regexp]    Pattern is treated as a regular expression\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  [<object>]   Object to query for properties\n  [<pattern>]  Pattern to match properties against\n               Default: *\n\nCategories: \nObject, PropertyAndParameter\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-class",
+      "description": "Object type to query for properties. Ignored if object is specified."
+    },
+    {
+      "flag": "-regexp",
+      "description": "Pattern is treated as a regular expression"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

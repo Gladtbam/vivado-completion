@@ -1,0 +1,16 @@
+{
+  "name": "delete_noc_interface",
+  "short_description": "Delete NOC Interface.",
+  "full_help": "delete_noc_interface\n\nDescription: \nDelete NOC Interface.\n\nSyntax: \ndelete_noc_interface  [-quiet] [-verbose] <interface>\n\nUsage: \n  Name         Description\n  ------------------------\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  <interface>  NOC Interface to delete.\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

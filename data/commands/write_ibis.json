@@ -1,0 +1,48 @@
+{
+  "name": "write_ibis",
+  "short_description": "Write IBIS models for current floorplan",
+  "full_help": "write_ibis\n\nDescription: \nWrite IBIS models for current floorplan\n\nSyntax: \nwrite_ibis  [-force] [-allmodels] [-nopin] [-no_pin_mapping] [-truncate <arg>]\n            [-component_name <arg>] [-ibs <arg>] [-pkg <arg>] [-quiet]\n            [-verbose] <file>\n\nReturns: \nname of the output file\n\nUsage: \n  Name               Description\n  ------------------------------\n  [-force]           Overwrite existing .ibs file\n  [-allmodels]       Include all available buffer models for this \n                     architecture.  By default, only buffer models used by \n                     the floorplan are included.\n                     \n  [-nopin]           Disable inclusion of the per-pin modeling of the package\n                     (path from the die pad to the package pin). Package is \n                     reduced to a single RLC transmission line model applied \n                     to all pins and defined in the [Package] section.\n                     Default: This option is not set. IBISWriter includes \n                     per-pin modeling of the package as RLC matrices in the \n                     [Define Package Model] section if this data is \n                     available.\n                     \n  [-no_pin_mapping]  Do not output the [Pin Mapping] section for ultrascale, \n                     ultrascale plus, and versal.\n                     \n  [-truncate]        Maximum length for a signal name in the output file. \n                     Names longer than this will be truncated. This property \n                     can be set to truncate  signal name length to 20, 40, or\n                     0 (unlimited).\n                     Default: Truncate signal name length to 40 characters in\n                     accordance with the IBIS version 4.2 specification.\n                     \n                     Default: 40\n  [-component_name]  Specify a new component name for use in multiple FPGA \n                     designs to replace the default.\n                     \n  [-ibs]             Specify an updated generic IBIS models file.\n  [-pkg]             Specify an updated per pin parasitic package data file.\n                     \n  [-quiet]           Ignore command errors\n  [-verbose]         Suspend message limits during command execution\n  <file>             Output file name. The .ibs extension is optional.\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrite existing .ibs file"
+    },
+    {
+      "flag": "-allmodels",
+      "description": "Include all available buffer models for this architecture.  By default, only buffer models used by the floorplan are included."
+    },
+    {
+      "flag": "-nopin",
+      "description": "Disable inclusion of the per-pin modeling of the package (path from the die pad to the package pin). Package is reduced to a single RLC transmission line model applied to all pins and defined in the [Package] section. Default: This option is not set. IBISWriter includes per-pin modeling of the package as RLC matrices in the [Define Package Model] section if this data is available."
+    },
+    {
+      "flag": "-no_pin_mapping",
+      "description": "Do not output the [Pin Mapping] section for ultrascale, ultrascale plus, and versal."
+    },
+    {
+      "flag": "-truncate",
+      "description": "Maximum length for a signal name in the output file. Names longer than this will be truncated. This property can be set to truncate  signal name length to 20, 40, or 0 (unlimited). Default: Truncate signal name length to 40 characters in accordance with the IBIS version 4.2 specification. Default: 40"
+    },
+    {
+      "flag": "-component_name",
+      "description": "Specify a new component name for use in multiple FPGA designs to replace the default."
+    },
+    {
+      "flag": "-ibs",
+      "description": "Specify an updated generic IBIS models file."
+    },
+    {
+      "flag": "-pkg",
+      "description": "Specify an updated per pin parasitic package data file."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

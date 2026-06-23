@@ -1,0 +1,92 @@
+{
+  "name": "get_dfx_footprint",
+  "short_description": "Get footprint tiles for different DFX flows.",
+  "full_help": "get_dfx_footprint\n\nDescription: \nGet footprint tiles for different DFX flows.\n\nSyntax: \nget_dfx_footprint  [-regexp] [-nocase] [-filter <arg>] [-of_objects <args>]\n                   [-place] [-route] [-pu] [-bli_tiles] [-frame] [-half_frame]\n                   [-shared] [-cell_type <arg>] [-site_type <arg>] [-overlap]\n                   [-prohibit] [-illegal_nodes] [-illegal_clock_nodes]\n                   [-snapped_tiles] [-quiet] [-verbose] [<patterns>]\n\nReturns: \ntiles, sites, cells, nodes\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-regexp]               Patterns are full regular expressions\n  [-nocase]               Perform case-insensitive matching. (valid only when\n                          -regexp specified)\n  [-filter]               Filter list with expression\n  [-of_objects]           Accepts cell instance of the reconfigurable module \n                          and tile of the device. It accepts one object as \n                          input.\n  [-place]                Returns the placement footprint of a cell specified\n                          by -of_objects\n  [-route]                Returns the routing footprint of a cell specified \n                          by -of_objects\n  [-pu]                   Returns the programmable unit of a given tile \n                          specified by -of_object\n  [-bli_tiles]            Returns the BLI tiles connected to given HSR tile\n  [-frame]                Returns frame tiles of a given tile specified by \n                          -of_object\n  [-half_frame]           Returns half frame tiles of a given tile specified \n                          by -of_object\n  [-shared]               Returns the tiles of a given cell specified by \n                          -of_objects, that are shared with another \n                          reconfigurable pblock\n  [-cell_type]            Returns the cells of type specified by value. The \n                          cells are of the reconfigurable module specified by\n                          `-of_objects`. Valid values are: non_clock, clock, \n                          and clock_control.\n                          Note: -cell_type is only used for disjoint pblock.\n  [-site_type]            Returns the sites of type specified by value. The \n                          sites are of the reconfigurable module specified by\n                          `-of_objects`. Valid values are hsr, fsr, fsr_hsr.\n                          Note: -site_type is only used for disjoint pblock.\n  [-overlap]              Returns the overlapped tiles of routing footprint \n                          of a given cell specified by -of_object\n  [-prohibit]             Returns the prohibited sites of RM module specified\n                          by -of_objects\n  [-illegal_nodes]        Returns the illegal nodes of a RP module specified \n                          by -of_objects, or illegal nodes prohibited for \n                          static if no cell is specified \n  [-illegal_clock_nodes]  Returns the illegal clock nodes of a net specified \n                          by -of_objects\n  [-snapped_tiles]        Returns the tiles of a given cell that are in \n                          derived ranges and not in XDC constraints\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n  [<patterns>]            Match tiles, sites, cells, nodes against patterns\n                          Default: *\n\nCategories: \nHD, Debug\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching. (valid only when"
+    },
+    {
+      "flag": "-regexp",
+      "description": "specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Accepts cell instance of the reconfigurable module and tile of the device. It accepts one object as input."
+    },
+    {
+      "flag": "-place",
+      "description": "Returns the placement footprint of a cell specified by -of_objects"
+    },
+    {
+      "flag": "-route",
+      "description": "Returns the routing footprint of a cell specified by -of_objects"
+    },
+    {
+      "flag": "-pu",
+      "description": "Returns the programmable unit of a given tile specified by -of_object"
+    },
+    {
+      "flag": "-bli_tiles",
+      "description": "Returns the BLI tiles connected to given HSR tile"
+    },
+    {
+      "flag": "-frame",
+      "description": "Returns frame tiles of a given tile specified by -of_object"
+    },
+    {
+      "flag": "-half_frame",
+      "description": "Returns half frame tiles of a given tile specified by -of_object"
+    },
+    {
+      "flag": "-shared",
+      "description": "Returns the tiles of a given cell specified by -of_objects, that are shared with another reconfigurable pblock"
+    },
+    {
+      "flag": "-cell_type",
+      "description": "Returns the cells of type specified by value. The cells are of the reconfigurable module specified by `-of_objects`. Valid values are: non_clock, clock, and clock_control. Note: -cell_type is only used for disjoint pblock."
+    },
+    {
+      "flag": "-site_type",
+      "description": "Returns the sites of type specified by value. The sites are of the reconfigurable module specified by `-of_objects`. Valid values are hsr, fsr, fsr_hsr. Note: -site_type is only used for disjoint pblock."
+    },
+    {
+      "flag": "-overlap",
+      "description": "Returns the overlapped tiles of routing footprint of a given cell specified by -of_object"
+    },
+    {
+      "flag": "-prohibit",
+      "description": "Returns the prohibited sites of RM module specified by -of_objects"
+    },
+    {
+      "flag": "-illegal_nodes",
+      "description": "Returns the illegal nodes of a RP module specified by -of_objects, or illegal nodes prohibited for static if no cell is specified"
+    },
+    {
+      "flag": "-illegal_clock_nodes",
+      "description": "Returns the illegal clock nodes of a net specified by -of_objects"
+    },
+    {
+      "flag": "-snapped_tiles",
+      "description": "Returns the tiles of a given cell that are in derived ranges and not in XDC constraints"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

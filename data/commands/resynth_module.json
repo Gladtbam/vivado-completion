@@ -1,0 +1,24 @@
+{
+  "name": "resynth_module",
+  "short_description": "Run synthesis to optimize a supplied verilog module",
+  "full_help": "resynth_module\n\nDescription: \nRun synthesis to optimize a supplied verilog module\n\nSyntax: \nresynth_module  [-input <arg>] [-output <arg>] [-quiet] [-verbose]\n\nReturns: \nopt_design\n\nUsage: \n  Name        Description\n  -----------------------\n  [-input]    Input file name - Verilog file containing module to optimize\n  [-output]   Output file name - Verilog file created containing optimized \n              module\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nTools\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-input",
+      "description": "Input file name - Verilog file containing module to optimize"
+    },
+    {
+      "flag": "-output",
+      "description": "Output file name - Verilog file created containing optimized module"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

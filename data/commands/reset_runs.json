@@ -1,0 +1,24 @@
+{
+  "name": "reset_runs",
+  "short_description": "Reset existing run(s).",
+  "full_help": "reset_runs\n\nDescription: \nReset existing run(s).\n\nSyntax: \nreset_runs  [-prev_step] [-from_step <arg>] [-quiet] [-verbose] <runs>...\n\nUsage: \n  Name          Description\n  -------------------------\n  [-prev_step]  Reset last run step\n  [-from_step]  First Step to reset\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  <runs>        Runs to modify\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-prev_step",
+      "description": "Reset last run step"
+    },
+    {
+      "flag": "-from_step",
+      "description": "First Step to reset"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

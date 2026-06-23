@@ -1,0 +1,36 @@
+{
+  "name": "show_schematic",
+  "short_description": "Show netlist items in schematic view",
+  "full_help": "show_schematic\n\nDescription: \nShow netlist items in schematic view\n\nSyntax: \nshow_schematic  [-add] [-remove] [-regenerate] [-pin_pairs] [-name <arg>]\n                [-quiet] [-verbose] <objects>\n\nUsage: \n  Name           Description\n  --------------------------\n  [-add]         Add to existing schematic view\n  [-remove]      Remove from existing schematic view\n  [-regenerate]  Regenerate layout of schematic view\n  [-pin_pairs]   objects are treated as pair of connected pins. This can be \n                 useful to display paths\n  [-name]        Schematic window title\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  <objects>      Netlist items to  show in schematic view\n\nCategories: \nGUIControl\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-add",
+      "description": "Add to existing schematic view"
+    },
+    {
+      "flag": "-remove",
+      "description": "Remove from existing schematic view"
+    },
+    {
+      "flag": "-regenerate",
+      "description": "Regenerate layout of schematic view"
+    },
+    {
+      "flag": "-pin_pairs",
+      "description": "objects are treated as pair of connected pins. This can be useful to display paths"
+    },
+    {
+      "flag": "-name",
+      "description": "Schematic window title"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

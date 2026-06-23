@@ -1,0 +1,56 @@
+{
+  "name": "export_ip_user_files",
+  "short_description": "Generate and export IP/IPI user files from a project. This can be scoped to work on one or more IPs.",
+  "full_help": "export_ip_user_files\n\nDescription: \nGenerate and export IP/IPI user files from a project. This can be scoped to work on one or more IPs.\n\nSyntax: \nexport_ip_user_files  [-of_objects <args>] [-ip_user_files_dir <arg>]\n                      [-ipstatic_source_dir <arg>] [-lib_map_path <arg>]\n                      [-single_step] [-no_script] [-for_target_sim] [-sync]\n                      [-reset] [-force] [-quiet] [-verbose]\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-of_objects]           IP, BD file object\n  [-ip_user_files_dir]    Base directory path for exporting IP files\n  [-ipstatic_source_dir]  Custom directory path for exporting IP static files\n  [-lib_map_path]         Compiled simulation library directory path\n  [-single_step]          Write a single-step script\n  [-no_script]            Do not export simulation scripts\n  [-for_target_sim]       Export simulation scripts for target simulator only\n  [-sync]                 Delete IP/IPI dynamic and simulation script files\n  [-reset]                Delete all IP/IPI static, dynamic and simulation \n                          script files\n  [-force]                Overwrite files\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n\nCategories: \nToolLaunch, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-of_objects",
+      "description": "IP, BD file object"
+    },
+    {
+      "flag": "-ip_user_files_dir",
+      "description": "Base directory path for exporting IP files"
+    },
+    {
+      "flag": "-ipstatic_source_dir",
+      "description": "Custom directory path for exporting IP static files"
+    },
+    {
+      "flag": "-lib_map_path",
+      "description": "Compiled simulation library directory path"
+    },
+    {
+      "flag": "-single_step",
+      "description": "Write a single-step script"
+    },
+    {
+      "flag": "-no_script",
+      "description": "Do not export simulation scripts"
+    },
+    {
+      "flag": "-for_target_sim",
+      "description": "Export simulation scripts for target simulator only"
+    },
+    {
+      "flag": "-sync",
+      "description": "Delete IP/IPI dynamic and simulation script files"
+    },
+    {
+      "flag": "-reset",
+      "description": "Delete all IP/IPI static, dynamic and simulation script files"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite files"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

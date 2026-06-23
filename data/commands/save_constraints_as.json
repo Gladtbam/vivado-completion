@@ -1,0 +1,24 @@
+{
+  "name": "save_constraints_as",
+  "short_description": "Save current design's constraints as a new set of constraints files",
+  "full_help": "save_constraints_as\n\nDescription: \nSave current design's constraints as a new set of constraints files\n\nSyntax: \nsave_constraints_as  [-dir <arg>] [-target_constrs_file <arg>] [-quiet]\n                     [-verbose] <name>\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-dir]                  Directory to save constraints to\n  [-target_constrs_file]  Target constraints file for the new fileset\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n  <name>                  Name of the new constraints fileset\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-dir",
+      "description": "Directory to save constraints to"
+    },
+    {
+      "flag": "-target_constrs_file",
+      "description": "Target constraints file for the new fileset"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

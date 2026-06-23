@@ -1,0 +1,40 @@
+{
+  "name": "generate_hier_access",
+  "short_description": "(User-written application) Generate sources for hierarchical access simulation",
+  "full_help": "generate_hier_access\n\nDescription: \n(User-written application)\nGenerate sources for hierarchical access simulation\n\n\nSyntax: \ngenerate_hier_access  [-bypass <arg>] [-driver <arg>] [-directory <arg>]\n                      [-pseudo_top <arg>] [-testbench <arg>] [-log <arg>]\n                      [-quiet] [-verbose]\n\nReturns: \nNone\n\n\nUsage: \n  Name           Description\n  --------------------------\n  [-bypass]      Hierarchical access module name\n                 Default: xil_dut_bypass\n  [-driver]      Signal driver template module name\n                 Default: xil_bypass_driver\n  [-directory]   Output directory for the generated sources\n                 Default: current working directory\n  [-pseudo_top]  Top-level pseudo testbench module name\n                 Default: None\n  [-testbench]   User design testbench module name\n                 Default: None\n  [-log]         Simulator log containing hierarchical path information \n                 (required for the non-Vivado standalone flow only)\n                 Default: None\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n\nCategories: \nsimulation, xilinxtclstore, user-written\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-bypass",
+      "description": "Hierarchical access module name Default: xil_dut_bypass"
+    },
+    {
+      "flag": "-driver",
+      "description": "Signal driver template module name Default: xil_bypass_driver"
+    },
+    {
+      "flag": "-directory",
+      "description": "Output directory for the generated sources Default: current working directory"
+    },
+    {
+      "flag": "-pseudo_top",
+      "description": "Top-level pseudo testbench module name Default: None"
+    },
+    {
+      "flag": "-testbench",
+      "description": "User design testbench module name Default: None"
+    },
+    {
+      "flag": "-log",
+      "description": "Simulator log containing hierarchical path information (required for the non-Vivado standalone flow only) Default: None"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

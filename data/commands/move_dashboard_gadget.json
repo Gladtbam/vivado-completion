@@ -1,0 +1,32 @@
+{
+  "name": "move_dashboard_gadget",
+  "short_description": "Reposition the Gadget for Project summary dashboard",
+  "full_help": "move_dashboard_gadget\n\nDescription: \nReposition the Gadget for Project summary dashboard\n\nSyntax: \nmove_dashboard_gadget  -name <arg> -row <arg> -col <arg> [-dashboard <arg>]\n                       [-quiet] [-verbose]\n\nUsage: \n  Name          Description\n  -------------------------\n  -name         Name of the gadget\n  -row          Target row number to which the gadget has to be moved\n  -col          Target column number to which the gadget has to be moved\n  [-dashboard]  Name of the dashboard to which the gadget is associated\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Name of the gadget"
+    },
+    {
+      "flag": "-row",
+      "description": "Target row number to which the gadget has to be moved"
+    },
+    {
+      "flag": "-col",
+      "description": "Target column number to which the gadget has to be moved"
+    },
+    {
+      "flag": "-dashboard",
+      "description": "Name of the dashboard to which the gadget is associated"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

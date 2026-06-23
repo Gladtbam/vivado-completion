@@ -1,0 +1,28 @@
+{
+  "name": "upgrade_project",
+  "short_description": "Upgrade a project from a previous release to use the latest Vivado features.",
+  "full_help": "upgrade_project\n\nDescription: \nUpgrade a project from a previous release to use the latest Vivado features.\n\nSyntax: \nupgrade_project  [-migrate_output_products] [-log <arg>]\n                 [-migrate_to_inline_hdl] [-quiet] [-verbose]\n\nUsage: \n  Name                        Description\n  ---------------------------------------\n  [-migrate_output_products]  Migrate the output products directory structure\n                              to the latest Vivado structure.\n  [-log]                      (Optional) Identifies the log file to which the\n                              project upgrade report will be concatenated. \n                              Default: An empty string, indicating that no \n                              log will be written\n                              Values: A file path to an existing writable \n                              file, or a non-existent file location in a \n                              writable directory\n  [-migrate_to_inline_hdl]    Migrate the utility IP (xl*/util_*) in all user\n                              BDs to inline hdl .\n  [-quiet]                    Ignore command errors\n  [-verbose]                  Suspend message limits during command execution\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-migrate_output_products",
+      "description": "Migrate the output products directory structure to the latest Vivado structure."
+    },
+    {
+      "flag": "-log",
+      "description": "(Optional) Identifies the log file to which the project upgrade report will be concatenated. Default: An empty string, indicating that no log will be written Values: A file path to an existing writable file, or a non-existent file location in a writable directory"
+    },
+    {
+      "flag": "-migrate_to_inline_hdl",
+      "description": "Migrate the utility IP (xl*/util_*) in all user BDs to inline hdl ."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

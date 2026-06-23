@@ -1,0 +1,60 @@
+{
+  "name": "create_generated_clock",
+  "short_description": "Create a generated clock object",
+  "full_help": "create_generated_clock\n\nDescription: \nCreate a generated clock object\n\nSyntax: \ncreate_generated_clock  [-name <arg>] [-source <args>] [-edges <args>]\n                        [-divide_by <arg>] [-multiply_by <arg>]\n                        [-combinational] [-duty_cycle <arg>] [-invert]\n                        [-edge_shift <args>] [-add] [-master_clock <args>]\n                        [-quiet] [-verbose] <objects>\n\nReturns: \nnew clock object\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-name]           Generated clock name\n  [-source]         Master clock source object pin/port\n  [-edges]          Edge Specification\n  [-divide_by]      Frequency division factor: Value >= 1\n                    Default: 1\n  [-multiply_by]    Frequency multiplication factor: Value >= 1\n                    Default: 1\n  [-combinational]  Create a divide_by 1 clock through combinational logic\n  [-duty_cycle]     Duty cycle of clock period: Range: 0.0 to 100.0\n                    Default: 50.0\n  [-invert]         Invert the signal\n  [-edge_shift]     Edge shift specification\n  [-add]            Add to the existing clock in source_objects\n  [-master_clock]   Use this clock if multiple clocks present at master pin\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  <objects>         List of clock source ports, pins, or nets\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Generated clock name"
+    },
+    {
+      "flag": "-source",
+      "description": "Master clock source object pin/port"
+    },
+    {
+      "flag": "-edges",
+      "description": "Edge Specification"
+    },
+    {
+      "flag": "-divide_by",
+      "description": "Frequency division factor: Value >= 1 Default: 1"
+    },
+    {
+      "flag": "-multiply_by",
+      "description": "Frequency multiplication factor: Value >= 1 Default: 1"
+    },
+    {
+      "flag": "-combinational",
+      "description": "Create a divide_by 1 clock through combinational logic"
+    },
+    {
+      "flag": "-duty_cycle",
+      "description": "Duty cycle of clock period: Range: 0.0 to 100.0 Default: 50.0"
+    },
+    {
+      "flag": "-invert",
+      "description": "Invert the signal"
+    },
+    {
+      "flag": "-edge_shift",
+      "description": "Edge shift specification"
+    },
+    {
+      "flag": "-add",
+      "description": "Add to the existing clock in source_objects"
+    },
+    {
+      "flag": "-master_clock",
+      "description": "Use this clock if multiple clocks present at master pin"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

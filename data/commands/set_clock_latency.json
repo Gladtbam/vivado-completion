@@ -1,0 +1,48 @@
+{
+  "name": "set_clock_latency",
+  "short_description": "Capture actual or predicted clock latency",
+  "full_help": "set_clock_latency\n\nDescription: \nCapture actual or predicted clock latency\n\nSyntax: \nset_clock_latency  [-clock <args>] [-rise] [-fall] [-min] [-max] [-source]\n                   [-late] [-early] [-quiet] [-verbose] <latency> <objects>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-clock]    List of relative clocks\n  [-rise]     Specify clock rise latency\n  [-fall]     Specify clock fall latency\n  [-min]      Specify clock rise and fall min condition latency\n  [-max]      Specify clock rise and fall max condition latency\n  [-source]   Specify clock rise and fall source latency\n  [-late]     Specify clock rise and fall late source latency\n  [-early]    Specify clock rise and fall early source latency\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <latency>   Latency value\n  <objects>   List of clocks, ports or pins\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-clock",
+      "description": "List of relative clocks"
+    },
+    {
+      "flag": "-rise",
+      "description": "Specify clock rise latency"
+    },
+    {
+      "flag": "-fall",
+      "description": "Specify clock fall latency"
+    },
+    {
+      "flag": "-min",
+      "description": "Specify clock rise and fall min condition latency"
+    },
+    {
+      "flag": "-max",
+      "description": "Specify clock rise and fall max condition latency"
+    },
+    {
+      "flag": "-source",
+      "description": "Specify clock rise and fall source latency"
+    },
+    {
+      "flag": "-late",
+      "description": "Specify clock rise and fall late source latency"
+    },
+    {
+      "flag": "-early",
+      "description": "Specify clock rise and fall early source latency"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

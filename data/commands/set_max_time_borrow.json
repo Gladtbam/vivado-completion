@@ -1,0 +1,16 @@
+{
+  "name": "set_max_time_borrow",
+  "short_description": "Limit time borrowing for latches",
+  "full_help": "set_max_time_borrow\n\nDescription: \nLimit time borrowing for latches\n\nSyntax: \nset_max_time_borrow  [-quiet] [-verbose] <delay> <objects>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <delay>     Delay value: Value >= 0\n  <objects>   List of clocks, cells, data pins or clock pins\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

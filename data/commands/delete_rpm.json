@@ -1,0 +1,16 @@
+{
+  "name": "delete_rpm",
+  "short_description": "Delete an RPM",
+  "full_help": "delete_rpm\n\nDescription: \nDelete an RPM\n\nSyntax: \ndelete_rpm  [-quiet] [-verbose] <rpm>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <rpm>       RPM to delete\n\nCategories: \nFloorplan\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "set_speed_grade",
+  "short_description": "Set Timing Speed Grade and Temperature Grade",
+  "full_help": "set_speed_grade\n\nDescription: \nSet Timing Speed Grade and Temperature Grade\n\nSyntax: \nset_speed_grade  [-temperature <arg>] [-quiet] [-verbose] [<value>]\n\nReturns: \nstring result\n\nUsage: \n  Name            Description\n  ---------------------------\n  [-temperature]  Temperature grade used for timing analysis (Not available \n                  for 7 Series and earlier)\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n  [<value>]       Speed grade used for timing analysis\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-temperature",
+      "description": "Temperature grade used for timing analysis (Not available for 7 Series and earlier)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

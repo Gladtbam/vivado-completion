@@ -1,0 +1,36 @@
+{
+  "name": "report_param",
+  "short_description": "Get information about all parameters",
+  "full_help": "report_param\n\nDescription: \nGet information about all parameters\n\nSyntax: \nreport_param  [-file <arg>] [-append] [-non_default] [-return_string] [-quiet]\n              [-verbose] [<pattern>]\n\nReturns: \nparam report\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-file]           Filename to output results to. (send output to console if\n                    -file is not used)\n  [-append]         Append the results to file, don't overwrite the results \n                    file\n  [-non_default]    Report only params that are set to a non default value\n  [-return_string]  Return report as string\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  [<pattern>]       Display params matching pattern\n                    Default: *\n\nCategories: \nPropertyAndParameter, Report\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if"
+    },
+    {
+      "flag": "-file",
+      "description": "is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-non_default",
+      "description": "Report only params that are set to a non default value"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "select_objects",
+  "short_description": "Select objects in GUI",
+  "full_help": "select_objects\n\nDescription: \nSelect objects in GUI\n\nSyntax: \nselect_objects  [-add] [-quiet] [-verbose] <objects>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-add]      Add to existing selection list\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <objects>   Objects to select\n\nCategories: \nGUIControl\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-add",
+      "description": "Add to existing selection list"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

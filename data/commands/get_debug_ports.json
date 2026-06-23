@@ -1,0 +1,32 @@
+{
+  "name": "get_debug_ports",
+  "short_description": "Get a list of debug ports in the current design",
+  "full_help": "get_debug_ports\n\nDescription: \nGet a list of debug ports in the current design\n\nSyntax: \nget_debug_ports  [-filter <arg>] [-of_objects <args>] [-regexp] [-nocase]\n                 [-quiet] [-verbose] [<patterns>]\n\nReturns: \nlist of debug_port objects\n\nUsage: \n  Name           Description\n  --------------------------\n  [-filter]      Filter list with expression\n  [-of_objects]  Get ports of these debug cores\n  [-regexp]      Patterns are full regular expressions\n  [-nocase]      Perform case-insensitive matching (valid only when -regexp \n                 specified)\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<patterns>]   Match debug ports against patterns\n                 Default: *\n\nCategories: \nObject, Debug, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get ports of these debug cores"
+    },
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

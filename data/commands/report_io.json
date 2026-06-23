@@ -1,0 +1,40 @@
+{
+  "name": "report_io",
+  "short_description": "Display information about all the IO sites on the device",
+  "full_help": "report_io\n\nDescription: \nDisplay information about all the IO sites on the device\n\nSyntax: \nreport_io  [-file <arg>] [-name <arg>] [-append] [-format <arg>]\n           [-return_string] [-quiet] [-verbose]\n\nReturns: \nReport\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-file]           Filename to output results to. Send output to console if \n                    -file is not used.\n  [-name]           Output the results to GUI panel with this name\n  [-append]         Append to existing file\n  [-format]         Specifies how to format the report: text, xml. Default is\n                    'text'. Only applies if -file is used. If xml output is \n                    used, -append is not allowed.\n                    Default: text\n  [-return_string]  Return report as string\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. Send output to console if"
+    },
+    {
+      "flag": "-file",
+      "description": "is not used."
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-append",
+      "description": "Append to existing file"
+    },
+    {
+      "flag": "-format",
+      "description": "Specifies how to format the report: text, xml. Default is 'text'. Only applies if -file is used. If xml output is used, -append is not allowed. Default: text"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

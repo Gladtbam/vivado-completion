@@ -1,0 +1,20 @@
+{
+  "name": "delete_waivers",
+  "short_description": "Delete one or more DRC/METHODOLOGY/CDC message waivers",
+  "full_help": "delete_waivers\n\nDescription: \nDelete one or more DRC/METHODOLOGY/CDC message waivers\n\nSyntax: \ndelete_waivers  [-scoped] [-quiet] [-verbose] [<objects>...]\n\nUsage: \n  Name         Description\n  ------------------------\n  [-scoped]    Flag waiver to interpret object wildcards as scoped to the \n               current_instance that is set\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  [<objects>]  List of waiver objects, or a list of message objects (cells, \n               nets, sites, etc.) for which DRC/METHODOLOGY waiver(s) were set\n\nCategories: \nWaiver, Object\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-scoped",
+      "description": "Flag waiver to interpret object wildcards as scoped to the current_instance that is set"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

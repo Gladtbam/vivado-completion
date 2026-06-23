@@ -1,0 +1,40 @@
+{
+  "name": "report_carry_chains",
+  "short_description": "Report carry chains",
+  "full_help": "report_carry_chains\n\nDescription: \nReport carry chains\n\nSyntax: \nreport_carry_chains  [-file <arg>] [-append] [-return_string] [-cell <args>]\n                     [-max_chains <arg>] [-quiet] [-verbose]\n\nReturns: \nReport\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-file]           Filename to output results to. (send output to console if\n                    -file is not used)\n  [-append]         Append to existing file\n  [-return_string]  Return report as string\n  [-cell]           Report Carry Chains only for given cell\n  [-max_chains]     Number of chains for which report is to be generated\n                    Default: 1\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if"
+    },
+    {
+      "flag": "-file",
+      "description": "is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append to existing file"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-cell",
+      "description": "Report Carry Chains only for given cell"
+    },
+    {
+      "flag": "-max_chains",
+      "description": "Number of chains for which report is to be generated Default: 1"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

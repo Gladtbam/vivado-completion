@@ -1,0 +1,24 @@
+{
+  "name": "resize_port_bus",
+  "short_description": "Resize port bus in the current design",
+  "full_help": "resize_port_bus\n\nDescription: \nResize port bus in the current design\n\nSyntax: \nresize_port_bus  [-from <arg>] [-to <arg>] [-quiet] [-verbose]\n                 <port_bus_name>...\n\nUsage: \n  Name             Description\n  ----------------------------\n  [-from]          New starting bus index\n  [-to]            New ending bus index\n  [-quiet]         Ignore command errors\n  [-verbose]       Suspend message limits during command execution\n  <port_bus_name>  Name of the port bus to resize\n\nCategories: \nPinPlanning\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "New starting bus index"
+    },
+    {
+      "flag": "-to",
+      "description": "New ending bus index"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

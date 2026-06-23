@@ -1,0 +1,24 @@
+{
+  "name": "open_checkpoint",
+  "short_description": "Open a design checkpoint in a new project",
+  "full_help": "open_checkpoint\n\nDescription: \nOpen a design checkpoint in a new project\n\nSyntax: \nopen_checkpoint  [-part <arg>] [-ignore_timing] [-quiet] [-verbose] <file>\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-part]           Override the checkpoint part. Note that this may cause \n                    errors if the checkpoint contains xdef.\n  [-ignore_timing]  reload a checkpoint without the timing constraints. Will \n                    not work if '-time' option given.\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  <file>            Design checkpoint file\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-part",
+      "description": "Override the checkpoint part. Note that this may cause errors if the checkpoint contains xdef."
+    },
+    {
+      "flag": "-ignore_timing",
+      "description": "reload a checkpoint without the timing constraints. Will not work if '-time' option given."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "create_cluster_configuration",
+  "short_description": "Creates a cluster configuration",
+  "full_help": "create_cluster_configuration\n\nDescription: \nCreates a cluster configuration\n\nSyntax: \ncreate_cluster_configuration  -submit_cmd <arg> -kill_cmd <arg>\n                              [-monitor_cmd <arg>] [-job_id_proc <arg>]\n                              [-job_id_tcl <arg>] -type <arg> [-force] [-quiet]\n                              [-verbose] <name>\n\nUsage: \n  Name            Description\n  ---------------------------\n  -submit_cmd     Submit command of cluster configuration\n  -kill_cmd       Kill command of cluster configuration\n  [-monitor_cmd]  Monitor command of cluster configuration\n  [-job_id_proc]  Proc name to parse job Id\n  [-job_id_tcl]   path to the tcl file contatining the proc\n  -type           Type of cluster configuration\n  [-force]        Force to overwrite a cluster configuration if it already \n                  exists.\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n  <name>          Name of cluster configuration\n\nCategories: \ncluster_configuration\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-submit_cmd",
+      "description": "Submit command of cluster configuration"
+    },
+    {
+      "flag": "-kill_cmd",
+      "description": "Kill command of cluster configuration"
+    },
+    {
+      "flag": "-monitor_cmd",
+      "description": "Monitor command of cluster configuration"
+    },
+    {
+      "flag": "-job_id_proc",
+      "description": "Proc name to parse job Id"
+    },
+    {
+      "flag": "-job_id_tcl",
+      "description": "path to the tcl file contatining the proc"
+    },
+    {
+      "flag": "-type",
+      "description": "Type of cluster configuration"
+    },
+    {
+      "flag": "-force",
+      "description": "Force to overwrite a cluster configuration if it already exists."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

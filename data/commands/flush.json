@@ -1,0 +1,7 @@
+{
+  "name": "flush",
+  "short_description": "",
+  "full_help": "\nTopic      Description\nflush_vcd  This command is auto loaded by Tcl. To explicitly load the command type 'load_features simulator'.\n\nFor help on an individual topic, type 'help <topic>'. For example:\n% help create_project\n",
+  "custom_snippet": null,
+  "arguments": []
+}

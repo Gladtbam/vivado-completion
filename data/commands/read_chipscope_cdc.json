@@ -1,0 +1,16 @@
+{
+  "name": "read_chipscope_cdc",
+  "short_description": "Import ChipScope Core Inserter CDC file",
+  "full_help": "read_chipscope_cdc\n\nDescription: \nImport ChipScope Core Inserter CDC file\n\nSyntax: \nread_chipscope_cdc  [-quiet] [-verbose] <file>\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <file>      ChipScope CDC file name\n\nCategories: \nFileIO, ChipScope\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

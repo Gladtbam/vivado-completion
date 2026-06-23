@@ -1,0 +1,36 @@
+{
+  "name": "create_project",
+  "short_description": "Create a new project",
+  "full_help": "create_project\n\nDescription: \nCreate a new project\n\nSyntax: \ncreate_project  [-part <arg>] [-force] [-in_memory] [-ip] [-rtl_kernel]\n                [-quiet] [-verbose] [<name>] [<dir>]\n\nReturns: \nnew project object\n\nUsage: \n  Name           Description\n  --------------------------\n  [-part]        Target part\n  [-force]       Overwrite existing project directory\n  [-in_memory]   Create an in-memory project\n  [-ip]          Default GUI behavior is for a managed IP project\n  [-rtl_kernel]  Default GUI behavior is for a RTL Kernel project\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<name>]       Project name\n  [<dir>]        Directory where the project file is saved\n                 Default: .\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-part",
+      "description": "Target part"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing project directory"
+    },
+    {
+      "flag": "-in_memory",
+      "description": "Create an in-memory project"
+    },
+    {
+      "flag": "-ip",
+      "description": "Default GUI behavior is for a managed IP project"
+    },
+    {
+      "flag": "-rtl_kernel",
+      "description": "Default GUI behavior is for a RTL Kernel project"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

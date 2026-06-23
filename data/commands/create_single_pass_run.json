@@ -1,0 +1,20 @@
+{
+  "name": "create_single_pass_run",
+  "short_description": "Exports an intelligent design run result into a single run for the current project",
+  "full_help": "create_single_pass_run\n\nDescription: \nExports an intelligent design run result into a single run for the current project\n\nSyntax: \ncreate_single_pass_run  -reference_run <arg> [-quiet] [-verbose] <name>\n\nReturns: \nrun object\n\nUsage: \n  Name            Description\n  ---------------------------\n  -reference_run  Intelligent design run for which the result has to be \n                  exported into a single run\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n  <name>          Name for new run\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-reference_run",
+      "description": "Intelligent design run for which the result has to be exported into a single run"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

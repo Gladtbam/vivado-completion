@@ -1,0 +1,36 @@
+{
+  "name": "get_board_component_interfaces",
+  "short_description": "Gets the list of interfaces in the board components that implement busdef specified by VLNV",
+  "full_help": "get_board_component_interfaces\n\nDescription: \nGets the list of interfaces in the board components that implement busdef specified by VLNV\n\nSyntax: \nget_board_component_interfaces  [-regexp] [-nocase] [-all] [-filter <arg>]\n                                [-of_objects <args>] [-quiet] [-verbose]\n                                [<patterns>...]\n\nReturns: \nlist of bus interfaces\n\nUsage: \n  Name           Description\n  --------------------------\n  [-regexp]      Patterns are full regular expressions\n  [-nocase]      Perform case-insensitive matching\n  [-all]         Returns all enabled as well as disabled interfaces\n  [-filter]      Filter list with expression\n  [-of_objects]  Get 'board_component_interface' objects of these types: \n                 'board board_component'.\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n  [<patterns>]   Match Bus Interface names against patterns\n                 Default: *\n                 Values: The default search pattern is the wildcard *, or .* \n                 when -regexp is specified.\n\nCategories: \nObject, Board\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching"
+    },
+    {
+      "flag": "-all",
+      "description": "Returns all enabled as well as disabled interfaces"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get 'board_component_interface' objects of these types: 'board board_component'."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

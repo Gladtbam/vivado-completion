@@ -1,0 +1,112 @@
+{
+  "name": "export_simulation",
+  "short_description": "Export a script and associated data files (if any) for driving standalone simulation using the specified simulator.",
+  "full_help": "export_simulation\n\nDescription: \nExport a script and associated data files (if any) for driving standalone simulation using the specified simulator.\n\nSyntax: \nexport_simulation  [-simulator <arg>] [-of_objects <args>] [-step <arg>]\n                   [-ip_user_files_dir <arg>] [-ipstatic_source_dir <arg>]\n                   [-lib_map_path <arg>] [-install_path <arg>]\n                   [-gcc_install_path <arg>] [-script_name <arg>]\n                   [-directory <arg>] [-runtime <arg>] [-define <args>]\n                   [-generic <args>] [-include <args>] [-more_options <args>]\n                   [-single_step] [-use_ip_compiled_libs] [-absolute_path]\n                   [-export_source_files] [-generate_hier_access] [-exec]\n                   [-report_ip_status] [-force] [-quiet] [-verbose]\n\nUsage: \n  Name                     Description\n  ------------------------------------\n  [-simulator]             Target simulator (all|xsim|modelsim|questa|xcelium\n                           |vcs|riviera|activehdl). Default:all\n  [-of_objects]            Export simulation script for the specified object \n                           (IP/BD)\n  [-step]                  Write script for the specified step (Values: \n                           'compile', 'elaborate', 'simulate'). For \n                           -single_step specify 'simulate' value.\n  [-ip_user_files_dir]     Directory path to the exported IP/BD files \n                           (static, dynamic, data)\n  [-ipstatic_source_dir]   Directory path to the exported IP/BD static files\n  [-lib_map_path]          Compiled simulation library directory path\n  [-install_path]          Simulator installation directory path\n  [-gcc_install_path]      GNU compiler installation directory path for the \n                           g++/gcc executables\n  [-script_name]           Output script filename (Default:<ip>)\n  [-directory]             output directory path for the generated script\n  [-runtime]               Simulation run time (default:full simulation run \n                           or until a logical break or finish condition)\n  [-define]                Verilog defines\n  [-generic]               Vhdl generics\n  [-include]               Include directory path(s)\n  [-more_options]          Additional options for simulator tools\n  [-single_step]           Write single-step script (supported simulators: \n                           xcelium)\n  [-use_ip_compiled_libs]  Reference pre-compiled IP simulation library\n  [-absolute_path]         Make all file paths absolute\n  [-export_source_files]   Copy IP/BD source files to the output directory\n  [-generate_hier_access]  Extract path for hierarchical access simulation\n  [-exec]                  Execute generated script\n  [-report_ip_status]      Check IP/BD generation status for 'not generated' \n                           or 'stale' simulation targets\n  [-force]                 Overwrite previous files\n  [-quiet]                 Ignore command errors\n  [-verbose]               Suspend message limits during command execution\n\nCategories: \nToolLaunch, Simulation\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-simulator",
+      "description": "Target simulator (all|xsim|modelsim|questa|xcelium |vcs|riviera|activehdl). Default:all"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Export simulation script for the specified object (IP/BD)"
+    },
+    {
+      "flag": "-step",
+      "description": "Write script for the specified step (Values: 'compile', 'elaborate', 'simulate'). For"
+    },
+    {
+      "flag": "-single_step",
+      "description": "specify 'simulate' value."
+    },
+    {
+      "flag": "-ip_user_files_dir",
+      "description": "Directory path to the exported IP/BD files (static, dynamic, data)"
+    },
+    {
+      "flag": "-ipstatic_source_dir",
+      "description": "Directory path to the exported IP/BD static files"
+    },
+    {
+      "flag": "-lib_map_path",
+      "description": "Compiled simulation library directory path"
+    },
+    {
+      "flag": "-install_path",
+      "description": "Simulator installation directory path"
+    },
+    {
+      "flag": "-gcc_install_path",
+      "description": "GNU compiler installation directory path for the g++/gcc executables"
+    },
+    {
+      "flag": "-script_name",
+      "description": "Output script filename (Default:<ip>)"
+    },
+    {
+      "flag": "-directory",
+      "description": "output directory path for the generated script"
+    },
+    {
+      "flag": "-runtime",
+      "description": "Simulation run time (default:full simulation run or until a logical break or finish condition)"
+    },
+    {
+      "flag": "-define",
+      "description": "Verilog defines"
+    },
+    {
+      "flag": "-generic",
+      "description": "Vhdl generics"
+    },
+    {
+      "flag": "-include",
+      "description": "Include directory path(s)"
+    },
+    {
+      "flag": "-more_options",
+      "description": "Additional options for simulator tools"
+    },
+    {
+      "flag": "-single_step",
+      "description": "Write single-step script (supported simulators: xcelium)"
+    },
+    {
+      "flag": "-use_ip_compiled_libs",
+      "description": "Reference pre-compiled IP simulation library"
+    },
+    {
+      "flag": "-absolute_path",
+      "description": "Make all file paths absolute"
+    },
+    {
+      "flag": "-export_source_files",
+      "description": "Copy IP/BD source files to the output directory"
+    },
+    {
+      "flag": "-generate_hier_access",
+      "description": "Extract path for hierarchical access simulation"
+    },
+    {
+      "flag": "-exec",
+      "description": "Execute generated script"
+    },
+    {
+      "flag": "-report_ip_status",
+      "description": "Check IP/BD generation status for 'not generated' or 'stale' simulation targets"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite previous files"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

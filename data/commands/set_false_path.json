@@ -1,0 +1,72 @@
+{
+  "name": "set_false_path",
+  "short_description": "Define false path",
+  "full_help": "set_false_path\n\nDescription: \nDefine false path\n\nSyntax: \nset_false_path  [-setup] [-hold] [-rise] [-fall] [-reset_path] [-from <args>]\n                [-rise_from <args>] [-fall_from <args>] [-to <args>]\n                [-rise_to <args>] [-fall_to <args>] [-through <args>]\n                [-rise_through <args>] [-fall_through <args>] [-quiet]\n                [-verbose]\n\nUsage: \n  Name             Description\n  ----------------------------\n  [-setup]         Eliminate setup timing analysis for paths\n  [-hold]          Eliminate hold timing analysis for paths\n  [-rise]          Eliminate only rising delays for the defined paths\n  [-fall]          Eliminate only falling delays for the defined paths\n  [-reset_path]    Reset this path before setting false path\n  [-from]          List of path startpoints or clocks\n  [-rise_from]     Apply to paths rising from the list of startpoints or \n                   clocks\n  [-fall_from]     Apply to paths falling from the list of startpoints or \n                   clocks\n  [-to]            List of path endpoints or clocks\n  [-rise_to]       Apply to paths with rise transition at the list of \n                   endpoints or clocks\n  [-fall_to]       Apply to paths with fall transition at the list of \n                   endpoints or clocks\n  [-through]       List of through pins, cells or nets\n  [-rise_through]  Apply to paths rising through pins, cells or nets\n  [-fall_through]  Apply to paths falling through pins, cells or nets\n  [-quiet]         Ignore command errors\n  [-verbose]       Suspend message limits during command execution\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-setup",
+      "description": "Eliminate setup timing analysis for paths"
+    },
+    {
+      "flag": "-hold",
+      "description": "Eliminate hold timing analysis for paths"
+    },
+    {
+      "flag": "-rise",
+      "description": "Eliminate only rising delays for the defined paths"
+    },
+    {
+      "flag": "-fall",
+      "description": "Eliminate only falling delays for the defined paths"
+    },
+    {
+      "flag": "-reset_path",
+      "description": "Reset this path before setting false path"
+    },
+    {
+      "flag": "-from",
+      "description": "List of path startpoints or clocks"
+    },
+    {
+      "flag": "-rise_from",
+      "description": "Apply to paths rising from the list of startpoints or clocks"
+    },
+    {
+      "flag": "-fall_from",
+      "description": "Apply to paths falling from the list of startpoints or clocks"
+    },
+    {
+      "flag": "-to",
+      "description": "List of path endpoints or clocks"
+    },
+    {
+      "flag": "-rise_to",
+      "description": "Apply to paths with rise transition at the list of endpoints or clocks"
+    },
+    {
+      "flag": "-fall_to",
+      "description": "Apply to paths with fall transition at the list of endpoints or clocks"
+    },
+    {
+      "flag": "-through",
+      "description": "List of through pins, cells or nets"
+    },
+    {
+      "flag": "-rise_through",
+      "description": "Apply to paths rising through pins, cells or nets"
+    },
+    {
+      "flag": "-fall_through",
+      "description": "Apply to paths falling through pins, cells or nets"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "report_ssn",
+  "short_description": "Run SSN analysis on the current package and pinout",
+  "full_help": "report_ssn\n\nDescription: \nRun SSN analysis on the current package and pinout\n\nSyntax: \nreport_ssn  [-name <arg>] [-return_string] [-format <arg>] [-file <arg>]\n            [-append] [-phase] [-quiet] [-verbose]\n\nReturns: \nssn report\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-name]           Output the results to GUI panel with this name\n  [-return_string]  Return report as string\n  [-format]         Report format.  Valid arguments are CSV, HTML, TXT\n                    Default: csv\n  [-file]           Filename to output results to. (send output to console if\n                    -file is not used)\n  [-append]         Append the report to the specified file\n  [-phase]          Account for multi-clock phase in the analysis\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nReport\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-format",
+      "description": "Report format.  Valid arguments are CSV, HTML, TXT Default: csv"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if"
+    },
+    {
+      "flag": "-file",
+      "description": "is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the report to the specified file"
+    },
+    {
+      "flag": "-phase",
+      "description": "Account for multi-clock phase in the analysis"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

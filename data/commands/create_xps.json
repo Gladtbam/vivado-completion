@@ -1,0 +1,16 @@
+{
+  "name": "create_xps",
+  "short_description": "Create embedded source for XPS and add to the source fileset (Not supported anymore. Please use Vivado IP integrator.)",
+  "full_help": "create_xps\n\nDescription: \nCreate embedded source for XPS and add to the source fileset (Not supported anymore. Please use Vivado IP integrator.)\n\nSyntax: \ncreate_xps  [-quiet] [-verbose] <name>\n\nReturns: \nsource file name that was created\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <name>      Source name\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

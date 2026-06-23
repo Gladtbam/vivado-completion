@@ -1,0 +1,32 @@
+{
+  "name": "create_clock",
+  "short_description": "Create a clock object",
+  "full_help": "create_clock\n\nDescription: \nCreate a clock object\n\nSyntax: \ncreate_clock  -period <arg> [-name <arg>] [-waveform <args>] [-add] [-quiet]\n              [-verbose] [<objects>]\n\nReturns: \nnew clock object\n\nUsage: \n  Name         Description\n  ------------------------\n  -period      Clock period: Value > 0\n  [-name]      Clock name\n  [-waveform]  Clock edge specification\n  [-add]       Add to the existing clock in source_objects\n  [-quiet]     Ignore command errors\n  [-verbose]   Suspend message limits during command execution\n  [<objects>]  List of clock source ports, pins or nets\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-period",
+      "description": "Clock period: Value > 0"
+    },
+    {
+      "flag": "-name",
+      "description": "Clock name"
+    },
+    {
+      "flag": "-waveform",
+      "description": "Clock edge specification"
+    },
+    {
+      "flag": "-add",
+      "description": "Add to the existing clock in source_objects"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

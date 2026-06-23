@@ -1,0 +1,32 @@
+{
+  "name": "convert_ngc",
+  "short_description": "(User-written application) Convert all provided NGC files to a supported format",
+  "full_help": "convert_ngc\n\nDescription: \n(User-written application)\nConvert all provided NGC files to a supported format\n\n\nSyntax: \nconvert_ngc  [-output_dir <arg>] [-format <arg>] [-add_to_project] [-force]\n             [-quiet] [-verbose] <files>\n\nReturns: \nNone\n\n\nUsage: \n  Name               Description\n  ------------------------------\n  [-output_dir]      Directory to place all output, else the output is placed\n                     at location of NGC file\n                     Default: Script output directory path\n  [-format]          Accepts 'Verilog' or 'EDIF' (Default: EDIF), specifies \n                     the desired output format\n                     Default: EDIF\n  [-add_to_project]  Adds the output files to the current project, if no \n                     project is open, then this option does nothing\n  [-force]           Force overwriting of files that already exist on disk, \n                     replaces files in project if add_to_project switch was \n                     specified\n  [-quiet]           Ignore command errors\n  [-verbose]         Suspend message limits during command execution\n  <files>            A list of NGC files to convert\n\nCategories: \nxilinxtclstore, projutils, user-written\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-output_dir",
+      "description": "Directory to place all output, else the output is placed at location of NGC file Default: Script output directory path"
+    },
+    {
+      "flag": "-format",
+      "description": "Accepts 'Verilog' or 'EDIF' (Default: EDIF), specifies the desired output format Default: EDIF"
+    },
+    {
+      "flag": "-add_to_project",
+      "description": "Adds the output files to the current project, if no project is open, then this option does nothing"
+    },
+    {
+      "flag": "-force",
+      "description": "Force overwriting of files that already exist on disk, replaces files in project if add_to_project switch was specified"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

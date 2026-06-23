@@ -1,0 +1,76 @@
+{
+  "name": "set_operating_conditions",
+  "short_description": "Set operating conditions for power estimation",
+  "full_help": "set_operating_conditions\n\nDescription: \nSet operating conditions for power estimation\n\nSyntax: \nset_operating_conditions  [-voltage <args>] [-grade <arg>] [-process <arg>]\n                          [-junction_temp <arg>] [-ambient_temp <arg>]\n                          [-thetaja <arg>] [-thetasa <arg>] [-airflow <arg>]\n                          [-heatsink <arg>] [-thetajb <arg>] [-board <arg>]\n                          [-board_temp <arg>] [-board_layers <arg>]\n                          [-design_power_budget <arg>]\n                          [-supply_current_budget <args>] [-quiet] [-verbose]\n\nUsage: \n  Name                      Description\n  -------------------------------------\n  [-voltage]                List of voltage pairs, e.g., {name value}.  \n                            Supported voltage supplies vary by family.\n  [-grade]                  Temperature grade.  Supported values vary by \n                            family.\n                            Default: commercial\n  [-process]                Process data: typical or maximum\n                            Default: typical\n  [-junction_temp]          Junction Temperature (C): auto|degC\n                            Default: auto\n  [-ambient_temp]           Ambient Temperature (C): default|degC\n                            Default: default\n  [-thetaja]                ThetaJA (C/W): auto|degC/W\n                            Default: auto\n  [-thetasa]                ThetaSA (C/W): auto|degC/W\n                            Default: auto\n  [-airflow]                Airflow (LFM): 0 to 750\n                            Default: varies by family\n  [-heatsink]               Dimensions of heatsink: none, low, medium, high, \n                            custom\n                            Default: medium\n  [-thetajb]                ThetaJB (C/W): auto|degC/W\n                            Default: auto\n  [-board]                  Board type: jedec, small, medium, large, custom\n                            Default: medium\n  [-board_temp]             Board Temperature degC\n  [-board_layers]           Board layers: 4to7, 8to11, 12to15, 16+\n                            Default: 8to11\n  [-design_power_budget]    Design Power Budget (W)\n                            Default: Unspecified\n  [-supply_current_budget]  Sets list of supply current budget 'name value' \n                            pairs.  Supported voltage supplies vary by \n                            family.\n  [-quiet]                  Ignore command errors\n  [-verbose]                Suspend message limits during command execution\n\nCategories: \nSDC, XDC, Power\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-voltage",
+      "description": "List of voltage pairs, e.g., {name value}. Supported voltage supplies vary by family."
+    },
+    {
+      "flag": "-grade",
+      "description": "Temperature grade.  Supported values vary by family. Default: commercial"
+    },
+    {
+      "flag": "-process",
+      "description": "Process data: typical or maximum Default: typical"
+    },
+    {
+      "flag": "-junction_temp",
+      "description": "Junction Temperature (C): auto|degC Default: auto"
+    },
+    {
+      "flag": "-ambient_temp",
+      "description": "Ambient Temperature (C): default|degC Default: default"
+    },
+    {
+      "flag": "-thetaja",
+      "description": "ThetaJA (C/W): auto|degC/W Default: auto"
+    },
+    {
+      "flag": "-thetasa",
+      "description": "ThetaSA (C/W): auto|degC/W Default: auto"
+    },
+    {
+      "flag": "-airflow",
+      "description": "Airflow (LFM): 0 to 750 Default: varies by family"
+    },
+    {
+      "flag": "-heatsink",
+      "description": "Dimensions of heatsink: none, low, medium, high, custom Default: medium"
+    },
+    {
+      "flag": "-thetajb",
+      "description": "ThetaJB (C/W): auto|degC/W Default: auto"
+    },
+    {
+      "flag": "-board",
+      "description": "Board type: jedec, small, medium, large, custom Default: medium"
+    },
+    {
+      "flag": "-board_temp",
+      "description": "Board Temperature degC"
+    },
+    {
+      "flag": "-board_layers",
+      "description": "Board layers: 4to7, 8to11, 12to15, 16+ Default: 8to11"
+    },
+    {
+      "flag": "-design_power_budget",
+      "description": "Design Power Budget (W) Default: Unspecified"
+    },
+    {
+      "flag": "-supply_current_budget",
+      "description": "Sets list of supply current budget 'name value' pairs.  Supported voltage supplies vary by family."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

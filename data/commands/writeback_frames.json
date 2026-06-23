@@ -1,0 +1,28 @@
+{
+  "name": "writeback_frames",
+  "short_description": "Create a partial bitstream to modify selected frames in a bitfile",
+  "full_help": "writeback_frames\n\nDescription: \nCreate a partial bitstream to modify selected frames in a bitfile\n\nSyntax: \nwriteback_frames  -reference_file <arg> -update_file <arg> [-force] [-quiet]\n                  [-verbose] <file>\n\nUsage: \n  Name             Description\n  ----------------------------\n  -reference_file  Input bitfile (.bit or .rbt)\n  -update_file     File containing details of bits to be modified\n  [-force]         Overwrite existing file\n  [-quiet]         Ignore command errors\n  [-verbose]       Suspend message limits during command execution\n  <file>           Output partial bitfile (.bit, .bin or .rbt)\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-reference_file",
+      "description": "Input bitfile (.bit or .rbt)"
+    },
+    {
+      "flag": "-update_file",
+      "description": "File containing details of bits to be modified"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

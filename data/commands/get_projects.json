@@ -1,0 +1,28 @@
+{
+  "name": "get_projects",
+  "short_description": "Get a list of projects",
+  "full_help": "get_projects\n\nDescription: \nGet a list of projects\n\nSyntax: \nget_projects  [-regexp] [-nocase] [-filter <arg>] [-quiet] [-verbose]\n              [<patterns>]\n\nReturns: \nlist of project objects\n\nUsage: \n  Name          Description\n  -------------------------\n  [-regexp]     Patterns are full regular expressions\n  [-nocase]     Perform case-insensitive matching (valid only when -regexp \n                specified)\n  [-filter]     Filter list with expression\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n  [<patterns>]  Match project names against patterns\n                Default: *\n\nCategories: \nObject, Project\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

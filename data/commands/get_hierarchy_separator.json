@@ -1,0 +1,16 @@
+{
+  "name": "get_hierarchy_separator",
+  "short_description": "Get hierarchical separator character",
+  "full_help": "get_hierarchy_separator\n\nDescription: \nGet hierarchical separator character\n\nSyntax: \nget_hierarchy_separator  [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

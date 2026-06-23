@@ -1,0 +1,16 @@
+{
+  "name": "write_readback_instances",
+  "short_description": "This command writes logic instances for SNPS flow",
+  "full_help": "write_readback_instances\n\nDescription: \nThis command writes logic instances for SNPS flow\n\nSyntax: \nwrite_readback_instances  [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

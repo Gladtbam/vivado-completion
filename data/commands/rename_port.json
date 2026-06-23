@@ -1,0 +1,20 @@
+{
+  "name": "rename_port",
+  "short_description": "rename a port",
+  "full_help": "rename_port\n\nDescription: \nrename a port\n\nSyntax: \nrename_port  -to <arg> [-quiet] [-verbose] <port>...\n\nUsage: \n  Name        Description\n  -----------------------\n  -to         New name\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <port>      Port to rename\n\nCategories: \nNetlist\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-to",
+      "description": "New name"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

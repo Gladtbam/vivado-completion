@@ -1,0 +1,40 @@
+{
+  "name": "config_timing_corners",
+  "short_description": "Configure single / multi corner timing analysis settings",
+  "full_help": "config_timing_corners\n\nDescription: \nConfigure single / multi corner timing analysis settings\n\nSyntax: \nconfig_timing_corners  [-corner <arg>] [-delay_type <arg>] [-setup] [-hold]\n                       [-quiet] [-verbose]\n\nUsage: \n  Name           Description\n  --------------------------\n  [-corner]      Name of the timing corner to be modified : Values: Slow, \n                 Fast\n  [-delay_type]  Type of path delays to be analyzed for specified timing \n                 corner: Values: none, max, min, min_max\n  [-setup]       Enable timing corner for setup analysis (equivalent to \n                 -delay_type max)\n  [-hold]        Enable timing corner for hold analysis (equivalent to \n                 -delay_type min)\n  [-quiet]       Ignore command errors\n  [-verbose]     Suspend message limits during command execution\n\nCategories: \nTiming\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-corner",
+      "description": "Name of the timing corner to be modified : Values: Slow, Fast"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "Type of path delays to be analyzed for specified timing corner: Values: none, max, min, min_max"
+    },
+    {
+      "flag": "-setup",
+      "description": "Enable timing corner for setup analysis (equivalent to"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "max)"
+    },
+    {
+      "flag": "-hold",
+      "description": "Enable timing corner for hold analysis (equivalent to"
+    },
+    {
+      "flag": "-delay_type",
+      "description": "min)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

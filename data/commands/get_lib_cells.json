@@ -1,0 +1,40 @@
+{
+  "name": "get_lib_cells",
+  "short_description": "Get a list of Library Cells",
+  "full_help": "get_lib_cells\n\nDescription: \nGet a list of Library Cells\n\nSyntax: \nget_lib_cells  [-regexp] [-filter <arg>] [-nocase] [-include_unsupported]\n               [-device <arg>] [-of_objects <args>] [-quiet] [-verbose]\n               <patterns>\n\nReturns: \nlist of library cells\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-regexp]               Patterns are regular expressions.\n  [-filter]               Filter list with expression.\n  [-nocase]               Perform case-insensitive matching when a pattern \n                          has been specified. This argument applies to the \n                          use of -regexp only.\n  [-include_unsupported]  Include test-only library cells.\n  [-device]               Include only library cells supported on device\n  [-of_objects]           Get the library cells of the objects passed in \n                          here. Valid objects are cells or instances (ie, \n                          get_cells), cell pins (ie, get_pins) and library \n                          pins (ie, get_lib_pins).\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n  <patterns>              Match library cell names against patterns.\n\nCategories: \nObject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are regular expressions."
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression."
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching when a pattern has been specified. This argument applies to the use of -regexp only."
+    },
+    {
+      "flag": "-include_unsupported",
+      "description": "Include test-only library cells."
+    },
+    {
+      "flag": "-device",
+      "description": "Include only library cells supported on device"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get the library cells of the objects passed in here. Valid objects are cells or instances (ie, get_cells), cell pins (ie, get_pins) and library pins (ie, get_lib_pins)."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

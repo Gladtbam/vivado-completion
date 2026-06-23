@@ -1,0 +1,48 @@
+{
+  "name": "write_cfgmem",
+  "short_description": "Create file(s) for programming flash memory.",
+  "full_help": "write_cfgmem\n\nDescription: \nCreate file(s) for programming flash memory.\n\nSyntax: \nwrite_cfgmem  [-force] -format <arg> -size <arg> [-interface <arg>] [-checksum]\n              [-disablebitswap] [-loadbit <arg>] [-loaddata <arg>] [-quiet]\n              [-verbose] <file>\n\nUsage: \n  Name               Description\n  ------------------------------\n  [-force]           Overwrite existing file\n  -format            Format of the file to generate\n  -size              Size of memory that is being targeted in M Bytes (must \n                     be power of 2).\n  [-interface]       Interface used to program device.\n                     Default: SMAPx8\n  [-checksum]        Calculate a 32-bit checksum for each file. Memory will \n                     be filed with value of 0xFF unless a different byte \n                     value is specified.\n                     Default: 0xFF\n  [-disablebitswap]  Disable bit swapping in a byte for bitfiles.\n  [-loadbit]         Load bit files into memory from given address.\n  [-loaddata]        Load data into memory from given address.\n  [-quiet]           Ignore command errors\n  [-verbose]         Suspend message limits during command execution\n  <file>             The name of the file to generate\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-format",
+      "description": "Format of the file to generate"
+    },
+    {
+      "flag": "-size",
+      "description": "Size of memory that is being targeted in M Bytes (must be power of 2)."
+    },
+    {
+      "flag": "-interface",
+      "description": "Interface used to program device. Default: SMAPx8"
+    },
+    {
+      "flag": "-checksum",
+      "description": "Calculate a 32-bit checksum for each file. Memory will be filed with value of 0xFF unless a different byte value is specified. Default: 0xFF"
+    },
+    {
+      "flag": "-disablebitswap",
+      "description": "Disable bit swapping in a byte for bitfiles."
+    },
+    {
+      "flag": "-loadbit",
+      "description": "Load bit files into memory from given address."
+    },
+    {
+      "flag": "-loaddata",
+      "description": "Load data into memory from given address."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

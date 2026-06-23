@@ -1,0 +1,28 @@
+{
+  "name": "decrypt_bitstream",
+  "short_description": "Decrypt an AES-GCM encrypted bitstream",
+  "full_help": "decrypt_bitstream\n\nDescription: \nDecrypt an AES-GCM encrypted bitstream\n\nSyntax: \ndecrypt_bitstream  -encrypted_file <arg> -keyfile <arg> [-force] [-quiet]\n                   [-verbose] <file>\n\nUsage: \n  Name             Description\n  ----------------------------\n  -encrypted_file  Input AES-GCM encrypted bitstream (.bit or .rbt)\n  -keyfile         File containing encryption keys\n  [-force]         Overwrite existing file\n  [-quiet]         Ignore command errors\n  [-verbose]       Suspend message limits during command execution\n  <file>           Output decrypted bitstream (.bit, .bin or .rbt)\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-encrypted_file",
+      "description": "Input AES-GCM encrypted bitstream (.bit or .rbt)"
+    },
+    {
+      "flag": "-keyfile",
+      "description": "File containing encryption keys"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

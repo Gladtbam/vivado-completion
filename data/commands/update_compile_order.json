@@ -1,0 +1,24 @@
+{
+  "name": "update_compile_order",
+  "short_description": "Updates a fileset compile order and possibly top based on a design graph.",
+  "full_help": "update_compile_order\n\nDescription: \nUpdates a fileset compile order and possibly top based on a design graph.\n\nSyntax: \nupdate_compile_order  [-force_gui] [-fileset <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name          Description\n  -------------------------\n  [-force_gui]  Execute this command, even when run interactively in the GUI.\n  [-fileset]    Fileset to update based on a design graph\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force_gui",
+      "description": "Execute this command, even when run interactively in the GUI."
+    },
+    {
+      "flag": "-fileset",
+      "description": "Fileset to update based on a design graph"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

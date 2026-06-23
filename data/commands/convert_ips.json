@@ -1,0 +1,28 @@
+{
+  "name": "convert_ips",
+  "short_description": "Convert specified IP to or from core container format.",
+  "full_help": "convert_ips\n\nDescription: \nConvert specified IP to or from core container format.\n\nSyntax: \nconvert_ips  [-force] [-to_core_container] [-from_core_container] [-quiet]\n             [-verbose] <objects>\n\nUsage: \n  Name                    Description\n  -----------------------------------\n  [-force]                Force conversion even if the IP is locked.\n  [-to_core_container]    Convert IP to core container format.\n  [-from_core_container]  Convert IP to non core container format.\n  [-quiet]                Ignore command errors\n  [-verbose]              Suspend message limits during command execution\n  <objects>               Input objects for the IP. May IP or source file \n                          objects\n\nCategories: \nIPFlow\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-force",
+      "description": "Force conversion even if the IP is locked."
+    },
+    {
+      "flag": "-to_core_container",
+      "description": "Convert IP to core container format."
+    },
+    {
+      "flag": "-from_core_container",
+      "description": "Convert IP to non core container format."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

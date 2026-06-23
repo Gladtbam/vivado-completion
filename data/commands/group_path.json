@@ -1,0 +1,40 @@
+{
+  "name": "group_path",
+  "short_description": "Groups paths for cost function calculations",
+  "full_help": "group_path\n\nDescription: \nGroups paths for cost function calculations\n\nSyntax: \ngroup_path  [-name <args>] [-weight <arg>] [-default] [-from <args>]\n            [-to <args>] [-through <args>] [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-name]     The name of group, can be multiple names\n  [-weight]   Cost function Weight, Valid values are 1, 2\n              Default: 1.0\n  [-default]  Restore path to its default group\n  [-from]     Filter by paths starting at these path startpoints\n  [-to]       Filter by paths terminating at these path endpoints\n  [-through]  Consider paths through pins, cells or nets\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "The name of group, can be multiple names"
+    },
+    {
+      "flag": "-weight",
+      "description": "Cost function Weight, Valid values are 1, 2 Default: 1.0"
+    },
+    {
+      "flag": "-default",
+      "description": "Restore path to its default group"
+    },
+    {
+      "flag": "-from",
+      "description": "Filter by paths starting at these path startpoints"
+    },
+    {
+      "flag": "-to",
+      "description": "Filter by paths terminating at these path endpoints"
+    },
+    {
+      "flag": "-through",
+      "description": "Consider paths through pins, cells or nets"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

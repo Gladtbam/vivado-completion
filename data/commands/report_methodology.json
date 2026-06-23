@@ -1,0 +1,60 @@
+{
+  "name": "report_methodology",
+  "short_description": "Methodology Checks",
+  "full_help": "report_methodology\n\nDescription: \nMethodology Checks\n\nSyntax: \nreport_methodology  [-name <arg>] [-cells <args>] [-checks <args>]\n                    [-file <arg>] [-rpx <arg>] [-append] [-waived]\n                    [-no_waivers] [-slack_lesser_than <arg>] [-return_string]\n                    [-merge_exceptions <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name                  Description\n  ---------------------------------\n  [-name]               Output the results to GUI panel with this name\n  [-cells]              Run report_methodology on the specified cell(s).\n  [-checks]             Report Methodology checks (see get_methodology_checks\n                        for available checks)\n  [-file]               Filename to output results to. (send output to \n                        console if -file is not used)\n  [-rpx]                Report filename for persisted results.\n  [-append]             Append the results to file, do not overwrite the \n                        results file\n  [-waived]             Output result is Waived checks\n  [-no_waivers]         Disable waivers for checks\n  [-slack_lesser_than]  Set SYNTH rules Slack Threshold value in 'ns' (float)\n                        Default: 2.0\n  [-return_string]      Return report as string\n  [-merge_exceptions]   Allow/Prevent the timing engine from merging timing \n                        exceptions. Valid values are auto/true/false\n                        Default: auto\n  [-quiet]              Ignore command errors\n  [-verbose]            Suspend message limits during command execution\n\nCategories: \nMethodology, Report, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-cells",
+      "description": "Run report_methodology on the specified cell(s)."
+    },
+    {
+      "flag": "-checks",
+      "description": "Report Methodology checks (see get_methodology_checks for available checks)"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-rpx",
+      "description": "Report filename for persisted results."
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, do not overwrite the results file"
+    },
+    {
+      "flag": "-waived",
+      "description": "Output result is Waived checks"
+    },
+    {
+      "flag": "-no_waivers",
+      "description": "Disable waivers for checks"
+    },
+    {
+      "flag": "-slack_lesser_than",
+      "description": "Set SYNTH rules Slack Threshold value in 'ns' (float) Default: 2.0"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-merge_exceptions",
+      "description": "Allow/Prevent the timing engine from merging timing exceptions. Valid values are auto/true/false Default: auto"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "name": "report_exceptions",
+  "short_description": "Report timing exceptions",
+  "full_help": "report_exceptions\n\nDescription: \nReport timing exceptions\n\nSyntax: \nreport_exceptions  [-from <args>] [-rise_from <args>] [-fall_from <args>]\n                   [-to <args>] [-rise_to <args>] [-fall_to <args>]\n                   [-through <args>] [-rise_through <args>]\n                   [-fall_through <args>] [-ignored] [-scope_override]\n                   [-summary] [-coverage] [-ignored_objects] [-count_objects]\n                   [-write_merged_exceptions] [-write_valid_exceptions]\n                   [-no_header] [-file <arg>] [-append] [-return_string]\n                   [-name <arg>] [-quiet] [-verbose]\n\nUsage: \n  Name                        Description\n  ---------------------------------------\n  [-from]                     From pins, ports, cells or clocks\n  [-rise_from]                Rising from pins, ports, cells or clocks\n  [-fall_from]                Falling from pins, ports, cells  or clocks\n  [-to]                       To pins, ports, cells or clocks\n  [-rise_to]                  Rising to pins, ports, cells or clocks\n  [-fall_to]                  Falling to pins, ports, cells or clocks\n  [-through]                  Through pins, ports, cells or nets\n  [-rise_through]             Rising through pins, ports, cells or nets\n  [-fall_through]             Falling through pins, ports, cells or nets\n  [-ignored]                  Only report exceptions which are fully ignored\n  [-scope_override]           Only report scoped exceptions which are fully \n                              or partially overriden\n  [-summary]                  Report a summary of all exceptions\n  [-coverage]                 Report the coverage of all timing exceptions\n  [-ignored_objects]          Report the list of ignored startpoints and \n                              endpoints\n  [-count_objects]            Report the number of objects in the timing \n                              exceptions\n  [-write_merged_exceptions]  Write merged timing exceptions\n  [-write_valid_exceptions]   Write timing exceptions with the valid objects \n                              only\n  [-no_header]                Do not generate a report header\n  [-file]                     Filename to output results to. (send output to \n                              console if -file is not used)\n  [-append]                   Append the results to file, don't overwrite the\n                              results file\n  [-return_string]            Return report as string\n  [-name]                     Output the results to GUI panel with this name\n  [-quiet]                    Ignore command errors\n  [-verbose]                  Suspend message limits during command execution\n\nCategories: \nReport, Timing\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-from",
+      "description": "From pins, ports, cells or clocks"
+    },
+    {
+      "flag": "-rise_from",
+      "description": "Rising from pins, ports, cells or clocks"
+    },
+    {
+      "flag": "-fall_from",
+      "description": "Falling from pins, ports, cells  or clocks"
+    },
+    {
+      "flag": "-to",
+      "description": "To pins, ports, cells or clocks"
+    },
+    {
+      "flag": "-rise_to",
+      "description": "Rising to pins, ports, cells or clocks"
+    },
+    {
+      "flag": "-fall_to",
+      "description": "Falling to pins, ports, cells or clocks"
+    },
+    {
+      "flag": "-through",
+      "description": "Through pins, ports, cells or nets"
+    },
+    {
+      "flag": "-rise_through",
+      "description": "Rising through pins, ports, cells or nets"
+    },
+    {
+      "flag": "-fall_through",
+      "description": "Falling through pins, ports, cells or nets"
+    },
+    {
+      "flag": "-ignored",
+      "description": "Only report exceptions which are fully ignored"
+    },
+    {
+      "flag": "-scope_override",
+      "description": "Only report scoped exceptions which are fully or partially overriden"
+    },
+    {
+      "flag": "-summary",
+      "description": "Report a summary of all exceptions"
+    },
+    {
+      "flag": "-coverage",
+      "description": "Report the coverage of all timing exceptions"
+    },
+    {
+      "flag": "-ignored_objects",
+      "description": "Report the list of ignored startpoints and endpoints"
+    },
+    {
+      "flag": "-count_objects",
+      "description": "Report the number of objects in the timing exceptions"
+    },
+    {
+      "flag": "-write_merged_exceptions",
+      "description": "Write merged timing exceptions"
+    },
+    {
+      "flag": "-write_valid_exceptions",
+      "description": "Write timing exceptions with the valid objects only"
+    },
+    {
+      "flag": "-no_header",
+      "description": "Do not generate a report header"
+    },
+    {
+      "flag": "-file",
+      "description": "Filename to output results to. (send output to console if -file is not used)"
+    },
+    {
+      "flag": "-append",
+      "description": "Append the results to file, don't overwrite the results file"
+    },
+    {
+      "flag": "-return_string",
+      "description": "Return report as string"
+    },
+    {
+      "flag": "-name",
+      "description": "Output the results to GUI panel with this name"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

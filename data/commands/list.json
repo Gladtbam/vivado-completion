@@ -1,0 +1,7 @@
+{
+  "name": "list",
+  "short_description": "",
+  "full_help": "\nTopic                  Description\nlist_board_parameters  Get the list of parameters supported by board.xml file\nlist_features          List available features.\nlist_hw_samples        This command is auto loaded by Tcl. To explicitly load the command type 'load_features labtools'.\nlist_param             Get all parameter names\nlist_property          List properties of object\nlist_property_value    List legal property values of object\nlist_targets           List applicable targets for the specified source\n\nFor help on an individual topic, type 'help <topic>'. For example:\n% help create_project\n",
+  "custom_snippet": null,
+  "arguments": []
+}

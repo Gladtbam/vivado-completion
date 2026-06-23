@@ -1,0 +1,28 @@
+{
+  "name": "write_aie_intf_constraints",
+  "short_description": "Writes aie interface placement information as constraints file.",
+  "full_help": "write_aie_intf_constraints\n\nDescription: \nWrites aie interface placement information as constraints file.\n\nSyntax: \nwrite_aie_intf_constraints  [-no_fixed_only] [-cell <arg>] [-force] [-quiet]\n                            [-verbose] [<file>]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-no_fixed_only]  Export fixed and non-fixed placement (by default only \n                    fixed placement is exported)\n  [-cell]           AIE IP Name for which constraints to be written)\n  [-force]          Overwrite existing file.\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  [<file>]          Output AIE Interface constraints file.\n\nCategories: \nAIE, FileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-no_fixed_only",
+      "description": "Export fixed and non-fixed placement (by default only fixed placement is exported)"
+    },
+    {
+      "flag": "-cell",
+      "description": "AIE IP Name for which constraints to be written)"
+    },
+    {
+      "flag": "-force",
+      "description": "Overwrite existing file."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

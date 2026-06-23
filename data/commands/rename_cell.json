@@ -1,0 +1,20 @@
+{
+  "name": "rename_cell",
+  "short_description": "rename a cell",
+  "full_help": "rename_cell\n\nDescription: \nrename a cell\n\nSyntax: \nrename_cell  -to <arg> [-quiet] [-verbose] <cell>...\n\nUsage: \n  Name        Description\n  -----------------------\n  -to         New name\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n  <cell>      Cell to rename\n\nCategories: \nNetlist\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-to",
+      "description": "New name"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

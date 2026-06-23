@@ -1,0 +1,28 @@
+{
+  "name": "is_part_supported",
+  "short_description": "Checks if a part is supported with a vlnv",
+  "full_help": "is_part_supported\n\nDescription: \nChecks if a part is supported with a vlnv\n\nSyntax: \nis_part_supported  [-vlnv <arg>] [-part <arg>] [-allowHiddenParts] [-quiet]\n                   [-verbose]\n\nReturns: \n1 if vlnv and part are compatible, 0 otherwise\n\nUsage: \n  Name                 Description\n  --------------------------------\n  [-vlnv]              VLNV to be checked for\n  [-part]              Part to be checked for compatibility with given VLNV\n  [-allowHiddenParts]  Allow hidden parts\n  [-quiet]             Ignore command errors\n  [-verbose]           Suspend message limits during command execution\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-vlnv",
+      "description": "VLNV to be checked for"
+    },
+    {
+      "flag": "-part",
+      "description": "Part to be checked for compatibility with given VLNV"
+    },
+    {
+      "flag": "-allowHiddenParts",
+      "description": "Allow hidden parts"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

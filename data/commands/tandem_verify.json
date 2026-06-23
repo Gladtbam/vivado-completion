@@ -1,0 +1,28 @@
+{
+  "name": "tandem_verify",
+  "short_description": "TCL task to verify Tandem Stage-1 PDIs",
+  "full_help": "tandem_verify\n\nDescription: \nTCL task to verify Tandem Stage-1 PDIs\n\nSyntax: \ntandem_verify  -reference_dcp <arg> -untrusted_dcp <arg> [-full_check <arg>]\n               [-quiet] [-verbose]\n\nUsage: \n  Name            Description\n  ---------------------------\n  -reference_dcp  Path to trusted reference DCP file\n  -untrusted_dcp  Path to untrusted DCP file\n  [-full_check]   Default behavior is to report the first difference only; if\n                  this option is set to true, tandem_verify will report \n                  complete differences\n  [-quiet]        Ignore command errors\n  [-verbose]      Suspend message limits during command execution\n\nCategories: \n\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-reference_dcp",
+      "description": "Path to trusted reference DCP file"
+    },
+    {
+      "flag": "-untrusted_dcp",
+      "description": "Path to untrusted DCP file"
+    },
+    {
+      "flag": "-full_check",
+      "description": "Default behavior is to report the first difference only; if this option is set to true, tandem_verify will report complete differences"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

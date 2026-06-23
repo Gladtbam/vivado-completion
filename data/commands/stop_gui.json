@@ -1,0 +1,12 @@
+{
+  "name": "stop_gui",
+  "short_description": "Close GUI",
+  "full_help": "stop_gui\n\nDescription: \nClose GUI\n\nSyntax: \nstop_gui  [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nGUIControl\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

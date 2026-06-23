@@ -1,0 +1,28 @@
+{
+  "name": "open_io_design",
+  "short_description": "Open an IO design",
+  "full_help": "open_io_design\n\nDescription: \nOpen an IO design\n\nSyntax: \nopen_io_design  [-name <arg>] [-part <arg>] [-constrset <arg>] [-quiet]\n                [-verbose]\n\nReturns: \ndesign object\n\nUsage: \n  Name          Description\n  -------------------------\n  [-name]       Design name\n  [-part]       Target part\n  [-constrset]  Constraint fileset to use\n  [-quiet]      Ignore command errors\n  [-verbose]    Suspend message limits during command execution\n\nCategories: \nProject\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-name",
+      "description": "Design name"
+    },
+    {
+      "flag": "-part",
+      "description": "Target part"
+    },
+    {
+      "flag": "-constrset",
+      "description": "Constraint fileset to use"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

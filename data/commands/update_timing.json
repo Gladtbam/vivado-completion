@@ -1,0 +1,20 @@
+{
+  "name": "update_timing",
+  "short_description": "update timing",
+  "full_help": "update_timing\n\nDescription: \nupdate timing\n\nSyntax: \nupdate_timing  [-full] [-quiet] [-verbose]\n\nUsage: \n  Name        Description\n  -----------------------\n  [-full]     Perform a full timing update instead of an incremental one\n  [-quiet]    Ignore command errors\n  [-verbose]  Suspend message limits during command execution\n\nCategories: \nTiming\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-full",
+      "description": "Perform a full timing update instead of an incremental one"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

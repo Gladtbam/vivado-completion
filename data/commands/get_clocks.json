@@ -1,0 +1,40 @@
+{
+  "name": "get_clocks",
+  "short_description": "Get a list of clocks in the current design",
+  "full_help": "get_clocks\n\nDescription: \nGet a list of clocks in the current design\n\nSyntax: \nget_clocks  [-regexp] [-nocase] [-filter <arg>] [-of_objects <args>]\n            [-match_style <arg>] [-include_generated_clocks] [-quiet]\n            [-verbose] [<patterns>]\n\nReturns: \nlist of clocks\n\nUsage: \n  Name                         Description\n  ----------------------------------------\n  [-regexp]                    Patterns are full regular expressions\n  [-nocase]                    Perform case-insensitive matching (valid only \n                               when -regexp specified)\n  [-filter]                    Filter list with expression\n  [-of_objects]                Get clocks of these pins, nets, or cells\n  [-match_style]               Style of pattern matching, valid values are \n                               ucf, sdc\n                               Default: sdc\n  [-include_generated_clocks]  Include auto-inferred/generated_clocks also.\n  [-quiet]                     Ignore command errors\n  [-verbose]                   Suspend message limits during command \n                               execution\n  [<patterns>]                 Match clock names against patterns\n                               Default: *\n\nCategories: \nSDC, XDC, Object\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-regexp",
+      "description": "Patterns are full regular expressions"
+    },
+    {
+      "flag": "-nocase",
+      "description": "Perform case-insensitive matching (valid only when -regexp specified)"
+    },
+    {
+      "flag": "-filter",
+      "description": "Filter list with expression"
+    },
+    {
+      "flag": "-of_objects",
+      "description": "Get clocks of these pins, nets, or cells"
+    },
+    {
+      "flag": "-match_style",
+      "description": "Style of pattern matching, valid values are ucf, sdc Default: sdc"
+    },
+    {
+      "flag": "-include_generated_clocks",
+      "description": "Include auto-inferred/generated_clocks also."
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "disconnect_debug_port",
+  "short_description": "Disconnect nets and pins from debug port channels",
+  "full_help": "disconnect_debug_port\n\nDescription: \nDisconnect nets and pins from debug port channels\n\nSyntax: \ndisconnect_debug_port  [-channel_index <arg>] [-quiet] [-verbose] <port>\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-channel_index]  Disconnect the net at channel index\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  <port>            Debug port name\n\nCategories: \nDebug\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-channel_index",
+      "description": "Disconnect the net at channel index"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

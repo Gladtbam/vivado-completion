@@ -1,0 +1,32 @@
+{
+  "name": "set_power_opt",
+  "short_description": "Set constraints for power optimization",
+  "full_help": "set_power_opt\n\nDescription: \nSet constraints for power optimization\n\nSyntax: \nset_power_opt  [-include_cells <args>] [-exclude_cells <args>] [-clocks <args>]\n               [-cell_types <args>] [-quiet] [-verbose]\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-include_cells]  Include only these instances for clock gating.\n                    Default: all\n  [-exclude_cells]  Exclude these instances from clock gating.\n                    Default: none\n  [-clocks]         Clock gate instances clocked by these clocks only.\n                    Default: all clocks\n  [-cell_types]     Clock gate these cell types only. Specify either \n                    [all|none], or one or more of [bram|reg|srl].\n                    Default: all\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n\nCategories: \nPower, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-include_cells",
+      "description": "Include only these instances for clock gating. Default: all"
+    },
+    {
+      "flag": "-exclude_cells",
+      "description": "Exclude these instances from clock gating. Default: none"
+    },
+    {
+      "flag": "-clocks",
+      "description": "Clock gate instances clocked by these clocks only. Default: all clocks"
+    },
+    {
+      "flag": "-cell_types",
+      "description": "Clock gate these cell types only. Specify either [all|none], or one or more of [bram|reg|srl]. Default: all"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

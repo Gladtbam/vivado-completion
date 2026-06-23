@@ -1,0 +1,48 @@
+{
+  "name": "set_noc_phase",
+  "short_description": "Add/modify a phase to all traffic paths within the provided phase group.",
+  "full_help": "set_noc_phase\n\nDescription: \nAdd/modify a phase to all traffic paths within the provided phase group.\n\nSyntax: \nset_noc_phase  [-phase_group <arg>] [-phase <arg>] [-master_instance <arg>]\n               [-slave_instance <arg>] [-read_bandwidth <arg>]\n               [-write_bandwidth <arg>] [-mode <arg>] [-port <arg>] [-quiet]\n               [-verbose]\n\nUsage: \n  Name                Description\n  -------------------------------\n  [-phase_group]      Name of the phase group which will include or already \n                      contain the provided phase\n                      Default: Group_Default\n  [-phase]            Name of the phase to add or modify\n                      Default: Phase_Default\n  [-master_instance]  The master instance of the traffic path to add or \n                      modify the provided phase\n  [-slave_instance]   The slave instance of the traffic path to add or modify\n                      the provided phase\n  [-read_bandwidth]   The read bandwidth of the phase to add or modify\n                      Default: 0\n  [-write_bandwidth]  The write bandwidth of the phase to add or modify\n                      Default: 0\n  [-mode]             Determines whether this is a read(READ)/write(WRITE) \n                      phase or both(ALL).\n                      Default: ALL\n  [-port]             Specifies the port of a slave instance the traffic path\n                      connects to.\n                      Default: PORT0\n  [-quiet]            Ignore command errors\n  [-verbose]          Suspend message limits during command execution\n\nCategories: \nNOC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-phase_group",
+      "description": "Name of the phase group which will include or already contain the provided phase Default: Group_Default"
+    },
+    {
+      "flag": "-phase",
+      "description": "Name of the phase to add or modify Default: Phase_Default"
+    },
+    {
+      "flag": "-master_instance",
+      "description": "The master instance of the traffic path to add or modify the provided phase"
+    },
+    {
+      "flag": "-slave_instance",
+      "description": "The slave instance of the traffic path to add or modify the provided phase"
+    },
+    {
+      "flag": "-read_bandwidth",
+      "description": "The read bandwidth of the phase to add or modify Default: 0"
+    },
+    {
+      "flag": "-write_bandwidth",
+      "description": "The write bandwidth of the phase to add or modify Default: 0"
+    },
+    {
+      "flag": "-mode",
+      "description": "Determines whether this is a read(READ)/write(WRITE) phase or both(ALL). Default: ALL"
+    },
+    {
+      "flag": "-port",
+      "description": "Specifies the port of a slave instance the traffic path connects to. Default: PORT0"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

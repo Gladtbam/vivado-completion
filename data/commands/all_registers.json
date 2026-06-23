@@ -1,0 +1,60 @@
+{
+  "name": "all_registers",
+  "short_description": "Get a list of register cells or pins in the current design",
+  "full_help": "all_registers\n\nDescription: \nGet a list of register cells or pins in the current design\n\nSyntax: \nall_registers  [-clock <args>] [-rise_clock <args>] [-fall_clock <args>]\n               [-cells] [-data_pins] [-clock_pins] [-async_pins] [-output_pins]\n               [-level_sensitive] [-edge_triggered] [-no_hierarchy] [-quiet]\n               [-verbose]\n\nReturns: \nlist of cell or pin objects\n\nUsage: \n  Name                Description\n  -------------------------------\n  [-clock]            Consider registers of this clock\n  [-rise_clock]       Consider registers triggered by clock rising edge\n  [-fall_clock]       Consider registers triggered by clock falling edge\n  [-cells]            Return list of cells (default)\n  [-data_pins]        Return list of register data pins\n  [-clock_pins]       Return list of register clock pins\n  [-async_pins]       Return list of async preset/clear pins\n  [-output_pins]      Return list of register output pins\n  [-level_sensitive]  Only consider level-sensitive latches\n  [-edge_triggered]   Only consider edge-triggered flip-flops\n  [-no_hierarchy]     Only search the current instance\n  [-quiet]            Ignore command errors\n  [-verbose]          Suspend message limits during command execution\n\nCategories: \nSDC, XDC\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-clock",
+      "description": "Consider registers of this clock"
+    },
+    {
+      "flag": "-rise_clock",
+      "description": "Consider registers triggered by clock rising edge"
+    },
+    {
+      "flag": "-fall_clock",
+      "description": "Consider registers triggered by clock falling edge"
+    },
+    {
+      "flag": "-cells",
+      "description": "Return list of cells (default)"
+    },
+    {
+      "flag": "-data_pins",
+      "description": "Return list of register data pins"
+    },
+    {
+      "flag": "-clock_pins",
+      "description": "Return list of register clock pins"
+    },
+    {
+      "flag": "-async_pins",
+      "description": "Return list of async preset/clear pins"
+    },
+    {
+      "flag": "-output_pins",
+      "description": "Return list of register output pins"
+    },
+    {
+      "flag": "-level_sensitive",
+      "description": "Only consider level-sensitive latches"
+    },
+    {
+      "flag": "-edge_triggered",
+      "description": "Only consider edge-triggered flip-flops"
+    },
+    {
+      "flag": "-no_hierarchy",
+      "description": "Only search the current instance"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}

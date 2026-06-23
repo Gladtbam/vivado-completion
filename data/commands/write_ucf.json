@@ -1,0 +1,32 @@
+{
+  "name": "write_ucf",
+  "short_description": "Export UCF information to a file or directory",
+  "full_help": "write_ucf\n\nDescription: \nExport UCF information to a file or directory\n\nSyntax: \nwrite_ucf  [-no_fixed_only] [-constraints <arg>] [-pblocks <args>]\n           [-cell <arg>] [-quiet] [-verbose] <file>\n\nReturns: \nname of the output file or directory\n\nUsage: \n  Name              Description\n  -----------------------------\n  [-no_fixed_only]  Export fixed and non-fixed placement (by default only \n                    fixed placement will be exported)\n  [-constraints]    Include constraints that are flagged invalid\n                    Values: valid, invalid, all\n                    Default: valid\n  [-pblocks]        Export placement for these pblocks (not valid with -cell)\n  [-cell]           Export placement for this cell (not valid with -pblocks)\n  [-quiet]          Ignore command errors\n  [-verbose]        Suspend message limits during command execution\n  <file>            Output file (directory with -pblocks, -cell)\n\nCategories: \nFileIO\n",
+  "custom_snippet": null,
+  "arguments": [
+    {
+      "flag": "-no_fixed_only",
+      "description": "Export fixed and non-fixed placement (by default only fixed placement will be exported)"
+    },
+    {
+      "flag": "-constraints",
+      "description": "Include constraints that are flagged invalid Values: valid, invalid, all Default: valid"
+    },
+    {
+      "flag": "-pblocks",
+      "description": "Export placement for these pblocks (not valid with -cell)"
+    },
+    {
+      "flag": "-cell",
+      "description": "Export placement for this cell (not valid with -pblocks)"
+    },
+    {
+      "flag": "-quiet",
+      "description": "Ignore command errors"
+    },
+    {
+      "flag": "-verbose",
+      "description": "Suspend message limits during command execution"
+    }
+  ]
+}
