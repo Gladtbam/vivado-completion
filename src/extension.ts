@@ -26,7 +26,21 @@ export function activate(context: vscode.ExtensionContext) {
                     const commandName = match[1];
 
                     if (vivadoArgs[commandName]) {
-                        return vivadoArgs[commandName];
+                        return vivadoArgs[commandName].map((arg: any) => {
+                            const label = arg.label || arg.name;
+                            
+                            const item = new vscode.CompletionItem(label, vscode.CompletionItemKind.Property);
+                            
+                            if (arg.documentation) { item.documentation = arg.documentation; }
+                            if (arg.description) { item.documentation = new vscode.MarkdownString(arg.description); }
+                            if (arg.detail) { item.detail = arg.detail; }
+
+                            if (typeof label === 'string' && label.startsWith('-')) {
+                                item.insertText = label.substring(1);
+                            }
+
+                            return item;
+                        });
                     }
                 }
 
